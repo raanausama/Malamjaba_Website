@@ -1,0 +1,67 @@
+.split-half{
+    display: flex;
+      /* justify-content: space-between; */
+    width: 100%;
+    height: 40em;
+    overflow: hidden;
+  
+  }
+  
+  .split-half .left{
+    width: 50%;
+    height: 40em;
+  }
+  
+  .split-half .right{
+    width: 50%;
+    height: 40em;
+  }
+  
+  
+  .grid-2-2{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 0;
+  }
+  .carousel-root{
+    position: relative;
+    overflow: hidden;
+    
+    width: 100%;
+    height: 40em;
+  }
+  .carousel{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  .carousel-slider{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+  .carousel button{
+    display: none;
+  }
+
+  .control-dots{
+    position: absolute;
+    right: 2em;
+    top: 50%;
+    z-index: 22;
+  }
+  .slider-wrapper{
+    overflow: hidden;
+    height: 100%;
+  }
+
+
+  .slide img{
+    width: 100%;
+  }
+  .slide{
+    overflow: hidden;
+  }
