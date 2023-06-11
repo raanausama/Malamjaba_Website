@@ -4,23 +4,29 @@ import { Box, Grid, Stack, Typography, Button } from "@mui/material";
 import gsap from "gsap";
 import Carousel from "react-bootstrap/Carousel";
 import { v4 as uuidv4 } from "uuid";
+import simage1 from "../../Assets/sliderimage/pastevent.jpg";
+import simage2 from "../../Assets/sliderimage/cycling.jpg";
+import simage3 from "../../Assets/sliderimage/futureevent.jpg";
 
 const data = [
   {
     id: 1,
-    src: "/pastevent.jpg",
+    // src: "/pastevent.jpg",
+    src: { simage1 },
     caption: "Caption",
     description: "Description Here",
   },
   {
     id: 2,
-    src: "/cycling.jpg",
+    // src: "/cycling.jpg",
+    src: { simage2 },
     caption: "Caption",
     description: "Description Here",
   },
   {
     id: 3,
-    src: "/futureevent.jpg",
+    // src: "/futureevent.jpg",
+    src: { simage3 },
     caption: "Caption",
     description: "Description Here",
   },
@@ -82,12 +88,12 @@ const Slider = ({
     <>
       <Box className="bg-image-wrap" sx={boxStyle}>
         <Grid container>
-          <Grid item sx={12}>
+          <Grid item xs={12}>
             <Carousel activeIndex={index} onSelect={handleSelect}>
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="./pastevent.jpg"
+                  src={simage1}
                   alt="First slide"
                 />
                 <Carousel.Caption>
@@ -100,7 +106,7 @@ const Slider = ({
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="./cycling.jpg"
+                  src={simage2}
                   alt="Second slide"
                 />
 
@@ -114,7 +120,7 @@ const Slider = ({
               <Carousel.Item>
                 <img
                   className="d-block w-100"
-                  src="./futureevent.jpg"
+                  src={simage3}
                   alt="Third slide"
                 />
 

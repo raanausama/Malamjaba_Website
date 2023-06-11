@@ -14,6 +14,9 @@ import HeaderText from "../components/header/HeaderText";
 import ImageWithSummerActivities from "../components/imageWithTextOverlay/imageWithSummerActivities";
 import ImageWithWinterActivities from "../components/imageWithTextOverlay/imageWithWinterActivities";
 import Slider from "../components/carousel/Slider";
+import Slider1 from "../components/carousel/Slider1";
+import { Box } from "@mui/material";
+import ImageLists from "../components/carousel/ImageLists";
 // import Item form "../components/swiper/swiper";
 
 // import Swiper from "../components/swiper/swiper";
@@ -60,7 +63,10 @@ const HomePage = () => {
           console.log("testing");
         }}
       />
-      <Slider/>
+
+      <ImageLists />
+      {/* <Slider1 /> */}
+      {/* <Slider /> */}
       {/* <div className="cardsParallaxBG">
         <div
           style={{ backgroundImage: `url(${parallaxBG})` }}
