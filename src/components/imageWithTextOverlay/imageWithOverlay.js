@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import "./imageWithOverlay.css"; // Import the CSS file for styling
 import { Box, Grid, Stack, Typography, Button } from "@mui/material";
 import gsap from "gsap";
+// import ScrollTrigger from "gsap/ScrollTrigger";
 
 const ImageWithOverlay = ({
   image = "",
@@ -24,6 +25,7 @@ const ImageWithOverlay = ({
     gsap.to(currentTarget, { scale: 1 });
   };
   const gridRef = useRef(null);
+  // gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
     const tl = gsap.timeline({ repeatDelay: 1, yoyo: true });
@@ -46,9 +48,17 @@ const ImageWithOverlay = ({
     // tF.to(".green", { rotation: 360 });
     // tF.to(".purple", { rotation: 360 });
     // tF.to(".orange", { rotation: 360 });
+    // ScrollTrigger.create({
+    //   trigger: gridRef.current,
+    //   start: "top center",
+    //   animation: tl,
+    // Uncomment the line below if you want the animation to play every time the trigger area is reached during scrolling
+    // scrub: true,
+    // });
 
     return () => {
       tl.kill();
+      // ScrollTrigger.kill();
     };
   }, []);
   return (
@@ -60,6 +70,8 @@ const ImageWithOverlay = ({
         ml={{ xs: 0, md: 10 }}
         xs={{ height: "100%" }}
         ref={gridRef}
+        onMouseEnter={onEnter}
+        onMouseLeave={onLeave}
       >
         <Grid item sx={12} md={4} className="grid-item-3">
           <Stack direction="column" alignItems="center">
@@ -84,7 +96,9 @@ const ImageWithOverlay = ({
               We are aiming open for winter in mid-October.
             </Typography>
             {button ? (
-              <Button onClick={buttonCallBack()}>{buttonText}</Button>
+              <Button sx={{ width: "20px" }} onClick={buttonCallBack()}>
+                {buttonText}
+              </Button>
             ) : (
               <></>
             )}
