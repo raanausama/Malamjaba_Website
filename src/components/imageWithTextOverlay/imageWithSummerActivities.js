@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import "./imageWithOverlay.css"; // Import the CSS file for styling
 import { Box, Grid, Stack, Typography, Button } from "@mui/material";
 import gsap from "gsap";
+// import ScrollTrigger from "gsap/ScrollTrigger";
 
 const ImageWithSummerActivities = ({
   image = "",
@@ -24,6 +25,7 @@ const ImageWithSummerActivities = ({
     gsap.to(currentTarget, { scale: 1 });
   };
   const gridRef = useRef(null);
+  // gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
     const tl = gsap.timeline({ repeatDelay: 1, yoyo: true });
@@ -46,9 +48,17 @@ const ImageWithSummerActivities = ({
     // tF.to(".green", { rotation: 360 });
     // tF.to(".purple", { rotation: 360 });
     // tF.to(".orange", { rotation: 360 });
+    // ScrollTrigger.create({
+    //   trigger: gridRef.current,
+    //   start: "top center",
+    //   animation: tl,
+    // Uncomment the line below if you want the animation to play every time the trigger area is reached during scrolling
+    // scrub: true,
+    // });
 
     return () => {
       tl.kill();
+      // ScrollTrigger.kill();
     };
   }, []);
   return (
@@ -58,9 +68,14 @@ const ImageWithSummerActivities = ({
         container
         mt={{ xs: 25, md: 20 }}
         ml={{ xs: 0, md: -3 }}
-        xs={{ height: "100%" }}
+        xs={{
+          height: "100%",
+          sx: { display: "flex", justifyContent: "center" },
+        }}
         ref={gridRef}
         justifyContent="flex-end"
+        onMouseEnter={onEnter}
+        onMouseLeave={onLeave}
       >
         <Grid item sx={12} md={4} className="grid-item-3">
           <Stack direction="column" alignItems="center">
@@ -93,7 +108,9 @@ const ImageWithSummerActivities = ({
               and engineers, multiple times a year.{" "}
             </Typography>
             {button ? (
-              <Button mt={5} onClick={buttonCallBack()}>{buttonText}</Button>
+              <Button mt={5} onClick={buttonCallBack()}>
+                {buttonText}
+              </Button>
             ) : (
               <></>
             )}

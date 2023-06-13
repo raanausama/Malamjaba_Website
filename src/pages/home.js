@@ -17,6 +17,9 @@ import Slider from "../components/carousel/Slider";
 import Slider1 from "../components/carousel/Slider1";
 import { Box } from "@mui/material";
 import ImageLists from "../components/carousel/ImageLists";
+import Eventcardsection from "../components/Cards/Eventcardsection";
+import Servicecardsection from "../components/Cards/servicecardsection";
+import CarouselSection from "../components/carousel/CarouselSection";
 // import Item form "../components/swiper/swiper";
 
 // import Swiper from "../components/swiper/swiper";
@@ -63,106 +66,13 @@ const HomePage = () => {
           console.log("testing");
         }}
       />
-
+      <Eventcardsection />
+      <Servicecardsection />
+      {/* <CarouselSection/> */}
       <ImageLists />
-      {/* <Slider1 /> */}
-      {/* <Slider /> */}
-      {/* <div className="cardsParallaxBG">
-        <div
-          style={{ backgroundImage: `url(${parallaxBG})` }}
-          className="header-image-overlay"
-        >
-          <div className="card-wrapper">
-            <Card
-              image="pastevent.jpg"
-              header="Food Fest"
-              text="Cusine from all over Pakistan and a Qawalli Night"
-              url="/activities"
-            />
-            <Card
-              image="cycling.jpg"
-              header="Mountain Bike Race"
-              text="From Cyclists all over Pakistan"
-              url="/activities"
-            />
-            <Card
-              image="futureevent.jpg"
-              header="Ski and Snowboarding Competition"
-              text="To Promote local talent and provide a platform for winter sports"
-              url="/activities"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="card-wrapper-no-space">
-        <Card
-          image="accomodation.jpg"
-          header="Accomodation"
-          text="A stay you will never forget"
-          url="/staycation"
-        />
-        <Card
-          image="activities.jpg"
-          header="Packages"
-          text="All our services for all of your needs"
-          url="/packages"
-        />
-        <Card
-          image="events.jpg"
-          header="Offers"
-          text="Experience luxury like never before with our exclusive resort offers, including discounted rates, complimentary amenities, and personalized service tailored to your every need."
-          url="/events"
-        />
-      </div>
-
-      <div class="split-half">
-        <div class="left">
-          <Carousel
-            axis="vertical"
-            verticalSwipe="natural"
-            infiniteLoop={true}
-            showArrows={true}
-          >
-            <div>
-              <img src="pastevent.jpg" />
-            </div>
-            <div>
-              <img src="cycling.jpg" />
-            </div>
-            <div>
-              <img src="futureevent.jpg" />
-            </div>
-          </Carousel>
-        </div>
-
-        <div class="right">
-          <div class="grid-2-2">
-            <SocailCard
-              image="instagram.jpg"
-              iconURL="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png"
-              targetURL="https://www.instagram.com/malamjabbaskiresortofficial/"
-            />
-            <SocailCard
-              image="facebook.jpg"
-              iconURL="https://www.facebook.com/images/fb_icon_325x325.png"
-              targetURL="https://www.facebook.com/MjSkiResort/"
-            />
-            <SocailCard
-              image="youtube.jpg"
-              iconURL="https://www.youtube.com/s/desktop/5f762ff5/img/favicon_144.png"
-              targetURL="https://www.youtube.com/@malamjabbaskiresort4928"
-            />
-            <SocailCard
-              image="facebook.jpg"
-              iconURL="https://www.tiktok.com/favicons/apple-touch-icon.png"
-              targetURL="https://www.tiktok.com/@mjskiresort"
-            />
-          </div>
-        </div>
-      </div> */}
-      {/*
-                <Sponsors />
-                <Footer /> */}
+      <Sponsors />
+      <Footer />
+      
     </>
   );
 };

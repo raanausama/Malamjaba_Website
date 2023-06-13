@@ -9,7 +9,7 @@
     transform: translateY(00%);
   }
 .hover-overlay:hover{
-    transform: translateY(100%)
+    transform: translateY(75%)
 }
   /* .ImageListItem:hover .hover-overlay.active {
     background-color: rgba(255, 255, 255, 0.4);

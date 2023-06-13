@@ -7,6 +7,7 @@ import Staycation from './pages/staycation';
 import TheSlope from './pages/TheSlope';
 import Packages from './pages/packages';
 import ResponsiveAppBar from './components/NavBar/NavBar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Activities from './pages/activities';
 
 
