@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
+import Backdrop from "@mui/material/Backdrop";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
+import Modal from "@mui/material/Modal";
+import Fade from "@mui/material/Fade";
 import { CardActionArea } from "@mui/material";
+import "./eventcard.css";
+import EventModal from "./EventModal";
 
 export default function ActionAreaCard({
   header1 = "",
@@ -12,43 +17,37 @@ export default function ActionAreaCard({
   image = "",
   header3 = "",
 }) {
-  const cardContentStyle = {
-    border: "1px solid blue",
-    margin: "10px",
-    height: 500,
-    "&:hover": {
-      border: "4px solid",
-      borderColor: "#fcb817", // Remove the border color on hover
-      margin: "0px",
-      "& .MuiCardMedia-img": {
-        transform: "scale(0.9)", // Reduce the image size on hover
-      },
-      "& .card-header2": {
-        color: "#2596be",
-      },
-    },
+  const [expanded, setExpanded] = useState(false);
+
+  const [viewModalOpen, setViewModalOpen] = React.useState(false);
+
+  const handleCloseModal = () => {
+    console.log("handleCloseModal");
+    setViewModalOpen(false); // Close the modal
+  };
+  const handleOpenModal = () => {
+    console.log("handleOpenModal");
+    setViewModalOpen(true); // open the modal
+  };
+
+  const handleExpandClick = () => {
+    console.log("just checking");
+    setExpanded(!expanded);
   };
 
   return (
-    <Card>
-      <CardActionArea>
-        <Box>
-          <CardContent sx={cardContentStyle}>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-                textAlign: "center",
-              }}
-            >
+    <>
+      <EventModal open={viewModalOpen} handleClose={handleCloseModal} image={image} />
+      <Card className={`action-card`} onClick={handleOpenModal}>
+        <CardActionArea onClick={handleExpandClick}>
+          <Box>
+            <CardContent className="card-content">
               <CardMedia
                 component="img"
                 height="200"
                 image={image}
                 alt="images"
-                // style={{ padding: "5px" }}
+                // sx={{display: ""}}
               />
               <Typography
                 gutterBottom
@@ -68,19 +67,40 @@ export default function ActionAreaCard({
                   textTransform: "none",
                   color: "inherit",
                   fontWeight: "bold",
-                  fontStyle: "italic", // Reset the text color to inherit
+                  fontStyle: "italic",
                 }}
-                // className="card-header2"
+                className="card-header2"
               >
                 {header2}
               </Typography>
-              <Typography variant="body1" component="h2">
-                {header3}
-              </Typography>
-            </div>
-          </CardContent>
-        </Box>
-      </CardActionArea>
-    </Card>
+              {/* {expanded && (
+              <div>
+                <Typography variant="h6" component="h2">
+                  <b>Long Description:</b> Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit.
+                </Typography>
+                <Typography variant="h6" component="h2">
+                  <b>PreReqs:</b> Lorem ipsum dolor sit amet.
+                </Typography>
+                <Typography variant="h6" component="h2">
+                  <b>Date:</b> June 30, 2023
+                </Typography>
+                <Typography variant="h6" component="h2">
+                  <b>Duration:</b> 3 hours
+                </Typography>
+                <Typography variant="h6" component="h2">
+                  <b>Disclaimer:</b> Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit.
+                </Typography>
+                <Button variant="contained" color="primary">
+                  Register
+                </Button>
+              </div>
+            )} */}
+            </CardContent>
+          </Box>
+        </CardActionArea>
+      </Card>
+    </>
   );
 }

@@ -1,46 +1,25 @@
 import React from "react";
-// imprt VideoTextOverlay from "../components/videoTextOverlay/videoTextOverlay";
 import VideoTextOverlay from "../components/textOverlay/TextOverlay";
-import ImageWithOverlay from "../components/imageWithTextOverlay/imageWithOverlay";
-import Card from "../components/Cards/card";
-import SocailCard from "../components/Cards/socialCards";
 import Sponsors from "../components/sponsors/sponsorsFooter";
 import "./home.css";
 import Footer from "../components/footer/footer";
-import parallaxBG from "../Assets/bg_content/parallax-bg.jpg";
-import Swiper from "../components/swiper/swiper";
-import { Carousel } from "react-responsive-carousel";
-import HeaderText from "../components/header/HeaderText";
 import ImageWithSummerActivities from "../components/imageWithTextOverlay/imageWithSummerActivities";
 import ImageWithWinterActivities from "../components/imageWithTextOverlay/imageWithWinterActivities";
-import Slider from "../components/carousel/Slider";
-import Slider1 from "../components/carousel/Slider1";
-import { Box } from "@mui/material";
+
 import ImageLists from "../components/carousel/ImageLists";
 import Eventcardsection from "../components/Cards/Eventcardsection";
 import Servicecardsection from "../components/Cards/servicecardsection";
-import CarouselSection from "../components/carousel/CarouselSection";
-// import Item form "../components/swiper/swiper";
-
-// import Swiper from "../components/swiper/swiper";
-// import {swiper-container} from "swiper";
+import ResponsiveAppBar from "../components/NavBar/NavBar";
 
 const HomePage = () => {
   return (
     <>
+      <ResponsiveAppBar />
       <VideoTextOverlay
         video="mjr.mp4"
         text="Plan your perfect getaway with family and friends"
         textHeading="The Magnificent Where"
         text1="Nature Meets Adventure!"
-      />
-      <ImageWithOverlay
-        image="passes.jpg"
-        button={true}
-        buttonText="Buy Now"
-        buttonCallBack={() => {
-          console.log("buttonPressed");
-        }}
       />
       <ImageWithSummerActivities
         image="summer-activities.jpg"
@@ -68,11 +47,9 @@ const HomePage = () => {
       />
       <Eventcardsection />
       <Servicecardsection />
-      {/* <CarouselSection/> */}
       <ImageLists />
       <Sponsors />
       <Footer />
-      
     </>
   );
 };

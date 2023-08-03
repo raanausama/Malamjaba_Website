@@ -1,57 +1,218 @@
 import React from "react";
-import Sponsors from "../components/sponsors/sponsorsFooter";
+// import Sponsors from "../components/sponsors/sponsorsFooter";
 import Footer from "../components/footer/footer";
-import Card from "../components/Cards/card";
+import ResponsiveAppBar from "../components/NavBar/NavBar";
+import {
+  Box,
+  Grid,
+  Stack,
+  Typography,
+  useTheme,
+  Avatar,
+  Container,
+} from "@mui/material";
 import "./activities.css";
-import Background from "../Assets/bg_content/activities-header.jpg"
-
+import Background from "../Assets/bg_content/activities-header.jpg";
+import WinterCards from "../components/Cards/WinterCards";
+import BlogCards from "../components/Cards/BlogCards";
 
 const Activities = () => {
-    return (
-        <div className="activities">
-            <div style={{ backgroundImage: `url(${Background})` }} className="header-image-overlay">
-                <div className="text-box">
-                    <h1>
-                        The Magnificent Accommodation
-                    </h1>
-                    <p>
-                        Rewind from work and reconnect with Nature
-                    </p>
-                </div>
-            </div>
-        
-            <div className="activites-cover-2-col">
-                <img src="outdoor.jpeg" alt="Activities" />
-                <div className="text-box">
-                    <h1>Premium Rooms</h1>
-                    <p>
-                        whatever text is requried
-                    </p>
-                </div>
-            </div>
-            <div className="section-heading">
-                <h1>Our top picks this winter</h1>
-            </div>
-            <div className="card-wrapper">
-                <Card image='pastevent.jpg' header='Food Fest' text='Cusine from all over Pakistan and a Qawalli Night'/>
-                <Card image='cycling.jpg' header='Mountain Bike Race' text='From Cyclists all over Pakistan'/>
-                <Card image='futureevent.jpg' header='Ski and Snowboarding Competition' text='To Promote local talent and provide a platform for winter sports'/>
-            </div>
+  const theme = useTheme();
+  const smallScreen = theme.breakpoints.down("md");
 
-            <div className="section-heading">
-                <h1>Explore our blog</h1>
-            </div>
-            
-            <div className="card-wrapper">
-                <Card image='pastevent.jpg' header='Food Fest' text='Cusine from all over Pakistan and a Qawalli Night'/>
-                <Card image='cycling.jpg' header='Mountain Bike Race' text='From Cyclists all over Pakistan'/>
-                <Card image='futureevent.jpg' header='Ski and Snowboarding Competition' text='To Promote local talent and provide a platform for winter sports'/>
-            </div>
+  return (
+    <>
+      <Box className="activities">
+        <ResponsiveAppBar />
+        <Grid container md={12} xl={12} className="header-image-overlay">
+          <Box
+            sx={{
+              backgroundImage: `url(${Background})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              width: "100%",
+            }}
+          >
+            <Grid
+              item
+              className="text-box"
+              color="white"
+              sx={{ paddingBottom: "20em" }}
+              display="flex"
+              alignItems={{ xs: "center", md: "flex-start" }}
+            >
+              <Stack
+                direction="column"
+                display="flex"
+                alignItems={{ xs: "center", md: "flex-start" }}
+                sx={{ marginTop: "20em" }}
+              >
+                <Typography
+                  variant={smallScreen ? "h3" : "h5"}
+                  sx={{
+                    [theme.breakpoints.down("sm")]: {
+                      fontSize: "1.5rem",
+                      textAlign: "start",
+                    },
+                    [theme.breakpoints.down("md")]: {
+                      fontSize: "1.5rem",
+                      display: "flex",
+                      textAlign: "start",
+                    },
+                  }}
+                >
+                  State-of-the-art infrastructure and Adventurous Activities
+                </Typography>
+                {/* <Typography
+                variant={smallScreen ? "h3" : "h5"}
+                sx={{
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "1.5rem",
+                    textAlign: "start",
+                  },
+                  [theme.breakpoints.down("md")]: {
+                    fontSize: "1.5rem",
+                    textAlign: "start",
+                  },
+                }}
+              >
+                Nature Meets Adventure!
+              </Typography> */}
+                <Typography
+                  variant={smallScreen ? "h5" : "h7"}
+                  sx={{
+                    [theme.breakpoints.down("sm")]: {
+                      fontSize: "1rem",
+                      justifyContent: "center",
+                      textAlign: "center",
+                    },
+                    [theme.breakpoints.down("md")]: { fontSize: "1.5rem" },
+                  }}
+                >
+                  Plan your perfect getaway with family and friends
+                </Typography>
+              </Stack>
+            </Grid>
+          </Box>
+        </Grid>
 
-            <Sponsors />
-            <Footer />
-        </div>
-    )
-}
+        <Container className="activites-cover-2-col">
+          {/* <img src="outdoor.jpeg" alt="Activities" /> */}
+          <Grid
+            container
+            display="flex !important"
+            justifyContent="center !important"
+          >
+            <Grid
+              item
+              md={6}
+
+              // sx={{ display: "flex", alignItems: "center", justifyContent: 'center' }}
+            >
+              <Avatar
+                alt="Activities"
+                src="outdoor.jpeg"
+                sx={{
+                  width: { xs: 250, sm: 450 },
+                  height: { xs: 250, sm: 450 },
+                }}
+              />
+            </Grid>
+            <Grid
+              Item
+              md={6}
+              mt={{ xs: 10, sm: 10, md: 10, lg: 5 }}
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                textAlign: {
+                  xs: "Center",
+                  sm: "Center",
+                  md: "Center",
+                  lg: "start",
+                },
+              }}
+            >
+              <Stack direction="column">
+                <Typography variant="h3" color="#094e9d">
+                  Adventurous yet Fun Activities at Malam Jabba Ski Resort
+                </Typography>
+                <Typography>
+                  Our exhilarating Chairlift, Ziplining, Giant Swing, Human
+                  Slingshot and kids activities made for fun and memorable
+                  adventures. We strive to enhance the lives of our guests by
+                  creating the best human-powered outdoor adventures available.{" "}
+                </Typography>
+              </Stack>
+            </Grid>
+          </Grid>
+        </Container>
+        <Container sx={{ mb: 10 }}>
+          <Grid container gap={4} display="flex" justifyContent="center">
+            <Grid Item xs={12} display="flex" justifyContent="center">
+              <Typography variant="h3" color="#094e9d">
+                Our Top Picks This Winter
+              </Typography>
+            </Grid>
+            <Grid Item sm={12} md={3}>
+              <WinterCards
+                simage="/PicturesForWebsite/19.jpg"
+                sheader="Skiing"
+                stext="Dummy Text"
+              />
+            </Grid>
+            <Grid Item sm={12} md={3}>
+              <WinterCards
+                simage="/PicturesForWebsite/13.png"
+                sheader="Snow Boarding"
+                stext="Dummy text"
+              />
+            </Grid>
+            <Grid Item sm={12} md={3}>
+              <WinterCards
+                simage="/PicturesForWebsite/12.JPG"
+                sheader="Snow Tubing"
+                stext="Dummy Text"
+              />
+            </Grid>
+
+            <Grid Item xs={12} display="flex" justifyContent="center">
+              <Typography variant="h3" color="#094e9d">
+                Explore our blog
+              </Typography>
+            </Grid>
+
+            <Grid Item sm={12} md={3}>
+              <BlogCards
+                simage="pastevent.jpg"
+                sheader="Lorem Ipsum"
+                stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor sagittis tincidunt."
+              />
+            </Grid>
+            <Grid Item sm={12} md={3}>
+              <BlogCards
+                simage="cycling.jpg"
+                sheader="Lorem Ipsum"
+                stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor sagittis tincidunt."
+              />
+            </Grid>
+            <Grid Item sm={12} md={3}>
+              <BlogCards
+                simage="futureevent.jpg"
+                sheader="Lorem Ipsum"
+                stext="To Promote local talent and provide a platform for winter sports"
+              />
+            </Grid>
+          </Grid>
+        </Container>
+
+        {/* <Sponsors /> */}
+        <Footer />
+      </Box>
+    </>
+  );
+};
 
 export default Activities;

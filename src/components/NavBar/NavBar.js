@@ -1,60 +1,8 @@
 import "./navbar.css";
-
-// import React, { useEffect } from 'react'
 import logo from "../../Assets/logos/malamjabbalogo-150.png";
 import Weather from "../weatherElement/weather";
 import AppsIcon from "@mui/icons-material/Apps";
 import WeatherBar from "../weatherElement/weatherBar";
-// import { useState } from 'react'
-
-// const NavBar = () => {
-//   const [SideMenu, setSideMenu] = useState(false);
-
-//   useEffect(() => {
-//     console.log(SideMenu);
-//   }, [SideMenu])
-//   return(
-//       <div className="navbar">
-//       <img src={logo} alt="logo"/>
-//       <div className="nav-links">
-//         <a href="/staycation">Staycation</a>
-//         <a href="/packages">Packages</a>
-//         <a href="/the-slope">The SLOPE</a>
-//       </div>
-//       <Weather />
-//       <WeatherBar />
-//       {!SideMenu ? (
-//         <button className="hamburger-menu" onClick={() => setSideMenu(true)}>
-//           &#9776;
-//         </button>
-//       ) : (
-//         <button className="hamburger-menu" onClick={() => setSideMenu(false)}>
-//           &#10006;
-//         </button>
-//       )}
-//       {/* create a dropdown menu when SideMenu is true */}
-//     </div>
-//   )
-// }
-// //  NavBar extends React.Component {
-// //     render() {
-// //         return (
-// //             <div className="navbar">
-// //             <div className="logo">Logo</div>
-// //             <div className="nav-links">
-// //               <a href="#">Link 1</a>
-// //               <a href="#">Link 2</a>
-// //               <a href="#">Link 3</a>
-// //             </div>
-// //             <div className="hamburger-menu">&#9776;</div>
-// //           </div>
-// //         )
-// //     }
-// // }
-
-// export default NavBar
-//______________________________________________________________________________________________________________________
-
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -64,26 +12,22 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import gsap from "gsap";
+import { Link, useNavigate } from "react-router-dom";
+import { Height } from "@mui/icons-material";
+import SignIn from "../../pages/SignIn";
 
-const pages = ["STAYACTION", "PACKAGES", "THE SLOPE"];
-const settings = [
-  "EVENTS",
-  "ACTIVITIES",
-  "SHOP",
-  "WORKSHOP",
-  "THE SLOPE",
-  "CONTACT US",
-];
+const pages = ["STAYCATION", "Activities", "THE SLOPE"];
+const settings = ["Dine In", "Blog", "CSR", "Contact Us", "Sign In"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const navigate = useNavigate();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -107,35 +51,45 @@ function ResponsiveAppBar() {
     gsap.to(currentTarget, { scale: 1 });
   };
 
+  const [viewModalOpen, setViewModalOpen] = React.useState(false);
+
+  const handleMenuItem = (setting) => {
+    if (setting === "Sign In") {
+      setViewModalOpen(true);
+    }
+    if (setting === "Blog") {
+      navigate("/blog");
+    }
+    if (setting === "CSR") {
+      navigate("/csr");
+    }
+    if (setting === "Dine In") {
+      navigate("/dinein");
+    }
+  };
+  const handleCloseModal = () => {
+    setViewModalOpen(false); // Close the modal
+  };
+
   return (
-    <AppBar position="absolute" sx={{ backgroundColor: "transparent", boxShadow: "none" }}>
-      <Container maxWidth="xl">
+    <AppBar
+      position="absolute"
+      sx={{ backgroundColor: "transparent", boxShadow: "none" }}
+    >
+      <SignIn open={viewModalOpen} handleClose={handleCloseModal} />
+      <Container maxWidth="100%">
         <Toolbar disableGutters>
           {/* <AdbIcon  /> */}
           <Box sx={{ flexGrow: 1, display: { xs: "flex" } }}>
-            <img
-              src={logo}
-              alt="logo"
-              sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
-            />
+            <a href="/">
+              <img
+                src={logo}
+                alt="logo"
+                Link="/"
+                sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+              />
+            </a>
           </Box>
-          {/* <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            Malamjabba
-          </Typography> */}
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -176,29 +130,13 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography> */}
+
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
                 key={page}
+                component={Link}
+                to={`/${page.toLowerCase().replace(/\s/g, "-")}`}
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
@@ -220,7 +158,7 @@ function ResponsiveAppBar() {
             <WeatherBar />
           </Box>
 
-          <Box sx={{ flexGrow: 0.2 }}>
+          <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <MenuIcon sx={{ color: "white", fontWeight: "bold" }} />
@@ -248,8 +186,18 @@ function ResponsiveAppBar() {
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center" color="inherit">
+                <MenuItem
+                  key={setting}
+                  // component={Link}
+                  to={`/${setting.toLowerCase().replace(/\s/g, "-")}`}
+                  onClick={() => handleMenuItem(setting)}
+                >
+                  <Typography
+                    textAlign="center"
+                    color="inherit"
+                    // component={Link}
+                    // to={`/${settings.toLowerCase().replace(/\s/g, "-")}`}
+                  >
                     {setting}
                   </Typography>
                 </MenuItem>

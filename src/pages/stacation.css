@@ -13,11 +13,11 @@
     position: relative;
 }
 
-.header-image-overlay .text-box{
+/* .header-image-overlay .text-box{
     max-width: 25em;
     padding-top: 30em;
     padding-bottom: 20em;
-}
+} */
 
 .header-image-overlay h1{
 color: white;

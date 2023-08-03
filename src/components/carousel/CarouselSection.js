@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 // import Carousel from "./Carousel";
-import uuidv4 from "uuid";
+// import uuidv4 from "uuid";
 import Grid from "@mui/material/Grid";
-import Container from "@mui/material/Container";
+// import Container from "@mui/material/Container";
 import SocailCard from "../Cards/socialCards";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -51,6 +51,7 @@ export default class CarouselSection extends Component {
                   <div style={{ height: "100%", position: "relative" }}>
                     <img
                       src="pastevent.jpg"
+                      alt="pastevent"
                       style={{
                         objectFit: "cover",
                         height: "100%",
@@ -61,6 +62,7 @@ export default class CarouselSection extends Component {
                   <div style={{ height: "100%", position: "relative" }}>
                     <img
                       src="cycling.jpg"
+                      alt="cycling"
                       style={{
                         objectFit: "cover",
                         height: "100%",
@@ -71,6 +73,7 @@ export default class CarouselSection extends Component {
                   <div style={{ height: "100%", position: "relative" }}>
                     <img
                       src="futureevent.jpg"
+                      alt="futureevent"
                       style={{
                         objectFit: "cover",
                         height: "100%",

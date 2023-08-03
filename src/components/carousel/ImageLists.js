@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
-import ListSubheader from "@mui/material/ListSubheader";
+// import ListSubheader from "@mui/material/ListSubheader";
 import IconButton from "@mui/material/IconButton";
-import InfoIcon from "@mui/icons-material/Info";
+// import InfoIcon from "@mui/icons-material/Info";
 import Limage1 from "../../Assets/sliderimage/instagram.jpg";
 import Limage2 from "../../Assets/sliderimage/facebook.jpg";
 import Limage3 from "../../Assets/sliderimage/youtube.jpg";
@@ -13,21 +13,21 @@ import { useNavigate } from "react-router-dom";
 import "./ImageLists.css";
 import "../../pages/home.css";
 import { Grid } from "@mui/material";
-import Badge from "react-bootstrap/Badge";
-import Button from "react-bootstrap/Button";
+// import Badge from "react-bootstrap/Badge";
+// import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Servicecard from "../Cards/servicecard";
+import { Box } from "@mui/material";
 
 export default function ImageLists() {
   const navigate = useNavigate();
 
   return (
     <Grid container>
-      <Grid item xs={12} md={6} sx={{height: "100%",}}>
-        <div
-          style={{ position: "relative"}}
-        >
+      <Grid item xs={12} md={6} sx={{ height: "100%" }}>
+        <div style={{ position: "relative" }}>
           <Carousel
             axis="vertical"
             verticalSwipe="natural"
@@ -50,6 +50,7 @@ export default function ImageLists() {
             <div style={{ height: "100%", position: "relative" }}>
               <img
                 src="pastevent.jpg"
+                alt="pastevent"
                 style={{
                   objectFit: "cover",
                   height: "100%",
@@ -60,6 +61,7 @@ export default function ImageLists() {
             <div style={{ height: "100%", position: "relative" }}>
               <img
                 src="cycling.jpg"
+                alt="cycling"
                 style={{
                   objectFit: "cover",
                   height: "100%",
@@ -70,6 +72,7 @@ export default function ImageLists() {
             <div style={{ height: "100%", position: "relative" }}>
               <img
                 src="futureevent.jpg"
+                alt="futureevent"
                 style={{
                   objectFit: "cover",
                   height: "100%",
@@ -81,10 +84,10 @@ export default function ImageLists() {
         </div>
       </Grid>
       <Grid item xs={12} md={6}>
-        <ImageList sx={{ overflow: "hidden" }}>
-          <ImageListItem>
-            <img src={Limage1} alt={"instagram"} loading="lazy" />
+        {/* <ImageList sx={{ overflow: "hidden" }}>
+          <ImageListItem >
             <div className="hover-overlay" />
+            <img src={Limage1} alt={"instagram"} loading="lazy" />
             <ImageListItemBar
               title={"malamjabbaskiresort"}
               sx={{ background: "transparent" }}
@@ -142,7 +145,50 @@ export default function ImageLists() {
               }
             />
           </ImageListItem>
-        </ImageList>
+        </ImageList> */}
+        <Grid container md={12}>
+          <Grid item md={6}>
+            <Box width="100%">
+              <Servicecard
+                simage="/Assets/sliderimage/instagram.jpg"
+                sheader="malamjabbaskiresort"
+                // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
+                // sit amet metus eu, vestibulum placerat mi"
+              />
+            </Box>
+          </Grid>
+          <Grid item md={6}>
+            <Box width="100%">
+              <Servicecard
+                simage="/Assets/sliderimage/facebook.jpg"
+                sheader="malamjabbaskiresort"
+                // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
+                // sit amet metus eu, vestibulum placerat mi"
+              />
+            </Box>
+          </Grid>
+
+          <Grid item md={6}>
+            <Box width="100%">
+              <Servicecard
+                simage="/Assets/sliderimage/youtube.jpg"
+                sheader="malamjabbaskiresort"
+                // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
+                // sit amet metus eu, vestibulum placerat mi"
+              />
+            </Box>
+          </Grid>
+          <Grid item md={6}>
+            <Box width="100%">
+              <Servicecard
+                simage="/Assets/sliderimage/facebook.jpg"
+                sheader="malamjabbaskiresort"
+                // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
+                // sit amet metus eu, vestibulum placerat mi"
+              />
+            </Box>
+          </Grid>
+        </Grid>
       </Grid>
     </Grid>
   );
