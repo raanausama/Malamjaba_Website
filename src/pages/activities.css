@@ -25,21 +25,18 @@ color: white;
 }
 
 .activites-cover-2-col{
-    padding: 8em;
+    padding: 8em 0em 8em 0em;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.activites-cover-2-col img{
-    /* border-radius: 50em; */
-    /* make image a circle using clip path */
+/* .activites-cover-2-col img{
     clip-path: circle(50% at 50% 50%);
-    /* clip-path: calc(50%); */
     height: 100%;
     max-width: 30%;
-}
+} */
 
 .activites-cover-2-col h1{
     color: black;

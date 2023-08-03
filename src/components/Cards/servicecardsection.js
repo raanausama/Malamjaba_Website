@@ -1,7 +1,7 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import Servicecard from "./servicecard";
-import { Box, Container } from "@mui/material";
+import { Box } from "@mui/material";
 
 const Servicecardsection = () => {
   return (

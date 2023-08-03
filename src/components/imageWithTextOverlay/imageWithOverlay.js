@@ -2,7 +2,6 @@ import React, { useRef, useEffect } from "react";
 import "./imageWithOverlay.css"; // Import the CSS file for styling
 import { Box, Grid, Stack, Typography, Button } from "@mui/material";
 import gsap from "gsap";
-// import ScrollTrigger from "gsap/ScrollTrigger";
 
 const ImageWithOverlay = ({
   image = "",

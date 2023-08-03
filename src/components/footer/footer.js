@@ -2,41 +2,141 @@ import React from "react";
 import "./footer.css";
 import Background from "../../Assets/bg_content/footer1.jpg";
 import logo from "../../Assets/logos/malamjabbalogo-150.png";
-import { Container, Grid } from "@mui/material";
+import { Box, Container, Grid,Stack,Typography,Link } from "@mui/material";
 
 const Footer = ({ bgImage = "", text = "", textHeading = "" }) => {
   return (
-    <div maxWidth="xl" style={{ backgroundImage: `url(${Background})` }} className="footer">
-      <Grid container spacing={2} className="footer-flex">
-        <Grid item xs={12} sm={6} md={3} className="child footer-logo">
-          <img src={logo} alt="footer-logo-mjr" />
+    <Box
+      maxWidth="100%"
+      sx={{
+        backgroundImage: `url(${Background})`,
+        padding: "5em 0em 0em 0em",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover"
+      }}
+    >
+      <Container maxWidth="100%">
+        <Grid
+          container
+          color="white"
+          gap={3}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={2.5}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <img
+              src={logo}
+              alt="footer-logo-mjr"
+              style={{ height: "35vh", width: "45vh" }}
+            />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={2.5}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Stack
+              direction="column"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+            >
+              <Typography variant="h5">LOCATION</Typography>
+              <Typography variant="body1">Hill station,</Typography>
+              <Typography variant="body1">Malam Jabba Road,</Typography>
+              <Typography variant="body1">Malam Jabba, Swat.</Typography>
+            </Stack>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={2.5}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Stack
+              direction="column"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+            >
+              <Typography variant="h5">QUICK LINKS</Typography>
+              <Typography variant="body1" >
+                <Link href="/" rel="sponsored" title="Flaticon" sx={{color: "white"}}>
+                  shop
+                </Link>
+              </Typography>
+              <Typography variant="body1">
+                <Link href="/activities" rel="sponsored" title="Flaticon" sx={{color: "white"}}>
+                  Activites
+                </Link>
+              </Typography>
+              <Typography variant="body1" >
+                <Link href="/" rel="sponsored" title="Flaticon" sx={{color: "white"}}> 
+                  Workshop
+                </Link>
+              </Typography>
+            </Stack>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={3}
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Stack
+              direction="column"
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+            >
+              <Typography variant="h5">CONTACT</Typography>
+              <Typography variant="body1">info@malamjabbaresort.com</Typography>
+              <Typography variant="body1">+92-302-6575400</Typography>
+              <Typography variant="body1">+92-333-2342342</Typography>
+            </Stack>
+          </Grid>
+          <Grid item xs={12} sm={12} md={12}>
+            <hr />
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              align="center"
+              sx={{ color: "white" }}
+            >
+              © {new Date().getFullYear()}&nbsp;
+              <Link
+                sx={{ color: "white" }}
+                href="https://www.assuretrust.asia"
+                rel="sponsored"
+                title="Flaticon"
+              >
+                www.malamjabba.asia
+              </Link>{" "}
+              All rights reserved.
+            </Typography>
+          </Grid>
         </Grid>
-        <Grid item xs={12} sm={6} md={3} className="child location">
-          <h1>LOCATION</h1>
-          <div className="location-text">
-            <p>Hill station,</p>
-            <p>Malam Jabba Road,</p>
-            <p>Malam Jabba, Swat.</p>
-          </div>
-        </Grid>
-        <Grid item xs={12} sm={6} md={3} className="child footer-links">
-          <Container>
-              <h1>QUICK LINKS</h1>
-              <div><a href="/">shop</a></div>
-              <div><a href="/">shop</a></div>
-              <div><a href="/">shop</a></div>
-              <div><a href="/">shop</a></div>
-          </Container>
-        </Grid>
-        <Grid item xs={12} sm={6} md={3} className="child contact">
-          <h1>CONTACT</h1>
-          <Container className="contact-text">
-            <p>info@malamjabbaresort.com</p>
-            <p>+92-302-6575400</p>
-          </Container>
-        </Grid>
-      </Grid>
-    </div>
+      </Container>
+    </Box>
   );
 };
 

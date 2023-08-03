@@ -1,36 +1,38 @@
 import React, { useRef, useEffect, useState } from "react";
 import "../imageWithTextOverlay/imageWithOverlay.css"; // Import the CSS file for styling
-import { Box, Grid, Stack, Typography, Button } from "@mui/material";
+import { Box, Grid} from "@mui/material";
 import gsap from "gsap";
 import Carousel from "react-bootstrap/Carousel";
-import { v4 as uuidv4 } from "uuid";
+// import { v4 as uuidv4 } from "uuid";
 import simage1 from "../../Assets/sliderimage/pastevent.jpg";
 import simage2 from "../../Assets/sliderimage/cycling.jpg";
 import simage3 from "../../Assets/sliderimage/futureevent.jpg";
 
-const data = [
-  {
-    id: 1,
-    // src: "/pastevent.jpg",
-    src: { simage1 },
-    caption: "Caption",
-    description: "Description Here",
-  },
-  {
-    id: 2,
-    // src: "/cycling.jpg",
-    src: { simage2 },
-    caption: "Caption",
-    description: "Description Here",
-  },
-  {
-    id: 3,
-    // src: "/futureevent.jpg",
-    src: { simage3 },
-    caption: "Caption",
-    description: "Description Here",
-  },
-];
+// const data = [
+//   {
+//     id: 1,
+//     // src: "/pastevent.jpg",
+//     src: { simage1 },
+//     caption: "Caption",
+//     description: "Description Here",
+//   },
+//   {
+//     id: 2,
+//     // src: "/cycling.jpg",
+//     src: { simage2 },
+//     caption: "Caption",
+//     description: "Description Here",
+//   },
+//   {
+//     id: 3,
+//     // src: "/futureevent.jpg",
+//     src: { simage3 },
+//     caption: "Caption",
+//     description: "Description Here",
+//   },
+// ];
+
+
 const boxStyle = {
   background: `black`,
   backgroundSize: "cover",
@@ -49,14 +51,15 @@ const Slider = ({
     setIndex(selectedIndex);
   };
 
-  const onEnter = ({ currentTarget }) => {
-    gsap.to(currentTarget, { scale: 1.05 });
-  };
+  // const onEnter = ({ currentTarget }) => {
+  //   gsap.to(currentTarget, { scale: 1.05 });
+  // };
 
-  const onLeave = ({ currentTarget }) => {
-    gsap.to(currentTarget, { scale: 1 });
-  };
-  const gridRef = useRef(null);
+  // const onLeave = ({ currentTarget }) => {
+  //   gsap.to(currentTarget, { scale: 1 });
+  // };
+
+  // const gridRef = useRef(null);
 
   useEffect(() => {
     const tl = gsap.timeline({ repeatDelay: 1, yoyo: true });
