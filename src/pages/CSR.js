@@ -26,7 +26,7 @@ function CSRMain() {
             <Avatar
               alt="Activities"
               src="images/CSR/Picture1.jpg"
-              sx={{ width: { xs: 250, sm: 450 }, height: { xs: 250, sm: 450 }, position: "bottom" }}
+              sx={{ width: { xs: 250, sm: 400 }, height: { xs: 250, sm: 400 }, position: "bottom" }}
             />
           </Grid>
           <Grid
@@ -46,10 +46,10 @@ function CSRMain() {
             }}
           >
             <Stack direction="column">
-              <Typography variant="h3" color="#094e9d">
+              <Typography variant="h4" color="#094e9d">
                 Our Contribution to society
               </Typography>
-              <Typography>
+              <Typography variant='subtitle'>
                 Corporate Social Responsibility (CSR) is an essential aspect of
                 any business that aims to make a positive impact on society. At
                 our company, we take CSR seriously, and we believe that it is
@@ -95,10 +95,10 @@ function CSRMain() {
       </Box>
       {/* <StacationCover /> */}
       {/* <BlogGrid /> */}
-      <StaycationSeasonPackage
+      {/* <StaycationSeasonPackage
         image="images/CSR/Picture2.jpg"
         buttonText={"Get Ready"}
-      />
+      /> */}
       {/* <Sponsors /> */}
       <Footer bgImage="footer1.jpg" />
     </div>

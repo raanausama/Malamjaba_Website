@@ -78,12 +78,12 @@
 }
 
 .bg-image-wrap button{
-    width: 60%;
+    width: 20%;
     color:black;
     margin-top: 3em;
     font-size: 1.25em;
     display: inline-block;
-    padding: 1em 1.5em;
+    padding: 1em 1em;
     border: 2px solid;
     background: rgba(255, 255, 255, 0.5);
     text-align: center;

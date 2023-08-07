@@ -66,7 +66,7 @@ const ImageWithWinterActivities = ({
       {/* <img src={image} alt='skii'></img> */}
       <Grid
         container
-        mt={{ xs: 25, md: 20 }}
+        mt={{ xs: 25, md: 30 }}
         ml={{ xs: 0, md: 10 }}
         xs={{ height: "100%" }}
         ref={gridRef}
@@ -74,7 +74,18 @@ const ImageWithWinterActivities = ({
         onMouseLeave={onLeave}
       >
         <Grid item sx={12} md={4} className="grid-item-3">
-          <Stack direction="column" alignItems="center">
+          <Stack
+            direction="column"
+            alignItems="center"
+            sx={{
+              background: "#00000061",
+              borderRadius: "20px",
+              padding: "10px",
+              // border: "10px solid #00000061",
+              filter: "drop-shadow(0px 8px 8px rgba(0, 0, 0, 1.25))",
+              borderRadius: "10px",
+            }}
+          >
             <Typography variant="h4">Winter Activities</Typography>
             <Typography variant="body1" mt={5}>
               Malam Jabba Ski Resort is the only
@@ -105,7 +116,7 @@ const ImageWithWinterActivities = ({
             <Typography variant="body1">
               compromise on the safety of our tourists.
             </Typography>
-            {button ? (
+            {/* {button ? (
               <Button
                 sx={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
                 mt={5}
@@ -115,7 +126,7 @@ const ImageWithWinterActivities = ({
               </Button>
             ) : (
               <></>
-            )}
+            )} */}
           </Stack>
         </Grid>
       </Grid>

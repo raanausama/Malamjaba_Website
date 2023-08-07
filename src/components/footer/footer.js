@@ -1,18 +1,23 @@
 import React from "react";
 import "./footer.css";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import Background from "../../Assets/bg_content/footer1.jpg";
 import logo from "../../Assets/logos/malamjabbalogo-150.png";
-import { Box, Container, Grid,Stack,Typography,Link } from "@mui/material";
+import { Box, Container, Grid, Stack, Typography, Link } from "@mui/material";
+import SponsorImage from "../sponsors/sponsorImage";
+import { LinkedIn, Twitter, YouTube } from "@mui/icons-material";
 
 const Footer = ({ bgImage = "", text = "", textHeading = "" }) => {
   return (
     <Box
       maxWidth="100%"
+      id="footer"
       sx={{
         backgroundImage: `url(${Background})`,
-        padding: "5em 0em 0em 0em",
+        padding: "0em 0em 0em 0em",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover"
+        backgroundSize: "cover",
       }}
     >
       <Container maxWidth="100%">
@@ -33,11 +38,23 @@ const Footer = ({ bgImage = "", text = "", textHeading = "" }) => {
             alignItems="center"
             justifyContent="center"
           >
-            <img
-              src={logo}
-              alt="footer-logo-mjr"
-              style={{ height: "35vh", width: "45vh" }}
-            />
+            <Stack direction="column" display="flex" alignItems="center">
+              <img
+                src={logo}
+                alt="footer-logo-mjr"
+                style={{ height: "25vh", width: "25vh" }}
+              />
+              <Stack direction="row" spacing={10}>
+                <SponsorImage
+                  image="images/samsons-logo-png.png"
+                  alt="nescafe"
+                />
+                <SponsorImage
+                  image="images/pc_logo-removebg-preview.png"
+                  alt="redbull"
+                />
+              </Stack>
+            </Stack>
           </Grid>
           <Grid
             item
@@ -76,18 +93,33 @@ const Footer = ({ bgImage = "", text = "", textHeading = "" }) => {
               justifyContent="center"
             >
               <Typography variant="h5">QUICK LINKS</Typography>
-              <Typography variant="body1" >
-                <Link href="/" rel="sponsored" title="Flaticon" sx={{color: "white"}}>
+              <Typography variant="body1">
+                <Link
+                  href="/"
+                  rel="sponsored"
+                  title="Flaticon"
+                  sx={{ color: "white" }}
+                >
                   shop
                 </Link>
               </Typography>
               <Typography variant="body1">
-                <Link href="/activities" rel="sponsored" title="Flaticon" sx={{color: "white"}}>
+                <Link
+                  href="/activities"
+                  rel="sponsored"
+                  title="Flaticon"
+                  sx={{ color: "white" }}
+                >
                   Activites
                 </Link>
               </Typography>
-              <Typography variant="body1" >
-                <Link href="/" rel="sponsored" title="Flaticon" sx={{color: "white"}}> 
+              <Typography variant="body1">
+                <Link
+                  href="/"
+                  rel="sponsored"
+                  title="Flaticon"
+                  sx={{ color: "white" }}
+                >
                   Workshop
                 </Link>
               </Typography>
@@ -116,13 +148,54 @@ const Footer = ({ bgImage = "", text = "", textHeading = "" }) => {
           </Grid>
           <Grid item xs={12} sm={12} md={12}>
             <hr />
+
             <Typography
               variant="body2"
               color="textSecondary"
               align="center"
               sx={{ color: "white" }}
             >
-              © {new Date().getFullYear()}&nbsp;
+              <Link
+                sx={{ color: "white" }}
+                href="https://www.assuretrust.asia"
+                rel="sponsored"
+                title="Flaticon"
+              >
+                <FacebookIcon color="blue" />
+              </Link>{" "}
+              <Link
+                sx={{ color: "white" }}
+                href="https://instagram.com/malamjabbaskiresortofficial?igshid=MzRlODBiNWFlZA=="
+                rel="sponsored"
+                title="Flaticon"
+              >
+                <InstagramIcon color="blue" />
+              </Link>{" "}
+              <Link
+                sx={{ color: "white" }}
+                href="https://www.youtube.com/@malamjabbaskiresort4928"
+                rel="sponsored"
+                title="Flaticon"
+              >
+                <YouTube color="blue" />
+              </Link>{" "}
+              <Link
+                sx={{ color: "white" }}
+                href="https://twitter.com/Mjskiresort"
+                rel="sponsored"
+                title="Flaticon"
+              >
+                <Twitter color="blue" />
+              </Link>{" "}
+              <Link
+                sx={{ color: "white" }}
+                href="https://www.linkedin.com/company/malam-jabba-ski-resort/?viewAsMember=true"
+                rel="sponsored"
+                title="Flaticon"
+              >
+                <LinkedIn color="blue" />
+              </Link>{" "}
+              {/* © {new Date().getFullYear()}&nbsp;
               <Link
                 sx={{ color: "white" }}
                 href="https://www.assuretrust.asia"
@@ -131,7 +204,7 @@ const Footer = ({ bgImage = "", text = "", textHeading = "" }) => {
               >
                 www.malamjabba.asia
               </Link>{" "}
-              All rights reserved.
+              All rights reserved. */}
             </Typography>
           </Grid>
         </Grid>

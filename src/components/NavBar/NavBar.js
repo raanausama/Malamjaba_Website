@@ -3,7 +3,7 @@ import logo from "../../Assets/logos/malamjabbalogo-150.png";
 import Weather from "../weatherElement/weather";
 import AppsIcon from "@mui/icons-material/Apps";
 import WeatherBar from "../weatherElement/weatherBar";
-import * as React from "react";
+import React, { useRef }  from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -20,12 +20,13 @@ import { Link, useNavigate } from "react-router-dom";
 import { Height } from "@mui/icons-material";
 import SignIn from "../../pages/SignIn";
 
-const pages = ["STAYCATION", "Activities", "THE SLOPE"];
+const pages = ["HOME", "STAYCATION", "Activities", "THE SLOPE"];
 const settings = ["Dine In", "Blog", "CSR", "Contact Us", "Sign In"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  
 
   const navigate = useNavigate();
 
@@ -65,6 +66,10 @@ function ResponsiveAppBar() {
     }
     if (setting === "Dine In") {
       navigate("/dinein");
+    }
+    if (setting === "Contact Us") {
+      const footerElement = document.getElementById("footer");
+      footerElement.scrollIntoView({ behavior: "smooth" });
     }
   };
   const handleCloseModal = () => {

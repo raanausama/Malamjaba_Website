@@ -25,8 +25,8 @@ export default function ImageLists() {
   const navigate = useNavigate();
 
   return (
-    <Grid container>
-      <Grid item xs={12} md={6} sx={{ height: "100%" }}>
+    <>
+      {/* <Grid item xs={12} md={6} sx={{ height: "100%" }}>
         <div style={{ position: "relative" }}>
           <Carousel
             axis="vertical"
@@ -82,9 +82,9 @@ export default function ImageLists() {
             </div>
           </Carousel>
         </div>
-      </Grid>
-      <Grid item xs={12} md={6}>
-        {/* <ImageList sx={{ overflow: "hidden" }}>
+      </Grid> */}
+
+      {/* <ImageList sx={{ overflow: "hidden" }}>
           <ImageListItem >
             <div className="hover-overlay" />
             <img src={Limage1} alt={"instagram"} loading="lazy" />
@@ -146,50 +146,42 @@ export default function ImageLists() {
             />
           </ImageListItem>
         </ImageList> */}
-        <Grid container md={12}>
-          <Grid item md={6}>
-            <Box width="100%">
-              <Servicecard
-                simage="/Assets/sliderimage/instagram.jpg"
-                sheader="malamjabbaskiresort"
-                // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
-                // sit amet metus eu, vestibulum placerat mi"
-              />
-            </Box>
-          </Grid>
-          <Grid item md={6}>
-            <Box width="100%">
-              <Servicecard
-                simage="/Assets/sliderimage/facebook.jpg"
-                sheader="malamjabbaskiresort"
-                // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
-                // sit amet metus eu, vestibulum placerat mi"
-              />
-            </Box>
-          </Grid>
+      {/* <Grid item xs={12} md={12}> */}
+      <Grid container>
+        <Grid item sx={12} sm={12} md={6}>
+          <Servicecard
+            simage="/Assets/sliderimage/instagram.jpg"
+            sheader="malamjabbaskiresort"
+            // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
+            // sit amet metus eu, vestibulum placerat mi"
+          />
+        </Grid>
+        <Grid item sx={12} sm={12} md={6}>
+          <Servicecard
+            simage="/Assets/sliderimage/facebook.jpg"
+            sheader="malamjabbaskiresort"
+            // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
+            // sit amet metus eu, vestibulum placerat mi"
+          />
+        </Grid>
 
-          <Grid item md={6}>
-            <Box width="100%">
-              <Servicecard
-                simage="/Assets/sliderimage/youtube.jpg"
-                sheader="malamjabbaskiresort"
-                // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
-                // sit amet metus eu, vestibulum placerat mi"
-              />
-            </Box>
-          </Grid>
-          <Grid item md={6}>
-            <Box width="100%">
-              <Servicecard
-                simage="/Assets/sliderimage/facebook.jpg"
-                sheader="malamjabbaskiresort"
-                // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
-                // sit amet metus eu, vestibulum placerat mi"
-              />
-            </Box>
-          </Grid>
+        <Grid item sx={12} sm={12} md={6}>
+          <Servicecard
+            simage="/Assets/sliderimage/youtube.jpg"
+            sheader="malamjabbaskiresort"
+            // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
+            // sit amet metus eu, vestibulum placerat mi"
+          />
+        </Grid>
+        <Grid item sx={12} sm={12} md={6}>
+          <Servicecard
+            simage="/Assets/sliderimage/facebook.jpg"
+            sheader="malamjabbaskiresort"
+            // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
+            // sit amet metus eu, vestibulum placerat mi"
+          />
         </Grid>
       </Grid>
-    </Grid>
+    </>
   );
 }
