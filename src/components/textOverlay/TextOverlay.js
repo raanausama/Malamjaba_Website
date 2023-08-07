@@ -30,10 +30,14 @@ const VideoTextOverlay = ({
             position: "absolute",
             bottom: { xs: "1%", md: "10em", lg: "16em" },
             left: { xs: "1%", md: "1em", lg: "1em" },
-
             zIndex: 1,
             // textAlign: "center",
+            background: '#938d8d47',
+            borderRadius: '20px',
+            padding: '10px',
             color: "white",
+            filter: "drop-shadow(0px 8px 8px rgba(0, 0, 0, 1.25))",
+              borderRadius: "10px",
           }}
         >
           <Stack

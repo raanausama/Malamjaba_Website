@@ -66,7 +66,7 @@ const ImageWithSummerActivities = ({
       {/* <img src={image} alt='skii'></img> */}
       <Grid
         container
-        mt={{ xs: 25, md: 20 }}
+        mt={{ xs: 25, md: 30 }}
         ml={{ xs: 0, md: -3 }}
         xs={{
           height: "100%",
@@ -78,7 +78,17 @@ const ImageWithSummerActivities = ({
         onMouseLeave={onLeave}
       >
         <Grid item sx={12} md={4} className="grid-item-3">
-          <Stack direction="column" alignItems="center">
+          <Stack
+            direction="column"
+            alignItems="center"
+            sx={{
+              background: "#938d8d47",
+              borderRadius: "20px",
+              padding: "10px",
+              filter: "drop-shadow(0px 8px 8px rgba(0, 0, 0, 1.25))",
+              borderRadius: "10px",
+            }}
+          >
             <Typography variant="h4">Summer Activities</Typography>
             <Typography variant="body1" mt={5}>
               The tourists can enjoy plethora of
@@ -107,13 +117,13 @@ const ImageWithSummerActivities = ({
             <Typography variant="body1">
               and engineers, multiple times a year.{" "}
             </Typography>
-            {button ? (
+            {/* {button ? (
               <Button mt={5} onClick={buttonCallBack()}>
                 {buttonText}
               </Button>
             ) : (
               <></>
-            )}
+            )} */}
           </Stack>
         </Grid>
       </Grid>

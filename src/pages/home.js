@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import VideoTextOverlay from "../components/textOverlay/TextOverlay";
 import Sponsors from "../components/sponsors/sponsorsFooter";
 import "./home.css";
@@ -12,14 +12,15 @@ import Servicecardsection from "../components/Cards/servicecardsection";
 import ResponsiveAppBar from "../components/NavBar/NavBar";
 
 const HomePage = () => {
+  const footerRef = useRef(null);
   return (
     <>
       <ResponsiveAppBar />
       <VideoTextOverlay
         video="mjr.mp4"
         text="Plan your perfect getaway with family and friends"
-        textHeading="The Magnificent Where"
-        text1="Nature Meets Adventure!"
+        textHeading="Malam Jabba Ski Resort – "
+        text1="Where Nature Meets Adventure!"
       />
       <ImageWithSummerActivities
         image="summer-activities.jpg"
@@ -48,7 +49,7 @@ const HomePage = () => {
       <Eventcardsection />
       <Servicecardsection />
       <ImageLists />
-      <Sponsors />
+      {/* <Sponsors /> */}
       <Footer />
     </>
   );

@@ -15,10 +15,10 @@ const StacationCover = () => {
           >
             Welcome To <br /> Malam Jabba Resort
           </Typography>
-          <Typography variant="h4" color="#094e9d" fontSize={"1.5rem"}>
+          <Typography variant="h5" color="#094e9d">
             The First Ski Resort In Pakistan
           </Typography>
-          <Typography fontSize={"1rem"}>
+          <Typography variant="subtitle">
             Nestled in a landscape that offers all natural wonders of Swat, the
             resort is a complete bliss for thrill seekers. Apart from being one
             of the top ski resorts in the country, it also aims to provide
@@ -46,7 +46,10 @@ const StacationCover = () => {
             <img
               src="/PicturesForWebsite/1.jpg"
               alt="First Image"
-              style={{ width: "100%", height: "auto" }}
+              style={{ width: "100%", height: "auto",
+              border: "10px solid white",
+              filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+              borderRadius: "10px", }}
             />
           </Grid>
           <Grid item xs={6}>
@@ -55,14 +58,20 @@ const StacationCover = () => {
                 <img
                   src="PicturesForWebsite/Malam-Jabba-pix.JPG"
                   alt="Second Image"
-                  style={{ width: "100%", height: "auto" }}
+                  style={{ width: "100%", height: "auto",
+                  border: "10px solid white",
+                  filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  borderRadius: "10px", }}
                 />
               </Grid>
               <Grid item xs={12}>
                 <img
                   src="PicturesForWebsite/Marcopolo.JPG"
                   alt="Third Image"
-                  style={{ width: "100%", height: "auto" }}
+                  style={{ width: "100%", height: "auto",
+                  border: "10px solid white",
+                  filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  borderRadius: "10px", }}
                 />
               </Grid>
             </Grid>

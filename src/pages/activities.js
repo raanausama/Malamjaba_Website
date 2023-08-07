@@ -46,23 +46,33 @@ const Activities = () => {
                 direction="column"
                 display="flex"
                 alignItems={{ xs: "center", md: "flex-start" }}
-                sx={{ marginTop: "20em" }}
+                ml={{ md: "20px" }}
+                sx={{
+                  marginTop: "20em",
+                  background: "#938d8d47",
+                  borderRadius: "20px",
+                  padding: "10px",
+                  color: "white",
+                  filter: "drop-shadow(0px 8px 8px rgba(0, 0, 0, 1.25))",
+                  borderRadius: "10px",
+                }}
               >
                 <Typography
-                  variant={smallScreen ? "h3" : "h5"}
+                  variant={smallScreen ? "h4" : "h6"}
                   sx={{
                     [theme.breakpoints.down("sm")]: {
-                      fontSize: "1.5rem",
+                      // fontSize: "1.5rem",
                       textAlign: "start",
                     },
                     [theme.breakpoints.down("md")]: {
-                      fontSize: "1.5rem",
+                      // fontSize: "1.5rem",
                       display: "flex",
                       textAlign: "start",
                     },
                   }}
                 >
-                  State-of-the-art infrastructure and Adventurous Activities
+                  State-of-the-art infrastructure and <br /> Adventurous
+                  Activities
                 </Typography>
                 {/* <Typography
                 variant={smallScreen ? "h3" : "h5"}
@@ -80,7 +90,7 @@ const Activities = () => {
                 Nature Meets Adventure!
               </Typography> */}
                 <Typography
-                  variant={smallScreen ? "h5" : "h7"}
+                  variant={smallScreen ? "h6" : "h7"}
                   sx={{
                     [theme.breakpoints.down("sm")]: {
                       fontSize: "1rem",
@@ -107,15 +117,18 @@ const Activities = () => {
             <Grid
               item
               md={6}
-
-              // sx={{ display: "flex", alignItems: "center", justifyContent: 'center' }}
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
             >
               <Avatar
                 alt="Activities"
                 src="outdoor.jpeg"
                 sx={{
-                  width: { xs: 250, sm: 450 },
-                  height: { xs: 250, sm: 450 },
+                  width: { xs: 250, sm: 400 },
+                  height: { xs: 250, sm: 400 },
                 }}
               />
             </Grid>
@@ -136,10 +149,11 @@ const Activities = () => {
               }}
             >
               <Stack direction="column">
-                <Typography variant="h3" color="#094e9d">
-                  Adventurous yet Fun Activities at Malam Jabba Ski Resort
+                <Typography variant="h4" color="#094e9d">
+                  Adventurous yet Fun Activities <br /> at Malam Jabba Ski
+                  Resort
                 </Typography>
-                <Typography>
+                <Typography variant="subtitle">
                   Our exhilarating Chairlift, Ziplining, Giant Swing, Human
                   Slingshot and kids activities made for fun and memorable
                   adventures. We strive to enhance the lives of our guests by
@@ -160,49 +174,91 @@ const Activities = () => {
               <WinterCards
                 simage="/PicturesForWebsite/19.jpg"
                 sheader="Skiing"
-                stext="Dummy Text"
+                stext="Ski through our magnificent slopes under the training of national and international experts"
               />
             </Grid>
             <Grid Item sm={12} md={3}>
               <WinterCards
                 simage="/PicturesForWebsite/13.png"
                 sheader="Snow Boarding"
-                stext="Dummy text"
+                stext="Enjoy Snowboarding at Malam Jabba and check your Wishlist of adventurous activities."
               />
             </Grid>
             <Grid Item sm={12} md={3}>
               <WinterCards
                 simage="/PicturesForWebsite/12.JPG"
                 sheader="Snow Tubing"
-                stext="Dummy Text"
+                stext="Perfect ride for all the fun lovers"
               />
             </Grid>
 
             <Grid Item xs={12} display="flex" justifyContent="center">
               <Typography variant="h3" color="#094e9d">
-                Explore our blog
+                Other Activities
               </Typography>
             </Grid>
 
             <Grid Item sm={12} md={3}>
               <BlogCards
                 simage="pastevent.jpg"
-                sheader="Lorem Ipsum"
-                stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor sagittis tincidunt."
+                sheader="Chairlift"
+                stext="An 850 meters ride to the top station to enjoy scenic views of the valley"
               />
             </Grid>
             <Grid Item sm={12} md={3}>
               <BlogCards
                 simage="cycling.jpg"
-                sheader="Lorem Ipsum"
-                stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor sagittis tincidunt."
+                sheader="Zipline"
+                stext="Zip through the clouds on one of the longest ziplines of Pakistan"
               />
             </Grid>
             <Grid Item sm={12} md={3}>
               <BlogCards
                 simage="futureevent.jpg"
-                sheader="Lorem Ipsum"
-                stext="To Promote local talent and provide a platform for winter sports"
+                sheader="Giant Swing"
+                stext="Swing your stress away, at the only Giant Swing of Pakistan"
+              />
+            </Grid>
+            <Grid Item sm={12} md={3}>
+              <BlogCards
+                simage="pastevent.jpg"
+                sheader="Human Slingshot"
+                stext="Are you daring enough to try the only slingshot of Pakistan"
+              />
+            </Grid>
+            <Grid Item sm={12} md={3}>
+              <BlogCards
+                simage="cycling.jpg"
+                sheader="Grass Ski"
+                stext="Ski is no longer for winters with our grass skiing, using the best equipment"
+              />
+            </Grid>
+            <Grid Item sm={12} md={3}>
+              <BlogCards
+                simage="futureevent.jpg"
+                sheader="VR Rides"
+                stext="VR Snowboarding and Skiing simulators to provide you the experience of its kind"
+              />
+            </Grid>
+            <Grid Item sm={12} md={3}>
+              <BlogCards
+                simage="pastevent.jpg"
+                sheader="Wall Climbing"
+                stext="Test your stamina through our wall climbing"
+              />
+            </Grid>
+            <Grid Item sm={12} md={3}>
+              <BlogCards
+                simage="cycling.jpg"
+                sheader="Leap of faith"
+                stext="Take a leap of faith at Malam Jabba Ski Resort"
+              />
+            </Grid>
+            <Grid Item sm={12} md={3}>
+              <BlogCards
+                simage="futureevent.jpg"
+                sheader="Jumping Castle"
+                stext="Kids play area for your young ones!"
               />
             </Grid>
           </Grid>

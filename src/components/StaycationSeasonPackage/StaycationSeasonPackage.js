@@ -84,7 +84,7 @@ const StaycationSeasonPackage = ({
             Check out our tips to hep you prepare for everything you need before you hit the slopes.
             </Typography>
             {button ? (
-              <Button mt={5} onClick={buttonCallBack()}>
+              <Button size="small" mt={5} onClick={buttonCallBack()}>
                 {buttonText}
               </Button>
             ) : (

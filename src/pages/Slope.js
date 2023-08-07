@@ -13,7 +13,8 @@ function Slope() {
       <ResponsiveAppBar />
       <StaycationHero
         image="images/Slope/dsfgfgg.jpg"
-        heading="Our Iconic Slope"
+        heading="A Symphony of Serenity -"
+        heading2="Malam Jabba's Magnificent Slopes Await you"
         text="The Identity of Malam Jabba Ski Resort"
       />
       <Box sx={{ padding: "10%" }}>
@@ -34,7 +35,13 @@ function Slope() {
                 <img
                   src="/Images/Slope/IMG_9404-1.JPG"
                   alt="First Image"
-                  style={{ width: "100%", height: "auto" }}
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    border: "10px solid white",
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                    borderRadius: "10px",
+                  }}
                 />
               </Grid>
               <Grid item xs={6}>
@@ -43,14 +50,26 @@ function Slope() {
                     <img
                       src="/Images/Slope/fghgfh.jpg"
                       alt="Second Image"
-                      style={{ width: "100%", height: "auto" }}
+                      style={{
+                        width: "100%",
+                        height: "auto",
+                        border: "10px solid white",
+                        filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                        borderRadius: "10px",
+                      }}
                     />
                   </Grid>
                   <Grid item xs={12}>
                     <img
                       src="/Images/Real_Images/snow.jpeg"
                       alt="Third Image"
-                      style={{ width: "100%", height: "auto" }}
+                      style={{
+                        width: "100%",
+                        height: "auto",
+                        border: "10px solid white",
+                        filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                        borderRadius: "10px",
+                      }}
                     />
                   </Grid>
                 </Grid>
@@ -74,10 +93,10 @@ function Slope() {
             }}
           >
             <Stack direction="column">
-              <Typography variant="h3" color="#094e9d">
-                Malam Jabba Ski Resort - Where Nature Meets Adventure:
+              <Typography variant="h4" color="#094e9d">
+                Malam Jabba Ski Resort - <br/> Where Nature Meets Adventure:
               </Typography>
-              <Typography>
+              <Typography variant="subtitle">
                 As you travel up the curvy roads of Swat, eyeing breathtaking
                 views of the valley, the journey concludes with a sight that
                 makes all the traveling worth it – Malam Jabba Ski Resort, a
@@ -99,17 +118,17 @@ function Slope() {
         sx={{ width: "100%", height: "80%", alignItems: "center" }}
       >
         <Grid item md={6} xs={12} sm={12} lg={6}>
-          <Box sx={{ padding: 10 }}>
+          <Box sx={{ padding: 5 }}>
             <Typography
               color="#094e9d"
               variant="h3"
               fontWeight={"400"}
-              fontSize={"3rem"}
+              // fontSize={"3rem"}
             >
-              Technicalities of the Slope
+            Technicalities of the Slope
             </Typography>
 
-            <Typography fontSize={"1rem"}>
+            <Typography variant="subtitle">
               The slope at Malam Jabba is one of its kind, well-maintained and
               perfect for skiing and snowboarding. The management at Malam Jabba
               Ski Resort ensures that the snow is groomed to perfection,
@@ -133,7 +152,13 @@ function Slope() {
               <img
                 src="/Images/Slope/sdfrr5fg1.jpg"
                 alt="First Image"
-                style={{ width: "100%", height: "auto" }}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  border: "10px solid white",
+                  filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                  borderRadius: "10px",
+                }}
               />
             </Grid>
             <Grid item xs={6}>
@@ -142,14 +167,26 @@ function Slope() {
                   <img
                     src="/Images/Slope/fghgfh.jpg"
                     alt="Second Image"
-                    style={{ width: "100%", height: "auto" }}
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      border: "10px solid white",
+                      filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                      borderRadius: "10px",
+                    }}
                   />
                 </Grid>
                 <Grid item xs={12}>
                   <img
                     src="/Images/Real_Images/SkiingActivity.jpeg"
                     alt="Third Image"
-                    style={{ width: "100%", height: "auto" }}
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      border: "10px solid white",
+                      filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                      borderRadius: "10px",
+                    }}
                   />
                 </Grid>
               </Grid>
@@ -159,10 +196,10 @@ function Slope() {
       </Grid>
       {/* <StacationCover /> */}
       {/* <BlogGrid /> */}
-      <StaycationSeasonPackage
+      {/* <StaycationSeasonPackage
         image="/PicturesForWebsite/17.jpg"
         buttonText={"Get Ready"}
-      />
+      /> */}
       {/* <Sponsors /> */}
       <Footer bgImage="footer1.jpg" />
     </div>

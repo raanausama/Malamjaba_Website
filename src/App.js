@@ -5,17 +5,18 @@ import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LazyLoader from "./components/utils/LazyLoader";
-import CSRMain from "./pages/CSR";
-import Slope from "./pages/Slope";
-import DineIn from "./pages/DineIn";
+// import CSRMain from "./pages/CSR";
+// import Slope from "./pages/Slope";
+// import DineIn from "./pages/DineIn";
 
 const HomePage = lazy(() => import("./pages/home"));
 const Staycation = lazy(() => import("./pages/staycation"));
-const TheSlope = lazy(() => import("./pages/TheSlope"));
+const TheSlope = lazy(() => import("./pages/Slope"));
 const Packages = lazy(() => import("./pages/packages"));
 const BlogMain = lazy(() => import("./pages/BlogMain"));
 const Activities = lazy(() => import("./pages/activities"));
-// const SignIn = lazy(() => import('./pages/SignIn'));
+const DineIn = lazy(() => import("./pages/activities"));
+const CSRMain = lazy(() => import('./pages/CSR'));
 
 function App() {
   // const header = useSelector(state => state.header.visible);
@@ -40,7 +41,7 @@ function App() {
               <Route exact path="/home" element={<HomePage />} />
               <Route exact path="/index" element={<HomePage />} />
               <Route exact path="/staycation" element={<Staycation />} />
-              <Route exact path="/the-slope" element={<Slope />} />
+              <Route exact path="/the-slope" element={<TheSlope />} />
               <Route exact path="/packages" element={<Packages />} />
               <Route exact path="/activities" element={<Activities />} />
               <Route exact path="/blog" element={<BlogMain />} />

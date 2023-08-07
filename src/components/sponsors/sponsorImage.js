@@ -3,7 +3,7 @@ import "./sponsorImage.css"
 
 const SponsorImage = ({image='', altText=''}) =>{
     return(
-        <img className="sponsorImage" src={image} alt={altText} />
+        <img className="sponsorImage" style={{ width: '5rem', height: '4rem' }} src={image} alt={altText} />
     )
 }
 
