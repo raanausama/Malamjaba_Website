@@ -22,7 +22,7 @@ const style = {
   //   width: isSmallscreen ? "80%" : "50%",
 };
 
-export default function EventModal({ open, handleClose, image }) {
+export default function EventModal({ open, handleClose, image, description }) {
   
   return (
     <>
@@ -46,9 +46,8 @@ export default function EventModal({ open, handleClose, image }) {
                 <img src={image} alt="images" style={{width: '100%',height: '100%'}} />
               </Grid>
               <Grid item xs={12}>
-                <Typography variant="h6" component="h2">
-                  <b>Long Description:</b> Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
+                <Typography variant="subtitle1" component="h2">
+                  <b>Long Description:</b> {description}
                 </Typography>
                 <Typography variant="h6" component="h2">
                   <b>PreReqs:</b> Lorem ipsum dolor sit amet.

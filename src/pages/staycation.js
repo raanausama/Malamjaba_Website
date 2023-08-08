@@ -13,10 +13,10 @@ const Staycation = () => {
       <StaycationHero image="accomodation.jpg" />
       <StacationCover />
       <StaycationGrid />
-      <StaycationSeasonPackage
+      {/* <StaycationSeasonPackage
         image="/PicturesForWebsite/17.jpg"
         buttonText={"Get Ready"}
-      />
+      /> */}
       {/* <Sponsors /> */}
       <Footer bgImage="footer1.jpg" />
     </div>
