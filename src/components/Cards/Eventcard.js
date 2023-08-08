@@ -16,6 +16,7 @@ export default function ActionAreaCard({
   header2 = "",
   image = "",
   header3 = "",
+  description
 }) {
   const [expanded, setExpanded] = useState(false);
 
@@ -37,7 +38,7 @@ export default function ActionAreaCard({
 
   return (
     <>
-      <EventModal open={viewModalOpen} handleClose={handleCloseModal} image={image} />
+      <EventModal description={description} open={viewModalOpen} handleClose={handleCloseModal} image={image} />
       <Card className={`action-card`} onClick={handleOpenModal}>
         <CardActionArea onClick={handleExpandClick}>
           <Box>
@@ -51,27 +52,42 @@ export default function ActionAreaCard({
               />
               <Typography
                 gutterBottom
-                variant="h2"
+                variant="h5"
                 component="div"
                 mt={3}
-                sx={{ fontSize: "1.5em" }}
+                // sx={{ fontSize: "1.5em" }}
               >
                 {header1}
               </Typography>
               <Typography
                 gutterBottom
-                variant="h3"
+                variant="h5"
                 component="div"
                 sx={{
-                  fontSize: "2em",
+                  // fontSize: "2em",
                   textTransform: "none",
                   color: "inherit",
                   fontWeight: "bold",
-                  fontStyle: "italic",
+                  // fontStyle: "italic",
                 }}
                 className="card-header2"
               >
                 {header2}
+              </Typography>
+              <Typography
+                gutterBottom
+                variant="subtitle1"
+                component="div"
+                sx={{
+                  // fontSize: "2em",
+                  // textTransform: "none",
+                  // color: "inherit",
+                  // fontWeight: "bold",
+                  // fontStyle: "italic",
+                }}
+                className="card-header2"
+              >
+                {header3}
               </Typography>
               {/* {expanded && (
               <div>
