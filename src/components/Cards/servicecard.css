@@ -32,3 +32,155 @@
 .content:hover .card-stext {
   color: #2596be;
 }
+
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.InsufficientBalance {
+  margin: auto;
+  /* padding: 50px 25px; */
+  /* height: 87vh; */
+}
+
+.InsufficientBalance .rounded-circle {
+  /* width: 19rem;
+  height: 19rem; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background: rgba(250, 173, 58, 0.1);
+  position: relative;
+  border-radius: 50%;
+}
+
+/* .InsufficientBalance .rounded-circle img {
+  width: 17.5rem;
+} */
+
+.InsufficientBalance .loader {
+  width: 100%;
+  position: absolute;
+  /* left: -11%;
+  top: -11%; */
+}
+
+.InsufficientBalance .loader-wheel {
+  animation: spin 2s infinite linear;
+  border-left: 2px solid #FAAD3A;
+  border-radius: 50%;
+  height: 5rem;
+  margin-bottom: 10px;
+  width: 5rem;
+}
+
+/* .InsufficientBalance .InsufficientBalanceDescriptionAndButton {
+  gap: 30px;
+}
+
+.InsufficientBalance .InsufficientBalanceDescriptionAndButton .InsufficientBalanceDescription {
+  width: 35% !important;
+}
+
+.InsufficientBalance .InsufficientBalanceDescriptionAndButton .TakeMeToFoundersDeskButton {
+  border-radius: 10px;
+  width: 30% !important;
+  text-transform: none !important;
+} */
+
+/* @media screen and (max-width: 1540px) {
+
+  .InsufficientBalance .rounded-circle {
+      width: 15rem;
+      height: 15rem;
+  }
+
+  .InsufficientBalance .rounded-circle img {
+      width: 13rem;
+  }
+
+  .InsufficientBalance .loader {
+      left: -12%;
+      top: -12%;
+  }
+
+  .InsufficientBalance .loader-wheel {
+      height: 18.5rem;
+      width: 18.5rem;
+  }
+
+  .Vise-Font-Secondary32 {
+      font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .InsufficientBalance {
+      height: auto;
+      padding: 30px 15px;
+      gap: 5rem;
+  }
+
+  .InsufficientBalance .InsufficientBalanceDescriptionAndButton .InsufficientBalanceDescription {
+      width: 100% !important;
+  }
+
+  .InsufficientBalance .InsufficientBalanceDescriptionAndButton .TakeMeToFoundersDeskButton {
+      width: 90% !important;
+  }
+
+  .InsufficientBalance .rounded-circle {
+      width: 13rem;
+      height: 13rem;
+  }
+
+  .InsufficientBalance .rounded-circle img {
+      width: 12rem;
+  }
+
+  .InsufficientBalance .loader-wheel {
+      height: 16rem;
+      width: 16rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .InsufficientBalance .GoldDiggerImage {
+      gap: 75px;
+      flex-direction: column !important;
+  }
+}
+
+@media screen and (max-width: 441px) {
+
+  .InsufficientBalance .rounded-circle {
+      width: 11.5rem;
+      height: 11.5rem;
+  }
+
+  .InsufficientBalance .rounded-circle img {
+      width: 10rem;
+  }
+
+  .InsufficientBalance .loader {
+      left: -13.5%;
+      top: -13.5%;
+  }
+
+  .InsufficientBalance .loader-wheel {
+      height: 14.5rem;
+      width: 14.5rem;
+  }
+
+} */

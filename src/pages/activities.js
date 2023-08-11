@@ -200,7 +200,7 @@ const Activities = () => {
 
             <Grid Item sm={12} md={3}>
               <BlogCards
-                simage="pastevent.jpg"
+                simage="/PicturesForWebsite/3.JPG"
                 sheader="Chairlift"
                 stext="An 850 meters ride to the top station to enjoy scenic views of the valley"
               />
@@ -235,7 +235,7 @@ const Activities = () => {
             </Grid>
             <Grid Item sm={12} md={3}>
               <BlogCards
-                simage="futureevent.jpg"
+                simage="/PicturesForWebsite/11.JPG"
                 sheader="VR Rides"
                 stext="VR Snowboarding and Skiing simulators to provide you the experience of its kind"
               />
