@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 // import { useSelector } from 'react-redux';
 import "./App.css";
-import React, { lazy, Suspense } from "react";
+import React, { lazy,Suspense  } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LazyLoader from "./components/utils/LazyLoader";

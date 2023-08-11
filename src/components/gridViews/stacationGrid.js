@@ -7,21 +7,21 @@ const StaycationGrid = () => {
     <Grid container spacing={2} display={"flex"} justifyContent={"center"}>
       <Grid item md={4}>
         <StaycationGridCard
-          image={"/PicturesForWebsite/Malam-Jabba-pix.JPG"}
+          image={"/PicturesForWebsite/premium-suites.jpg"}
           heading={"Premium Rooms"}
           text={"Go with the same!"}
         />
       </Grid>
       <Grid item md={4}>
         <StaycationGridCard
-          image={"/PicturesForWebsite/cinema.jpg"}
+          image={"/PicturesForWebsite/Cinema (2).jpg"}
           heading={"Cinema"}
           text={"Indoor Cinema for your entertainment"}
         />
       </Grid>
       <Grid item md={4}>
         <StaycationGridCard
-          image={"meeting.jpg"}
+          image={"/PicturesForWebsite/conferenceRoom.JPG"}
           heading={"Meeting Rooms"}
           text={"Boardrooms for the conferences and professional meetings"}
         />
@@ -42,7 +42,7 @@ const StaycationGrid = () => {
       </Grid>
       <Grid item md={4}>
         <StaycationGridCard
-          image={"pool.jpg"}
+          image={"/PicturesForWebsite/SwimmingPool.JPG"}
           heading={"Swimming Pool"}
           text={"Outdoor and temperature control swimming pool for your refreshment"}
         />

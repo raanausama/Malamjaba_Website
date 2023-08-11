@@ -18,11 +18,11 @@ import { Grid } from "@mui/material";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Servicecard from "../Cards/servicecard";
+import IconCards from "../Cards/IconCards";
 import { Box } from "@mui/material";
 
 export default function ImageLists() {
-  const navigate = useNavigate();
+  
 
   return (
     <>
@@ -149,34 +149,42 @@ export default function ImageLists() {
       {/* <Grid item xs={12} md={12}> */}
       <Grid container>
         <Grid item sx={12} sm={12} md={6}>
-          <Servicecard
+          <IconCards
             simage="/Assets/sliderimage/instagram.jpg"
             sheader="malamjabbaskiresort"
+            icons="Facebook"
+            iconLinks="https://www.facebook.com/MjSkiResort"
             // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
             // sit amet metus eu, vestibulum placerat mi"
           />
         </Grid>
         <Grid item sx={12} sm={12} md={6}>
-          <Servicecard
+          <IconCards
             simage="/Assets/sliderimage/facebook.jpg"
             sheader="malamjabbaskiresort"
+            icons="Youtube"
+            iconLinks="https://www.youtube.com/@malamjabbaskiresort4928"
             // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
             // sit amet metus eu, vestibulum placerat mi"
           />
         </Grid>
 
         <Grid item sx={12} sm={12} md={6}>
-          <Servicecard
+          <IconCards
             simage="/Assets/sliderimage/youtube.jpg"
             sheader="malamjabbaskiresort"
+            icons='Twitter'
+            iconLinks="https://twitter.com/Mjskiresort"
             // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
             // sit amet metus eu, vestibulum placerat mi"
           />
         </Grid>
         <Grid item sx={12} sm={12} md={6}>
-          <Servicecard
+          <IconCards
             simage="/Assets/sliderimage/facebook.jpg"
             sheader="malamjabbaskiresort"
+            icons="LinkedIn"
+            iconLinks="https://www.linkedin.com/company/malam-jabba-ski-resort/?viewAsMember=true"
             // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
             // sit amet metus eu, vestibulum placerat mi"
           />

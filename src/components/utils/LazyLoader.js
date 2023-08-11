@@ -10,7 +10,7 @@ export default function LazyLoader() {
       <RouterLink to="/">
         <Stack direction="column" spacing={2}>
           <Zoom center cascade>
-            <img src={logo} alt="Main Logo" height={200} width={200} />
+            <img src={logo} alt="Main Logo" height={100} width={100} />
           </Zoom>
           {/* <Bounce cascade>
           <img src='/static/logo/ppd.svg' alt="PPD" style={{ marginTop: 20 }} />

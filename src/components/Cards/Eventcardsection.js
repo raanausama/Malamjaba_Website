@@ -36,7 +36,7 @@ const Eventcardsection = () => {
           <Grid container spacing={3}>
             <Grid item md={4} sm={6}>
               <ActionAreaCard
-                image="pastevent.jpg"
+                image="familyfest.jpeg"
                 header1="PAST EVENT"
                 header2="Food Fest"
                 header3="Cuisine from all over Pakistan and a Qawalli Night"
@@ -49,7 +49,7 @@ const Eventcardsection = () => {
             </Grid>
             <Grid item md={4} sm={6}>
               <ActionAreaCard
-                image="cycling.jpg"
+                image="Marathon.jpg"
                 header1="UPCOMING EVENT"
                 header2="Marathon"
                 header3="From Cyclists all over Pakistan"
@@ -60,7 +60,7 @@ const Eventcardsection = () => {
             </Grid>
             <Grid item md={4} sm={6}>
               <ActionAreaCard
-                image="futureevent.jpg"
+                image="Nationalski.jpeg"
                 header1="FUTURE EVENT"
                 header2="National Ski and Snowboarding Competition"
                 header3="To Promote local talent and provide a platform for winter sports"
