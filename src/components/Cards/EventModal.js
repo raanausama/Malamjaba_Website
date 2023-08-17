@@ -25,6 +25,8 @@ const style = {
 export default function EventModal({ open, handleClose, image, description }) {
   
   return (
+  +
+  
     <>
       <Modal
         open={open}

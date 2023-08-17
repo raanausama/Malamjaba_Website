@@ -42,7 +42,7 @@ const Footer = ({ bgImage = "", text = "", textHeading = "" }) => {
               <img
                 src={logo}
                 alt="footer-logo-mjr"
-                style={{ height: "25vh", width: "25vh" }}
+                // style={{ height: "25vh", width: "25vh" }}
               />
               <Stack direction="row" spacing={10}>
                 <SponsorImage
