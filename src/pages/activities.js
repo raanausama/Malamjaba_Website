@@ -50,7 +50,7 @@ const Activities = () => {
                 sx={{
                   marginTop: "20em",
                   background: "#938d8d47",
-                  borderRadius: "20px",
+                  // borderRadius: "20px",
                   padding: "10px",
                   color: "white",
                   filter: "drop-shadow(0px 8px 8px rgba(0, 0, 0, 1.25))",
@@ -172,14 +172,14 @@ const Activities = () => {
             </Grid>
             <Grid Item sm={12} md={3}>
               <WinterCards
-                simage="/PicturesForWebsite/19.jpg"
+                simage="/Activities/Sking.JPG"
                 sheader="Skiing"
                 stext="Ski through our magnificent slopes under the training of national and international experts"
               />
             </Grid>
             <Grid Item sm={12} md={3}>
               <WinterCards
-                simage="/PicturesForWebsite/13.png"
+                simage="/Activities/Snowboarding.jpg"
                 sheader="Snow Boarding"
                 stext="Enjoy Snowboarding at Malam Jabba and check your Wishlist of adventurous activities."
               />
@@ -200,35 +200,35 @@ const Activities = () => {
 
             <Grid Item sm={12} md={3}>
               <BlogCards
-                simage="/PicturesForWebsite/3.JPG"
+                simage="/Activities/Chairlift.JPG"
                 sheader="Chairlift"
                 stext="An 850 meters ride to the top station to enjoy scenic views of the valley"
               />
             </Grid>
             <Grid Item sm={12} md={3}>
               <BlogCards
-                simage="cycling.jpg"
+                simage="/Activities/Zipline.png"
                 sheader="Zipline"
                 stext="Zip through the clouds on one of the longest ziplines of Pakistan"
               />
             </Grid>
             <Grid Item sm={12} md={3}>
               <BlogCards
-                simage="futureevent.jpg"
+                simage="/Activities/GiantSwing.jpg"
                 sheader="Giant Swing"
                 stext="Swing your stress away, at the only Giant Swing of Pakistan"
               />
             </Grid>
             <Grid Item sm={12} md={3}>
               <BlogCards
-                simage="pastevent.jpg"
+                simage="/Activities/HumanSlingshot.JPG"
                 sheader="Human Slingshot"
                 stext="Are you daring enough to try the only slingshot of Pakistan"
               />
             </Grid>
             <Grid Item sm={12} md={3}>
               <BlogCards
-                simage="cycling.jpg"
+                simage="/PicturesForWebsite/10.jpg"
                 sheader="Grass Ski"
                 stext="Ski is no longer for winters with our grass skiing, using the best equipment"
               />

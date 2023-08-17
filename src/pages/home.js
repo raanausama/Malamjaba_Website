@@ -1,4 +1,4 @@
-import React, { useRef, lazy, Suspense } from "react";
+import React, {  lazy, Suspense } from "react";
 // import VideoTextOverlay from "../components/textOverlay/TextOverlay";
 import Sponsors from "../components/sponsors/sponsorsFooter";
 import "./home.css";
@@ -23,7 +23,7 @@ const Eventcardsection = lazy(() =>
 );
 
 const HomePage = () => {
-  const footerRef = useRef(null);
+  // const footerRef = useRef(null);
   return (
     <>
       <ResponsiveAppBar />
