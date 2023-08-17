@@ -13,13 +13,15 @@ export default function IconCards({
   stext = "",
   icons,
   iconLinks,
+  icons2,
+  iconLinks2,
 }) {
   const iconComponents = {
     LinkedIn: (
       <img
         className=".rounded-circle"
-        width="80"
-        height="80"
+        width="70"
+        height="70"
         src="https://img.icons8.com/carbon-copy/100/linkedin.png"
         alt="linkedin"
       />
@@ -27,9 +29,8 @@ export default function IconCards({
     Twitter: (
       <img
         className=".rounded-circle"
-        
-        width="80"
-        height="80"
+        width="70"
+        height="70"
         src="https://img.icons8.com/carbon-copy/100/twitter.png"
         alt="twitter"
       />
@@ -37,9 +38,8 @@ export default function IconCards({
     Facebook: (
       <img
         className=".rounded-circle"
-        
-        width="80"
-        height="80"
+        width="70"
+        height="70"
         src="https://img.icons8.com/carbon-copy/100/facebook-new.png"
         alt="facebook-new"
       />
@@ -47,11 +47,26 @@ export default function IconCards({
     Youtube: (
       <img
         className=".rounded-circle"
-        
-        width="80"
-        height="80"
+        width="70"
+        height="70"
         src="https://img.icons8.com/carbon-copy/100/youtube-play--v1.png"
         alt="youtube-play--v1"
+      />
+    ),
+    Instagram: (
+      <img
+        width="70"
+        height="70"
+        src="https://img.icons8.com/carbon-copy/100/instagram-new--v1.png"
+        alt="instagram-new--v1"
+      />
+    ),
+    Tiktok: (
+      <img
+        width="70"
+        height="70"
+        src="https://img.icons8.com/carbon-copy/100/tiktok.png"
+        alt="tiktok"
       />
     ),
     // Add more icons as needed
@@ -73,14 +88,19 @@ export default function IconCards({
         // textAlign="center"
         >
           <Stack direction="row">
-            <Stack display="flex" alignItems="flex-start" className="InsufficientBalance">
-              <Link sx={{ color: "white" }} href={iconLinks} rel="sponsored">
+            <Link sx={{ color: "white" }} href={iconLinks} rel="sponsored">
+              <Stack
+                display="flex"
+                alignItems="flex-start"
+                className="InsufficientBalance"
+              >
                 {iconComponents[icons]}
-              </Link>
-              <div className="loader">
-                <div className="loader-wheel"></div>
-              </div>
-            </Stack>
+
+                <div className="loader">
+                  <div className="loader-wheel"></div>
+                </div>
+              </Stack>
+            </Link>
             <Stack display="flex" alignItems="center" flexGrow={1}>
               <Typography
                 gutterBottom
@@ -93,6 +113,21 @@ export default function IconCards({
               </Typography>
             </Stack>
 
+            {iconLinks2 ? (
+              <Link sx={{ color: "white" }} href={iconLinks2} rel="sponsored">
+                <Stack
+                  display="flex"
+                  alignItems="flex-start"
+                  className="InsufficientBalance"
+                >
+                  {iconComponents[icons2]}
+
+                  <div className="loader">
+                    <div className="loader-wheel"></div>
+                  </div>
+                </Stack>
+              </Link>
+            ) : null}
             {/* <Typography variant="body2" component="div" sx={sxText} mt={1}>
               {stext}
             </Typography> */}

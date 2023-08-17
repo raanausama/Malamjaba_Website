@@ -155,7 +155,7 @@ const Footer = ({ bgImage = "", text = "", textHeading = "" }) => {
               align="center"
               sx={{ color: "white" }}
             >
-              <Link
+              {/* <Link
                 sx={{ color: "white" }}
                 href="https://www.assuretrust.asia"
                 rel="sponsored"
@@ -194,8 +194,8 @@ const Footer = ({ bgImage = "", text = "", textHeading = "" }) => {
                 title="Flaticon"
               >
                 <LinkedIn color="blue" />
-              </Link>{" "}
-              {/* © {new Date().getFullYear()}&nbsp;
+              </Link>{" "} */}
+              © {new Date().getFullYear()}&nbsp;
               <Link
                 sx={{ color: "white" }}
                 href="https://www.assuretrust.asia"
@@ -204,7 +204,7 @@ const Footer = ({ bgImage = "", text = "", textHeading = "" }) => {
               >
                 www.malamjabba.asia
               </Link>{" "}
-              All rights reserved. */}
+              All rights reserved.
             </Typography>
           </Grid>
         </Grid>

@@ -153,6 +153,8 @@ export default function ImageLists() {
             simage="/Assets/sliderimage/instagram.jpg"
             sheader="malamjabbaskiresort"
             icons="Facebook"
+            icons2="Instagram"
+            iconLinks2="https://instagram.com/malamjabbaskiresortofficial?igshid=MzRlODBiNWFlZA=="
             iconLinks="https://www.facebook.com/MjSkiResort"
             // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
             // sit amet metus eu, vestibulum placerat mi"
@@ -163,6 +165,8 @@ export default function ImageLists() {
             simage="/Assets/sliderimage/facebook.jpg"
             sheader="malamjabbaskiresort"
             icons="Youtube"
+            icons2="Tiktok"
+            iconLinks2="https://www.tiktok.com/@mjskiresort?_t=8eUt9nOB3wX&_r=1"
             iconLinks="https://www.youtube.com/@malamjabbaskiresort4928"
             // stext="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quam elit, interdum
             // sit amet metus eu, vestibulum placerat mi"
