@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-around;
   /* height: 7em; */
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
   background: #094e9d;
 }

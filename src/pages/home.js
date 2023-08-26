@@ -7,7 +7,7 @@ import Footer from "../components/footer/footer";
 import ImageWithWinterActivities from "../components/imageWithTextOverlay/imageWithWinterActivities";
 
 import ImageLists from "../components/carousel/ImageLists";
-// import Eventcardsection from "../components/Cards/Eventcardsection";
+import Eventcardsection from "../components/Cards/Eventcardsection";
 import Servicecardsection from "../components/Cards/servicecardsection";
 import ResponsiveAppBar from "../components/NavBar/NavBar";
 import { CircularProgress } from "@mui/material";
@@ -18,9 +18,9 @@ const VideoTextOverlay = lazy(() =>
 const ImageWithSummerActivities = lazy(() =>
   import("../components/imageWithTextOverlay/imageWithSummerActivities")
 );
-const Eventcardsection = lazy(() =>
-  import("../components/Cards/Eventcardsection")
-);
+// const Eventcardsection = lazy(() =>
+//   import("../components/Cards/Eventcardsection")
+// );
 
 const HomePage = () => {
   // const footerRef = useRef(null);
@@ -67,15 +67,15 @@ const HomePage = () => {
           console.log("testing");
         }}
       />
-      <Suspense
+      {/* <Suspense
         fallback={
           <>
             <CircularProgress />
           </>
         }
-      >
+      > */}
         <Eventcardsection />
-      </Suspense>
+      {/* </Suspense> */}
       <Servicecardsection />
       <ImageLists />
       {/* <Sponsors /> */}
