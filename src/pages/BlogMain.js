@@ -5,6 +5,7 @@ import BlogGrid from "../components/gridViews/BlogGrid";
 import StaycationHero from "./StaycationHero";
 import { Box, Grid, Stack, Typography, Avatar } from "@mui/material";
 import ResponsiveAppBar from "../components/NavBar/NavBar";
+import NewFooter from "../components/footer/NewFooter";
 
 function BlogMain() {
   return (
@@ -60,7 +61,8 @@ function BlogMain() {
       {/* <StacationCover /> */}
       <BlogGrid />
       {/* <Sponsors /> */}
-      <Footer bgImage="footer1.jpg" />
+      {/* <Footer bgImage="footer1.jpg" /> */}
+      <NewFooter/>
     </div>
   );
 }

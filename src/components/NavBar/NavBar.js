@@ -21,7 +21,7 @@ import { Height } from "@mui/icons-material";
 import SignIn from "../../pages/SignIn";
 
 const pages = ["HOME", "STAYCATION", "Activities", "THE SLOPE"];
-const settings = ["Dine In", "Blog", "CSR", "Contact Us", "Sign In"];
+const settings = ["Dine In", "Blog", "CSR"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

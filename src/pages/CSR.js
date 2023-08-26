@@ -6,6 +6,7 @@ import StaycationHero from "./StaycationHero";
 import { Box, Grid, Stack, Typography, Avatar } from "@mui/material";
 import ResponsiveAppBar from "../components/NavBar/NavBar";
 import StaycationSeasonPackage from "../components/StaycationSeasonPackage/StaycationSeasonPackage";
+import NewFooter from "../components/footer/NewFooter";
 
 function CSRMain() {
   return (
@@ -100,7 +101,8 @@ function CSRMain() {
         buttonText={"Get Ready"}
       /> */}
       {/* <Sponsors /> */}
-      <Footer bgImage="footer1.jpg" />
+      {/* <Footer bgImage="footer1.jpg" /> */}
+      <NewFooter/>
     </div>
   );
 }

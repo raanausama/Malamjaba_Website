@@ -8,8 +8,8 @@ const StaycationGrid = () => {
       <Grid item md={4}>
         <StaycationGridCard
           image={"/PicturesForWebsite/premium-suites.jpg"}
-          heading={"Premium Rooms"}
-          text={"Go with the same!"}
+          heading={"Premium Suites"}
+          text={"Luxury Premium Suites to make your stay memorable!"}
         />
       </Grid>
       <Grid item md={4}>
