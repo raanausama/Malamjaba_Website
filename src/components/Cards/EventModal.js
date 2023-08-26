@@ -5,7 +5,8 @@ import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { Grid } from "@mui/material";
+import { Grid, IconButton } from "@mui/material";
+import CancelIcon from "@mui/icons-material/Cancel";
 
 const style = {
   position: "absolute",
@@ -41,6 +42,17 @@ export default function EventModal({ open, handleClose, image, description }) {
         <Fade in={open}>
           <Box sx={style}>
             <Grid container>
+              <Grid item xs={12} display="flex" justifyContent="flex-end">
+                <IconButton edge="end" color="inherit" onClick={handleClose}>
+                  {/* <CancelIcon sx={{color:"#11357C"}}  /> */}
+                  <img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/arcade/64/multiply.png"
+                    alt="multiply"
+                  />
+                </IconButton>
+              </Grid>
               <Grid item xs={12}>
                 <img
                   src={image}
@@ -50,7 +62,8 @@ export default function EventModal({ open, handleClose, image, description }) {
               </Grid>
               <Grid item xs={12}>
                 <Typography variant="subtitle1" component="h2">
-                  <b>Long Description:</b> {description}
+                  {/* <b>Description:</b> */}
+                  {description}
                 </Typography>
                 {/* <Typography variant="h6" component="h2">
                   <b>PreReqs:</b> Lorem ipsum dolor sit amet.

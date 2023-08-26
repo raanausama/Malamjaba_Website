@@ -27,3 +27,53 @@
     color: white;
     text-decoration: none;
 }
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+  
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  
+  .InsufficientBalance {
+    margin: auto;
+    /* padding: 50px 25px; */
+    /* height: 87vh; */
+  }
+  
+  .InsufficientBalance .rounded-circle {
+    /* width: 19rem;
+    height: 19rem; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background: rgba(250, 173, 58, 0.1);
+    position: relative;
+    border-radius: 50%;
+  }
+  
+  /* .InsufficientBalance .rounded-circle img {
+    width: 17.5rem;
+  } */
+  
+  .InsufficientBalance .loader {
+    width: 100%;
+    position: absolute;
+    /* left: -11%;
+    top: -11%; */
+  }
+  
+  .InsufficientBalance .loader-wheel {
+    animation: spin 2s infinite linear;
+    border-left: 2px solid #FAAD3A;
+    border-radius: 50%;
+    height: 10.5rem;
+    margin-bottom: 10px;
+    width: 10.5rem;
+  }

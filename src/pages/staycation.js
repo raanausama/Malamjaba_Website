@@ -6,6 +6,7 @@ import StaycationGrid from "../components/gridViews/stacationGrid";
 import StaycationHero from "./StaycationHero";
 import StaycationSeasonPackage from "../components/StaycationSeasonPackage/StaycationSeasonPackage";
 import ResponsiveAppBar from "../components/NavBar/NavBar";
+import NewFooter from "../components/footer/NewFooter";
 const Staycation = () => {
   return (
     <div>
@@ -18,7 +19,8 @@ const Staycation = () => {
         buttonText={"Get Ready"}
       /> */}
       {/* <Sponsors /> */}
-      <Footer bgImage="footer1.jpg" />
+      {/* <Footer bgImage="footer1.jpg" /> */}
+      <NewFooter />
     </div>
   );
 };

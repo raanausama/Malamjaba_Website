@@ -11,6 +11,7 @@ import Eventcardsection from "../components/Cards/Eventcardsection";
 import Servicecardsection from "../components/Cards/servicecardsection";
 import ResponsiveAppBar from "../components/NavBar/NavBar";
 import { CircularProgress } from "@mui/material";
+import NewFooter from "../components/footer/NewFooter";
 
 const VideoTextOverlay = lazy(() =>
   import("../components/textOverlay/TextOverlay")
@@ -77,9 +78,10 @@ const HomePage = () => {
         <Eventcardsection />
       {/* </Suspense> */}
       <Servicecardsection />
-      <ImageLists />
+      {/* <ImageLists /> */}
       {/* <Sponsors /> */}
-      <Footer />
+      {/* <Footer /> */}
+      <NewFooter />
     </>
   );
 };

@@ -15,6 +15,7 @@ import "./activities.css";
 import Background from "../Assets/bg_content/activities-header.jpg";
 import WinterCards from "../components/Cards/WinterCards";
 import BlogCards from "../components/Cards/BlogCards";
+import NewFooter from "../components/footer/NewFooter";
 
 const Activities = () => {
   const theme = useTheme();
@@ -265,7 +266,8 @@ const Activities = () => {
         </Container>
 
         {/* <Sponsors /> */}
-        <Footer />
+        {/* <Footer /> */}
+        <NewFooter/>
       </Box>
     </>
   );

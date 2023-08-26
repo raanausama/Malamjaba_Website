@@ -98,7 +98,7 @@ export default function AccomendationModal({ open, handleClose }) {
     </Carousel>
         </Grid>
         <Grid item xs={6}>
-        <Typography variant="h5" component="h2" gutterBottom color="#6E263D" spacing={2}>Delux, Guest Room, 1 King</Typography>
+        <Typography variant="h5" component="h2" gutterBottom color="#6E263D" spacing={2}>Deluxe, Guest Room, 1 King</Typography>
         <Typography variant="body1" component="h2" gutterBottom color="#7D7D7D"><Box display={"inline"}padding={"2px"}><SquareFootIcon/>34m</Box>  <Box display={"inline"} padding={"2px"}>
           <LandscapeIcon /> Mountain View
         </Box>  <Box display={"inline"} padding={"2px"}><LocationCityIcon/> City View</Box>  <Box display={"inline"} padding={"2px"}><AcUnitIcon/> Air Conditioned <br /></Box> <Box display={"inline"} padding={"2px"}><BathtubIcon/> Ensuite Bathroom</Box><Box display={"inline"} padding={"2px"}> <TvIcon/> Flat Screen Tv</Box> <Box display={"inline"} padding={"2px"}><RestaurantIcon/> Mini Bar</Box> <br /><Box display={"inline"} padding={"2px"}><WifiIcon/> Free Wifi</Box> </Typography>
