@@ -23,10 +23,7 @@ const style = {
 };
 
 export default function EventModal({ open, handleClose, image, description }) {
-  
   return (
-  +
-  
     <>
       <Modal
         open={open}
@@ -45,13 +42,17 @@ export default function EventModal({ open, handleClose, image, description }) {
           <Box sx={style}>
             <Grid container>
               <Grid item xs={12}>
-                <img src={image} alt="images" style={{width: '100%',height: '100%'}} />
+                <img
+                  src={image}
+                  alt="images"
+                  style={{ width: "100%", height: "100%" }}
+                />
               </Grid>
               <Grid item xs={12}>
                 <Typography variant="subtitle1" component="h2">
                   <b>Long Description:</b> {description}
                 </Typography>
-                <Typography variant="h6" component="h2">
+                {/* <Typography variant="h6" component="h2">
                   <b>PreReqs:</b> Lorem ipsum dolor sit amet.
                 </Typography>
                 <Typography variant="h6" component="h2">
@@ -63,18 +64,18 @@ export default function EventModal({ open, handleClose, image, description }) {
                 <Typography variant="h6" component="h2">
                   <b>Disclaimer:</b> Lorem ipsum dolor sit amet, consectetur
                   adipiscing elit.
-                </Typography>
+                </Typography> */}
               </Grid>
-              <Grid item xs={12} display='flex' justifyContent='center'>
+              {/* <Grid item xs={12} display="flex" justifyContent="center">
                 <Button
                   variant="contained"
                   color="primary"
                   onClick={handleClose}
-                  sx={{padding:'20px'}}
+                  sx={{ padding: "20px" }}
                 >
                   Register
                 </Button>
-              </Grid>
+              </Grid> */}
             </Grid>
           </Box>
         </Fade>
