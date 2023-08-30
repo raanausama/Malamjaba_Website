@@ -61,7 +61,7 @@ export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
             transition: "background-color 0.3s",
             // backgroundColor: "transparent",
             backgroundColor: "rgba(255, 255, 255, 0.5)",
-            height:"100rem"
+            height: "100rem",
           }}
         >
           <Box

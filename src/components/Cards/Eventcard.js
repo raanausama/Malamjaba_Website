@@ -16,9 +16,9 @@ export default function ActionAreaCard({
   header2 = "",
   image = "",
   header3 = "",
-  description
+  description,
 }) {
-  const [expanded, setExpanded] = useState(false);
+  // const [expanded, setExpanded] = useState(false);
 
   const [viewModalOpen, setViewModalOpen] = React.useState(false);
 
@@ -31,16 +31,22 @@ export default function ActionAreaCard({
     setViewModalOpen(true); // open the modal
   };
 
-  const handleExpandClick = () => {
-    console.log("just checking");
-    setExpanded(!expanded);
-  };
+  // const handleExpandClick = () => {
+  //   console.log("just checking");
+  //   setExpanded(!expanded);
+  // };
 
   return (
     <>
-      <EventModal description={description} open={viewModalOpen} handleClose={handleCloseModal} image={image} />
-      <Card className={`action-card`} onClick={handleOpenModal}>
-        <CardActionArea onClick={handleExpandClick}>
+      <EventModal
+        description={description}
+        open={viewModalOpen}
+        handleClose={handleCloseModal}
+        image={image}
+      />
+      <Card className={`action-card`}>
+        {/* <CardActionArea onClick={handleExpandClick}> */}
+        <CardActionArea onClick={handleOpenModal}>
           <Box>
             <CardContent className="card-content">
               <CardMedia
@@ -48,6 +54,7 @@ export default function ActionAreaCard({
                 height="200"
                 image={image}
                 alt="images"
+                
                 // sx={{display: ""}}
               />
               <Typography
@@ -78,13 +85,15 @@ export default function ActionAreaCard({
                 gutterBottom
                 variant="subtitle1"
                 component="div"
-                sx={{
-                  // fontSize: "2em",
-                  // textTransform: "none",
-                  // color: "inherit",
-                  // fontWeight: "bold",
-                  // fontStyle: "italic",
-                }}
+                sx={
+                  {
+                    // fontSize: "2em",
+                    // textTransform: "none",
+                    // color: "inherit",
+                    // fontWeight: "bold",
+                    // fontStyle: "italic",
+                  }
+                }
                 className="card-header2"
               >
                 {header3}
