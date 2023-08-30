@@ -3,7 +3,7 @@ import logo from "../../Assets/logos/malamjabbalogo-150.png";
 import Weather from "../weatherElement/weather";
 import AppsIcon from "@mui/icons-material/Apps";
 import WeatherBar from "../weatherElement/weatherBar";
-import React, { useRef }  from "react";
+import React, { useRef } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -20,13 +20,12 @@ import { Link, useNavigate } from "react-router-dom";
 import { Height } from "@mui/icons-material";
 import SignIn from "../../pages/SignIn";
 
-const pages = ["HOME", "STAYCATION", "Activities", "THE SLOPE"];
+const pages = ["HOME", "STAYCATION", "ACTIVITIES", "THE SLOPE"];
 const settings = ["Dine In", "Blog", "CSR"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-  
 
   const navigate = useNavigate();
 
@@ -130,7 +129,12 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Link
+                    to={`/${page.toLowerCase().replace(/\s/g, "-")}`}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    <Typography textAlign="center" sx={{fontFamily: "TrajanPro3Black"}}>{page}</Typography>
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -150,6 +154,7 @@ function ResponsiveAppBar() {
                   fontSize: "0.990rem",
                   fontWeight: "Bold",
                   padding: "6px 30px",
+                  fontFamily: "TrajanPro3Black"
                 }}
                 onMouseEnter={onEnter}
                 onMouseLeave={onLeave}

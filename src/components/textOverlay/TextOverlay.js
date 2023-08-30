@@ -96,19 +96,20 @@ const VideoTextOverlay = ({
           >
             <Typography
               variant="h4"
-              sx={{ [theme.breakpoints.down("sm")]: { fontSize: "1rem" } }}
+
+              sx={{ [theme.breakpoints.down("sm")]: { fontSize: "1rem" } ,fontFamily: "TrajanPro3Black" }}
             >
               {textHeading}
             </Typography>
             <Typography
               variant="h4"
-              sx={{ [theme.breakpoints.down("sm")]: { fontSize: "1rem" } }}
+              sx={{ [theme.breakpoints.down("sm")]: { fontSize: "1rem" } ,fontFamily: "TrajanPro3Black" }}
             >
               {text1}
             </Typography>
             <Typography
               variant="h6"
-              sx={{ [theme.breakpoints.down("sm")]: { fontSize: "1rem" } }}
+              sx={{ [theme.breakpoints.down("sm")]: { fontSize: "1rem" } ,fontFamily: "TrajanPro3Black" }}
             >
               {text}
             </Typography>

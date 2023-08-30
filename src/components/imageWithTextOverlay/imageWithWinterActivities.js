@@ -86,7 +86,7 @@ const ImageWithWinterActivities = ({
               borderRadius: "10px",
             }}
           >
-            <Typography variant="h4">Winter Activities</Typography>
+            <Typography variant="h4" sx={{fontFamily: "TrajanPro3Black"}}>Winter Activities</Typography>
             <Typography variant="body1" mt={5}>
               Malam Jabba Ski Resort is the only
             </Typography>

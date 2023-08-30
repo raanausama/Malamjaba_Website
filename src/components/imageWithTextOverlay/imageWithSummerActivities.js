@@ -89,7 +89,7 @@ const ImageWithSummerActivities = ({
               borderRadius: "10px",
             }}
           >
-            <Typography variant="h4">Summer Activities</Typography>
+            <Typography variant="h4" sx={{fontFamily: "TrajanPro3Black"}}>Summer Activities</Typography>
             <Typography variant="body1" mt={5}>
               The tourists can enjoy plethora of
             </Typography>

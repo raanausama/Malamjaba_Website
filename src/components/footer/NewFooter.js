@@ -159,7 +159,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
           spacing={3}
           alignItems="center"
           justifyContent="center"
-          sx={{padding: '3em 0em 3em 0em '}}
+          sx={{ padding: "3em 0em 3em 0em " }}
         >
           <Grid
             item
@@ -210,6 +210,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               align="center"
               sx={{ color: "white" }}
             > */}
+            <Typography variant="h6" sx={{fontFamily: 'Times New Roman,Times,serif'}}>FOLLOW US</Typography>
             <Link
               sx={{ color: "white" }}
               href="https://www.facebook.com/MjSkiResort"
@@ -217,9 +218,9 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               title="Flaticon"
             >
               <img
-                width="70"
-                height="70"
-                src="https://img.icons8.com/bubbles/100/facebook-new.png"
+                width="60"
+                height="60"
+                src="/socialIcons/icons8-facebook.svg"
                 alt="facebook-new"
               />
             </Link>{" "}
@@ -230,9 +231,9 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               title="Flaticon"
             >
               <img
-                width="70"
-                height="70"
-                src="https://img.icons8.com/bubbles/100/instagram.png"
+                width="60"
+                height="60"
+                src="/socialIcons/icons8-instagram.svg"
                 alt="instagram"
               />
             </Link>{" "}
@@ -243,9 +244,9 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               title="Flaticon"
             >
               <img
-                width="70"
-                height="70"
-                src="https://img.icons8.com/bubbles/100/tiktok.png"
+                width="60"
+                height="60"
+                src="/socialIcons/icons8-tik-tok.svg"
                 alt="tiktok"
               />
             </Link>{" "}
@@ -256,9 +257,9 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               title="Flaticon"
             >
               <img
-                width="70"
-                height="70"
-                src="https://img.icons8.com/bubbles/100/youtube-squared.png"
+                width="60"
+                height="60"
+                src="/socialIcons/icons8-youtube.svg"
                 alt="youtube-squared"
               />
             </Link>{" "}
@@ -269,9 +270,9 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               title="Flaticon"
             >
               <img
-                width="70"
-                height="70"
-                src="https://img.icons8.com/bubbles/100/twitter-circled.png"
+                width="60"
+                height="60"
+                src="/socialIcons/icons8-twitter.svg"
                 alt="twitter-circled"
               />
             </Link>{" "}
@@ -282,9 +283,9 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               title="Flaticon"
             >
               <img
-                width="70"
-                height="70"
-                src="https://img.icons8.com/bubbles/100/linkedin.png"
+                width="60"
+                height="60"
+                src="/socialIcons/icons8-linkedin.svg"
                 alt="linkedin"
               />
             </Link>{" "}

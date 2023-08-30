@@ -48,8 +48,8 @@ export default function EventModal({ open, handleClose, image, description }) {
                   <img
                     width="30"
                     height="30"
-                    src="https://img.icons8.com/arcade/64/multiply.png"
-                    alt="multiply"
+                    src="https://img.icons8.com/arcade/64/delete-sign.png"
+                    alt="delete-sign"
                   />
                 </IconButton>
               </Grid>
