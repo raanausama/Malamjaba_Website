@@ -72,7 +72,7 @@ const Activities = () => {
                     },
                   }}
                 >
-                  State-of-the-art infrastructure and <br /> Adventurous
+                  State of the Art Infrastructure and <br /> Adventurous
                   Activities
                 </Typography>
                 {/* <Typography

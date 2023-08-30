@@ -1,0 +1,32 @@
+.announcement-banner {
+    background: radial-gradient(
+        circle,
+        rgba(2, 0, 36, 0.5) 0%, /* 50% fade */
+        rgba(0, 0, 0, 1) 100%
+      );
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust as needed */
+  }
+  
+  .moving-text {
+    white-space: nowrap;
+    animation: moveText 20s linear infinite; /* Adjust animation duration */
+  }
+  .moving-text.paused {
+    animation-play-state: paused;
+  }
+
+  .announcement-banner.paused .moving-text {
+    animation-play-state: paused;
+  }
+  @keyframes moveText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

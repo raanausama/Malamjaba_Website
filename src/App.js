@@ -5,6 +5,7 @@ import React, { lazy,Suspense  } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import LazyLoader from "./components/utils/LazyLoader";
+import AnnouncementBanner from "./components/announcementBanner/AnnouncementBanner";
 // import CSRMain from "./pages/CSR";
 // import Slope from "./pages/Slope";
 // import DineIn from "./pages/DineIn";
@@ -25,6 +26,7 @@ function App() {
   return (
     <div className="App">
       {/* <ResponsiveAppBar /> */}
+      {/* <AnnouncementBanner/> */}
 
       <div className="flex-body">
         <Router>
