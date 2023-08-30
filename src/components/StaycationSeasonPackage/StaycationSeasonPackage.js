@@ -1,7 +1,20 @@
-import React, { useRef, useEffect } from "react";
-import { Box, Grid, Stack, Typography, Button } from "@mui/material";
+import React, { useRef, useEffect, useState } from "react";
+// import React, { useState } from "react";
+import { Box, Grid, Stack, Typography, Button, Divider } from "@mui/material";
 import gsap from "gsap";
 // import ScrollTrigger from "gsap/ScrollTrigger";
+import PrepModal from "./PrepModal";
+
+// const [viewModalOpen, setViewModalOpen] = React.useState(false);
+
+// const handleCloseModal = () => {
+//   console.log("handleCloseModal");
+//   setViewModalOpen(false); // Close the modal
+// };
+// const handleOpenModal = () => {
+//   console.log("handleOpenModal");
+//   setViewModalOpen(true); // open the modal #86796f
+// };
 
 const StaycationSeasonPackage = ({
   image,
@@ -10,19 +23,36 @@ const StaycationSeasonPackage = ({
   buttonCallBack = () => {},
 }) => {
   const boxStyle = {
-    backgroundImage: `url(${image})`,
+    // backgroundImage: `url(${image})`,
+    backgroundColor: "#F1F1FE",
     backgroundSize: "cover",
     backgroundPosition: "0% 80%",
     backgroundRepeat: "no-repeat",
-    height:"70vh"
+    height: "11em",
+    display: "flex",
+    justifyContent: "center",
+  };
+
+  const [viewModalOpen, setViewModalOpen] = React.useState(false);
+
+  const handleCloseModal = () => {
+    console.log("handleCloseModal");
+    setViewModalOpen(false); // Close the modal
+  };
+  const handleOpenModal = () => {
+    console.log("handleOpenModal");
+    setViewModalOpen(true); // open the modal
   };
 
   const onEnter = ({ currentTarget }) => {
-    gsap.to(currentTarget, { scale: 1.05, backgroundColor: "rgba(0, 0, 0, 0.3)" });
+    gsap.to(currentTarget, {
+      scale: 1.05,
+      // backgroundColor: "rgba(0, 0, 0, 0.3)",
+    });
   };
 
   const onLeave = ({ currentTarget }) => {
-    gsap.to(currentTarget, { scale: 1, backgroundColor:"transparent" });
+    gsap.to(currentTarget, { scale: 1 });
   };
   const gridRef = useRef(null);
   // gsap.registerPlugin(ScrollTrigger);
@@ -62,36 +92,50 @@ const StaycationSeasonPackage = ({
     };
   }, []);
   return (
-    <Box className="bg-image-wrap" sx={boxStyle} color="white">
+    <Box sx={boxStyle} >
       {/* <img src={image} alt='skii'></img> */}
       <Grid
         container
-        mt={{ xs: 25, md: 20 }}
+        // mt={{ xs: 25, md: 20 }}
         ml={{ xs: 0, md: -3 }}
         xs={{
-          height: "100%",
-          sx: { display: "flex", justifyContent: "center" },
+          // height: "20%",
+          sx: {
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          },
         }}
-        ref={gridRef}
         justifyContent="flex-end"
-        onMouseEnter={onEnter}
-        onMouseLeave={onLeave}
       >
-        <Grid item sx={12} md={12} className="grid-item-3">
+        <Grid item sx={12} md={12}>
+          <PrepModal open={viewModalOpen} handleClose={handleCloseModal} />
           <Stack direction="column" alignItems="center">
-            <Typography variant="h4">Prepare For Your Visit</Typography>
-            <Typography variant="body1" mt={5}>
-            Check out our tips to hep you prepare for everything you need before you hit the slopes.
+            <Typography variant="h4" mt={4}>
+              ARE YOU READY?
             </Typography>
-            {button ? (
-              <Button size="small" mt={5} onClick={buttonCallBack()}>
-                {buttonText}
-              </Button>
-            ) : (
-              <></>
-            )}
+
+            {/* <Typography variant="body1" fontStyle="bold" mt={5}>
+              Check out our tips to help you prepare for everything you need
+              before you hit the slopes.
+            </Typography> */}
           </Stack>
         </Grid>
+        <Divider />
+        <Grid item mb={4} sx={12} md={12}  display='flex' justifyContent="center">
+          <Button
+            onMouseEnter={onEnter}
+            onMouseLeave={onLeave}
+            // sx={{ color: "white", borderColor: "white !important" }}
+            size="medium"
+            variant="outlined"
+            mt={4}
+            onClick={handleOpenModal}
+          >
+            {buttonText}
+          </Button>
+        </Grid>
+        
       </Grid>
     </Box>
   );

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Grid from "@mui/material/Grid";
-import BingMapsReact from "bingmaps-react";
+// import BingMapsReact from "bingmaps-react";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const GoogleMap = () => {
@@ -15,7 +15,8 @@ const GoogleMap = () => {
     <>
       <Grid container>
         <Grid item xs={12}>
-          <BingMapsReact
+          Loading...
+          {/* <BingMapsReact
             bingMapsKey="Ah76HTpzx2K1Bc-v-2HYhT5avQE3pLyLv_k_MH57pozl9QvzUYSvv05qQcGkCPZC"
             center = {[34.7999, 72.5722]}
             height="500px"
@@ -30,7 +31,7 @@ const GoogleMap = () => {
             }}
            
           >
-          </BingMapsReact>
+          </BingMapsReact> */}
         </Grid>
       </Grid>
     </>

@@ -1,7 +1,7 @@
 import React from "react";
 // import Sponsors from "../components/sponsors/sponsorsFooter";
 import StacationCover from "../components/Cover/stacationCover";
-import Footer from "../components/footer/footer";
+// import Footer from "../components/footer/footer";
 import StaycationGrid from "../components/gridViews/stacationGrid";
 import StaycationHero from "./StaycationHero";
 import StaycationSeasonPackage from "../components/StaycationSeasonPackage/StaycationSeasonPackage";
@@ -14,10 +14,10 @@ const Staycation = () => {
       <StaycationHero image="accomodation.jpg" />
       <StacationCover />
       <StaycationGrid />
-      {/* <StaycationSeasonPackage
+      <StaycationSeasonPackage
         image="/PicturesForWebsite/17.jpg"
-        buttonText={"Get Ready"}
-      /> */}
+        buttonText={"Tips before your trip"}
+      />
       {/* <Sponsors /> */}
       {/* <Footer bgImage="footer1.jpg" /> */}
       <NewFooter />

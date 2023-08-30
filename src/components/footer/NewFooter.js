@@ -48,12 +48,18 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               alignItems="center"
               justifyContent="center"
             >
-              <Typography
-                variant="h5"
-                sx={{ fontFamily: "Times New Roman, Times, serif" }}
+              <a
+                href="https://maps.app.goo.gl/vgMu5DNN9b2t42gX7"
+                target="_blank"
+                style={{ textDecoration: "none", color: "inherit" }}
               >
-                LOCATION
-              </Typography>
+                <Typography
+                  variant="h5"
+                  sx={{ fontFamily: "Times New Roman, Times, serif" }}
+                >
+                  LOCATION
+                </Typography>
+              </a>
               <Typography variant="body1 " sx={{ fontFamily: "Didot, serif" }}>
                 Hill station,
               </Typography>
@@ -159,11 +165,15 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
           spacing={3}
           alignItems="center"
           justifyContent="center"
-          sx={{ padding: "3em 0em 3em 0em " }}
+          sx={{
+            padding: "3em 0em 3em 0em ",
+            width: { xs: "100%", md: "25%" },
+            margin: "0 auto",
+          }}
         >
           <Grid
             item
-            gap={{ xs: 1, md: 5 }}
+            gap={{ xs: 1, md: 1 }}
             sx={12}
             sm={12}
             md={4}
@@ -175,7 +185,27 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               alt="footer-logo-mjr"
               // style={{ height: "25vh", width: "25vh" }}
             />
+          </Grid>
+          <Grid
+            item
+            gap={{ xs: 1, md: 1 }}
+            sx={12}
+            sm={12}
+            md={4}
+            display="flex"
+            justifyContent="center"
+          >
             <SponsorImage image="images/samsons-logo-png.png" alt="nescafe" />
+          </Grid>
+          <Grid
+            item
+            gap={{ xs: 1, md: 1 }}
+            sx={12}
+            sm={12}
+            md={4}
+            display="flex"
+            justifyContent="center"
+          >
             <SponsorImage
               image="images/pc_logo-removebg-preview.png"
               alt="redbull"

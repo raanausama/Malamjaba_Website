@@ -241,7 +241,7 @@ const Activities = () => {
                 stext="VR Snowboarding and Skiing simulators to provide you the experience of its kind"
               />
             </Grid>
-            <Grid Item sm={12} md={3}>
+            {/* <Grid Item sm={12} md={3}>
               <BlogCards
                 simage="pastevent.jpg"
                 sheader="Wall Climbing"
@@ -261,7 +261,7 @@ const Activities = () => {
                 sheader="Jumping Castle"
                 stext="Kids play area for your young ones!"
               />
-            </Grid>
+            </Grid> */}
           </Grid>
         </Container>
 
