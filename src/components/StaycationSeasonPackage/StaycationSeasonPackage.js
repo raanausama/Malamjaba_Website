@@ -26,7 +26,7 @@ const StaycationSeasonPackage = ({
     // backgroundImage: `url(${image})`,
     backgroundColor: "#F1F1FE",
     backgroundSize: "cover",
-    backgroundPosition: "0% 80%",
+    // backgroundPosition: "0% 80%",
     backgroundRepeat: "no-repeat",
     height: "11em",
     display: "flex",
@@ -106,12 +106,12 @@ const StaycationSeasonPackage = ({
             alignItems: "center",
           },
         }}
-        justifyContent="flex-end"
+        justifyContent={{ xs: "center", md: "flex-end" }}
       >
         <Grid item sx={12} md={12}>
           <PrepModal open={viewModalOpen} handleClose={handleCloseModal} />
           <Stack direction="column" alignItems="center">
-            <Typography variant="h4" mt={4}>
+            <Typography variant="h4" mt={4} color='#11357C'>
               ARE YOU READY?
             </Typography>
 

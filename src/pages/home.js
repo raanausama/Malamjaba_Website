@@ -94,7 +94,7 @@ const HomePage = () => {
       > */}
         <Eventcardsection />
       {/* </Suspense> */}
-      <Servicecardsection />
+      {/* <Servicecardsection /> */}
       {/* <ImageLists /> */}
       {/* <Sponsors /> */}
       {/* <Footer /> */}

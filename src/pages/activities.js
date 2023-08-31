@@ -201,7 +201,7 @@ const Activities = () => {
 
             <Grid Item sm={12} md={3}>
               <BlogCards
-                simage="/Activities/Chairlift.JPG"
+                simage="/Activities/ChairliftCropped.png"
                 sheader="Chairlift"
                 stext="An 850 meters ride to the top station to enjoy scenic views of the valley"
               />
@@ -267,7 +267,7 @@ const Activities = () => {
 
         {/* <Sponsors /> */}
         {/* <Footer /> */}
-        <NewFooter/>
+        <NewFooter />
       </Box>
     </>
   );

@@ -15,8 +15,12 @@ const style = {
   transform: "translate(-50%, -50%)",
   padding: "1%",
   //   width: 600,
-  maxHeight: "90vh",
-  minWidth:"50vw",
+  maxHeight: "95vh",
+  // Apply minWidth based on screen size
+  minWidth: "50vw", // Default for larger screens
+  '@media (max-width: 600px)': {
+    minWidth: "90vw", // Adjusted for smaller screens
+  },
   backgroundColor: "#F1F1FE",
   color:"black",
 
