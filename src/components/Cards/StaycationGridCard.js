@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box } from "@mui/material";
+import { Typography, Box, Divider } from "@mui/material";
 // import AccomendationModal from "../../pages/AccomendationModal";
 
 const StaycationGridCard = ({ image, heading, text }) => {
@@ -34,22 +34,24 @@ const StaycationGridCard = ({ image, heading, text }) => {
           >
             <Typography
               variant="h4"
-              style={{
+
+              sx={{
                 textDecoration: "none",
-                color: "inherit",
+                color: "#11357C",
                 transition: "color 0.3s ease",
               }}
               onMouseOver={(e) => {
-                e.target.style.color = "blue";
+                e.target.style.color = "#BD9A5F";
               }}
               onMouseOut={(e) => {
-                e.target.style.color = "inherit";
+                e.target.style.color = "#11357C";
               }}
               // onClick={handleOpenModal}
             >
               {heading}
             </Typography>
           </a>
+          <Divider  sx={{ borderBottomWidth: 'medium', borderColor: '#D9BD90', width: '50px' }}/>
 
           <Typography>{text}</Typography>
         </Box>

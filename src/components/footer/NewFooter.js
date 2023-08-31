@@ -167,7 +167,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
           justifyContent="center"
           sx={{
             padding: "3em 0em 3em 0em ",
-            width: { xs: "100%", md: "25%" },
+            width: { xs: "100%", md: "50%" },
             margin: "0 auto",
           }}
         >
@@ -186,17 +186,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               // style={{ height: "25vh", width: "25vh" }}
             />
           </Grid>
-          <Grid
-            item
-            gap={{ xs: 1, md: 1 }}
-            sx={12}
-            sm={12}
-            md={4}
-            display="flex"
-            justifyContent="center"
-          >
-            <SponsorImage image="images/samsons-logo-png.png" alt="nescafe" />
-          </Grid>
+          
           <Grid
             item
             gap={{ xs: 1, md: 1 }}
@@ -210,6 +200,17 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               image="images/pc_logo-removebg-preview.png"
               alt="redbull"
             />
+          </Grid>
+          <Grid
+            item
+            gap={{ xs: 1, md: 1 }}
+            sx={12}
+            sm={12}
+            md={4}
+            display="flex"
+            justifyContent="center"
+          >
+            <SponsorImage image="images/samsons-logo-png.png" alt="nescafe" />
           </Grid>
           {/* <Grid item sx={12} sm={12} md={4} display="flex" justifyContent="center">
                 <SponsorImage
