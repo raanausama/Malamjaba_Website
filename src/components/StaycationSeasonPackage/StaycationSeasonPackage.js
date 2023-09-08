@@ -28,7 +28,7 @@ const StaycationSeasonPackage = ({
     backgroundSize: "cover",
     // backgroundPosition: "0% 80%",
     backgroundRepeat: "no-repeat",
-    height: "11em",
+    height: "10em",
     display: "flex",
     justifyContent: "center",
   };
@@ -92,7 +92,7 @@ const StaycationSeasonPackage = ({
     };
   }, []);
   return (
-    <Box sx={boxStyle} >
+    <Box sx={boxStyle}>
       {/* <img src={image} alt='skii'></img> */}
       <Grid
         container
@@ -109,9 +109,9 @@ const StaycationSeasonPackage = ({
         justifyContent={{ xs: "center", md: "flex-end" }}
       >
         <Grid item sx={12} md={12}>
-          <PrepModal open={viewModalOpen} handleClose={handleCloseModal} />
+          <PrepModal image={image} open={viewModalOpen} handleClose={handleCloseModal} />
           <Stack direction="column" alignItems="center">
-            <Typography variant="h4" mt={4} color='#11357C'>
+            <Typography variant="h4" mt={4} color="#11357C">
               ARE YOU READY?
             </Typography>
 
@@ -122,7 +122,14 @@ const StaycationSeasonPackage = ({
           </Stack>
         </Grid>
         <Divider />
-        <Grid item mb={4} sx={12} md={12}  display='flex' justifyContent="center">
+        <Grid
+          item
+          mb={4}
+          sx={12}
+          md={12}
+          display="flex"
+          justifyContent="center"
+        >
           <Button
             onMouseEnter={onEnter}
             onMouseLeave={onLeave}
@@ -135,7 +142,6 @@ const StaycationSeasonPackage = ({
             {buttonText}
           </Button>
         </Grid>
-        
       </Grid>
     </Box>
   );

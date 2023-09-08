@@ -21,7 +21,7 @@ const StaycationGridCard = ({ image, heading, text }) => {
           style={{ width: "100%", height: "35vh" }}
         />
         <Box
-          sx={{ padding: "5%", margin: "1%", borderLeft: "3px solid #094e9d" }}
+          sx={{ padding: "5%", borderLeft: "3px solid #094e9d" }}
         >
           {/* <a href="">
           <Typography variant="h4">{heading}</Typography>

@@ -187,7 +187,7 @@ const Activities = () => {
             </Grid>
             <Grid Item sm={12} md={3}>
               <WinterCards
-                simage="/PicturesForWebsite/12.JPG"
+                simage="/Activities/Snowtubing.jpg"
                 sheader="Snow Tubing"
                 stext="Perfect ride for all the fun lovers"
               />
@@ -229,7 +229,7 @@ const Activities = () => {
             </Grid>
             <Grid Item sm={12} md={3}>
               <BlogCards
-                simage="/PicturesForWebsite/10.jpg"
+                simage="/Activities/GrassSki.jpg"
                 sheader="Grass Ski"
                 stext="Ski is no longer for winters with our grass skiing, using the best equipment"
               />
