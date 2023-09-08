@@ -15,7 +15,7 @@ const Staycation = () => {
       <StacationCover />
       <StaycationGrid />
       <StaycationSeasonPackage
-        image="/PicturesForWebsite/17.jpg"
+        image="/familyfest.jpeg"
         buttonText={"Tips before your trip"}
       />
       {/* <Sponsors /> */}

@@ -35,7 +35,7 @@ const StaycationGrid = () => {
       </Grid>
       <Grid item md={4}>
         <StaycationGridCard
-          image={"weddings.jpg"}
+          image={"/Activities/BanquetHall.JPG"}
           heading={"Banquet Hall"}
           text={"Perfect place for your destination wedding, corporate events etc."}
         />

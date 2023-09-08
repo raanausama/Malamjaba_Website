@@ -25,7 +25,7 @@ const WeatherBar = () => {
     // const apiKey = "fRtra77GJ2l7pq2lBBIOcuUiBddmhfYx"; // Replace with your actual API key for local
     const apiKey = "s7em63xbxHAXifNOZgBvnLSZCK8Bxkm1"; // Replace with your actual API key for Netlify
     const apiUrl = "https://api.windy.com/api/point-forecast/v2";
-
+    const controller = new AbortController()
     const requestData = {
       lat: 34.7999,
       lon: 72.5722,
@@ -36,6 +36,7 @@ const WeatherBar = () => {
     };
 
     fetch(apiUrl, {
+      signal: controller.signal,
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -48,6 +49,10 @@ const WeatherBar = () => {
         setWeatherData(data);
       })
       .catch((error) => console.error("Error fetching weather data:", error));
+
+      return () => {
+        controller.abort()
+      }
   }, []);
 
 //   if (!weatherData) {

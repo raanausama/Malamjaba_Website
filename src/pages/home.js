@@ -61,7 +61,7 @@ const HomePage = () => {
         />
 
         <ImageWithSummerActivities
-          image="summer-activities.jpg"
+          image="SummerActivities.JPG"
           text="The tourists can enjoy plethora of activities during Summers other than the scenic
                                 beauty of green mountains of the Malam Jabba Valley. All the rides and their equipment conform to state-of-the-art safety and
                                 quality procedures and are tested and reviewed by a team of foreign experts and engineers, multiple times a year."

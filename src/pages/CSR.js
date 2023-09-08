@@ -3,7 +3,7 @@ import React from "react";
 import Footer from "../components/footer/footer";
 // import BlogGrid from "../components/gridViews/BlogGrid";
 import StaycationHero from "./StaycationHero";
-import { Box, Grid, Stack, Typography, Avatar } from "@mui/material";
+import { Box, Grid, Stack, Typography, Avatar, Container } from "@mui/material";
 import ResponsiveAppBar from "../components/NavBar/NavBar";
 import StaycationSeasonPackage from "../components/StaycationSeasonPackage/StaycationSeasonPackage";
 import NewFooter from "../components/footer/NewFooter";
@@ -17,6 +17,46 @@ function CSRMain() {
         heading="Empowering Communities, Enriching Lives:"
         text="Our Commitment to Corporate Social Responsibility."
       />
+      {/* <Container fixed>
+        <Box sx={{ height: "100vh" }}>
+          <Grid container sx={{ height: "100vh", maxWidth: "100%" }}>
+            <Grid item xs={4} sx={{ padding: "10px 0px 200px 0px" }}>
+              <img
+                style={{
+                  height: "100vh",
+                  maxWidth: "100%",
+                  borderRadius: "20px 0 0 20px", // Adding borderRadius to the left side
+                  // transform: "scale(0.9)",
+                }}
+                src="pastevent.jpg"
+              />
+            </Grid>
+            <Grid item xs={4}>
+              <img
+                style={{ height: "100vh", maxWidth: "100%", borderRadius: "20px 20px 20px 20px", }}
+                src="pastevent.jpg"
+              />
+            </Grid> */}
+            {/* <Grid item xs={3}>
+              <img
+                style={{ height: "100vh", maxWidth: "100%" }}
+                src="pastevent.jpg"
+              />
+            </Grid> */}
+            {/* <Grid item xs={4}>
+              <img
+                style={{
+                  height: "100vh",
+                  maxWidth: "100%",
+                  borderRadius: "0 20px 20px 0", // Adding borderRadius to the right side
+                  // transform: "scale(0.9)",
+                }}
+                src="pastevent.jpg"
+              />
+            </Grid>
+          </Grid>
+        </Box>
+      </Container> */}
       <Box sx={{ padding: "10%" }}>
         <Grid
           container
@@ -102,7 +142,7 @@ function CSRMain() {
       /> */}
       {/* <Sponsors /> */}
       {/* <Footer bgImage="footer1.jpg" /> */}
-      <NewFooter/>
+      <NewFooter />
     </div>
   );
 }

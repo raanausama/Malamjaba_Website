@@ -4,6 +4,7 @@ import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/system";
 import gsap from "gsap";
+import { Divider } from "@mui/material";
 
 export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
   const onEnter = ({ currentTarget }) => {
@@ -33,16 +34,18 @@ export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
           }}
         />
       </Card>
-      <Box flexDirection="column" color="#094e9d">
+      <Box flexDirection="column" >
         <Typography
           gutterBottom
           variant="h4"
           component="div"
           sx={sxHeader}
-          mt={2}
+          mt={1}
+          color="#094e9d"
         >
           {sheader}
         </Typography>
+        <Divider sx={{ borderBottomWidth: 'medium', borderColor: '#D9BD90', width: '50px' }}/>
         <Typography variant="body1" sx={sxText} mt={1}>
           {stext}
         </Typography>
