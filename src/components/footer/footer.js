@@ -135,6 +135,7 @@ const Footer = ({ bgImage = "", text = "", textHeading = "" }) => {
             justifyContent="center"
           >
             <Stack
+              id="contact-footer"
               direction="column"
               display="flex"
               alignItems="center"
