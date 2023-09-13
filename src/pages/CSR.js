@@ -7,67 +7,39 @@ import { Box, Grid, Stack, Typography, Avatar, Container } from "@mui/material";
 import ResponsiveAppBar from "../components/NavBar/NavBar";
 import StaycationSeasonPackage from "../components/StaycationSeasonPackage/StaycationSeasonPackage";
 import NewFooter from "../components/footer/NewFooter";
+import PhotoAlbum from "react-photo-album";
+
+const photos = [
+  { src: "CleanlinessDrive.jpeg", width: 500, height: 300 },
+  { src: "FirstAid.png", width: 600, height: 300 },
+  { src: "FreeAmbulanceService.png", width: 400, height: 300 },
+  { src: "Learning&DevelopmentofLocals.png", width: 700, height: 400 },
+  { src: "RehabilitationofMosque.png", width: 1190, height: 400 },
+  { src: "RationDistribution.png", width: 900, height: 300 },
+  { src: "WinterRoadClearance.png", width: 700, height: 300 },
+];
 
 function CSRMain() {
   return (
     <div>
       <ResponsiveAppBar />
       <StaycationHero
-        image="summer-activities.jpg"
+        image="/summer-activities.jpg"
         heading="Empowering Communities, Enriching Lives:"
         text="Our Commitment to Corporate Social Responsibility."
       />
-      {/* <Container fixed>
-        <Box sx={{ height: "100vh" }}>
-          <Grid container sx={{ height: "100vh", maxWidth: "100%" }}>
-            <Grid item xs={4} sx={{ padding: "10px 0px 200px 0px" }}>
-              <img
-                style={{
-                  height: "100vh",
-                  maxWidth: "100%",
-                  borderRadius: "20px 0 0 20px", // Adding borderRadius to the left side
-                  // transform: "scale(0.9)",
-                }}
-                src="pastevent.jpg"
-              />
-            </Grid>
-            <Grid item xs={4}>
-              <img
-                style={{ height: "100vh", maxWidth: "100%", borderRadius: "20px 20px 20px 20px", }}
-                src="pastevent.jpg"
-              />
-            </Grid> */}
-            {/* <Grid item xs={3}>
-              <img
-                style={{ height: "100vh", maxWidth: "100%" }}
-                src="pastevent.jpg"
-              />
-            </Grid> */}
-            {/* <Grid item xs={4}>
-              <img
-                style={{
-                  height: "100vh",
-                  maxWidth: "100%",
-                  borderRadius: "0 20px 20px 0", // Adding borderRadius to the right side
-                  // transform: "scale(0.9)",
-                }}
-                src="pastevent.jpg"
-              />
-            </Grid>
-          </Grid>
-        </Box>
-      </Container> */}
-      <Box sx={{ padding: "10%" }}>
+      <Box sx={{ padding: "5%" }}>
         <Grid
           container
           display="flex !important"
           justifyContent="center !important"
+          alignItems="center !important"
         >
           <Grid item md={6}>
             <Avatar
               alt="Activities"
-              src="images/CSR/Picture1.jpg"
-              sx={{ width: { xs: 250, sm: 400 }, height: { xs: 250, sm: 400 }, position: "bottom" }}
+              src="/images/CSR/Picture1.jpg"
+              sx={{ width: { xs: 350, sm: 400 }, height: { xs: 350, sm: 400 }, position: "bottom" }}
             />
           </Grid>
           <Grid
@@ -87,10 +59,10 @@ function CSRMain() {
             }}
           >
             <Stack direction="column">
-              <Typography variant="h4" color="#094e9d">
+              <Typography variant="h3" color="#094e9d" sx={{pb:"1em"}}>
                 Our Contribution to society
               </Typography>
-              <Typography variant='subtitle'>
+              <Typography sx={{fontSize:"1.25em"}}>
                 Corporate Social Responsibility (CSR) is an essential aspect of
                 any business that aims to make a positive impact on society. At
                 our company, we take CSR seriously, and we believe that it is
@@ -134,14 +106,7 @@ function CSRMain() {
           </Grid>
         </Grid>
       </Box>
-      {/* <StacationCover /> */}
-      {/* <BlogGrid /> */}
-      {/* <StaycationSeasonPackage
-        image="images/CSR/Picture2.jpg"
-        buttonText={"Get Ready"}
-      /> */}
-      {/* <Sponsors /> */}
-      {/* <Footer bgImage="footer1.jpg" /> */}
+     <PhotoAlbum layout="rows" photos={photos} sx={{pb:"2em"}} />
       <NewFooter />
     </div>
   );

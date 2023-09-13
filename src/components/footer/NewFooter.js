@@ -210,7 +210,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
             display="flex"
             justifyContent="center"
           >
-            <SponsorImage image="images/samsons-logo-png.png" alt="nescafe" />
+            <SponsorImage image="/images/samsons-logo-png.png" alt="nescafe" />
           </Grid>
           {/* <Grid item sx={12} sm={12} md={4} display="flex" justifyContent="center">
                 <SponsorImage

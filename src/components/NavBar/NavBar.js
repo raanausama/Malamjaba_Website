@@ -21,7 +21,10 @@ import { Height } from "@mui/icons-material";
 import SignIn from "../../pages/SignIn";
 
 const pages = ["HOME", "STAYCATION", "ACTIVITIES", "THE SLOPE"];
-const settings = ["Dine In", "Blog", "CSR"];
+const settings = ["Dine In",
+  // "Blog",
+  "Contact Us",
+  "CSR"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -57,8 +60,11 @@ function ResponsiveAppBar() {
     if (setting === "Sign In") {
       setViewModalOpen(true);
     }
-    if (setting === "Blog") {
-      navigate("/blog");
+    // if (setting === "Blog") {
+    //   navigate("/blog");
+    // }
+    if(setting === "Contact Us"){
+      navigate("#contact-footer")
     }
     if (setting === "CSR") {
       navigate("/csr");
