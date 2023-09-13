@@ -44,7 +44,7 @@ const HomePage = () => {
   // }, []);
   return (
     <>
-    {/* <AnnouncementBanner /> */}
+    <AnnouncementBanner />
       <ResponsiveAppBar />
       <Suspense
         fallback={

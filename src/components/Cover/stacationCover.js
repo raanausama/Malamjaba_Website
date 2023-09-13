@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./StacationCover.css";
-import { Grid, Box, Typography } from "@mui/material";
+import { Grid, CardMedia, Typography } from "@mui/material";
 import gsap from "gsap";
 
 const StacationCover = () => {
@@ -56,7 +56,7 @@ const StacationCover = () => {
         >
           <Grid item xs={6} onMouseEnter={onEnter} onMouseLeave={onLeave}>
             <img
-              src="/PicturesForWebsite/1.jpg"
+              src="/PicturesForWebsite/1-min.jpg"
               alt="First Image"
               style={{
                 width: "100%",
@@ -71,7 +71,7 @@ const StacationCover = () => {
             <Grid container spacing={2}>
               <Grid item xs={12} onMouseEnter={onEnter} onMouseLeave={onLeave}>
                 <img
-                  src="PicturesForWebsite/Malam-Jabba-pix.JPG"
+                  src="PicturesForWebsite/Malam-Jabba-pix-min.JPG"
                   alt="Second Image"
                   style={{
                     width: "100%",
@@ -83,9 +83,10 @@ const StacationCover = () => {
                 />
               </Grid>
               <Grid item xs={12} onMouseEnter={onEnter} onMouseLeave={onLeave}>
-                <img
-                  src="PicturesForWebsite/Marcopolo.JPG"
+                {/* <img
+                  src="PicturesForWebsite/Marcopolo.webp"
                   alt="Third Image"
+                  
                   style={{
                     width: "100%",
                     height: "auto",
@@ -93,6 +94,17 @@ const StacationCover = () => {
                     filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
                     borderRadius: "10px",
                   }}
+                /> */}
+                <CardMedia
+                  sx={{
+                    width: "100%",
+                    height: "auto",
+                    border: "10px solid white",
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                    borderRadius: "10px",
+                  }}
+                  component="img"
+                  image="PicturesForWebsite/Marcopolo-min.JPG"
                 />
               </Grid>
             </Grid>

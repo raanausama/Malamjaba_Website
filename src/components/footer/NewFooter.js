@@ -197,7 +197,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
             justifyContent="center"
           >
             <SponsorImage
-              image="images/pc_logo-removebg-preview.png"
+              image="images/footer-logo-pc.png"
               alt="redbull"
             />
           </Grid>

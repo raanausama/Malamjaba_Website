@@ -24,11 +24,9 @@ function App() {
   // const isHomePage = window.location.pathname === '/' || window.location.pathname === '/home' || window.location.pathname === '/index';
 
   return (
-    <div className="App">
+    <>
       {/* <ResponsiveAppBar /> */}
       {/* <AnnouncementBanner/> */}
-
-      <div className="flex-body">
         <Router>
           <Suspense
             fallback={
@@ -52,8 +50,7 @@ function App() {
             </Routes>
           </Suspense>
         </Router>
-      </div>
-    </div>
+    </>
   );
 }
 
