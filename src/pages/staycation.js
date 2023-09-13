@@ -6,16 +6,18 @@ import StaycationGrid from "../components/gridViews/stacationGrid";
 import StaycationHero from "./StaycationHero";
 import StaycationSeasonPackage from "../components/StaycationSeasonPackage/StaycationSeasonPackage";
 import ResponsiveAppBar from "../components/NavBar/NavBar";
+import { CircularProgress } from "@mui/material";
 import NewFooter from "../components/footer/NewFooter";
+
 const Staycation = () => {
   return (
     <div>
       <ResponsiveAppBar />
-      <StaycationHero image="accomodation.jpg" />
+      <StaycationHero image="accomodation.webp" />
       <StacationCover />
       <StaycationGrid />
       <StaycationSeasonPackage
-        image="/familyfest.jpeg"
+        image="/familyfest.webp"
         buttonText={"Tips before your trip"}
       />
       {/* <Sponsors /> */}

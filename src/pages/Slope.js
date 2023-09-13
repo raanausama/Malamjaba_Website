@@ -34,7 +34,7 @@ function Slope() {
             >
               <Grid item xs={6}>
                 <img
-                  src="/Images/Slope/IMG_9404-1.JPG"
+                  src="/Images/Slope/IMG_9404-1-min.JPG"
                   alt="First Image"
                   style={{
                     width: "100%",
@@ -49,7 +49,7 @@ function Slope() {
                 <Grid container spacing={2}>
                   <Grid item xs={12}>
                     <img
-                      src="/Images/Slope/fghgfh.jpg"
+                      src="/Images/Slope/fghgfh-min.jpg"
                       alt="Second Image"
                       style={{
                         width: "100%",
@@ -62,7 +62,7 @@ function Slope() {
                   </Grid>
                   <Grid item xs={12}>
                     <img
-                      src="/Images/Real_Images/snow.jpeg"
+                      src="/Images/Real_Images/snow-min.jpeg"
                       alt="Third Image"
                       style={{
                         width: "100%",
@@ -151,7 +151,7 @@ function Slope() {
           >
             <Grid item xs={6}>
               <img
-                src="/Images/Slope/sdfrr5fg1.jpg"
+                src="/Images/Slope/sdfrr5fg1-min.jpg"
                 alt="First Image"
                 style={{
                   width: "100%",
@@ -166,7 +166,7 @@ function Slope() {
               <Grid container spacing={2}>
                 <Grid item xs={12}>
                   <img
-                    src="/Images/Slope/fghgfh.jpg"
+                    src="/Images/Slope/dsfgfgg-min.jpg"
                     alt="Second Image"
                     style={{
                       width: "100%",
@@ -179,7 +179,7 @@ function Slope() {
                 </Grid>
                 <Grid item xs={12}>
                   <img
-                    src="/Images/Real_Images/SkiingActivity.jpeg"
+                    src="/Images/Real_Images/SkiingActivity-min.jpeg"
                     alt="Third Image"
                     style={{
                       width: "100%",
