@@ -134,10 +134,10 @@ function DineIn() {
       </Box>
       {/* <StacationCover /> */}
       {/* <BlogGrid /> */}
-      <StaycationSeasonPackage
+      {/* <StaycationSeasonPackage
         image="images/DineIn/_L1A7808.JPG"
         buttonText={"Get Ready"}
-      />
+      /> */}
       {/* <Sponsors /> */}
       <Footer bgImage="footer1.jpg" />
     </div>
