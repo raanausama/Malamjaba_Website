@@ -8,12 +8,13 @@ import StaycationSeasonPackage from "../components/StaycationSeasonPackage/Stayc
 import ResponsiveAppBar from "../components/NavBar/NavBar";
 import { CircularProgress } from "@mui/material";
 import NewFooter from "../components/footer/NewFooter";
+import header from "../Assets/staycation/Picture1-min.png"
 
 const Staycation = () => {
   return (
     <div>
       <ResponsiveAppBar />
-      <StaycationHero image="accomodation.webp" />
+      <StaycationHero image={header} />
       <StacationCover />
       <StaycationGrid />
       <StaycationSeasonPackage

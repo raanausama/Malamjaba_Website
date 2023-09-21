@@ -7,6 +7,9 @@ import { Box, Grid, Stack, Typography, Avatar } from "@mui/material";
 import ResponsiveAppBar from "../components/NavBar/NavBar";
 import StaycationSeasonPackage from "../components/StaycationSeasonPackage/StaycationSeasonPackage";
 import NewFooter from "../components/footer/NewFooter";
+import slope1 from "../Assets/bg_content/slope1.png";
+import slope2 from "../Assets/bg_content/slope2.png";
+
 
 function Slope() {
   return (
@@ -62,7 +65,7 @@ function Slope() {
                   </Grid>
                   <Grid item xs={12}>
                     <img
-                      src="/Images/Real_Images/snow-min.jpeg"
+                      src={slope1}
                       alt="Third Image"
                       style={{
                         width: "100%",
@@ -179,7 +182,7 @@ function Slope() {
                 </Grid>
                 <Grid item xs={12}>
                   <img
-                    src="/Images/Real_Images/SkiingActivity-min.jpeg"
+                    src={slope2}
                     alt="Third Image"
                     style={{
                       width: "100%",

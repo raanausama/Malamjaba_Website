@@ -7,7 +7,7 @@ import {
   useTheme,
 } from "@mui/material";
 import "../../pages/activities.css";
-import Background from "../../Assets/bg_content/activities-header.jpg";
+import Background from "../../Assets/bg_content/Picture4.png";
 
 const ActivitiesTop = () => {
   const theme = useTheme();
@@ -23,16 +23,17 @@ const ActivitiesTop = () => {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             width: "100%",
+            height: "100%",
           }}
         >
           <Grid
             item
             color="white"
-            sx={{ paddingBottom: "20em" }}
+            sx={{ paddingBottom: "45em" }}
             display="flex"
             alignItems={{ xs: "center", md: "flex-start" }}
           >
-            <Stack
+            {/* <Stack
               direction="column"
               display="flex"
               alignItems={{ xs: "center", md: "flex-start" }}
@@ -63,7 +64,7 @@ const ActivitiesTop = () => {
               >
                 State of the Art Infrastructure and <br /> Adventurous
                 Activities
-              </Typography>
+              </Typography> */}
               {/* <Typography
                 variant={smallScreen ? "h3" : "h5"}
                 sx={{
@@ -79,7 +80,7 @@ const ActivitiesTop = () => {
               >
                 Nature Meets Adventure!
               </Typography> */}
-              <Typography
+              {/* <Typography
                 variant={smallScreen ? "h6" : "h7"}
                 sx={{
                   [theme.breakpoints.down("sm")]: {
@@ -92,7 +93,7 @@ const ActivitiesTop = () => {
               >
                 Plan your perfect getaway with family and friends
               </Typography>
-            </Stack>
+            </Stack> */}
           </Grid>
         </Box>
       </Grid>

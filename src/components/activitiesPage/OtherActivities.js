@@ -7,6 +7,7 @@ import {
 } from "@mui/material";
 import "../../pages/activities.css";
 import BlogCards from "../../components/Cards/BlogCards";
+import vrRides from "../../Assets/bg_content/Picture5.png"
 
 const OtherActivities = () => {
   const theme = useTheme();
@@ -59,7 +60,7 @@ const OtherActivities = () => {
           </Grid>
           <Grid Item sm={12} md={3}>
             <BlogCards
-              simage="/PicturesForWebsite/11-min.JPG"
+              simage={vrRides}
               sheader="VR Rides"
               stext="VR Snowboarding and Skiing simulators to provide you the experience of its kind"
             />
