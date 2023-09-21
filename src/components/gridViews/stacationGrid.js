@@ -1,6 +1,8 @@
 import { Grid } from "@mui/material";
 import React from "react";
 import StaycationGridCard from "../Cards/StaycationGridCard";
+import OutDoor from "../../Assets/staycation/Picture2.png"
+import NetCricket from "../../Assets/staycation/Picture3.png"
 
 const StaycationGrid = () => {
   return (
@@ -45,6 +47,20 @@ const StaycationGrid = () => {
           image={"/PicturesForWebsite/SwimmingPool-min.JPG"}
           heading={"Swimming Pool"}
           text={"Outdoor and temperature control swimming pool for your refreshment"}
+        />
+      </Grid>
+      <Grid item md={4}>
+        <StaycationGridCard
+          image={OutDoor}
+          heading={"Outdoor Wedding"}
+          text={"Plan your perfect wedding at the perfect location"}
+        />
+      </Grid>
+      <Grid item md={4}>
+        <StaycationGridCard
+          image={NetCricket}
+          heading={"Net Cricket"}
+          text={"Through our Net Cricket, we ensure, Cricket stays with you no matter where you go. "}
         />
       </Grid>
     </Grid>

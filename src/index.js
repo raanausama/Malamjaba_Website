@@ -19,7 +19,6 @@ root.render(
         </>
       }
     >
-      {/* <AnnouncementBanner/> */}
       <App />
     </Suspense>
   </Provider>

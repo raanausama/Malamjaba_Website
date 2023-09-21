@@ -54,43 +54,7 @@ const StaycationSeasonPackage = ({
   const onLeave = ({ currentTarget }) => {
     gsap.to(currentTarget, { scale: 1 });
   };
-  const gridRef = useRef(null);
-  // gsap.registerPlugin(ScrollTrigger);
-
-  useEffect(() => {
-    const tl = gsap.timeline({ repeatDelay: 1, yoyo: true });
-    // const tF = gsap.timeline({repeat: -1, repeatDelay: 1, yoyo: true})
-    tl.fromTo(
-      ".grid-item-1",
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1 }
-    );
-    tl.fromTo(
-      ".grid-item-2",
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, duration: 1 }
-    );
-    tl.fromTo(
-      ".grid-item-3",
-      { opacity: 0, x: -50 },
-      { opacity: 1, x: 0, duration: 1 }
-    );
-    // tF.to(".green", { rotation: 360 });
-    // tF.to(".purple", { rotation: 360 });
-    // tF.to(".orange", { rotation: 360 });
-    // ScrollTrigger.create({
-    //   trigger: gridRef.current,
-    //   start: "top center",
-    //   animation: tl,
-    // Uncomment the line below if you want the animation to play every time the trigger area is reached during scrolling
-    // scrub: true,
-    // });
-
-    return () => {
-      tl.kill();
-      // ScrollTrigger.kill();
-    };
-  }, []);
+  
   return (
     <Box sx={boxStyle}>
       {/* <img src={image} alt='skii'></img> */}
@@ -133,9 +97,9 @@ const StaycationSeasonPackage = ({
           <Button
             onMouseEnter={onEnter}
             onMouseLeave={onLeave}
-            // sx={{ color: "white", borderColor: "white !important" }}
+            sx={{ color: "black", borderColor: "black !important", background: 'rgb(118,152,255)' }}
             size="medium"
-            variant="outlined"
+            variant="contained"
             mt={4}
             onClick={handleOpenModal}
           >

@@ -8,7 +8,6 @@ import Typography from "@mui/material/Typography";
 import { Grid, IconButton } from "@mui/material";
 import CancelIcon from "@mui/icons-material/Cancel";
 
-
 export default function PrepModal({ open, handleClose, image }) {
   // const [viewModalOpen, setViewModalOpen] = React.useState(false);
 
@@ -25,10 +24,12 @@ export default function PrepModal({ open, handleClose, image }) {
     "@media (max-width: 600px)": {
       minWidth: "90vw", // Adjusted for smaller screens
     },
-    backgroundColor: "#F1F1FE",
+    // backgroundColor: "#F1F1FE",
+    background: "rgb(118,152,255)",
     // backgroundImage: `url(${image})`,
     // backdropFilter: "blur(10px)",
-    color: "black",
+    color: "#ffffff",
+    borderRadius: '20px',
 
     overflow: "auto",
     //   border: '0px solid #000',
@@ -83,71 +84,128 @@ export default function PrepModal({ open, handleClose, image }) {
                   component="h2"
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                 >
-                  1. Weather and Clothing: Check the weather forecast before
-                  traveling and pack appropriate clothing for the season. Make
-                  sure to bring warm, waterproof clothing, gloves, and sturdy
-                  snow boots (in winters).
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://img.icons8.com/arcade/64/1.png"
+                    alt="1"
+                  />{" "}
+                  <b> Weather & Clothing </b> <br /> Check the weather forecast
+                  before traveling and pack appropriate clothing for the season.
+                  Make sure to bring warm, waterproof clothing, gloves, and
+                  sturdy snow boots (in winters).
                 </Typography>
                 <Typography
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                   component="h2"
                 >
-                  2. Accommodation: Book your accommodation in advance to secure
-                  the best options, especially during peak ski season.
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://img.icons8.com/arcade/64/2.png"
+                    alt="2"
+                  />{" "}
+                  <b> Accommodation </b> <br /> Book your accommodation in
+                  advance to secure the best options, especially during peak ski
+                  season.
                 </Typography>
                 <Typography
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                   component="h2"
                 >
-                  3. Physical Fitness: Skiing and snowboarding or other
-                  adventurous activities can be physically demanding, so ensure
-                  you are in good health.
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://img.icons8.com/arcade/64/3.png"
+                    alt="3"
+                  />{" "}
+                  <b> Physical Fitness </b> <br />
+                  Skiing and snowboarding or other adventurous activities can be
+                  physically demanding, so ensure you are in good health.
                 </Typography>
                 <Typography
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                   component="h2"
                 >
-                  4. Altitude: Malam Jabba is at a higher altitude, so be
-                  prepared for potential altitude sickness. Stay hydrated and
-                  take it easy on your first day to acclimatize.
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://img.icons8.com/arcade/64/4.png"
+                    alt="4"
+                  />{" "}
+                  <b> Altitude </b> <br /> Malam Jabba is at a higher altitude,
+                  so be prepared for potential altitude sickness. Stay hydrated
+                  and take it easy on your first day to acclimatize.
                 </Typography>
                 <Typography
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                   component="h2"
                 >
-                  5. Transportation: Arrange for transportation to and from the
-                  resort in advance, as public transportation options may be
-                  limited.
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://img.icons8.com/arcade/64/5.png"
+                    alt="5"
+                  />{" "}
+                  <b> Transportation </b> <br /> Arrange for transportation to
+                  and from the resort in advance, as public transportation
+                  options may be limited.
                 </Typography>
                 <Typography
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                   component="h2"
                 >
-                  6. Photography: Don't forget to bring a camera or smartphone
-                  to capture the breathtaking scenery and memorable moments.
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://img.icons8.com/arcade/64/6.png"
+                    alt="6"
+                  />{" "}
+                  <b> Photography </b> <br /> Don't forget to bring a camera or
+                  smartphone to capture the breathtaking scenery and memorable
+                  moments.
                 </Typography>
                 <Typography
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                   component="h2"
                 >
-                  7. Cash and Payment: Bring enough cash, as ATMs may be scarce
-                  in the area. Additionally, inquire about payment options at
-                  the resort for activities, food, and souvenirs.
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://img.icons8.com/arcade/64/7.png"
+                    alt="7"
+                  />{" "}
+                  <b> Cash & Payment </b> <br /> Bring enough cash, as ATMs may
+                  be scarce in the area. Additionally, inquire about payment
+                  options at the resort for activities, food, and souvenirs.
                 </Typography>
                 <Typography
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                   component="h2"
                 >
-                  8. Respect Nature: Malam Jabba is an ecologically sensitive
-                  area, so make sure to respect nature, follow designated
-                  trails, and refrain from littering.
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://img.icons8.com/arcade/64/8.png"
+                    alt="8"
+                  />{" "}
+                  <b> Respect Nature </b> <br /> Malam Jabba is an ecologically
+                  sensitive area, so make sure to respect nature, follow
+                  designated trails, and refrain from littering.
                 </Typography>
                 <Typography
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                   component="h2"
                 >
-                  9. Local Customs: Familiarize yourself with local customs and
-                  traditions to show respect for the local culture and people.
+                  <img
+                    width="40"
+                    height="40"
+                    src="https://img.icons8.com/arcade/64/9.png"
+                    alt="9"
+                  />{" "}
+                  <b> Local Customs </b> <br /> Familiarize yourself with local
+                  customs and traditions to show respect for the local culture
+                  and people.
                 </Typography>
                 <Typography component="h4" marginTop="1em" textAlign={"center"}>
                   By keeping these tips in mind, you can make the most of your
