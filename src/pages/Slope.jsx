@@ -16,7 +16,7 @@ function Slope() {
     <div>
       <ResponsiveAppBar />
       <StaycationHero
-        image="images/Slope/dsfgfgg.jpg"
+        image="Images/Slope/dsfgfgg.jpg"
         heading="A Symphony of Serenity -"
         heading2="Malam Jabba's Magnificent Slopes Await you"
         text="The Identity of Malam Jabba Ski Resort"

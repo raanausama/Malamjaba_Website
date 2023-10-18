@@ -197,7 +197,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
             justifyContent="center"
           >
             <SponsorImage
-              image="images/footer-logo-pc.png"
+              image="/Images/footer-logo-pc.png"
               alt="redbull"
             />
           </Grid>
@@ -210,7 +210,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
             display="flex"
             justifyContent="center"
           >
-            <SponsorImage image="/images/samsons-logo-png.png" alt="nescafe" />
+            <SponsorImage image="/Images/samsons-logo-png.png" alt="nescafe" />
           </Grid>
           {/* <Grid item sx={12} sm={12} md={4} display="flex" justifyContent="center">
                 <SponsorImage
@@ -251,7 +251,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               <img
                 width="60"
                 height="60"
-                src="/socialIcons/icons8-facebook.svg"
+                src="/SocialIcons/icons8-facebook.svg"
                 alt="facebook-new"
               />
             </Link>{" "}
@@ -264,7 +264,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               <img
                 width="60"
                 height="60"
-                src="/socialIcons/icons8-instagram.svg"
+                src="/SocialIcons/icons8-instagram.svg"
                 alt="instagram"
               />
             </Link>{" "}
@@ -277,7 +277,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               <img
                 width="60"
                 height="60"
-                src="/socialIcons/icons8-tik-tok.svg"
+                src="/SocialIcons/icons8-tik-tok.svg"
                 alt="tiktok"
               />
             </Link>{" "}
@@ -290,7 +290,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               <img
                 width="60"
                 height="60"
-                src="/socialIcons/icons8-youtube.svg"
+                src="/SocialIcons/icons8-youtube.svg"
                 alt="youtube-squared"
               />
             </Link>{" "}
@@ -303,7 +303,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               <img
                 width="60"
                 height="60"
-                src="/socialIcons/icons8-twitter.svg"
+                src="/SocialIcons/icons8-twitter.svg"
                 alt="twitter-circled"
               />
             </Link>{" "}
@@ -316,7 +316,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               <img
                 width="60"
                 height="60"
-                src="/socialIcons/icons8-linkedin.svg"
+                src="/SocialIcons/icons8-linkedin.svg"
                 alt="linkedin"
               />
             </Link>{" "}

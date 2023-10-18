@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 // import gsap from "gsap";
 import "../components/imageWithTextOverlay/imageWithOverlay.css";
 
-const StaycationHero = ({ image, heading,heading2, text }) => {
+const StaycationHero = ({ image, heading, heading2, text }) => {
   return (
     <Box
       sx={{
@@ -22,16 +22,27 @@ const StaycationHero = ({ image, heading,heading2, text }) => {
           position: "relative",
           paddingTop: "20%",
           paddingLeft: "3%",
-          top:{xs:"60%", sm:"30%", md:"10%"}
+          top: { xs: "60%", sm: "30%", md: "10%" },
         }}
       >
-        <Typography variant="h3" sx={{ fontSize: {xs:"1em",md:"2.25em"}, fontWeight: "400" }}>
+        <Typography
+          variant="h3"
+          sx={{ fontSize: { xs: "1em", md: "2.25em" }, fontWeight: "400" }}
+        >
           {heading}
         </Typography>
-        <Typography variant="h3" sx={{ fontSize: {xs:"1em",md:"2.25em"}, fontWeight: "400" }}>
+        <Typography
+          variant="h3"
+          sx={{ fontSize: { xs: "1em", md: "2.25em" }, fontWeight: "400" }}
+        >
           {heading2}
         </Typography>
-        <Typography variant="h5" sx={{ fontSize: "1.5em" }}>{text}</Typography>
+        <Typography
+          variant="h5"
+          sx={{ fontSize: { xs: "0.8em", md: "2.25em" } }}
+        >
+          {text}
+        </Typography>
       </Box>
     </Box>
   );

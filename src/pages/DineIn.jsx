@@ -52,6 +52,7 @@ function DineIn() {
                   textTransform: "none",
                   color: "#0a0a0a",
                   fontFamily: '"Allison", handwriting !important',
+                  marginTop: 5,
                 }}
               >
                 Marcopolo.
@@ -141,6 +142,7 @@ function DineIn() {
                     textTransform: "none",
                     color: "#0a0a0a",
                     fontFamily: '"Allison", handwriting !important',
+                    marginTop: 5,
                   }}
                 >
                   Marcopolo Bistro.
@@ -200,6 +202,7 @@ function DineIn() {
                   textTransform: "none",
                   color: "#0a0a0a",
                   fontFamily: '"Allison", handwriting !important',
+                  marginTop: 5,
                 }}
               >
                 Tai Pan.
@@ -274,6 +277,7 @@ function DineIn() {
                   textTransform: "none",
                   color: "#0a0a0a",
                   fontFamily: '"Allison", handwriting !important',
+                  marginTop: 5,
                 }}
               >
                 Gloria Jeans.
