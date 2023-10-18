@@ -3,9 +3,18 @@ import Sponsors from "../components/sponsors/sponsorsFooter";
 import Footer from "../components/footer/footer";
 import BlogGrid from "../components/gridViews/BlogGrid";
 import StaycationHero from "./StaycationHero";
-import { Box, Grid, Stack, Typography, Avatar } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Stack,
+  Typography,
+  Avatar,
+  Container,
+  Divider,
+} from "@mui/material";
 import ResponsiveAppBar from "../components/NavBar/NavBar";
 import StaycationSeasonPackage from "../components/StaycationSeasonPackage/StaycationSeasonPackage";
+import NewFooter from "../components/footer/NewFooter";
 
 function DineIn() {
   return (
@@ -16,20 +25,290 @@ function DineIn() {
         heading="The Magnificient Slope"
         text="Rewind from work and reconnect with Nature"
       />
-      <Box sx={{ padding: "10%" }}>
+      <Container fixed sx={{ mb: 10 }}>
+        <Grid container>
+          <Grid
+            item
+            xs={6}
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            textAlign="center"
+          >
+            <Stack
+              direction="column"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <Typography
+                sx={{
+                  fontSize: "25px",
+                  lineHeight: "1.4",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                  textTransform: "none",
+                  color: "#0a0a0a",
+                  fontFamily: '"Allison", handwriting !important',
+                }}
+              >
+                Marcopolo.
+              </Typography>
+              <Divider
+                sx={{
+                  borderBottomWidth: "medium",
+                  borderColor: "#D9BD90",
+                  width: "100px",
+                  mb: "5",
+                }}
+              />
+              <Typography
+                mt={4}
+                sx={{
+                  fontSize: "20px",
+                  lineHeight: "1.4",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                  textTransform: "none",
+                  color: "#0a0a0a",
+                  fontFamily: '"Jost", sans-serif',
+                }}
+              >
+                {" "}
+                Experience culinary excellence at its finest at MarcoPolo
+                Restaurant, nestled within the luxurious Pearl Continental Malam
+                Jabba. Indulge in a symphony of flavors as our talented chefs
+                craft exquisite dishes that blend traditional Pakistani cuisine
+                with international flair.{" "}
+              </Typography>
+            </Stack>
+          </Grid>
+
+          <Grid item xs={6} mt={5}>
+            <img
+              src="/DineIn/Marcopolo.png"
+              alt="MarcoPolo"
+              style={{
+                maxWidth: 550,
+                height: 500,
+                borderRadius: "50px 0px 50px 0px",
+              }}
+            />
+          </Grid>
+          <Grid item xs={6} mt={5}>
+            <img
+              src="/DineIn/MarcopoloBistro.png"
+              alt="Summer Activities"
+              style={{
+                maxWidth: 550,
+                height: 500,
+                borderRadius: "50px 0px 50px 0px",
+              }}
+            />
+          </Grid>
+          <Grid
+            item
+            xs={6}
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            textAlign="center"
+          >
+            <Stack
+              direction="column"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <Typography
+                sx={{
+                  fontSize: "25px",
+                  lineHeight: "1.4",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                  textTransform: "none",
+                  color: "#0a0a0a",
+                  fontFamily: '"Allison", handwriting !important',
+                }}
+              >
+                Marcopolo Bistro.
+              </Typography>
+              <Divider
+                sx={{
+                  borderBottomWidth: "medium",
+                  borderColor: "#D9BD90",
+                  width: "130px",
+                  mb: "5",
+                }}
+              />
+              <Typography
+                mt={4}
+                sx={{
+                  fontSize: "20px",
+                  lineHeight: "1.4",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                  textTransform: "none",
+                  color: "#0a0a0a",
+                  fontFamily: '"Jost", sans-serif',
+                }}
+              >
+                {" "}
+                Indulge in a symphony of flavors crafted by our expert chefs,
+                surrounded by the stunning natural beauty of the Swat Valley.
+                From delectable local cuisine to international delights,
+                MarcoPolo Bistro promises a dining experience like no other.{" "}
+              </Typography>
+            </Stack>
+          </Grid>
+          <Grid
+            item
+            xs={6}
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            textAlign="center"
+          >
+            <Stack
+              direction="column"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <Typography
+                sx={{
+                  fontSize: "25px",
+                  lineHeight: "1.4",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                  textTransform: "none",
+                  color: "#0a0a0a",
+                  fontFamily: '"Allison", handwriting !important',
+                }}
+              >
+                Tai Pan.
+              </Typography>
+              <Divider
+                sx={{
+                  borderBottomWidth: "medium",
+                  borderColor: "#D9BD90",
+                  width: "80px",
+                  mb: "5",
+                }}
+              />
+              <Typography
+                mt={4}
+                sx={{
+                  fontSize: "20px",
+                  lineHeight: "1.4",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                  textTransform: "none",
+                  color: "#0a0a0a",
+                  fontFamily: '"Jost", sans-serif',
+                }}
+              >
+                {" "}
+                Treat yourself in an exquisite culinary journey at Tai Pan, the
+                premier Chinese restaurant at Pearl Continental Malam Jabba.
+                Savor the rich flavors of authentic Chinese cuisine prepared by
+                our master chefs, all while enjoying breathtaking mountain
+                views.{" "}
+              </Typography>
+            </Stack>
+          </Grid>
+          <Grid item xs={6} mt={5}>
+            <img
+              src="/DineIn/TaiPan.png"
+              alt="MarcoPolo"
+              style={{
+                maxWidth: 550,
+                height: 500,
+                borderRadius: "50px 0px 50px 0px",
+              }}
+            />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            mt={3}
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            textAlign="center"
+            sx={{
+              background:
+                "linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(230,230,230,1) 50%, rgba(255,255,255,1) 100%)",
+            }}
+          >
+            <Stack
+              direction="column"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              textAlign="center"
+            >
+              <Typography
+                mt={3}
+                sx={{
+                  fontSize: "25px",
+                  lineHeight: "1.4",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                  textTransform: "none",
+                  color: "#0a0a0a",
+                  fontFamily: '"Allison", handwriting !important',
+                }}
+              >
+                Gloria Jeans.
+              </Typography>
+              <Divider
+                sx={{
+                  borderBottomWidth: "medium",
+                  borderColor: "#D9BD90",
+                  width: "130px",
+                  mb: "5",
+                }}
+              />
+              <Typography
+                mt={3}
+                mb={3}
+                sx={{
+                  fontSize: "20px",
+                  lineHeight: "1.4",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                  textTransform: "none",
+                  color: "#898989",
+                  fontFamily: '"Jost", sans-serif',
+                }}
+              >
+                Get the perfect blend of warmth and flavor at Gloria Jeans,
+                nestled in the heart of Malam Jabba Ski Resort. Indulge in our
+                rich, aromatic coffees and delightful snacks as you take in the
+                breathtaking mountain views. Whether you're hitting the slopes
+                or simply seeking a cozy retreat, Gloria Jeans at Malam Jabba
+                Ski Resort is your go-to destination for comfort and
+                refreshment.
+              </Typography>
+            </Stack>
+          </Grid>
+        </Grid>
+      </Container>
+      {/* <Box sx={{ padding: "10%" }}>
         <Grid
           container
           display="flex !important"
           justifyContent="center !important"
           
         >
-          <Grid item md={6}>
-            {/* <Avatar
+          <Grid item md={6}> */}
+      {/* <Avatar
               alt="Activities"
               src="images/DineIn/_L1A7728.JPG"
               sx={{ width: { xs: 250, sm: 450 }, height: { xs: 250, sm: 450 } }}
             /> */}
-            <Grid
+      {/* <Grid
           container
           style={{ padding: "4px" }}
           spacing={2}
@@ -131,7 +410,7 @@ function DineIn() {
             </Stack>
           </Grid>
         </Grid>
-      </Box>
+      </Box> */}
       {/* <StacationCover /> */}
       {/* <BlogGrid /> */}
       {/* <StaycationSeasonPackage
@@ -139,7 +418,8 @@ function DineIn() {
         buttonText={"Get Ready"}
       /> */}
       {/* <Sponsors /> */}
-      <Footer bgImage="footer1.jpg" />
+      {/* <Footer bgImage="footer1.jpg" /> */}
+      <NewFooter />
     </div>
   );
 }
