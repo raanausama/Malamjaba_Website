@@ -18,16 +18,17 @@ const StaycationHero = ({ image, heading,heading2, text }) => {
       <Box
         sx={{
           color: "white",
-          width: "60%",
+          width: "90%",
           position: "relative",
           paddingTop: "20%",
           paddingLeft: "3%",
+          top:{xs:"60%", sm:"30%", md:"10%"}
         }}
       >
-        <Typography variant="h3" sx={{ fontSize: "2.25em", fontWeight: "400" }}>
+        <Typography variant="h3" sx={{ fontSize: {xs:"1em",md:"2.25em"}, fontWeight: "400" }}>
           {heading}
         </Typography>
-        <Typography variant="h3" sx={{ fontSize: "2.25em", fontWeight: "400" }}>
+        <Typography variant="h3" sx={{ fontSize: {xs:"1em",md:"2.25em"}, fontWeight: "400" }}>
           {heading2}
         </Typography>
         <Typography variant="h5" sx={{ fontSize: "1.5em" }}>{text}</Typography>
