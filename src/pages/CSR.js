@@ -3,20 +3,83 @@ import React from "react";
 import Footer from "../components/footer/footer";
 // import BlogGrid from "../components/gridViews/BlogGrid";
 import StaycationHero from "./StaycationHero";
-import { Box, Grid, Stack, Typography, Avatar, Container } from "@mui/material";
+import { Box, Grid, Stack, Typography, Avatar, Container, Button } from "@mui/material";
 import ResponsiveAppBar from "../components/NavBar/NavBar";
 import StaycationSeasonPackage from "../components/StaycationSeasonPackage/StaycationSeasonPackage";
 import NewFooter from "../components/footer/NewFooter";
 import PhotoAlbum from "react-photo-album";
 
 const photos = [
-  { src: "CleanlinessDrive.jpeg", width: 500, height: 300 },
-  { src: "FirstAid.png", width: 600, height: 300 },
-  { src: "FreeAmbulanceService.png", width: 400, height: 300 },
-  { src: "Learning&DevelopmentofLocals.png", width: 700, height: 400 },
-  { src: "RehabilitationofMosque.png", width: 1190, height: 400 },
-  { src: "RationDistribution.png", width: 900, height: 300 },
-  { src: "WinterRoadClearance.png", width: 700, height: 300 },
+  {
+    src: "CleanlinessDrive.jpeg",
+    width: 500,
+    height: 500,
+    style: {
+      border: "10px solid white",
+      filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+      borderRadius: "10px",
+    },
+  },
+  {
+    src: "FirstAid.png",
+    width: 600,
+    height: 600,
+    style: {
+      border: "10px solid white",
+      filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+      borderRadius: "10px",
+    },
+  },
+  {
+    src: "FreeAmbulanceService.png",
+    width: 400,
+    height: 400,
+    style: {
+      border: "10px solid white",
+      filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+      borderRadius: "10px",
+    },
+  },
+  {
+    src: "Learning&DevelopmentofLocals.png",
+    width: 500,
+    height: 400,
+    style: {
+      border: "10px solid white",
+      filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+      borderRadius: "10px",
+    },
+  },
+  {
+    src: "RehabilitationofMosque.png",
+    width: 600,
+    height: 400,
+    style: {
+      border: "10px solid white",
+      filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+      borderRadius: "10px",
+    },
+  },
+  {
+    src: "RationDistribution.png",
+    width: 400,
+    height: 300,
+    style: {
+      border: "10px solid white",
+      filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+      borderRadius: "10px",
+    },
+  },
+  {
+    src: "WinterRoadClearance.png",
+    width: 400,
+    height: 300,
+    style: {
+      border: "10px solid white",
+      filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+      borderRadius: "10px",
+    },
+  },
 ];
 
 function CSRMain() {
@@ -28,7 +91,7 @@ function CSRMain() {
         heading="Empowering Communities, Enriching Lives:"
         text="Our Commitment to Corporate Social Responsibility."
       />
-      <Box sx={{ padding: "5%" }}>
+      {/* <Box sx={{ padding: "5%" }}>
         <Grid
           container
           display="flex !important"
@@ -39,7 +102,11 @@ function CSRMain() {
             <Avatar
               alt="Activities"
               src="/images/CSR/Picture1.jpg"
-              sx={{ width: { xs: 350, sm: 400 }, height: { xs: 350, sm: 400 }, position: "bottom" }}
+              sx={{
+                width: { xs: 350, sm: 400 },
+                height: { xs: 350, sm: 400 },
+                position: "bottom",
+              }}
             />
           </Grid>
           <Grid
@@ -59,10 +126,10 @@ function CSRMain() {
             }}
           >
             <Stack direction="column">
-              <Typography variant="h3" color="#094e9d" sx={{pb:"1em"}}>
+              <Typography variant="h3" color="#094e9d" sx={{ pb: "1em" }}>
                 Our Contribution to society
               </Typography>
-              <Typography sx={{fontSize:"1.25em"}}>
+              <Typography sx={{ fontSize: "1.25em" }}>
                 Corporate Social Responsibility (CSR) is an essential aspect of
                 any business that aims to make a positive impact on society. At
                 our company, we take CSR seriously, and we believe that it is
@@ -105,8 +172,106 @@ function CSRMain() {
             </Stack>
           </Grid>
         </Grid>
-      </Box>
-     <PhotoAlbum layout="rows" photos={photos} sx={{pb:"2em"}} />
+      </Box> */}
+      
+      <Container maxWidth="lg" sx={{ mb: 3, mt: 3, }}>
+        <Grid
+          container
+          display="flex !important"
+          justifyContent="center !important"
+          gap={2}
+        >
+          {/* <Button sx={{ animation: 'pulse-border-2 1.5s linear infinite', fontFamily: 'font-family: "Allison", handwriting !important'}}> hi boi--- </Button> */}
+          <Grid item sx={6}>
+            <img
+              src="CleanlinessDrive.jpeg"
+              alt="img"
+              style={{
+                width: 300,
+                height: 300,
+                border: "10px solid white",
+                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                borderRadius: "10px",
+              }}
+            />
+          </Grid>
+          <Grid item xs={6}>
+            <img
+              src="FirstAid.png"
+              alt="img"
+              style={{
+                width: 400,
+                height: 300,
+                border: "10px solid white",
+                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                borderRadius: "10px",
+              }}
+            />
+          </Grid>
+          <Grid item xs={6}>
+            <img
+              src="FreeAmbulanceService.png"
+              alt="img"
+              style={{
+                width: 300,
+                height: 300,
+                border: "10px solid white",
+                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                borderRadius: "10px",
+              }}
+            />
+          </Grid>
+
+          <Grid item xs={6}>
+            <img
+              src="RationDistribution.png"
+              alt="img"
+              style={{
+                width: 300,
+                height: 300,
+                border: "10px solid white",
+                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                borderRadius: "10px",
+              }}
+            />
+          </Grid>
+          <Grid item xs={6}>
+            <img
+              src="WinterRoadClearance.png"
+              alt="img"
+              style={{
+                width: 300,
+                height: 300,
+                border: "10px solid white",
+                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                borderRadius: "10px",
+              }}
+            />
+          </Grid>
+          
+          <Grid item xs={12}>
+            <img
+              src="Learning&DevelopmentofLocals.png"
+              alt="img"
+              style={{
+                width: "100%",
+                height: 300,
+                border: "10px solid white",
+                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                borderRadius: "10px",
+              }}
+            />
+          </Grid>
+          
+        </Grid>
+      </Container>
+      {/* <PhotoAlbum
+        layout="rows"
+        photos={photos}
+        style={{
+          pb: "2em",
+        }}
+      /> */}
       <NewFooter />
     </div>
   );
