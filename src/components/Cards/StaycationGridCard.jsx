@@ -20,9 +20,7 @@ const StaycationGridCard = ({ image, heading, text }) => {
           alt="Staycation"
           style={{ width: "100%", height: "35vh" }}
         />
-        <Box
-          sx={{ padding: "5%", borderLeft: "3px solid #094e9d" }}
-        >
+        <Box sx={{ padding: "5%", borderLeft: "3px solid #094e9d" }}>
           {/* <a href="">
           <Typography variant="h4">{heading}</Typography>
         </a> */}
@@ -34,7 +32,6 @@ const StaycationGridCard = ({ image, heading, text }) => {
           >
             <Typography
               variant="h4"
-
               sx={{
                 textDecoration: "none",
                 color: "#11357C",
@@ -51,7 +48,13 @@ const StaycationGridCard = ({ image, heading, text }) => {
               {heading}
             </Typography>
           </a>
-          <Divider  sx={{ borderBottomWidth: 'medium', borderColor: '#D9BD90', width: '50px' }}/>
+          <Divider
+            sx={{
+              borderBottomWidth: "medium",
+              borderColor: "#D9BD90",
+              width: "50px",
+            }}
+          />
 
           <Typography>{text}</Typography>
         </Box>
