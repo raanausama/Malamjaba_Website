@@ -29,7 +29,9 @@ function DineIn() {
         <Grid container>
           <Grid
             item
-            xs={6}
+            xs={12}
+            sm={12}
+            md={6}
             display="flex"
             justifyContent="center"
             alignItems="center"
@@ -84,86 +86,100 @@ function DineIn() {
             </Stack>
           </Grid>
 
-          <Grid item xs={6} mt={5}>
+          <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
               src="/DineIn/Marcopolo.png"
               alt="MarcoPolo"
               style={{
-                maxWidth: 550,
-                height: 500,
-                borderRadius: "50px 0px 50px 0px",
-              }}
-            />
-          </Grid>
-          <Grid item xs={6} mt={5}>
-            <img
-              src="/DineIn/MarcopoloBistro.png"
-              alt="Summer Activities"
-              style={{
-                maxWidth: 550,
-                height: 500,
+                maxWidth: "90%",
+                // height: 500,
                 borderRadius: "50px 0px 50px 0px",
               }}
             />
           </Grid>
           <Grid
-            item
-            xs={6}
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            textAlign="center"
+            container
+            sx={{
+              display: "flex",
+              flexWrap: "nowrap",
+              flexDirection: { xs: "column-reverse", md: "row" },
+            }}
           >
-            <Stack
-              direction="column"
+            <Grid item xs={12} sm={12} md={6} mt={5}>
+              <img
+                src="/DineIn/MarcopoloBistro.png"
+                alt="Summer Activities"
+                style={{
+                  maxWidth: "90%",
+                  // height: 500,
+                  borderRadius: "50px 0px 50px 0px",
+                }}
+              />
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={12}
+              md={6}
               display="flex"
               justifyContent="center"
               alignItems="center"
+              textAlign="center"
             >
-              <Typography
-                sx={{
-                  fontSize: "25px",
-                  lineHeight: "1.4",
-                  fontWeight: "400",
-                  letterSpacing: "2px",
-                  textTransform: "none",
-                  color: "#0a0a0a",
-                  fontFamily: '"Allison", handwriting !important',
-                }}
+              <Stack
+                direction="column"
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
               >
-                Marcopolo Bistro.
-              </Typography>
-              <Divider
-                sx={{
-                  borderBottomWidth: "medium",
-                  borderColor: "#D9BD90",
-                  width: "130px",
-                  mb: "5",
-                }}
-              />
-              <Typography
-                mt={4}
-                sx={{
-                  fontSize: "20px",
-                  lineHeight: "1.4",
-                  fontWeight: "400",
-                  letterSpacing: "2px",
-                  textTransform: "none",
-                  color: "#0a0a0a",
-                  fontFamily: '"Jost", sans-serif',
-                }}
-              >
-                {" "}
-                Indulge in a symphony of flavors crafted by our expert chefs,
-                surrounded by the stunning natural beauty of the Swat Valley.
-                From delectable local cuisine to international delights,
-                MarcoPolo Bistro promises a dining experience like no other.{" "}
-              </Typography>
-            </Stack>
+                <Typography
+                  sx={{
+                    fontSize: "25px",
+                    lineHeight: "1.4",
+                    fontWeight: "400",
+                    letterSpacing: "2px",
+                    textTransform: "none",
+                    color: "#0a0a0a",
+                    fontFamily: '"Allison", handwriting !important',
+                  }}
+                >
+                  Marcopolo Bistro.
+                </Typography>
+                <Divider
+                  sx={{
+                    borderBottomWidth: "medium",
+                    borderColor: "#D9BD90",
+                    width: "130px",
+                    mb: "5",
+                  }}
+                />
+                <Typography
+                  mt={4}
+                  sx={{
+                    fontSize: "20px",
+                    lineHeight: "1.4",
+                    fontWeight: "400",
+                    letterSpacing: "2px",
+                    textTransform: "none",
+                    color: "#0a0a0a",
+                    fontFamily: '"Jost", sans-serif',
+                  }}
+                >
+                  {" "}
+                  Indulge in a symphony of flavors crafted by our expert chefs,
+                  surrounded by the stunning natural beauty of the Swat Valley.
+                  From delectable local cuisine to international delights,
+                  MarcoPolo Bistro promises a dining experience like no other.{" "}
+                </Typography>
+              </Stack>
+            </Grid>
           </Grid>
+
           <Grid
             item
-            xs={6}
+            xs={12}
+            sm={12}
+            md={6}
             display="flex"
             justifyContent="center"
             alignItems="center"
@@ -217,13 +233,13 @@ function DineIn() {
               </Typography>
             </Stack>
           </Grid>
-          <Grid item xs={6} mt={5}>
+          <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
               src="/DineIn/TaiPan.png"
               alt="MarcoPolo"
               style={{
-                maxWidth: 550,
-                height: 500,
+                maxWidth: "90%",
+                // height: 500,
                 borderRadius: "50px 0px 50px 0px",
               }}
             />
