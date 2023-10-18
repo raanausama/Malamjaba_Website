@@ -97,7 +97,7 @@ function Slope() {
             }}
           >
             <Stack direction="column">
-              <Typography variant="h4" color="#094e9d">
+              <Typography variant="h4" color="#094e9d" sx={{ fontFamily: '"Allison", handwriting !important', }}>
                 Malam Jabba Ski Resort - <br/> Where Nature Meets Adventure:
               </Typography>
               <Typography variant="subtitle">
@@ -127,6 +127,7 @@ function Slope() {
               color="#094e9d"
               variant="h3"
               fontWeight={"400"}
+              sx={{fontFamily: '"Allison", handwriting !important',}}
               // fontSize={"3rem"}
             >
             Technicalities of the Slope

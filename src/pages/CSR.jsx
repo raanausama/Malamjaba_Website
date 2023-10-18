@@ -374,6 +374,7 @@ function CSRMain() {
                 maxWidth: "90%",
                 // height: 500,
                 borderRadius: "50px 0px 50px 0px",
+                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
               }}
             />
           </Grid>
@@ -393,6 +394,7 @@ function CSRMain() {
                   maxWidth: "90%",
                   height: 450,
                   borderRadius: "50px 0px 50px 0px",
+                  filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
                 }}
               />
             </Grid>
@@ -424,7 +426,7 @@ function CSRMain() {
                     marginTop: 5,
                   }}
                 >
-                  Quick Rescue Teams
+                  Quick Rescue Teams.
                 </Typography>
                 <Divider
                   sx={{
@@ -522,6 +524,7 @@ function CSRMain() {
                 maxWidth: "90%",
                 height: 350,
                 borderRadius: "50px 0px 50px 0px",
+                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
               }}
             />
           </Grid>
@@ -541,6 +544,7 @@ function CSRMain() {
                   maxWidth: "90%",
                   height: 400,
                   borderRadius: "50px 0px 50px 0px",
+                  filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
                 }}
               />
             </Grid>
@@ -572,7 +576,7 @@ function CSRMain() {
                     marginTop: 5,
                   }}
                 >
-                  Quick Rescue Teams
+                  Road Clearance.
                 </Typography>
                 <Divider
                   sx={{
@@ -601,6 +605,7 @@ function CSRMain() {
                 </Typography>
               </Stack>
             </Grid>
+          </Grid>
           </Grid>
 
           {/* <Grid
@@ -741,6 +746,10 @@ function CSRMain() {
               </Typography>
             </Stack>
           </Grid> */}
+          <Grid container sx={{
+              background:
+                "linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(230,230,230,1) 50%, rgba(255,255,255,1) 100%)",
+            }}>
           <Grid
             item
             xs={12}
@@ -749,18 +758,13 @@ function CSRMain() {
             justifyContent="center"
             alignItems="center"
             textAlign="center"
-            sx={{
-              background:
-                "linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(230,230,230,1) 50%, rgba(255,255,255,1) 100%)",
-            }}
           >
-            <Stack
-              direction="column"
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-              textAlign="center"
-            >
+            <Stack 
+            direction='column'
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            textAlign="center">
               <Typography
                 mt={3}
                 sx={{
@@ -774,7 +778,7 @@ function CSRMain() {
                   marginTop: 5,
                 }}
               >
-                Learning and Development
+                Learning and Development.
               </Typography>
               <Divider
                 sx={{
@@ -784,17 +788,21 @@ function CSRMain() {
                   mb: "5",
                 }}
               />
+              </Stack>
+              </Grid>
               <Grid item xs={12} sm={12} md={6} mt={5}>
                 <img
                   src="Learning&DevelopmentofLocals.png"
                   alt="Summer Activities"
                   style={{
-                    maxWidth: "100%",
+                    maxWidth: "93%",
                     height: 300,
-                    borderRadius: "50px 0px 50px 0px",
+                    borderRadius: "50px 50px 50px 50px",
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
                   }}
                 />
               </Grid>
+              <Grid item xs={12} sm={12} md={6} mt={5} sx={{padding: 3}}>
               <Typography
                 mt={3}
                 mb={3}
@@ -813,9 +821,8 @@ function CSRMain() {
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </Typography>
-            </Stack>
+              </Grid>
           </Grid>
-        </Grid>
       </Container>
       {/* <Box sx={{ padding: "10%" }}>
         <Grid

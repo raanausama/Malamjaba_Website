@@ -57,8 +57,8 @@ const ActivitiesAvatar = () => {
             }}
           >
             <Stack direction="column">
-              <Typography variant="h4" color="#094e9d">
-                Adventurous yet Fun Activities <br /> at Malam Jabba Ski Resort
+              <Typography variant="h4" color="#094e9d" sx={{ fontFamily: '"Allison", handwriting !important', }}>
+                Adventurous yet Fun Activities at<br /> Malam Jabba Ski Resort
               </Typography>
               <Typography variant="subtitle">
                 Our exhilarating Chairlift, Ziplining, Giant Swing, Human

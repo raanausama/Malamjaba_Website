@@ -93,7 +93,8 @@ export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
 }
 
 const sxHeader = {
-  fontSize: "1.5em",
+  fontSize: "1.7em",
+  fontFamily: '"Allison", handwriting !important',
 };
 
 const sxText = {};

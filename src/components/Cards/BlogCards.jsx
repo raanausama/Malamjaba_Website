@@ -42,6 +42,7 @@ export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
           sx={sxHeader}
           mt={1}
           color="#094e9d"
+          
         >
           {sheader}
         </Typography>
@@ -56,6 +57,7 @@ export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
 
 // Define separate sx objects for each style group
 const sxHeader = {
+  fontFamily: '"Allison", handwriting !important',
   //   fontSize: "1.5em",
   /* Additional styles for the header typography */
 };
