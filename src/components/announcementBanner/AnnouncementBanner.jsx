@@ -20,7 +20,7 @@ const AnnouncementBanner = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <Typography variant="body1" className="moving-text moving-text.paused " color='white'>Something's New Cooking...</Typography>
+        <Typography variant="body1" className="moving-text moving-text.paused " color='white'>Something's Cooking...</Typography>
       </div>
     </>
   );

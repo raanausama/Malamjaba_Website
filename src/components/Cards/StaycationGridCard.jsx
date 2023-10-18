@@ -34,6 +34,7 @@ const StaycationGridCard = ({ image, heading, text }) => {
               variant="h4"
               sx={{
                 textDecoration: "none",
+                fontFamily: '"Allison", handwriting !important',
                 color: "#11357C",
                 transition: "color 0.3s ease",
               }}
@@ -52,7 +53,7 @@ const StaycationGridCard = ({ image, heading, text }) => {
             sx={{
               borderBottomWidth: "medium",
               borderColor: "#D9BD90",
-              width: "50px",
+              width: "100px",
             }}
           />
 

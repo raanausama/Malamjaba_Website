@@ -27,19 +27,19 @@ const StaycationHero = ({ image, heading, heading2, text }) => {
       >
         <Typography
           variant="h3"
-          sx={{ fontSize: { xs: "1em", md: "2.25em" }, fontWeight: "400" }}
+          sx={{ fontSize: { xs: "1em", md: "2.25em" }, fontWeight: "400", fontFamily: '"Allison", handwriting !important', }}
         >
           {heading}
         </Typography>
         <Typography
           variant="h3"
-          sx={{ fontSize: { xs: "1em", md: "2.25em" }, fontWeight: "400" }}
+          sx={{ fontSize: { xs: "1em", md: "2.25em" }, fontWeight: "400", fontFamily: '"Allison", handwriting !important', }}
         >
           {heading2}
         </Typography>
         <Typography
           variant="h5"
-          sx={{ fontSize: { xs: "0.8em", md: "2.25em" } }}
+          sx={{ fontSize: { xs: "0.8em", md: "2.25em" }, fontFamily: '"Allison", handwriting !important', }}
         >
           {text}
         </Typography>

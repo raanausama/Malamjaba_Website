@@ -24,11 +24,13 @@ const StaycationSeasonPackage = ({
 }) => {
   const boxStyle = {
     // backgroundImage: `url(${image})`,
-    backgroundColor: "#F1F1FE",
+    // backgroundColor: "#F1F1FE",
+    background: "linear-gradient(90deg,  rgba(255,255,255,1) 50%,rgba(230,230,210,1) 50%, rgba(255,255,255,1) 100%)",
+
     backgroundSize: "cover",
     // backgroundPosition: "0% 80%",
     backgroundRepeat: "no-repeat",
-    height: "10em",
+    height: "13em",
     display: "flex",
     justifyContent: "center",
   };
@@ -75,7 +77,7 @@ const StaycationSeasonPackage = ({
         <Grid item sx={12} md={12}>
           <PrepModal image={image} open={viewModalOpen} handleClose={handleCloseModal} />
           <Stack direction="column" alignItems="center">
-            <Typography variant="h4" mt={4} color="#11357C">
+            <Typography variant="h4" mt={4} color="#11357C" sx={{fontFamily: '"Allison", handwriting !important',}}>
               ARE YOU READY?
             </Typography>
 

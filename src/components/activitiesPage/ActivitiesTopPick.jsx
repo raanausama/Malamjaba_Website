@@ -21,7 +21,7 @@ const ActivitiesTopPick = () => {
       <Container sx={{ mb: 5 }}>
         <Grid container gap={4} display="flex" justifyContent="center">
           <Grid Item xs={12} display="flex" justifyContent="center">
-            <Typography variant="h3" color="#094e9d">
+            <Typography variant="h3" color="#094e9d" sx={{ fontFamily: '"Allison", handwriting !important', }}>
               Our Top Picks This Winter
             </Typography>
           </Grid>

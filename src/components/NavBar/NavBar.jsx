@@ -22,9 +22,10 @@ import SignIn from "../../pages/SignIn";
 
 const pages = ["HOME", "STAYCATION", "ACTIVITIES", "THE SLOPE"];
 const settings = ["Dine In",
+"CSR",
   // "Blog",
   "Contact Us",
-  "CSR"];
+  ];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
