@@ -177,7 +177,7 @@ function DineIn() {
             </Grid>
           </Grid>
 
-          <Grid
+          {/* <Grid
             item
             xs={12}
             sm={12}
@@ -246,8 +246,159 @@ function DineIn() {
                 borderRadius: "50px 0px 50px 0px",
               }}
             />
+          </Grid> */}
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={6}
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            textAlign="center"
+          >
+            <Stack
+              direction="column"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <Typography
+                sx={{
+                  fontSize: "25px",
+                  lineHeight: "1.4",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                  textTransform: "none",
+                  color: "#0a0a0a",
+                  fontFamily: '"Allison", handwriting !important',
+                  marginTop: 5,
+                }}
+              >
+                Tai Pan
+              </Typography>
+              <Divider
+                sx={{
+                  borderBottomWidth: "medium",
+                  borderColor: "#D9BD90",
+                  width: "100px",
+                  mb: "5",
+                }}
+              />
+              <Typography
+                mt={4}
+                sx={{
+                  fontSize: "20px",
+                  lineHeight: "1.4",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                  textTransform: "none",
+                  color: "#0a0a0a",
+                  fontFamily: '"Jost", sans-serif',
+                }}
+              >
+                {" "}
+                Treat yourself in an exquisite culinary journey at Tai Pan, the
+                premier Chinese restaurant at Pearl Continental Malam Jabba.
+                Savor the rich flavors of authentic Chinese cuisine prepared by
+                our master chefs, all while enjoying breathtaking mountain
+                views.{" "}
+              </Typography>
+            </Stack>
+          </Grid>
+
+          <Grid item xs={12} sm={12} md={6} mt={5}>
+            <img
+              src="/DineIn/TaiPan.png"
+              alt="TaiPan"
+              style={{
+                maxWidth: "90%",
+                // height: 500,
+                borderRadius: "50px 0px 50px 0px",
+              }}
+            />
           </Grid>
           <Grid
+            container
+            sx={{
+              display: "flex",
+              flexWrap: "nowrap",
+              flexDirection: { xs: "column-reverse", md: "row" },
+            }}
+          >
+            <Grid item xs={12} sm={12} md={6} mt={5}>
+              <img
+                src="/DineIn/ecoRestraunt.jpg"
+                alt="EcoRestaurant"
+                style={{
+                  maxWidth: "90%",
+                  // height: 500,
+                  borderRadius: "50px 0px 50px 0px",
+                }}
+              />
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={12}
+              md={6}
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              textAlign="center"
+            >
+              <Stack
+                direction="column"
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <Typography
+                  sx={{
+                    fontSize: "25px",
+                    lineHeight: "1.4",
+                    fontWeight: "400",
+                    letterSpacing: "2px",
+                    textTransform: "none",
+                    color: "#0a0a0a",
+                    fontFamily: '"Allison", handwriting !important',
+                    marginTop: 5,
+                  }}
+                >
+                  Lazeez Restaurant
+                </Typography>
+                <Divider
+                  sx={{
+                    borderBottomWidth: "medium",
+                    borderColor: "#D9BD90",
+                    width: "130px",
+                    mb: "5",
+                  }}
+                />
+                <Typography
+                  mt={4}
+                  sx={{
+                    fontSize: "20px",
+                    lineHeight: "1.4",
+                    fontWeight: "400",
+                    letterSpacing: "2px",
+                    textTransform: "none",
+                    color: "#0a0a0a",
+                    fontFamily: '"Jost", sans-serif',
+                  }}
+                >
+                  {" "}
+                  Experience culinary excellence amidst the stunning
+                  snow-covered slopes at Lazeez Restaurant, your ultimate dining
+                  destination at Malam Jabba Ski Resort. Indulge in a delectable
+                  fusion of local flavors, served with warm hospitality in a
+                  cozy mountain setting.{" "}
+                </Typography>
+              </Stack>
+            </Grid>
+          </Grid>
+
+          {/* <Grid
             item
             xs={12}
             mt={3}
@@ -255,10 +406,10 @@ function DineIn() {
             justifyContent="center"
             alignItems="center"
             textAlign="center"
-            sx={{
-              background:
-                "linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(230,230,230,1) 50%, rgba(255,255,255,1) 100%)",
-            }}
+            // sx={{
+            //   background:
+            //     "linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(230,230,230,1) 50%, rgba(255,255,255,1) 100%)",
+            // }}
           >
             <Stack
               direction="column"
@@ -312,6 +463,81 @@ function DineIn() {
                 refreshment.
               </Typography>
             </Stack>
+          </Grid> */}
+          <Grid
+            item
+            xs={12}
+            mt={3}
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            textAlign="center"
+          >
+            <Stack
+              direction="column"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              textAlign="center"
+            >
+              <Typography
+                mt={3}
+                sx={{
+                  fontSize: "25px",
+                  lineHeight: "1.4",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                  textTransform: "none",
+                  color: "#0a0a0a",
+                  fontFamily: '"Allison", handwriting !important',
+                  marginTop: 5,
+                }}
+              >
+                Gloria Jeans
+              </Typography>
+              <Divider
+                sx={{
+                  borderBottomWidth: "medium",
+                  borderColor: "#D9BD90",
+                  width: "130px",
+                  mb: "5",
+                }}
+              />
+            </Stack>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} mt={5}>
+            <img
+              src="/DineIn/gloria.jpg "
+              alt="GloriaJeans"
+              style={{
+                maxWidth: "93%",
+                height: 300,
+                borderRadius: "50px 50px 50px 50px",
+                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+              }}
+            />
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} mt={5} sx={{ padding: 3 }}>
+            <Typography
+              mt={3}
+              mb={3}
+              sx={{
+                fontSize: "20px",
+                lineHeight: "1.4",
+                fontWeight: "400",
+                letterSpacing: "2px",
+                textTransform: "none",
+                color: "#898989",
+                fontFamily: '"Jost", sans-serif',
+              }}
+            >
+              Get the perfect blend of warmth and flavor at Gloria Jeans,
+              nestled in the heart of Malam Jabba Ski Resort. Indulge in our
+              rich, aromatic coffees and delightful snacks as you take in the
+              breathtaking mountain views. Whether you're hitting the slopes or
+              simply seeking a cozy retreat, Gloria Jeans at Malam Jabba Ski
+              Resort is your go-to destination for comfort and refreshment.
+            </Typography>
           </Grid>
         </Grid>
       </Container>

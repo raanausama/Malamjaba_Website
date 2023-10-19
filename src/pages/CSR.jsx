@@ -606,9 +606,9 @@ function CSRMain() {
               </Stack>
             </Grid>
           </Grid>
-          </Grid>
+        </Grid>
 
-          {/* <Grid
+        {/* <Grid
             item
             xs={12}
             sm={12}
@@ -746,10 +746,13 @@ function CSRMain() {
               </Typography>
             </Stack>
           </Grid> */}
-          <Grid container sx={{
-              background:
-                "linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(230,230,230,1) 50%, rgba(255,255,255,1) 100%)",
-            }}>
+        <Grid
+          container
+          // sx={{
+          //     background:
+          //       "linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(230,230,230,1) 50%, rgba(255,255,255,1) 100%)",
+          //   }}
+        >
           <Grid
             item
             xs={12}
@@ -759,12 +762,13 @@ function CSRMain() {
             alignItems="center"
             textAlign="center"
           >
-            <Stack 
-            direction='column'
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            textAlign="center">
+            <Stack
+              direction="column"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              textAlign="center"
+            >
               <Typography
                 mt={3}
                 sx={{
@@ -788,41 +792,41 @@ function CSRMain() {
                   mb: "5",
                 }}
               />
-              </Stack>
-              </Grid>
-              <Grid item xs={12} sm={12} md={6} mt={5}>
-                <img
-                  src="Learning&DevelopmentofLocals.png"
-                  alt="Summer Activities"
-                  style={{
-                    maxWidth: "93%",
-                    height: 300,
-                    borderRadius: "50px 50px 50px 50px",
-                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
-                  }}
-                />
-              </Grid>
-              <Grid item xs={12} sm={12} md={6} mt={5} sx={{padding: 3}}>
-              <Typography
-                mt={3}
-                mb={3}
-                sx={{
-                  fontSize: "20px",
-                  lineHeight: "1.4",
-                  fontWeight: "400",
-                  letterSpacing: "2px",
-                  textTransform: "none",
-                  color: "#898989",
-                  fontFamily: '"Jost", sans-serif',
-                }}
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Typography>
-              </Grid>
+            </Stack>
           </Grid>
+          <Grid item xs={12} sm={12} md={6} mt={5}>
+            <img
+              src="Learning&DevelopmentofLocals.png"
+              alt="Summer Activities"
+              style={{
+                maxWidth: "93%",
+                height: 300,
+                borderRadius: "50px 50px 50px 50px",
+                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+              }}
+            />
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} mt={5} sx={{ padding: 3 }}>
+            <Typography
+              mt={3}
+              mb={3}
+              sx={{
+                fontSize: "20px",
+                lineHeight: "1.4",
+                fontWeight: "400",
+                letterSpacing: "2px",
+                textTransform: "none",
+                color: "#898989",
+                fontFamily: '"Jost", sans-serif',
+              }}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </Typography>
+          </Grid>
+        </Grid>
       </Container>
       {/* <Box sx={{ padding: "10%" }}>
         <Grid
