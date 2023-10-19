@@ -1,16 +1,16 @@
-import React, {  lazy, Suspense, useState, useEffect } from "react";
+import React, { lazy, Suspense, useState, useEffect } from "react";
 // import VideoTextOverlay from "../components/textOverlay/TextOverlay";
 import Sponsors from "../components/sponsors/sponsorsFooter";
 import "./home.css";
 import Footer from "../components/footer/footer";
 // import ImageWithSummerActivities from "../components/imageWithTextOverlay/imageWithSummerActivities";
 import ImageWithWinterActivities from "../components/imageWithTextOverlay/imageWithWinterActivities";
-import axios from 'axios';
+import axios from "axios";
 import ImageLists from "../components/carousel/ImageLists";
 import Eventcardsection from "../components/Cards/Eventcardsection";
 import Servicecardsection from "../components/Cards/servicecardsection";
 import ResponsiveAppBar from "../components/NavBar/NavBar";
-import { CircularProgress } from "@mui/material";
+import { Box, CircularProgress } from "@mui/material";
 import NewFooter from "../components/footer/NewFooter";
 import AnnouncementBanner from "../components/announcementBanner/AnnouncementBanner";
 import GoogleMap from "./GoogleMap";
@@ -44,7 +44,8 @@ const HomePage = () => {
   // }, []);
   return (
     <>
-    <AnnouncementBanner />
+      <AnnouncementBanner />
+
       <ResponsiveAppBar />
       <Suspense
         fallback={
@@ -92,7 +93,7 @@ const HomePage = () => {
           </>
         }
       > */}
-        <Eventcardsection />
+      <Eventcardsection />
       {/* </Suspense> */}
       {/* <Servicecardsection /> */}
       {/* <ImageLists /> */}
@@ -100,7 +101,6 @@ const HomePage = () => {
       {/* <Footer /> */}
       {/* <GoogleMap/> */}
       <NewFooter />
-
     </>
   );
 };

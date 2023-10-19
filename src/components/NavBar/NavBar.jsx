@@ -21,11 +21,12 @@ import { Height } from "@mui/icons-material";
 import SignIn from "../../pages/SignIn";
 
 const pages = ["HOME", "STAYCATION", "ACTIVITIES", "THE SLOPE"];
-const settings = ["Dine In",
-"CSR",
+const settings = [
+  "Dine In",
+  "CSR",
   // "Blog",
   "Contact Us",
-  ];
+];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -64,8 +65,8 @@ function ResponsiveAppBar() {
     // if (setting === "Blog") {
     //   navigate("/blog");
     // }
-    if(setting === "Contact Us"){
-      navigate("#contact-footer")
+    if (setting === "Contact Us") {
+      navigate("#contact-footer");
     }
     if (setting === "CSR") {
       navigate("/csr");
@@ -85,7 +86,7 @@ function ResponsiveAppBar() {
   return (
     <AppBar
       position="absolute"
-      sx={{ backgroundColor: "transparent", boxShadow: "none" }}
+      sx={{ backgroundColor: "transparent", boxShadow: "none", marginTop: 4 }}
     >
       <SignIn open={viewModalOpen} handleClose={handleCloseModal} />
       <Container maxWidth="100%">
@@ -140,7 +141,12 @@ function ResponsiveAppBar() {
                     to={`/${page.toLowerCase().replace(/\s/g, "-")}`}
                     style={{ textDecoration: "none", color: "inherit" }}
                   >
-                    <Typography textAlign="center" sx={{fontFamily: "TrajanPro3Black"}}>{page}</Typography>
+                    <Typography
+                      textAlign="center"
+                      sx={{ fontFamily: "TrajanPro3Black" }}
+                    >
+                      {page}
+                    </Typography>
                   </Link>
                 </MenuItem>
               ))}
@@ -161,7 +167,7 @@ function ResponsiveAppBar() {
                   fontSize: "0.990rem",
                   fontWeight: "Bold",
                   padding: "6px 30px",
-                  fontFamily: "TrajanPro3Black"
+                  fontFamily: "TrajanPro3Black",
                 }}
                 onMouseEnter={onEnter}
                 onMouseLeave={onLeave}
