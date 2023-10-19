@@ -25,7 +25,7 @@ const StaycationSeasonPackage = ({
   const boxStyle = {
     // backgroundImage: `url(${image})`,
     // backgroundColor: "#F1F1FE",
-    background: "linear-gradient(90deg,  rgba(255,255,255,1) 50%,rgba(230,230,210,1) 50%, rgba(255,255,255,1) 100%)",
+    background: "linear-gradient(90deg,  rgba(255,255,255,1) 0%,rgba(230,230,210,1) 50%, rgba(255,255,255,1) 100%)",
 
     backgroundSize: "cover",
     // backgroundPosition: "0% 80%",
