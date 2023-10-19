@@ -349,7 +349,7 @@ function CSRMain() {
               <Typography
                 mt={4}
                 sx={{
-                  fontSize: "20px",
+                  fontSize: "17px",
                   lineHeight: "1.4",
                   fontWeight: "400",
                   letterSpacing: "2px",
@@ -439,7 +439,7 @@ function CSRMain() {
                 <Typography
                   mt={4}
                   sx={{
-                    fontSize: "20px",
+                    fontSize: "17px",
                     lineHeight: "1.4",
                     fontWeight: "400",
                     letterSpacing: "2px",
@@ -497,7 +497,7 @@ function CSRMain() {
               <Typography
                 mt={4}
                 sx={{
-                  fontSize: "20px",
+                  fontSize: "17px",
                   lineHeight: "1.4",
                   fontWeight: "400",
                   letterSpacing: "2px",
@@ -589,7 +589,7 @@ function CSRMain() {
                 <Typography
                   mt={4}
                   sx={{
-                    fontSize: "20px",
+                    fontSize: "17px",
                     lineHeight: "1.4",
                     fontWeight: "400",
                     letterSpacing: "2px",
@@ -649,7 +649,7 @@ function CSRMain() {
               <Typography
                 mt={4}
                 sx={{
-                  fontSize: "20px",
+                  fontSize: "17px",
                   lineHeight: "1.4",
                   fontWeight: "400",
                   letterSpacing: "2px",
@@ -730,7 +730,7 @@ function CSRMain() {
               <Typography
                 mt={4}
                 sx={{
-                  fontSize: "20px",
+                  fontSize: "17px",
                   lineHeight: "1.4",
                   fontWeight: "400",
                   letterSpacing: "2px",
@@ -806,12 +806,11 @@ function CSRMain() {
               }}
             />
           </Grid>
-          <Grid item xs={12} sm={12} md={6} mt={5} sx={{ padding: 3 }}>
+          <Grid item xs={12} sm={12} md={6} mt={5} sx={{ padding: 3 }} display='flex' alignItems='center' textAlign='center' justifyContent='center'>
             <Typography
-              mt={3}
               mb={3}
               sx={{
-                fontSize: "20px",
+                fontSize: "17px",
                 lineHeight: "1.4",
                 fontWeight: "400",
                 letterSpacing: "2px",

@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./TextOverlay.css"; // Import the CSS file for styling
-import { Box, Grid, Stack, Typography, useTheme } from "@mui/material";
+import { Box, Grid, Stack, Typography, useTheme, useMediaQuery, } from "@mui/material";
 // import mjr from "../../Assets/bg_content/mjr.gif";
 import gsap from "gsap";
 
@@ -11,6 +11,8 @@ const VideoTextOverlay = ({
   text1,
 }) => {
   const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
   const onEnter = ({ currentTarget }) => {
     gsap.to(currentTarget, { scale: 1.05 });
   };
@@ -85,7 +87,7 @@ const VideoTextOverlay = ({
             padding: "10px",
             color: "white",
             filter: "drop-shadow(0px 8px 8px rgba(0, 0, 0, 1.25))",
-            borderRadius: "10px",
+            // borderRadius: "10px",
           }}
         >
           <Stack
@@ -97,7 +99,7 @@ const VideoTextOverlay = ({
             <Typography
               variant="h4"
 
-              sx={{ [theme.breakpoints.down("sm")]: { fontSize: "1rem" } ,fontFamily: "TrajanPro3Black" }}
+              sx={{ [theme.breakpoints.down("sm")]: { fontSize: "1.3rem" } ,fontFamily: "TrajanPro3Black" }}
             >
               {textHeading}
             </Typography>
@@ -107,12 +109,15 @@ const VideoTextOverlay = ({
             >
               {text1}
             </Typography>
+            {!isSmallScreen ?
             <Typography
               variant="h6"
               sx={{ [theme.breakpoints.down("sm")]: { fontSize: "1rem" } ,fontFamily: "TrajanPro3Black" }}
             >
               {text}
             </Typography>
+            : null }
+
           </Stack>
         </Grid>
       </Grid>

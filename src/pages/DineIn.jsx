@@ -68,7 +68,7 @@ function DineIn() {
               <Typography
                 mt={4}
                 sx={{
-                  fontSize: "20px",
+                  fontSize: "17px",
                   lineHeight: "1.4",
                   fontWeight: "400",
                   letterSpacing: "2px",
@@ -158,7 +158,7 @@ function DineIn() {
                 <Typography
                   mt={4}
                   sx={{
-                    fontSize: "20px",
+                    fontSize: "17px",
                     lineHeight: "1.4",
                     fontWeight: "400",
                     letterSpacing: "2px",
@@ -218,7 +218,7 @@ function DineIn() {
               <Typography
                 mt={4}
                 sx={{
-                  fontSize: "20px",
+                  fontSize: "17px",
                   lineHeight: "1.4",
                   fontWeight: "400",
                   letterSpacing: "2px",
@@ -275,7 +275,7 @@ function DineIn() {
                   marginTop: 5,
                 }}
               >
-                Tai Pan
+                Tai Pan.
               </Typography>
               <Divider
                 sx={{
@@ -288,7 +288,7 @@ function DineIn() {
               <Typography
                 mt={4}
                 sx={{
-                  fontSize: "20px",
+                  fontSize: "17px",
                   lineHeight: "1.4",
                   fontWeight: "400",
                   letterSpacing: "2px",
@@ -365,7 +365,7 @@ function DineIn() {
                     marginTop: 5,
                   }}
                 >
-                  Lazeez Restaurant
+                  Lazeez Restaurant.
                 </Typography>
                 <Divider
                   sx={{
@@ -378,7 +378,7 @@ function DineIn() {
                 <Typography
                   mt={4}
                   sx={{
-                    fontSize: "20px",
+                    fontSize: "17px",
                     lineHeight: "1.4",
                     fontWeight: "400",
                     letterSpacing: "2px",
@@ -445,7 +445,7 @@ function DineIn() {
                 mt={3}
                 mb={3}
                 sx={{
-                  fontSize: "20px",
+                  fontSize: "17px",
                   lineHeight: "1.4",
                   fontWeight: "400",
                   letterSpacing: "2px",
@@ -493,7 +493,7 @@ function DineIn() {
                   marginTop: 5,
                 }}
               >
-                Gloria Jeans
+                Gloria Jeans.
               </Typography>
               <Divider
                 sx={{
@@ -510,24 +510,24 @@ function DineIn() {
               src="/DineIn/gloria.jpg "
               alt="GloriaJeans"
               style={{
-                maxWidth: "93%",
-                height: 300,
+                maxWidth: "100%",
+                height: 320,
                 borderRadius: "50px 50px 50px 50px",
                 filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
               }}
             />
           </Grid>
-          <Grid item xs={12} sm={12} md={6} mt={5} sx={{ padding: 3 }}>
+          <Grid item xs={12} sm={12} md={6} mt={5} sx={{ padding: 2 }} justifyContent='center' textAlign='center' alignItems='center'>
             <Typography
-              mt={3}
+              // mt={3}
               mb={3}
               sx={{
-                fontSize: "20px",
+                fontSize: "17px",
                 lineHeight: "1.4",
                 fontWeight: "400",
                 letterSpacing: "2px",
                 textTransform: "none",
-                color: "#898989",
+                color: "#0a0a0a",
                 fontFamily: '"Jost", sans-serif',
               }}
             >

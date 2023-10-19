@@ -37,7 +37,6 @@ function App() {
         >
           <Routes>
             <Route exact path="/" element={<HomePage />} />
-
             <Route exact path="/home" element={<HomePage />} />
             <Route exact path="/index" element={<HomePage />} />
             <Route exact path="/staycation" element={<Staycation />} />
