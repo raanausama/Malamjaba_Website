@@ -301,8 +301,9 @@ function CSRMain() {
   return (
     <div>
       <ResponsiveAppBar />
+
       <StaycationHero
-        image="/summer-activities.jpg"
+        image="/csrtop.jpg"
         heading="Empowering Communities, Enriching Lives:"
         text="Our Commitment to Corporate Social Responsibility."
       />
@@ -606,6 +607,78 @@ function CSRMain() {
               </Stack>
             </Grid>
           </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={6}
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            textAlign="center"
+          >
+            <Stack
+              direction="column"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <Typography
+                sx={{
+                  fontSize: "25px",
+                  lineHeight: "1.4",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                  textTransform: "none",
+                  color: "#0a0a0a",
+                  fontFamily: '"Allison", handwriting !important',
+                  marginTop: 5,
+                }}
+              >
+                Learning and Development.
+              </Typography>
+              <Divider
+                sx={{
+                  borderBottomWidth: "medium",
+                  borderColor: "#D9BD90",
+                  width: "100px",
+                  mb: "5",
+                }}
+              />
+              <Typography
+                mt={4}
+                sx={{
+                  fontSize: "17px",
+                  lineHeight: "1.4",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                  textTransform: "none",
+                  color: "#0a0a0a",
+                  fontFamily: '"Jost", sans-serif',
+                  mr: 2,
+                }}
+              >
+                {" "}
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.{" "}
+              </Typography>
+            </Stack>
+          </Grid>
+
+          <Grid item xs={12} sm={12} md={6} mt={5}>
+            <img
+              src="Learning&DevelopmentofLocals.png"
+              alt="Ration Distribution drives"
+              style={{
+                maxWidth: "90%",
+                height: 350,
+                borderRadius: "50px 0px 50px 0px",
+                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+              }}
+            />
+          </Grid>
         </Grid>
 
         {/* <Grid
@@ -746,7 +819,7 @@ function CSRMain() {
               </Typography>
             </Stack>
           </Grid> */}
-        <Grid
+        {/* <Grid
           container
           // sx={{
           //     background:
@@ -806,7 +879,18 @@ function CSRMain() {
               }}
             />
           </Grid>
-          <Grid item xs={12} sm={12} md={6} mt={5} sx={{ padding: 3 }} display='flex' alignItems='center' textAlign='center' justifyContent='center'>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={6}
+            mt={5}
+            sx={{ padding: 3 }}
+            display="flex"
+            alignItems="center"
+            textAlign="center"
+            justifyContent="center"
+          >
             <Typography
               mb={3}
               sx={{
@@ -825,7 +909,7 @@ function CSRMain() {
               nisi ut aliquip ex ea commodo consequat.
             </Typography>
           </Grid>
-        </Grid>
+        </Grid> */}
       </Container>
       {/* <Box sx={{ padding: "10%" }}>
         <Grid

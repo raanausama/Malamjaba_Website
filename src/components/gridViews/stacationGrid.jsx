@@ -69,8 +69,6 @@ let card = [
   />,
 ];
 const StaycationGrid = () => {
-  
-  
   return (
     // <Grid container spacing={2} display={"flex"} justifyContent={"center"}>
     //   <Grid item md={4}>
@@ -145,8 +143,6 @@ const StaycationGrid = () => {
         customTransition="all .5s"
         transitionDuration={500}
         arrows={true}
-        
-        
       >
         {card}
       </Carousel>

@@ -397,6 +397,79 @@ function DineIn() {
               </Stack>
             </Grid>
           </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={6}
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            textAlign="center"
+          >
+            <Stack
+              direction="column"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <Typography
+                sx={{
+                  fontSize: "25px",
+                  lineHeight: "1.4",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                  textTransform: "none",
+                  color: "#0a0a0a",
+                  fontFamily: '"Allison", handwriting !important',
+                  marginTop: 5,
+                }}
+              >
+                Gloria Jeans.
+              </Typography>
+              <Divider
+                sx={{
+                  borderBottomWidth: "medium",
+                  borderColor: "#D9BD90",
+                  width: "100px",
+                  mb: "5",
+                }}
+              />
+              <Typography
+                mt={4}
+                sx={{
+                  fontSize: "17px",
+                  lineHeight: "1.4",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                  textTransform: "none",
+                  color: "#0a0a0a",
+                  fontFamily: '"Jost", sans-serif',
+                }}
+              >
+                {" "}
+                Get the perfect blend of warmth and flavor at Gloria Jeans,
+                nestled in the heart of Malam Jabba Ski Resort. Indulge in our
+                rich, aromatic coffees and delightful snacks as you take in the
+                breathtaking mountain views. Whether you're hitting the slopes
+                or simply seeking a cozy retreat, Gloria Jeans at Malam Jabba
+                Ski Resort is your go-to destination for comfort and
+                refreshment. views.{" "}
+              </Typography>
+            </Stack>
+          </Grid>
+
+          <Grid item xs={12} sm={12} md={6} mt={5}>
+            <img
+              src="/DineIn/gloria.jpg"
+              alt="TaiPan"
+              style={{
+                maxWidth: "90%",
+                // height: 500,
+                borderRadius: "50px 0px 50px 0px",
+              }}
+            />
+          </Grid>
 
           {/* <Grid
             item
@@ -464,7 +537,7 @@ function DineIn() {
               </Typography>
             </Stack>
           </Grid> */}
-          <Grid
+          {/* <Grid
             item
             xs={12}
             mt={3}
@@ -517,7 +590,17 @@ function DineIn() {
               }}
             />
           </Grid>
-          <Grid item xs={12} sm={12} md={6} mt={5} sx={{ padding: 2 }} justifyContent='center' textAlign='center' alignItems='center'>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={6}
+            mt={5}
+            sx={{ padding: 2 }}
+            justifyContent="center"
+            textAlign="center"
+            alignItems="center"
+          >
             <Typography
               // mt={3}
               mb={3}
@@ -538,7 +621,7 @@ function DineIn() {
               simply seeking a cozy retreat, Gloria Jeans at Malam Jabba Ski
               Resort is your go-to destination for comfort and refreshment.
             </Typography>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
       {/* <Box sx={{ padding: "10%" }}>
