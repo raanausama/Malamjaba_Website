@@ -6,6 +6,7 @@ import gsap from "gsap";
 
 const ImageWithSummerActivities = ({
   image = "",
+  text,
   button = false,
   buttonText = "",
   buttonCallBack = () => {},
@@ -82,7 +83,7 @@ const ImageWithSummerActivities = ({
             alignItems="center"
             sx={{
               background: "#938d8d47",
-              borderRadius: "20px",
+              // borderRadius: "20px",
               padding: "20px 10px 30px 10px",
               filter: "drop-shadow(0px 8px 8px rgba(0, 0, 0, 1.25))",
               borderRadius: "10px",
@@ -91,7 +92,10 @@ const ImageWithSummerActivities = ({
             <Typography variant="h4" sx={{ fontFamily: "TrajanPro3Black" }}>
               Summer Activities
             </Typography>
-            <Typography variant="body1" mt={5}>
+            <Typography variant="body1" mt={5} textAlign='center'>
+              {text}
+            </Typography>
+            {/* <Typography variant="body1" mt={5}>
               The tourists can enjoy plethora of
             </Typography>
             <Typography variant="body1">
@@ -117,7 +121,7 @@ const ImageWithSummerActivities = ({
             </Typography>
             <Typography variant="body1">
               and engineers, multiple times a year.{" "}
-            </Typography>
+            </Typography> */}
             {/* {button ? (
               <Button mt={5} onClick={buttonCallBack()}>
                 {buttonText}

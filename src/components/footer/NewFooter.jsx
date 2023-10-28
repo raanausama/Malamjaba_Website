@@ -94,16 +94,6 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               </Typography>
               <Typography variant="body1" sx={{ fontFamily: "Didot, serif" }}>
                 <Link
-                  href="/"
-                  rel="sponsored"
-                  title="Flaticon"
-                  sx={{ color: "white" }}
-                >
-                  Shop
-                </Link>
-              </Typography>
-              <Typography variant="body1" sx={{ fontFamily: "Didot, serif" }}>
-                <Link
                   href="/activities"
                   rel="sponsored"
                   title="Flaticon"
@@ -114,12 +104,22 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               </Typography>
               <Typography variant="body1" sx={{ fontFamily: "Didot, serif" }}>
                 <Link
-                  href="/"
+                  href="/staycation"
                   rel="sponsored"
                   title="Flaticon"
                   sx={{ color: "white" }}
                 >
-                  Workshop
+                  Staycation
+                </Link>
+              </Typography>
+              <Typography variant="body1" sx={{ fontFamily: "Didot, serif" }}>
+                <Link
+                  href="/dinein"
+                  rel="sponsored"
+                  title="Flaticon"
+                  sx={{ color: "white" }}
+                >
+                  Dinning inn
                 </Link>
               </Typography>
             </Stack>

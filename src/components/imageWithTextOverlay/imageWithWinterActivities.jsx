@@ -6,6 +6,7 @@ import gsap from "gsap";
 
 const ImageWithWinterActivities = ({
   image = "",
+  text,
   button = false,
   buttonText = "",
   buttonCallBack = () => {},
@@ -85,13 +86,16 @@ const ImageWithWinterActivities = ({
               padding: "20px",
               // border: "10px solid #00000061",
               filter: "drop-shadow(0px 8px 8px rgba(0, 0, 0, 1.25))",
-              borderRadius: "10px",
+              // borderRadius: "10px",
             }}
           >
             <Typography variant="h4" sx={{ fontFamily: "TrajanPro3Black" }}>
               Winter Activities
             </Typography>
-            <Typography variant="body1" mt={5}>
+            <Typography variant="body1" mt={5} textAlign='center'>
+              {text}
+            </Typography>
+            {/* <Typography variant="body1" mt={5}>
               Malam Jabba Ski Resort is the only
             </Typography>
             <Typography variant="body1">
@@ -119,7 +123,7 @@ const ImageWithWinterActivities = ({
             </Typography>
             <Typography variant="body1">
               compromise on the safety of our tourists.
-            </Typography>
+            </Typography> */}
             {/* {button ? (
               <Button
                 sx={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
