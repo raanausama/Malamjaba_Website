@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Sponsors from "../components/sponsors/sponsorsFooter";
 import Footer from "../components/footer/footer";
 import BlogGrid from "../components/gridViews/BlogGrid";
@@ -15,15 +15,53 @@ import {
 import ResponsiveAppBar from "../components/NavBar/NavBar";
 import StaycationSeasonPackage from "../components/StaycationSeasonPackage/StaycationSeasonPackage";
 import NewFooter from "../components/footer/NewFooter";
+import axios from "axios";
 
 function DineIn() {
+    const [dineData, setDineData] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  const getDineData = async () => {
+    try {
+      const response = await axios.get(`http://localhost:5000/dine/getDinePageData?username=ranausama`);
+      // Handle the response data here
+      console.log('Data:', response.data);
+      setLoading(true);
+      setDineData(response.data);
+    } catch (error) {
+      // Handle errors here
+      console.error('Error:', error);
+    }
+  };
+
+  // const footerRef = useRef(null);
+  // const [data, setData] = useState([]);
+  console.log('homeData', dineData)
+    useEffect(() => {
+    // const fetchData = async () => {
+    //   try {
+    //     const response = await axios.get(`http://127.0.0.1:8000/api/homepage`);
+    //     setData(response.data);
+    //     console.log('yoodata', response.data.date.general[1]);
+    //   } catch (error) {
+    //     console.error(error);
+    //   }
+    // };
+
+    // fetchData();
+    getDineData()
+
+  }, [loading]);
   return (
     <div>
       <ResponsiveAppBar />
       <StaycationHero
-        image="/PicturesForWebsite/DineIn.JPG"
-        heading="The Magnificient Slope"
-        text="Rewind from work and reconnect with Nature"
+        // image="/PicturesForWebsite/DineIn.JPG"
+         image={`http://localhost:5000/${dineData.hero_img}`}
+        // heading="The Magnificient Slope"
+        heading={dineData.hero_title}
+        // text="Rewind from work and reconnect with Nature"
+        text={dineData.hero_txt}
       />
       <Container fixed sx={{ mb: 10 }}>
         <Grid container>
@@ -55,7 +93,7 @@ function DineIn() {
                   marginTop: 5,
                 }}
               >
-                Marcopolo.
+                {dineData.rest1_title}
               </Typography>
               <Divider
                 sx={{
@@ -77,19 +115,22 @@ function DineIn() {
                   fontFamily: '"Jost", sans-serif',
                 }}
               >
-                {" "}
+                {dineData.rest1_txt}
+                {/* {" "}
                 Experience culinary excellence at its finest at MarcoPolo
                 Restaurant, nestled within the luxurious Pearl Continental Malam
                 Jabba. Indulge in a symphony of flavors as our talented chefs
                 craft exquisite dishes that blend traditional Pakistani cuisine
-                with international flair.{" "}
+                with international flair.{" "} */}
               </Typography>
             </Stack>
           </Grid>
 
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
-              src="/DineIn/Marcopolo.png"
+                    src={`http://localhost:5000/${dineData.rest1_img}`}
+
+              // src="/DineIn/Marcopolo.png"
               alt="MarcoPolo"
               style={{
                 maxWidth: "90%",
@@ -108,7 +149,8 @@ function DineIn() {
           >
             <Grid item xs={12} sm={12} md={6} mt={5}>
               <img
-                src="/DineIn/MarcopoloBistro.png"
+                // src="/DineIn/MarcopoloBistro.png"
+                src={`http://localhost:5000/${dineData.rest2_img}`}
                 alt="Summer Activities"
                 style={{
                   maxWidth: "90%",
@@ -145,7 +187,8 @@ function DineIn() {
                     marginTop: 5,
                   }}
                 >
-                  Marcopolo Bistro.
+                  {/* Marcopolo Bistro. */}
+                  {dineData.rest2_title}
                 </Typography>
                 <Divider
                   sx={{
@@ -167,11 +210,13 @@ function DineIn() {
                     fontFamily: '"Jost", sans-serif',
                   }}
                 >
-                  {" "}
+                                    {dineData.rest2_txt}
+
+                  {/* {" "}
                   Indulge in a symphony of flavors crafted by our expert chefs,
                   surrounded by the stunning natural beauty of the Swat Valley.
                   From delectable local cuisine to international delights,
-                  MarcoPolo Bistro promises a dining experience like no other.{" "}
+                  MarcoPolo Bistro promises a dining experience like no other.{" "} */}
                 </Typography>
               </Stack>
             </Grid>
@@ -275,7 +320,8 @@ function DineIn() {
                   marginTop: 5,
                 }}
               >
-                Tai Pan.
+                {/* Tai Pan. */}
+                {dineData.rest3_title}
               </Typography>
               <Divider
                 sx={{
@@ -297,19 +343,22 @@ function DineIn() {
                   fontFamily: '"Jost", sans-serif',
                 }}
               >
-                {" "}
+                {dineData.rest3_txt}
+                {/* {" "}
                 Treat yourself in an exquisite culinary journey at Tai Pan, the
                 premier Chinese restaurant at Pearl Continental Malam Jabba.
                 Savor the rich flavors of authentic Chinese cuisine prepared by
                 our master chefs, all while enjoying breathtaking mountain
-                views.{" "}
+                views.{" "} */}
+
               </Typography>
             </Stack>
           </Grid>
 
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
-              src="/DineIn/TaiPan.png"
+              // src="/DineIn/TaiPan.png"
+              src={`http://localhost:5000/${dineData.rest3_img}`}
               alt="TaiPan"
               style={{
                 maxWidth: "90%",
@@ -328,7 +377,7 @@ function DineIn() {
           >
             <Grid item xs={12} sm={12} md={6} mt={5}>
               <img
-                src="/DineIn/ecoRestraunt.jpg"
+                src={`http://localhost:5000/${dineData.rest4_img}`}
                 alt="EcoRestaurant"
                 style={{
                   maxWidth: "90%",
@@ -365,7 +414,9 @@ function DineIn() {
                     marginTop: 5,
                   }}
                 >
-                  Lazeez Restaurant.
+                  {/* Lazeez Restaurant. */}
+                  {dineData.rest4_title}
+
                 </Typography>
                 <Divider
                   sx={{
@@ -387,12 +438,13 @@ function DineIn() {
                     fontFamily: '"Jost", sans-serif',
                   }}
                 >
-                  {" "}
+                  {dineData.rest4_txt}
+                  {/* {" "}
                   Experience culinary excellence amidst the stunning
                   snow-covered slopes at Lazeez Restaurant, your ultimate dining
                   destination at Malam Jabba Ski Resort. Indulge in a delectable
                   fusion of local flavors, served with warm hospitality in a
-                  cozy mountain setting.{" "}
+                  cozy mountain setting.{" "} */}
                 </Typography>
               </Stack>
             </Grid>
@@ -425,7 +477,8 @@ function DineIn() {
                   marginTop: 5,
                 }}
               >
-                Gloria Jeans.
+                {dineData.rest5_title}
+                {/* Gloria Jeans. */}
               </Typography>
               <Divider
                 sx={{
@@ -447,21 +500,22 @@ function DineIn() {
                   fontFamily: '"Jost", sans-serif',
                 }}
               >
+                {dineData.rest5_txt}
                 {" "}
-                Get the perfect blend of warmth and flavor at Gloria Jeans,
+                {/* Get the perfect blend of warmth and flavor at Gloria Jeans,
                 nestled in the heart of Malam Jabba Ski Resort. Indulge in our
                 rich, aromatic coffees and delightful snacks as you take in the
                 breathtaking mountain views. Whether you're hitting the slopes
                 or simply seeking a cozy retreat, Gloria Jeans at Malam Jabba
                 Ski Resort is your go-to destination for comfort and
-                refreshment. views.{" "}
+                refreshment. views.{" "} */}
               </Typography>
             </Stack>
           </Grid>
 
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
-              src="/DineIn/gloria.jpg"
+              src={`http://localhost:5000/${dineData.rest5_img}`}
               alt="TaiPan"
               style={{
                 maxWidth: "90%",

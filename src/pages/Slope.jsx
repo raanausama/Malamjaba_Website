@@ -12,6 +12,7 @@ import slope2 from "../Assets/bg_content/slope2.png";
 
 
 function Slope() {
+  
   return (
     <div>
       <ResponsiveAppBar />

@@ -9,7 +9,7 @@ import {
 import "../../pages/activities.css";
 import Background from "../../Assets/bg_content/Picture4.png";
 
-const ActivitiesTop = () => {
+const ActivitiesTop = ({activitiesData}) => {
   const theme = useTheme();
   const smallScreen = theme.breakpoints.down("md");
 
@@ -18,7 +18,8 @@ const ActivitiesTop = () => {
       <Grid container md={12} xl={12}>
         <Box
           sx={{
-            backgroundImage: `url(${Background})`,
+            // backgroundImage: `url(${Background})`,
+            backgroundImage:`url(http://localhost:5000/${activitiesData.hero_img})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
