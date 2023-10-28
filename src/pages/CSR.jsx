@@ -279,7 +279,7 @@
 
 // export default CSRMain;
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Sponsors from "../components/sponsors/sponsorsFooter";
 import Footer from "../components/footer/footer";
 import BlogGrid from "../components/gridViews/BlogGrid";
@@ -296,16 +296,53 @@ import {
 import ResponsiveAppBar from "../components/NavBar/NavBar";
 import StaycationSeasonPackage from "../components/StaycationSeasonPackage/StaycationSeasonPackage";
 import NewFooter from "../components/footer/NewFooter";
+import axios from "axios";
 
 function CSRMain() {
+  const [csrData, setCsrData] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const getCsrData = async () => {
+    try {
+      const response = await axios.get(`http://localhost:5000/csr/getcsrPageData?username=ranausama`);
+      // Handle the response data here
+      console.log('Data:', response.data);
+      setLoading(true);
+      setCsrData(response.data);
+    } catch (error) {
+      // Handle errors here
+      console.error('Error:', error);
+    }
+  };
+
+  // const footerRef = useRef(null);
+  // const [data, setData] = useState([]);
+  console.log('csrData', csrData)
+    useEffect(() => {
+    // const fetchData = async () => {
+    //   try {
+    //     const response = await axios.get(`http://127.0.0.1:8000/api/homepage`);
+    //     setData(response.data);
+    //     console.log('yoodata', response.data.date.general[1]);
+    //   } catch (error) {
+    //     console.error(error);
+    //   }
+    // };
+
+    // fetchData();
+    getCsrData()
+
+  }, [loading]);
   return (
     <div>
       <ResponsiveAppBar />
 
       <StaycationHero
-        image="/csrtop.jpg"
-        heading="Empowering Communities, Enriching Lives:"
-        text="Our Commitment to Corporate Social Responsibility."
+        // image="/csrtop.jpg"
+          image={`http://localhost:5000/${csrData.hero_img}`}
+        // heading="Empowering Communities, Enriching Lives:"
+        heading={csrData.hero_title}
+        text={csrData.hero_txt}
+        // text="Our Commitment to Corporate Social Responsibility."
       />
       <Container fixed sx={{ mb: 10 }}>
         <Grid container>
@@ -337,7 +374,7 @@ function CSRMain() {
                   marginTop: 5,
                 }}
               >
-                Cleanliness Drive.
+               {csrData.csr1_title}
               </Typography>
               <Divider
                 sx={{
@@ -359,17 +396,19 @@ function CSRMain() {
                   fontFamily: '"Jost", sans-serif',
                 }}
               >
-                {" "}
+                {csrData.csr1_txt}
+                {/* {" "}
                 To provide a pleasant and fresh experience to the tourists and
                 also a way of giving back to nature, regular cleanliness drives
-                for a soulful vacation.{" "}
+                for a soulful vacation.{" "} */}
               </Typography>
             </Stack>
           </Grid>
 
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
-              src="CleanlinessDrive.jpeg"
+             src={`http://localhost:5000/${csrData.csr1_img}`}
+              // src={csrData.csr1_img}
               alt="Cleanliness drives"
               style={{
                 maxWidth: "90%",
@@ -389,7 +428,8 @@ function CSRMain() {
           >
             <Grid item xs={12} sm={12} md={6} mt={5}>
               <img
-                src="FirstAid.png"
+               src={`http://localhost:5000/${csrData.csr2_img}`}
+                // src={csrData.csr2_img}
                 alt="First Aid"
                 style={{
                   maxWidth: "90%",
@@ -427,7 +467,8 @@ function CSRMain() {
                     marginTop: 5,
                   }}
                 >
-                  Quick Rescue Teams.
+                  {csrData.csr2_title}
+                  {/* Quick Rescue Teams. */}
                 </Typography>
                 <Divider
                   sx={{
@@ -449,10 +490,11 @@ function CSRMain() {
                     fontFamily: '"Jost", sans-serif',
                   }}
                 >
-                  {" "}
+                  {csrData.csr2_txt}
+                  {/* {" "}
                   Keeping in mind the safety of the tourists, we have rescue
                   teams on the ready 24/7 for any mishaps or unfortunate
-                  incidents as safety is the utmost priority.{" "}
+                  incidents as safety is the utmost priority.{" "} */}
                 </Typography>
               </Stack>
             </Grid>
@@ -485,7 +527,8 @@ function CSRMain() {
                   marginTop: 5,
                 }}
               >
-                Ration Distribution.
+                {csrData.csr3_title}
+                {/* Ration Distribution. */}
               </Typography>
               <Divider
                 sx={{
@@ -508,18 +551,20 @@ function CSRMain() {
                   mr: 2,
                 }}
               >
-                {" "}
+                {csrData.csr3_txt}
+                {/* {" "}
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.{" "}
+                nisi ut aliquip ex ea commodo consequat.{" "} */}
               </Typography>
             </Stack>
           </Grid>
 
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
-              src="RationDistribution.png"
+ src={`http://localhost:5000/${csrData.csr3_img}`}
+              // src={csrData.csr3_img}
               alt="Ration Distribution drives"
               style={{
                 maxWidth: "90%",
@@ -539,7 +584,8 @@ function CSRMain() {
           >
             <Grid item xs={12} sm={12} md={6} mt={5}>
               <img
-                src="WinterRoadClearance.png"
+              src={`http://localhost:5000/${csrData.csr4_img}`}
+                // src={csrData.csr4_img}
                 alt="Road Clearance"
                 style={{
                   maxWidth: "90%",
@@ -577,7 +623,8 @@ function CSRMain() {
                     marginTop: 5,
                   }}
                 >
-                  Road Clearance.
+                  {csrData.csr4_title}
+                  {/* Road Clearance. */}
                 </Typography>
                 <Divider
                   sx={{
@@ -599,10 +646,12 @@ function CSRMain() {
                     fontFamily: '"Jost", sans-serif',
                   }}
                 >
-                  {" "}
+                                  {csrData.csr4_txt}
+
+                  {/* {" "}
                   Keeping in mind the safety of the tourists, we have rescue
                   teams on the ready 24/7 for any mishaps or unfortunate
-                  incidents as safety is the utmost priority.{" "}
+                  incidents as safety is the utmost priority.{" "} */}
                 </Typography>
               </Stack>
             </Grid>
@@ -635,7 +684,8 @@ function CSRMain() {
                   marginTop: 5,
                 }}
               >
-                Learning and Development.
+                {csrData.csr5_title}
+                {/* Learning and Development. */}
               </Typography>
               <Divider
                 sx={{
@@ -658,18 +708,20 @@ function CSRMain() {
                   mr: 2,
                 }}
               >
-                {" "}
+                {csrData.csr5_txt}
+                {/* {" "}
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.{" "}
+                nisi ut aliquip ex ea commodo consequat.{" "} */}
               </Typography>
             </Stack>
           </Grid>
 
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
-              src="Learning&DevelopmentofLocals.png"
+             src={`http://localhost:5000/${csrData.csr5_img}`}
+              // src={csrData.csr5_img}
               alt="Ration Distribution drives"
               style={{
                 maxWidth: "90%",

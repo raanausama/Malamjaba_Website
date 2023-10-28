@@ -100,10 +100,10 @@ const HomePage = () => {
       //  image={`http://localhost:5000/${homeData.wa_img}`}
         image="events.jpg"
         textHeading="Winter Activities"
-        // text={homeData.wa_txt}
-        text="Malam Jabba Ski Resort is the only Public Ski Resort in Pakistan accessible throughout the year, even in heavy snowfall. 
-                                We offer a range of exciting and fun activities to our visitors that are guaranteed to make you feel refreshed and inspire you to live fully and freely in the moment.
-                                The equipment used for these activities is of premium quality as we can never compromise on the safety of our tourists. "
+        text={homeData.wa_txt}
+        // text="Malam Jabba Ski Resort is the only Public Ski Resort in Pakistan accessible throughout the year, even in heavy snowfall. 
+        //                         We offer a range of exciting and fun activities to our visitors that are guaranteed to make you feel refreshed and inspire you to live fully and freely in the moment.
+        //                         The equipment used for these activities is of premium quality as we can never compromise on the safety of our tourists. "
         button={true}
         buttonText="Book Acitvites"
         buttonCallBack={() => {
