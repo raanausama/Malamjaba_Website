@@ -26,25 +26,45 @@ const ImageWithSummerActivities = lazy(() =>
 // );
 
 const HomePage = () => {
+  const [homeData, setHomeData] = useState([]);
+  const [loading, setLoading] = useState(false);
+  // console.log('env',import.meta.env.VITE_REACT_APP_SERVER_URL)
+  // const [username,SetUserName] = useState('ranausama')
+
+  const getHomeData = async () => {
+    try {
+      const response = await axios.get(`http://localhost:5000/home/getHomePageData?username=ranausama`);
+      // Handle the response data here
+      console.log('Data:', response.data);
+      setLoading(true);
+      setHomeData(response.data);
+    } catch (error) {
+      // Handle errors here
+      console.error('Error:', error);
+    }
+  };
+
   // const footerRef = useRef(null);
   // const [data, setData] = useState([]);
-  // console.log('env', process.env.REACT_APP_BACKEND_URL)
-  //   useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await axios.get(`http://127.0.0.1:8000/api/homepage`);
-  //       setData(response.data);
-  //       console.log('yoodata', response.data.date.general[1]);
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   };
+  console.log('homeData', homeData)
+    useEffect(() => {
+    // const fetchData = async () => {
+    //   try {
+    //     const response = await axios.get(`http://127.0.0.1:8000/api/homepage`);
+    //     setData(response.data);
+    //     console.log('yoodata', response.data.date.general[1]);
+    //   } catch (error) {
+    //     console.error(error);
+    //   }
+    // };
 
-  //   fetchData();
-  // }, []);
+    // fetchData();
+    getHomeData()
+
+  }, [loading]);
   return (
     <>
-      <AnnouncementBanner />
+      <AnnouncementBanner text={homeData.header_txt}/>
 
       <ResponsiveAppBar />
       <Suspense
@@ -62,7 +82,9 @@ const HomePage = () => {
         />
 
         <ImageWithSummerActivities
+        // image={`http://localhost:5000/${homeData.sa_img}`}
           image="SummerActivities.JPG"
+          // text={homeData.sa_txt}
           text="The tourists can enjoy plethora of activities during Summers other than the scenic
                                 beauty of green mountains of the Malam Jabba Valley. All the rides and their equipment conform to state-of-the-art safety and
                                 quality procedures and are tested and reviewed by a team of foreign experts and engineers, multiple times a year."
@@ -75,8 +97,10 @@ const HomePage = () => {
         />
       </Suspense>
       <ImageWithWinterActivities
+      //  image={`http://localhost:5000/${homeData.wa_img}`}
         image="events.jpg"
         textHeading="Winter Activities"
+        // text={homeData.wa_txt}
         text="Malam Jabba Ski Resort is the only Public Ski Resort in Pakistan accessible throughout the year, even in heavy snowfall. 
                                 We offer a range of exciting and fun activities to our visitors that are guaranteed to make you feel refreshed and inspire you to live fully and freely in the moment.
                                 The equipment used for these activities is of premium quality as we can never compromise on the safety of our tourists. "
@@ -93,7 +117,7 @@ const HomePage = () => {
           </>
         }
       > */}
-      <Eventcardsection />
+      <Eventcardsection homeData={homeData}/>
       {/* </Suspense> */}
       {/* <Servicecardsection /> */}
       {/* <ImageLists /> */}
