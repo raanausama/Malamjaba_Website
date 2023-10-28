@@ -2,8 +2,10 @@ import React, { useRef } from "react";
 import "./StacationCover.css";
 import { Grid, CardMedia, Typography } from "@mui/material";
 import gsap from "gsap";
+import axios from "axios";
 
-const StacationCover = () => {
+const StacationCover = ({staycationData}) => {
+  console.log(staycationData);
   const onEnter = ({ currentTarget }) => {
     gsap.to(currentTarget, { scale: 1.05 });
   };
@@ -26,13 +28,15 @@ const StacationCover = () => {
           // fontWeight={"400"}
           // fontSize={"3rem"}
         >
-          Welcome To <br /> Malam Jabba Resort
+          {/* Welcome To <br /> Malam Jabba Resort */}
+          {staycationData?.welcome_txt}
         </Typography>
         <Typography variant="h5" color="#094e9d">
-          The First Ski Resort In Pakistan
+          {/* The First Ski Resort In Pakistan */}
+          {staycationData?.heading2_txt}
         </Typography>
         <Typography variant="subtitle">
-          Nestled in a landscape that offers all natural wonders of Swat, the
+          {/* Nestled in a landscape that offers all natural wonders of Swat, the
           resort is a complete bliss for thrill seekers. Apart from being one of
           the top ski resorts in the country, it also aims to provide
           exclusively exquisite standards of staycation amidst the mountains.
@@ -40,7 +44,8 @@ const StacationCover = () => {
           The resort is located in a meticulously beautiful location amidst
           snow-covered peaks and underneath clear blue sky. An exclusive area
           aimed to provide the perfect adrenaline shot through adventure and
-          thrill activities.
+          thrill activities. */}
+          {staycationData?.heading1_txt}
         </Typography>
       </Grid>
       <Grid item md={6} xs={12} sm={12} lg={6} padding="2%">
@@ -56,7 +61,9 @@ const StacationCover = () => {
         >
           <Grid item xs={6} onMouseEnter={onEnter} onMouseLeave={onLeave}>
             <img
-              src="/PicturesForWebsite/1-min.jpg"
+              // src="/PicturesForWebsite/1-min.jpg"
+              src={`http://localhost:5000/${staycationData.w1}`}
+              
               alt="First Image"
               style={{
                 width: "100%",
@@ -71,7 +78,8 @@ const StacationCover = () => {
             <Grid container spacing={2}>
               <Grid item xs={12} onMouseEnter={onEnter} onMouseLeave={onLeave}>
                 <img
-                  src="PicturesForWebsite/Malam-Jabba-pix-min.JPG"
+                  // src="PicturesForWebsite/Malam-Jabba-pix-min.JPG"
+                  src={`http://localhost:5000/${staycationData.w2}`}
                   alt="Second Image"
                   style={{
                     width: "100%",
@@ -104,7 +112,8 @@ const StacationCover = () => {
                     borderRadius: "10px",
                   }}
                   component="img"
-                  image="PicturesForWebsite/Marcopolo-min.JPG"
+                  // image="PicturesForWebsite/Marcopolo-min.JPG"
+                  src={`http://localhost:5000/${staycationData.w3}`}
                 />
               </Grid>
             </Grid>
