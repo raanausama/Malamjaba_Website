@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Sponsors from "../components/sponsors/sponsorsFooter";
 import Footer from "../components/footer/footer";
 import BlogGrid from "../components/gridViews/BlogGrid";
@@ -9,17 +9,42 @@ import StaycationSeasonPackage from "../components/StaycationSeasonPackage/Stayc
 import NewFooter from "../components/footer/NewFooter";
 import slope1 from "../Assets/bg_content/slope1.png";
 import slope2 from "../Assets/bg_content/slope2.png";
+import axios from "axios";
 
 
 function Slope() {
+  const [slopeData, setSlopeData] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const getSlopePageData = async () => {
+    try {
+      const response = await axios.get(
+        `http://localhost:5000/slope/getSlopePageData?username=ranausama`
+      );
+      // Handle the response data here
+      console.log("Data:", response.data);
+      setLoading(true);
+      setSlopeData(response.data);
+    } catch (error) {
+      // Handle errors here
+      console.error("Error:", error);
+    }
+  };
+  console.log("slopeData", slopeData);
+  useEffect(() => {
+    getSlopePageData();
+  }, [loading]);
+  console.log("__________Slope Data_______________", slopeData);
   return (
     <div>
       <ResponsiveAppBar />
       <StaycationHero
-        image="Images/Slope/dsfgfgg.jpg"
-        heading="A Symphony of Serenity -"
-        heading2="Malam Jabba's Magnificent Slopes Await you"
-        text="The Identity of Malam Jabba Ski Resort"
+        // image="Images/Slope/dsfgfgg.jpg"
+        image={`http://localhost:5000/${slopeData.hero_img}`}
+        // heading="A Symphony of Serenity -"
+        // heading2="Malam Jabba's Magnificent Slopes Await you"
+        // text="The Identity of Malam Jabba Ski Resort"
+        heading={slopeData.hero_title}
+        text={slopeData.hero_txt}
       />
       <Box sx={{ padding: "10%" }}>
         <Grid
@@ -37,7 +62,8 @@ function Slope() {
             >
               <Grid item xs={6}>
                 <img
-                  src="/Images/Slope/IMG_9404-1-min.JPG"
+                  // src="/Images/Slope/IMG_9404-1-min.JPG"
+                  src={`http://localhost:5000/${slopeData.ski_img1}`}
                   alt="First Image"
                   style={{
                     width: "100%",
@@ -52,7 +78,8 @@ function Slope() {
                 <Grid container spacing={2}>
                   <Grid item xs={12}>
                     <img
-                      src="/Images/Slope/fghgfh-min.jpg"
+                      // src="/Images/Slope/fghgfh-min.jpg"
+                      src={`http://localhost:5000/${slopeData.ski_img2}`}
                       alt="Second Image"
                       style={{
                         width: "100%",
@@ -65,7 +92,8 @@ function Slope() {
                   </Grid>
                   <Grid item xs={12}>
                     <img
-                      src={slope1}
+                      // src={slope1}
+                      src={`http://localhost:5000/${slopeData.ski_img3}`}
                       alt="Third Image"
                       style={{
                         width: "100%",
@@ -98,10 +126,12 @@ function Slope() {
           >
             <Stack direction="column">
               <Typography variant="h4" color="#094e9d" sx={{ fontFamily: '"Allison", handwriting !important', }}>
-                Malam Jabba Ski Resort - <br/> Where Nature Meets Adventure:
+                {/* Malam Jabba Ski Resort - <br/> Where Nature Meets Adventure: */}
+                {slopeData.ski_title1}<br/>
+                {slopeData.ski_title2}
               </Typography>
               <Typography variant="subtitle">
-                As you travel up the curvy roads of Swat, eyeing breathtaking
+                {/* As you travel up the curvy roads of Swat, eyeing breathtaking
                 views of the valley, the journey concludes with a sight that
                 makes all the traveling worth it – Malam Jabba Ski Resort, a
                 beautiful destination stationed amidst the Hindu Kush and
@@ -111,7 +141,8 @@ function Slope() {
                 It is Pakistan's only public alpine-style Ski Resort with
                 state-of-the-art infrastructure, premium accommodations, and
                 world-class winter sports facilities. The resort commenced its
-                operations in 2016.
+                operations in 2016. */}
+                {slopeData.ski_txt}
               </Typography>
             </Stack>
           </Grid>
@@ -130,18 +161,20 @@ function Slope() {
               sx={{fontFamily: '"Allison", handwriting !important',}}
               // fontSize={"3rem"}
             >
-            Technicalities of the Slope
+            {/* Technicalities of the Slope */}
+            {slopeData.tech_title}
             </Typography>
 
             <Typography variant="subtitle">
-              The slope at Malam Jabba is one of its kind, well-maintained and
+              {/* The slope at Malam Jabba is one of its kind, well-maintained and
               perfect for skiing and snowboarding. The management at Malam Jabba
               Ski Resort ensures that the snow is groomed to perfection,
               especially during our winter season. The top station elevation of
               the slope is 2656 Meters while the base elevation is 2472 Meters.
               The length of the slope is 720 Meters and its width is 60 Meters.
               Moreover, the average slope gradient is 28%, providing an
-              exhilarating skiing experience for enthusiasts.
+              exhilarating skiing experience for enthusiasts. */}
+              {slopeData.tech_txt}
             </Typography>
           </Box>
         </Grid>
@@ -155,7 +188,8 @@ function Slope() {
           >
             <Grid item xs={6}>
               <img
-                src="/Images/Slope/sdfrr5fg1-min.jpg"
+                // src="/Images/Slope/sdfrr5fg1-min.jpg"
+                src={`http://localhost:5000/${slopeData.tech1_img}`}
                 alt="First Image"
                 style={{
                   width: "100%",
@@ -170,7 +204,8 @@ function Slope() {
               <Grid container spacing={2}>
                 <Grid item xs={12}>
                   <img
-                    src="/Images/Slope/dsfgfgg-min.jpg"
+                    // src="/Images/Slope/dsfgfgg-min.jpg"
+                    src={`http://localhost:5000/${slopeData.tech2_img}`}
                     alt="Second Image"
                     style={{
                       width: "100%",
@@ -183,7 +218,8 @@ function Slope() {
                 </Grid>
                 <Grid item xs={12}>
                   <img
-                    src={slope2}
+                    // src={slope2}
+                    src={`http://localhost:5000/${slopeData.tech3_img}`}
                     alt="Third Image"
                     style={{
                       width: "100%",
