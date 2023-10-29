@@ -13,6 +13,7 @@ import axios from "axios";
 
 
 function Slope() {
+
   const [slopeData, setSlopeData] = useState([]);
   const [loading, setLoading] = useState(false);
   const getSlopePageData = async () => {
@@ -34,6 +35,7 @@ function Slope() {
     getSlopePageData();
   }, [loading]);
   console.log("__________Slope Data_______________", slopeData);
+
   return (
     <div>
       <ResponsiveAppBar />

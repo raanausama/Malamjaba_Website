@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import "../../pages/activities.css";
 
-const ActivitiesAvatar = () => {
+const ActivitiesAvatar = ({activitiesData}) => {
   const theme = useTheme();
   const smallScreen = theme.breakpoints.down("md");
 
@@ -33,7 +33,7 @@ const ActivitiesAvatar = () => {
           >
             <Avatar
               alt="Activities"
-              src="outdoor-min.jpeg"
+              src={`http://localhost:5000/${activitiesData.adventure_img}`}
               sx={{
                 width: { xs: 250, sm: 400 },
                 height: { xs: 250, sm: 400 },
@@ -58,13 +58,16 @@ const ActivitiesAvatar = () => {
           >
             <Stack direction="column">
               <Typography variant="h4" color="#094e9d" sx={{ fontFamily: '"Allison", handwriting !important', }}>
-                Adventurous yet Fun Activities at<br /> Malam Jabba Ski Resort
+                {/* Adventurous yet Fun Activities at<br /> Malam Jabba Ski Resort */}
+                {activitiesData?.adventure_title}
               </Typography>
               <Typography variant="subtitle">
-                Our exhilarating Chairlift, Ziplining, Giant Swing, Human
+                {/* Our exhilarating Chairlift, Ziplining, Giant Swing, Human
                 Slingshot and kids activities made for fun and memorable
                 adventures. We strive to enhance the lives of our guests by
-                creating the best human-powered outdoor adventures available.{" "}
+                creating the best human-powered outdoor adventures available.{" "} */}
+                                {activitiesData?.adventure_txt}
+
               </Typography>
             </Stack>
           </Grid>
