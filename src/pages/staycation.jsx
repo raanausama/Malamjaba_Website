@@ -35,7 +35,7 @@ const Staycation = () => {
   console.log("__________Staycation Data_______________", staycationData);
   return (
     <div>
-      <ResponsiveAppBar  />
+      <ResponsiveAppBar />
       <StaycationHero
         image={`http://localhost:5000/${staycationData.hero_img}`}
         // image={header}
