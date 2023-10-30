@@ -82,13 +82,15 @@ const HomePage = () => {
         />
 
         <ImageWithSummerActivities
-        // image={`http://localhost:5000/${homeData.sa_img}`}
-          image="SummerActivities.JPG"
-          // text={homeData.sa_txt}
-          text="The tourists can enjoy plethora of activities during Summers other than the scenic
-                                beauty of green mountains of the Malam Jabba Valley. All the rides and their equipment conform to state-of-the-art safety and
-                                quality procedures and are tested and reviewed by a team of foreign experts and engineers, multiple times a year."
+        image={`http://localhost:5000/${homeData.sa_img}`}
+          // image="SummerActivities.JPG"
+          text={homeData.sa_txt}
+          // text="The tourists can enjoy plethora of activities during Summers other than the scenic
+          //                       beauty of green mountains of the Malam Jabba Valley. All the rides and their equipment conform to state-of-the-art safety and
+          //                       quality procedures and are tested and reviewed by a team of foreign experts and engineers, multiple times a year."
           textHeading="Summer Activities"
+          // textHeading={homeData.sa}
+          
           button={true}
           buttonText="Book Activities"
           buttonCallBack={() => {
