@@ -47,6 +47,7 @@ function Slope() {
         // text="The Identity of Malam Jabba Ski Resort"
         heading={slopeData.hero_title}
         text={slopeData.hero_txt}
+        
       />
       <Box sx={{ padding: "10%" }}>
         <Grid
