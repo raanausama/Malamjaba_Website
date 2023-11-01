@@ -740,8 +740,8 @@ We take pride in providing ski training to our locals and provide them with plat
 
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
-             src={`http://localhost:5000/${csrData.csr5_img}`}
-              // src={csrData.csr5_img}
+            //  src={`http://localhost:5000/${csrData.csr5_img}`}
+              src="/CSR/Learning&DevelopmentofLocals.png"
               alt="Learning drives"
               style={{
                 maxWidth: "90%",
