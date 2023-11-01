@@ -17,39 +17,50 @@ export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
 
   return (
     <>
-      <Card
-        sx={{ position: "relative", height: 200, borderRadius: "15px" }}
-        onMouseEnter={onEnter}
-        onMouseLeave={onLeave}
-      >
-        <Box
+      <Box sx={{ ml: "1em", mr: "1em" }}>
+        <Card
           sx={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundImage: `url(${simage})`,
-            backgroundSize: "cover",
+            position: "relative",
+            height: 200,
+            borderRadius: "15px",
           }}
-        />
-      </Card>
-      <Box flexDirection="column" >
-        <Typography
-          gutterBottom
-          variant="h4"
-          component="div"
-          sx={sxHeader}
-          mt={1}
-          color="#094e9d"
-          
+          onMouseEnter={onEnter}
+          onMouseLeave={onLeave}
         >
-          {sheader}
-        </Typography>
-        <Divider sx={{ borderBottomWidth: 'medium', borderColor: '#D9BD90', width: '50px' }}/>
-        <Typography variant="body1" sx={sxText} mt={1}>
-          {stext}
-        </Typography>
+          <Box
+            sx={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              backgroundImage: `url(${simage})`,
+              backgroundSize: "cover",
+            }}
+          />
+        </Card>
+        <Box flexDirection="column">
+          <Typography
+            gutterBottom
+            variant="h4"
+            component="div"
+            sx={sxHeader}
+            mt={1}
+            color="#094e9d"
+          >
+            {sheader}
+          </Typography>
+          <Divider
+            sx={{
+              borderBottomWidth: "medium",
+              borderColor: "#D9BD90",
+              width: "50px",
+            }}
+          />
+          <Typography variant="body1" sx={sxText} mt={1}>
+            {stext}
+          </Typography>
+        </Box>
       </Box>
     </>
   );
