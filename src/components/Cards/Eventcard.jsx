@@ -61,6 +61,7 @@ export default function ActionAreaCard({
                 gutterBottom
                 variant="h5"
                 component="div"
+                fontFamily={"Aktiv"}
                 mt={3}
                 // sx={{ fontSize: "1.5em" }}
               >
@@ -70,6 +71,7 @@ export default function ActionAreaCard({
                 gutterBottom
                 variant="h5"
                 component="div"
+                fontFamily={"Aktiv"}
                 sx={{
                   // fontSize: "2em",
                   textTransform: "none",
@@ -85,6 +87,7 @@ export default function ActionAreaCard({
                 gutterBottom
                 variant="subtitle1"
                 component="div"
+                fontFamily={"Aktiv"}
                 sx={
                   {
                     // fontSize: "2em",
@@ -100,20 +103,20 @@ export default function ActionAreaCard({
               </Typography>
               {/* {expanded && (
               <div>
-                <Typography variant="h6" component="h2">
+                <Typography fontFamily={"Aktiv"} variant="h6" component="h2">
                   <b>Long Description:</b> Lorem ipsum dolor sit amet,
                   consectetur adipiscing elit.
                 </Typography>
-                <Typography variant="h6" component="h2">
+                <Typography fontFamily={"Aktiv"} variant="h6" component="h2">
                   <b>PreReqs:</b> Lorem ipsum dolor sit amet.
                 </Typography>
-                <Typography variant="h6" component="h2">
+                <Typography fontFamily={"Aktiv"} variant="h6" component="h2">
                   <b>Date:</b> June 30, 2023
                 </Typography>
-                <Typography variant="h6" component="h2">
+                <Typography fontFamily={"Aktiv"} variant="h6" component="h2">
                   <b>Duration:</b> 3 hours
                 </Typography>
-                <Typography variant="h6" component="h2">
+                <Typography fontFamily={"Aktiv"} variant="h6" component="h2">
                   <b>Disclaimer:</b> Lorem ipsum dolor sit amet, consectetur
                   adipiscing elit.
                 </Typography>

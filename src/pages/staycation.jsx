@@ -37,8 +37,8 @@ const Staycation = () => {
     <div>
       <ResponsiveAppBar />
       <StaycationHero
-        image={`http://localhost:5000/${staycationData.hero_img}`}
-        // image={header}
+        // image={`http://localhost:5000/${staycationData.hero_img}`}
+        image={header}
       />
       <StacationCover staycationData={staycationData} />
       <StaycationGrid staycationData={staycationData} />
