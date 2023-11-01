@@ -143,7 +143,8 @@ function ResponsiveAppBar() {
                   >
                     <Typography
                       textAlign="center"
-                      sx={{ fontFamily: "TrajanPro3Black" }}
+                      fontFamily="Aktiv"
+                      // sx={{ fontFamily: "TrajanPro3Black" }}
                     >
                       {page}
                     </Typography>
@@ -167,7 +168,8 @@ function ResponsiveAppBar() {
                   fontSize: "0.990rem",
                   fontWeight: "Bold",
                   padding: "6px 30px",
-                  fontFamily: "TrajanPro3Black",
+                  fontFamily:"Aktiv"
+                  // fontFamily: "TrajanPro3Black",
                 }}
                 onMouseEnter={onEnter}
                 onMouseLeave={onLeave}
@@ -218,6 +220,7 @@ function ResponsiveAppBar() {
                   <Typography
                     textAlign="center"
                     color="inherit"
+                    fontFamily= "Aktiv"
                     // component={Link}
                     // to={`/${settings.toLowerCase().replace(/\s/g, "-")}`}
                   >

@@ -77,11 +77,11 @@ const StaycationSeasonPackage = ({
         <Grid item sx={12} md={12}>
           <PrepModal image={image} open={viewModalOpen} handleClose={handleCloseModal} />
           <Stack direction="column" alignItems="center">
-            <Typography variant="h4" mt={4} color="#11357C" sx={{fontFamily: '"Allison", handwriting !important',}}>
+            <Typography variant="h4" mt={4} color="#11357C" fontFamily={"Aktiv"}>
               ARE YOU READY?
             </Typography>
 
-            {/* <Typography variant="body1" fontStyle="bold" mt={5}>
+            {/* <Typography fontFamily={"Aktiv"} variant="body1" fontStyle="bold" mt={5}>
               Check out our tips to help you prepare for everything you need
               before you hit the slopes.
             </Typography> */}
@@ -104,6 +104,7 @@ const StaycationSeasonPackage = ({
             variant="contained"
             mt={4}
             onClick={handleOpenModal}
+            fontFamily={"Aktiv"}
           >
             {buttonText}
           </Button>

@@ -53,20 +53,20 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
                 target="_blank"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                <Typography
+                <Typography fontFamily={"Aktiv"}
                   variant="h5"
-                  sx={{ fontFamily: "Times New Roman, Times, serif" }}
+                  // sx={{ fontFamily: "Times New Roman, Times, serif" }}
                 >
                   LOCATION
                 </Typography>
               </a>
-              <Typography variant="body1 " sx={{ fontFamily: "Didot, serif" }}>
+              <Typography fontFamily={"Aktiv"} variant="body1 " >
                 Hill station,
               </Typography>
-              <Typography variant="body1" sx={{ fontFamily: "Didot, serif" }}>
+              <Typography fontFamily={"Aktiv"} variant="body1" >
                 Malam Jabba Road,
               </Typography>
-              <Typography variant="body1" sx={{ fontFamily: "Didot, serif" }}>
+              <Typography fontFamily={"Aktiv"} variant="body1" >
                 Malam Jabba, Swat.
               </Typography>
             </Stack>
@@ -88,11 +88,12 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
             >
               <Typography
                 variant="h5"
-                sx={{ fontFamily: "Times New Roman, Times, serif" }}
+                fontFamily={"Aktiv"}
+                // sx={{ fontFamily: "Times New Roman, Times, serif" }}
               >
                 QUICK LINKS
               </Typography>
-              <Typography variant="body1" sx={{ fontFamily: "Didot, serif" }}>
+              <Typography fontFamily={"Aktiv"} variant="body1" >
                 <Link
                   href="/activities"
                   rel="sponsored"
@@ -102,7 +103,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
                   Activites
                 </Link>
               </Typography>
-              <Typography variant="body1" sx={{ fontFamily: "Didot, serif" }}>
+              <Typography fontFamily={"Aktiv"} variant="body1">
                 <Link
                   href="/staycation"
                   rel="sponsored"
@@ -112,7 +113,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
                   Staycation
                 </Link>
               </Typography>
-              <Typography variant="body1" sx={{ fontFamily: "Didot, serif" }}>
+              <Typography fontFamily={"Aktiv"} variant="body1" >
                 <Link
                   href="/dinein"
                   rel="sponsored"
@@ -141,17 +142,17 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
             >
               <Typography
                 variant="h5"
-                sx={{ fontFamily: "Times New Roman, Times, serif" }}
+                // sx={{ fontFamily: "Times New Roman, Times, serif" }}
               >
                 CONTACT US
               </Typography>
-              <Typography variant="body1" sx={{ fontFamily: "Didot, serif" }}>
+              <Typography fontFamily={"Aktiv"} variant="body1" >
                 info@malamjabbaresort.com
               </Typography>
-              <Typography variant="body1" sx={{ fontFamily: "Didot, serif" }}>
+              <Typography fontFamily={"Aktiv"} variant="body1" >
                 +92-302-6575400
               </Typography>
-              <Typography variant="body1" sx={{ fontFamily: "Didot, serif" }}>
+              <Typography fontFamily={"Aktiv"} variant="body1" >
                 +92-333-2342342
               </Typography>
             </Stack>
@@ -241,7 +242,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               align="center"
               sx={{ color: "white" }}
             > */}
-            <Typography variant="h6" sx={{fontFamily: 'Times New Roman,Times,serif'}}>FOLLOW US</Typography>
+            <Typography fontFamily={"Aktiv"} variant="h6" >FOLLOW US</Typography>
             <Link
               sx={{ color: "white" }}
               href="https://www.facebook.com/MjSkiResort"

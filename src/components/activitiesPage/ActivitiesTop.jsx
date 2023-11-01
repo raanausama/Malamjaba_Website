@@ -18,8 +18,8 @@ const ActivitiesTop = ({activitiesData}) => {
       <Grid container md={12} xl={12}>
         <Box
           sx={{
-            // backgroundImage: `url(${Background})`,
-            backgroundImage:`url(http://localhost:5000/${activitiesData.hero_img})`,
+            backgroundImage: `url(${Background})`,
+            // backgroundImage:`url(http://localhost:5000/${activitiesData.hero_img})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",

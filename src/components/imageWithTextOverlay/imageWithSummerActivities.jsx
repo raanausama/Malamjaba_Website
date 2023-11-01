@@ -89,10 +89,10 @@ const ImageWithSummerActivities = ({
               borderRadius: "10px",
             }}
           >
-            <Typography variant="h4" sx={{ fontFamily: "TrajanPro3Black" }}>
+            <Typography variant="h4" fontFamily={"Aktiv"} >
               Summer Activities
             </Typography>
-            <Typography variant="body1" mt={5} textAlign='center'>
+            <Typography fontFamily={"Aktiv"} variant="body1" mt={5} textAlign='center'>
               {text}
             </Typography>
             {/* <Typography variant="body1" mt={5}>

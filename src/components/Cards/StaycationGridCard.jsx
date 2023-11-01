@@ -53,9 +53,10 @@ const StaycationGridCard = ({ image, heading, text }) => {
             >
               <Typography
                 variant="h4"
+                fontFamily={"Aktiv"}
                 sx={{
                   textDecoration: "none",
-                  fontFamily: '"Allison", handwriting !important',
+                  // fontFamily: '"Allison", handwriting !important',
                   color: "#11357C",
                   transition: "color 0.3s ease",
                 }}
@@ -77,7 +78,7 @@ const StaycationGridCard = ({ image, heading, text }) => {
                 width: "100px",
               }}
             />
-            <Typography>{text}</Typography>
+            <Typography fontFamily={"Aktiv"}>{text}</Typography>
           </Box>
         </Box>
       </Box>

@@ -24,19 +24,20 @@ const StacationCover = ({staycationData}) => {
         <Typography
           color="#094e9d"
           variant="h3"
-          fontFamily="TrajanPro3Black"
+          fontFamily={"Aktiv"}
+          // fontFamily="TrajanPro3Black"
           // fontWeight={"400"}
           // fontSize={"3rem"}
         >
-          {/* Welcome To <br /> Malam Jabba Resort */}
-          {staycationData?.welcome_txt}
+          Welcome To <br /> Malam Jabba Resort
+          {/* {staycationData?.welcome_txt} */}
         </Typography>
-        <Typography variant="h5" color="#094e9d">
-          {/* The First Ski Resort In Pakistan */}
-          {staycationData?.heading2_txt}
+        <Typography fontFamily={"Aktiv"} variant="h5" color="#094e9d">
+          The First Ski Resort In Pakistan
+          {/* {staycationData?.heading2_txt} */}
         </Typography>
-        <Typography variant="subtitle">
-          {/* Nestled in a landscape that offers all natural wonders of Swat, the
+        <Typography fontFamily={"Aktiv"} variant="subtitle">
+          Nestled in a landscape that offers all natural wonders of Swat, the
           resort is a complete bliss for thrill seekers. Apart from being one of
           the top ski resorts in the country, it also aims to provide
           exclusively exquisite standards of staycation amidst the mountains.
@@ -44,8 +45,8 @@ const StacationCover = ({staycationData}) => {
           The resort is located in a meticulously beautiful location amidst
           snow-covered peaks and underneath clear blue sky. An exclusive area
           aimed to provide the perfect adrenaline shot through adventure and
-          thrill activities. */}
-          {staycationData?.heading1_txt}
+          thrill activities.
+          {/* {staycationData?.heading1_txt} */}
         </Typography>
       </Grid>
       <Grid item md={6} xs={12} sm={12} lg={6} padding="2%">
@@ -61,8 +62,8 @@ const StacationCover = ({staycationData}) => {
         >
           <Grid item xs={6} onMouseEnter={onEnter} onMouseLeave={onLeave}>
             <img
-              // src="/PicturesForWebsite/1-min.jpg"
-              src={`http://localhost:5000/${staycationData.w1}`}
+              src="/PicturesForWebsite/1-min.jpg"
+              // src={`http://localhost:5000/${staycationData.w1}`}
               
               alt="First Image"
               style={{
@@ -78,8 +79,8 @@ const StacationCover = ({staycationData}) => {
             <Grid container spacing={2}>
               <Grid item xs={12} onMouseEnter={onEnter} onMouseLeave={onLeave}>
                 <img
-                  // src="PicturesForWebsite/Malam-Jabba-pix-min.JPG"
-                  src={`http://localhost:5000/${staycationData.w2}`}
+                  src="PicturesForWebsite/Malam-Jabba-pix-min.JPG"
+                  // src={`http://localhost:5000/${staycationData.w2}`}
                   alt="Second Image"
                   style={{
                     width: "100%",
@@ -112,7 +113,7 @@ const StacationCover = ({staycationData}) => {
                     borderRadius: "10px",
                   }}
                   component="img"
-                  // image="PicturesForWebsite/Marcopolo-min.JPG"
+                  image="PicturesForWebsite/Marcopolo-min.JPG"
                   src={`http://localhost:5000/${staycationData.w3}`}
                 />
               </Grid>

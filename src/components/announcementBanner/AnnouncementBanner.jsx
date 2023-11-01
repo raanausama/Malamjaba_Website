@@ -2,7 +2,7 @@ import React, { lazy, Suspense, useState } from "react";
 import "./AnnouncementBanner.css";
 import { Typography } from "@mui/material";
 
-const AnnouncementBanner = ({text}) => {
+const AnnouncementBanner = ({ text }) => {
   // const footerRef = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -21,7 +21,14 @@ const AnnouncementBanner = ({text}) => {
         onMouseLeave={handleMouseLeave}
       >
         {/* <Typography variant="body1" className="moving-text moving-text.paused " color='white'>{text}</Typography> */}
-        <Typography variant="body1" className="moving-text moving-text.paused " color='white'>Something's Comming</Typography>
+        <Typography
+          variant="body1"
+          className="moving-text moving-text.paused "
+          color="white"
+          fontFamily="Aktiv"
+        >
+          Something's Comming
+        </Typography>
       </div>
     </>
   );

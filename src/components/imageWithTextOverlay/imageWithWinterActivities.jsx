@@ -89,39 +89,39 @@ const ImageWithWinterActivities = ({
               // borderRadius: "10px",
             }}
           >
-            <Typography variant="h4" sx={{ fontFamily: "TrajanPro3Black" }}>
+            <Typography variant="h4" fontFamily={"Aktiv"} >
               Winter Activities
             </Typography>
-            <Typography variant="body1" mt={5} textAlign='center'>
+            <Typography fontFamily={"Aktiv"} variant="body1" mt={5} textAlign='center'>
               {text}
             </Typography>
-            {/* <Typography variant="body1" mt={5}>
+            {/* <Typography fontFamily={"Aktiv"} variant="body1" mt={5}>
               Malam Jabba Ski Resort is the only
             </Typography>
-            <Typography variant="body1">
+            <Typography fontFamily={"Aktiv"} variant="body1">
               Public Ski Resort in Pakistan
             </Typography>
-            <Typography variant="body1">
+            <Typography fontFamily={"Aktiv"} variant="body1">
               accessible throughout the year,
             </Typography>
-            <Typography variant="body1">even in heavy snowfall.</Typography>
-            <Typography variant="body1">
+            <Typography fontFamily={"Aktiv"} variant="body1">even in heavy snowfall.</Typography>
+            <Typography fontFamily={"Aktiv"} variant="body1">
               We offer a range of exciting and fun activities
             </Typography>
-            <Typography variant="body1">
+            <Typography fontFamily={"Aktiv"} variant="body1">
               to our visitors that are guaranteed to make
             </Typography>
-            <Typography variant="body1">
+            <Typography fontFamily={"Aktiv"} variant="body1">
               you feel refreshed and inspire you to live fully
             </Typography>
-            <Typography variant="body1">and freely in the moment.</Typography>
-            <Typography variant="body1">
+            <Typography fontFamily={"Aktiv"} variant="body1">and freely in the moment.</Typography>
+            <Typography fontFamily={"Aktiv"} variant="body1">
               The equipment used for these activities is
             </Typography>
-            <Typography variant="body1">
+            <Typography fontFamily={"Aktiv"} variant="body1">
               of premium quality as we can never
             </Typography>
-            <Typography variant="body1">
+            <Typography fontFamily={"Aktiv"} variant="body1">
               compromise on the safety of our tourists.
             </Typography> */}
             {/* {button ? (

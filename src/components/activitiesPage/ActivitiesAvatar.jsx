@@ -33,7 +33,8 @@ const ActivitiesAvatar = ({activitiesData}) => {
           >
             <Avatar
               alt="Activities"
-              src={`http://localhost:5000/${activitiesData.adventure_img}`}
+              // src={`http://localhost:5000/${activitiesData.adventure_img}`}
+              src="outdoor.jpeg"
               sx={{
                 width: { xs: 250, sm: 400 },
                 height: { xs: 250, sm: 400 },
@@ -58,15 +59,15 @@ const ActivitiesAvatar = ({activitiesData}) => {
           >
             <Stack direction="column">
               <Typography variant="h4" color="#094e9d" fontFamily={"Aktiv"}>
-                {/* Adventurous yet Fun Activities at<br /> Malam Jabba Ski Resort */}
-                {activitiesData?.adventure_title}
+                Adventurous yet Fun Activities at<br /> Malam Jabba Ski Resort
+                {/* {activitiesData?.adventure_title} */}
               </Typography>
               <Typography variant="subtitle" fontFamily={"Aktiv"}>
-                {/* Our exhilarating Chairlift, Ziplining, Giant Swing, Human
+                Our exhilarating Chairlift, Ziplining, Giant Swing, Human
                 Slingshot and kids activities made for fun and memorable
                 adventures. We strive to enhance the lives of our guests by
-                creating the best human-powered outdoor adventures available.{" "} */}
-                                {activitiesData?.adventure_txt}
+                creating the best human-powered outdoor adventures available.{" "}
+                                {/* {activitiesData?.adventure_txt} */}
 
               </Typography>
             </Stack>
