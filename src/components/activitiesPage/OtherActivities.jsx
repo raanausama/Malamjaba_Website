@@ -89,7 +89,8 @@ const OtherActivities = ({ activitiesData }) => {
             alignItems: "center",
           }}
         >
-          <Typography variant="h3" color="#094e9d" sx={{}}>
+          <Typography variant="h3" color="#094e9d" sx={{                  fontFamily: "Aktiv",
+}}>
             Other Activities
           </Typography>
         </Box>

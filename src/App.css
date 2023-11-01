@@ -1,8 +1,7 @@
 @font-face {
   font-family: "Aktiv";
-  src: url("../src/Fonts/") format("truetype");
+  src: url("../src/Fonts/AktivGrotesk-Light.ttf") format("truetype");
 }
-
 .App {
   /* text-align: center; */
   font-family: 'Aktiv';

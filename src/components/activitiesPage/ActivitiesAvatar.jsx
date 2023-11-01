@@ -34,7 +34,7 @@ const ActivitiesAvatar = ({activitiesData}) => {
             <Avatar
               alt="Activities"
               // src={`http://localhost:5000/${activitiesData.adventure_img}`}
-              src="outdoor.jpeg"
+              src="/outdoor-min.jpeg"
               sx={{
                 width: { xs: 250, sm: 400 },
                 height: { xs: 250, sm: 400 },
