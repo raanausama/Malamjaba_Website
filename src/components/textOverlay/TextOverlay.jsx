@@ -98,21 +98,24 @@ const VideoTextOverlay = ({
           >
             <Typography
               variant="h4"
+              fontFamily={"Aktiv"}
 
-              sx={{ [theme.breakpoints.down("sm")]: { fontSize: "1.3rem" } ,fontFamily: "TrajanPro3Black" }}
+              sx={{ [theme.breakpoints.down("sm")]: { fontSize: "1.3rem" }  }}
             >
               {textHeading}
             </Typography>
             <Typography
               variant="h4"
-              sx={{ [theme.breakpoints.down("sm")]: { fontSize: "1rem" } ,fontFamily: "TrajanPro3Black" }}
+              fontFamily={"Aktiv"}
+              sx={{ [theme.breakpoints.down("sm")]: { fontSize: "1rem" }  }}
             >
               {text1}
             </Typography>
             {!isSmallScreen ?
             <Typography
               variant="h6"
-              sx={{ [theme.breakpoints.down("sm")]: { fontSize: "1rem" } ,fontFamily: "TrajanPro3Black" }}
+              fontFamily={"Aktiv"}
+              sx={{ [theme.breakpoints.down("sm")]: { fontSize: "1rem" }  }}
             >
               {text}
             </Typography>
