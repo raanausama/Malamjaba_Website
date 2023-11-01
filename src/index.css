@@ -1,20 +1,35 @@
+@font-face {
+  font-family: "Aktiv";
+  src: url("../src/Fonts/") format("truetype");
+}
+
+@font-face {
+  font-family: "Second";
+  src: url("../src/Fonts/Franklin_Gothic_Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Third";
+  src: url("../src/Fonts/FRABK.TTF") format("truetype");
+}
 body {
   width: 100%;
   margin: 0;
-  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue','TrajanPro3Black',
-    sans-serif;
+    sans-serif; */
+  font-family: "Aktiv";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
-#root{
+#root {
   width: 100%;
+  font-family: "Aktiv";
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
