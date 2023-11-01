@@ -30,7 +30,9 @@ const StaycationHero = ({ image, heading, heading2, text }) => {
           sx={{
             fontSize: { xs: "1.2em", md: "2.25em" },
             fontWeight: "400",
-            fontFamily: '"Allison", handwriting !important',
+            // fontFamily: '"Allison", handwriting !important',
+            fontFamily: "Aktiv",
+
           }}
         >
           {heading}
@@ -40,7 +42,9 @@ const StaycationHero = ({ image, heading, heading2, text }) => {
           sx={{
             fontSize: { xs: "1em", md: "2.00em" },
             fontWeight: "400",
-            fontFamily: '"Allison", handwriting !important',
+            // fontFamily: '"Allison", handwriting !important',
+            fontFamily: "Aktiv",
+
           }}
         >
           {heading2}
@@ -49,7 +53,9 @@ const StaycationHero = ({ image, heading, heading2, text }) => {
           variant="h5"
           sx={{
             fontSize: { xs: "0.8em", md: "1.90em" },
-            fontFamily: '"Allison", handwriting !important',
+            // fontFamily: '"Allison", handwriting !important',
+            fontFamily: "Aktiv",
+
           }}
         >
           {text}

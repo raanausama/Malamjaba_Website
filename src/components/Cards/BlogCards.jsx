@@ -68,11 +68,13 @@ export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
 
 // Define separate sx objects for each style group
 const sxHeader = {
-  fontFamily: '"Allison", handwriting !important',
+  fontFamily: "Aktiv",
   //   fontSize: "1.5em",
   /* Additional styles for the header typography */
 };
 
 const sxText = {
   /* Additional styles for the text typography */
+  fontFamily: "Aktiv",
+
 };

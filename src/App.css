@@ -1,6 +1,10 @@
+@font-face {
+  font-family: "Aktiv";
+  src: url("../src/Fonts/AktivGrotesk-Light.ttf") format("truetype");
+}
 .App {
   /* text-align: center; */
-  font-family: 'TrajanPro3Black';
+  font-family: 'Aktiv';
 }
 
 body{

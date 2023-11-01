@@ -29,52 +29,52 @@ const OtherActivities = ({ activitiesData }) => {
   // console.log("THIS IS OTHER DATA", activitiesData)
   let card = [
     <BlogCards
-      // simage="/Activities/ChairliftCropped-min.png"
-      // sheader="Chairlift"
-      // stext="An 850 meters ride to the top station to enjoy scenic views of the valley"
-      simage={`http://localhost:5000/${activitiesData?.ac1_img}`}
-      sheader={activitiesData?.ac1_title}
-      stext={activitiesData?.ac1_txt}
+      simage="/Activities/ChairliftCropped-min.png"
+      sheader="Chairlift"
+      stext="An 850 meters ride to the top station to enjoy scenic views of the valley"
+      // simage={`http://localhost:5000/${activitiesData?.ac1_img}`}
+      // sheader={activitiesData?.ac1_title}
+      // stext={activitiesData?.ac1_txt}
     />,
     <BlogCards
-      // simage="/Activities/Zipline-min.png"
-      // sheader="Zipline"
-      // stext="Zip through the clouds on one of the longest ziplines of Pakistan"
-      simage={`http://localhost:5000/${activitiesData?.ac2_img}`}
-      sheader={activitiesData?.ac2_title}
-      stext={activitiesData?.ac2_txt}
+      simage="/Activities/Zipline-min.png"
+      sheader="Zipline"
+      stext="Zip through the clouds on one of the longest ziplines of Pakistan"
+      // simage={`http://localhost:5000/${activitiesData?.ac2_img}`}
+      // sheader={activitiesData?.ac2_title}
+      // stext={activitiesData?.ac2_txt}
     />,
     <BlogCards
-      // simage="/Activities/GiantSwing-min.jpg"
-      // sheader="Giant Swing"
-      // stext="Swing your stress away, at the only Giant Swing of Pakistan"
-      simage={`http://localhost:5000/${activitiesData?.ac3_img}`}
-      sheader={activitiesData?.ac3_title}
-      stext={activitiesData?.ac3_txt}
+      simage="/Activities/GiantSwing-min.jpg"
+      sheader="Giant Swing"
+      stext="Swing your stress away, at the only Giant Swing of Pakistan"
+      // simage={`http://localhost:5000/${activitiesData?.ac3_img}`}
+      // sheader={activitiesData?.ac3_title}
+      // stext={activitiesData?.ac3_txt}
     />,
     <BlogCards
-      // simage="/Activities/HumanSlingshot-min.JPG"
-      // sheader="Human Slingshot"
-      // stext="Are you daring enough to try the only slingshot of Pakistan"
-      simage={`http://localhost:5000/${activitiesData?.ac4_img}`}
-      sheader={activitiesData?.ac4_title}
-      stext={activitiesData?.ac4_txt}
+      simage="/Activities/HumanSlingshot-min.JPG"
+      sheader="Human Slingshot"
+      stext="Are you daring enough to try the only slingshot of Pakistan"
+      // simage={`http://localhost:5000/${activitiesData?.ac4_img}`}
+      // sheader={activitiesData?.ac4_title}
+      // stext={activitiesData?.ac4_txt}
     />,
     <BlogCards
-      // simage="/Activities/GrassSki-min.jpg"
-      // sheader="Grass Ski"
-      // stext="Ski is no longer for winters with our grass skiing, using the best equipment"
-      simage={`http://localhost:5000/${activitiesData?.ac5_img}`}
-      sheader={activitiesData?.ac5_title}
-      stext={activitiesData?.ac5_txt}
+      simage="/Activities/GrassSki-min.jpg"
+      sheader="Grass Ski"
+      stext="Ski is no longer for winters with our grass skiing, using the best equipment"
+      // simage={`http://localhost:5000/${activitiesData?.ac5_img}`}
+      // sheader={activitiesData?.ac5_title}
+      // stext={activitiesData?.ac5_txt}
     />,
     <BlogCards
-      // simage={vrRides}
-      // sheader="VR Rides"
-      // stext="VR Snowboarding and Skiing simulators to provide you the experience of its kind"
-      simage={`http://localhost:5000/${activitiesData?.ac6_img}`}
-      sheader={activitiesData?.ac6_title}
-      stext={activitiesData?.ac6_txt}
+      simage={vrRides}
+      sheader="VR Rides"
+      stext="VR Snowboarding and Skiing simulators to provide you the experience of its kind"
+      // simage={`http://localhost:5000/${activitiesData?.ac6_img}`}
+      // sheader={activitiesData?.ac6_title}
+      // stext={activitiesData?.ac6_txt}
     />,
   ];
 
@@ -89,7 +89,8 @@ const OtherActivities = ({ activitiesData }) => {
             alignItems: "center",
           }}
         >
-          <Typography variant="h3" color="#094e9d" sx={{}}>
+          <Typography variant="h3" color="#094e9d" sx={{                  fontFamily: "Aktiv",
+}}>
             Other Activities
           </Typography>
         </Box>
