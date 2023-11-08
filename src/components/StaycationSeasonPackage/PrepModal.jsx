@@ -84,12 +84,13 @@ export default function PrepModal({ open, handleClose, image }) {
                   component="h2"
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                 >
-                  <img
+                  {/* <img
                     width="40"
                     height="40"
                     src="https://img.icons8.com/arcade/64/1.png"
                     alt="1"
-                  />{" "}
+                  />{" "} */}
+                  <b>1-</b>
                   <b> Weather & Clothing </b> <br /> Check the weather forecast
                   before traveling and pack appropriate clothing for the season.
                   Make sure to bring warm, waterproof clothing, gloves, and
@@ -99,12 +100,13 @@ export default function PrepModal({ open, handleClose, image }) {
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                   component="h2"
                 >
-                  <img
+                  <b>2-</b>
+                  {/* <img
                     width="40"
                     height="40"
                     src="https://img.icons8.com/arcade/64/2.png"
                     alt="2"
-                  />{" "}
+                  />{" "} */}
                   <b> Accommodation </b> <br /> Book your accommodation in
                   advance to secure the best options, especially during peak ski
                   season.
@@ -113,12 +115,13 @@ export default function PrepModal({ open, handleClose, image }) {
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                   component="h2"
                 >
-                  <img
+                  {/* <img
                     width="40"
                     height="40"
                     src="https://img.icons8.com/arcade/64/3.png"
                     alt="3"
-                  />{" "}
+                  />{" "} */}
+                  <b>3-</b>
                   <b> Physical Fitness </b> <br />
                   Skiing and snowboarding or other adventurous activities can be
                   physically demanding, so ensure you are in good health.
@@ -127,12 +130,13 @@ export default function PrepModal({ open, handleClose, image }) {
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                   component="h2"
                 >
-                  <img
+                  {/* <img
                     width="40"
                     height="40"
                     src="https://img.icons8.com/arcade/64/4.png"
                     alt="4"
-                  />{" "}
+                  />{" "} */}
+                  <b>4-</b>
                   <b> Altitude </b> <br /> Malam Jabba is at a higher altitude,
                   so be prepared for potential altitude sickness. Stay hydrated
                   and take it easy on your first day to acclimatize.
@@ -141,12 +145,13 @@ export default function PrepModal({ open, handleClose, image }) {
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                   component="h2"
                 >
-                  <img
+                  <b>5-</b>
+                  {/* <img
                     width="40"
                     height="40"
                     src="https://img.icons8.com/arcade/64/5.png"
                     alt="5"
-                  />{" "}
+                  />{" "} */}
                   <b> Transportation </b> <br /> Arrange for transportation to
                   and from the resort in advance, as public transportation
                   options may be limited.
@@ -155,12 +160,13 @@ export default function PrepModal({ open, handleClose, image }) {
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                   component="h2"
                 >
-                  <img
+                 <b>6-</b>
+                  {/* <img
                     width="40"
                     height="40"
                     src="https://img.icons8.com/arcade/64/6.png"
                     alt="6"
-                  />{" "}
+                  />{" "} */}
                   <b> Photography </b> <br /> Don't forget to bring a camera or
                   smartphone to capture the breathtaking scenery and memorable
                   moments.
@@ -169,12 +175,13 @@ export default function PrepModal({ open, handleClose, image }) {
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                   component="h2"
                 >
-                  <img
+                  <b>7-</b>
+                  {/* <img
                     width="40"
                     height="40"
                     src="https://img.icons8.com/arcade/64/7.png"
                     alt="7"
-                  />{" "}
+                  />{" "} */}
                   <b> Cash & Payment </b> <br /> Bring enough cash, as ATMs may
                   be scarce in the area. Additionally, inquire about payment
                   options at the resort for activities, food, and souvenirs.
@@ -183,12 +190,13 @@ export default function PrepModal({ open, handleClose, image }) {
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                   component="h2"
                 >
-                  <img
+                  <b>8-</b>
+                  {/* <img
                     width="40"
                     height="40"
                     src="https://img.icons8.com/arcade/64/8.png"
                     alt="8"
-                  />{" "}
+                  />{" "} */}
                   <b> Respect Nature </b> <br /> Malam Jabba is an ecologically
                   sensitive area, so make sure to respect nature, follow
                   designated trails, and refrain from littering.
@@ -197,12 +205,13 @@ export default function PrepModal({ open, handleClose, image }) {
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                   component="h2"
                 >
-                  <img
+                  <b>9-</b>
+                  {/* <img
                     width="40"
                     height="40"
                     src="https://img.icons8.com/arcade/64/9.png"
                     alt="9"
-                  />{" "}
+                  />{" "} */}
                   <b> Local Customs </b> <br /> Familiarize yourself with local
                   customs and traditions to show respect for the local culture
                   and people.
