@@ -40,7 +40,7 @@ function App() {
             <Route exact path="/home" element={<HomePage />} />
             <Route exact path="/index" element={<HomePage />} />
             <Route exact path="/staycation" element={<Staycation />} />
-            <Route exact path="/the-slope" element={<TheSlope />} />
+            <Route exact path="/about-us" element={<TheSlope />} />
             <Route exact path="/packages" element={<Packages />} />
             <Route exact path="/activities" element={<Activities />} />
             <Route exact path="/blog" element={<BlogMain />} />

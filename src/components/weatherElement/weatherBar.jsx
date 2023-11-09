@@ -25,7 +25,7 @@ const WeatherBar = () => {
     // const apiKey = "fRtra77GJ2l7pq2lBBIOcuUiBddmhfYx"; // Replace with your actual API key for local
     const apiKey = "s7em63xbxHAXifNOZgBvnLSZCK8Bxkm1"; // Replace with your actual API key for Netlify
     const apiUrl = "https://api.windy.com/api/point-forecast/v2";
-    const controller = new AbortController()
+    const controller = new AbortController();
     const requestData = {
       lat: 34.7999,
       lon: 72.5722,
@@ -50,14 +50,14 @@ const WeatherBar = () => {
       })
       .catch((error) => console.error("Error fetching weather data:", error));
 
-      return () => {
-        controller.abort()
-      }
+    return () => {
+      controller.abort();
+    };
   }, []);
 
-//   if (!weatherData) {
-//     return  <CircularProgress/> ;
-//   }
+  //   if (!weatherData) {
+  //     return  <CircularProgress/> ;
+  //   }
   const kelvinToCelsius = (kelvin) => {
     return kelvin - 273.15;
   };
@@ -95,44 +95,46 @@ const WeatherBar = () => {
 
   return (
     <>
-    {weatherData ? <div
-      className="example"
-      id="displayWeatherbar"
-      onMouseOver={() => {
-        document.getElementById("displayWeatherbar").style.display = "block";
-      }}
-      onMouseOut={() => {
-        document.getElementById("displayWeatherbar").style.display = "none";
-      }}
-    >
-      {/* wind_u-surface */}
-      <div className="ab-headerConditions_conditions">
-        <div className="ab-condition_wrapper">
-          <div className="ab-condition">
-            <div className="ab-condition_value">
-              {kelvinToCelsius(weatherData["temp-surface"][1]).toFixed(2)}°C
-            </div>
-            <div className="ab-condition_sub">Past 24 Hrs</div>
-          </div>
-          <div className="ab-condition">
-            <div className="ab-condition_value">
-              {kelvinToCelsius(weatherData["temp-800h"][1]).toFixed(2)}°C
-            </div>
-            <div className="ab-condition_sub">Past 3 Days</div>
-          </div>
-          <div className="ab-condition">
-            <div className="ab-condition_value">0"</div>
-            <div className="ab-condition_sub">Base</div>
-          </div>
-          <div className="ab-condition">
-            <div className="ab-condition_value ab-condition_value_small">
-              Summer
-            </div>
-            <div className="ab-condition_sub">Conditions</div>
-          </div>
-          {/* <div className="ab-condition ab-condition-weather ab-condition-wide"> */}
+      {weatherData ? (
+        <div
+          className="example"
+          id="displayWeatherbar"
+          onMouseOver={() => {
+            document.getElementById("displayWeatherbar").style.display =
+              "block";
+          }}
+          onMouseOut={() => {
+            document.getElementById("displayWeatherbar").style.display = "none";
+          }}
+        >
+          {/* wind_u-surface */}
+          <div className="ab-headerConditions_conditions">
+            <div className="ab-condition_wrapper">
+              <div className="ab-condition">
+                <div className="ab-condition_value">
+                  {kelvinToCelsius(weatherData["temp-surface"][1]).toFixed(2)}°C
+                </div>
+                <div className="ab-condition_sub">Past 24 Hrs</div>
+              </div>
+              <div className="ab-condition">
+                <div className="ab-condition_value">
+                  {kelvinToCelsius(weatherData["temp-800h"][1]).toFixed(2)}°C
+                </div>
+                <div className="ab-condition_sub">Past 3 Days</div>
+              </div>
+              <div className="ab-condition">
+                <div className="ab-condition_value">0"</div>
+                <div className="ab-condition_sub">Base</div>
+              </div>
+              <div className="ab-condition">
+                <div className="ab-condition_value ab-condition_value_small">
+                  Summer
+                </div>
+                <div className="ab-condition_sub">Conditions</div>
+              </div>
+              {/* <div className="ab-condition ab-condition-weather ab-condition-wide"> */}
 
-          {/* <div className="ab-condition_icon">
+              {/* <div className="ab-condition_icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="-1225.4 2083.7 105.4 72.9"
@@ -164,28 +166,31 @@ const WeatherBar = () => {
                 </g>
               </svg>
             </div> */}
-          <div className="ab-condition">
-            <div className="ab-condition_heading">
-              Today <br />
-              {todayFormatted}
-            </div>
-            <div className="ab-condition_value">
-              {Math.abs(weatherData["wind_u-surface"][1] * 2.23694).toFixed(2)}{" "}
-              mph
-            </div>
-            <div className="ab-condition_sub">Windy</div>
-          </div>
-          <div className="ab-condition">
-            <div className="ab-condition_heading">
-              {" "}
-              Tommorrow <br /> {tomorrowFormatted}
-            </div>
-            <div className="ab-condition_value">
-              {Math.abs(weatherData["wind_u-800h"][1] * 2.23694).toFixed(2)} mph
-            </div>
-            <div className="ab-condition_sub">Windy</div>
-          </div>
-          {/* <div className="ab-condition">
+              <div className="ab-condition">
+                <div className="ab-condition_heading">
+                  Today <br />
+                  {todayFormatted}
+                </div>
+                <div className="ab-condition_value">
+                  {/* {Math.abs(weatherData["wind_u-surface"][1] * 2.23694).toFixed(2)}{" "}
+              mph */}
+                  {Math.abs(weatherData["wind_u-surface"][1] * 3.6).toFixed(2)}
+                  kph
+                </div>
+                <div className="ab-condition_sub">Windy</div>
+              </div>
+              <div className="ab-condition">
+                <div className="ab-condition_heading">
+                  {" "}
+                  Tommorrow <br /> {tomorrowFormatted}
+                </div>
+                <div className="ab-condition_value">
+                  {/* {Math.abs(weatherData["wind_u-800h"][1] * 2.23694).toFixed(2)} mph */}
+                  {Math.abs(weatherData["wind_u-800h"][1] * 3.6).toFixed(2)} kph
+                </div>
+                <div className="ab-condition_sub">Windy</div>
+              </div>
+              {/* <div className="ab-condition">
             <div className="ab-condition_heading">
               Today <br />
               {todayFormatted}
@@ -195,43 +200,46 @@ const WeatherBar = () => {
             </div>
             <div className="ab-condition_sub">Windy</div>
           </div> */}
-          <div className="ab-condition ab-condition-weather ab-condition-wide">
-            <div className="ab-condition_icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="-1225.4 2083.7 105.4 72.9"
-                className="icon Wind"
-              >
-                <g
-                  id="Group_30"
-                  data-name="Group 30"
-                  transform="translate(-1697 2077)"
-                >
-                  <path
-                    id="Path_126"
-                    data-name="Path 126"
-                    className="Wind-cls-1"
-                    d="M486.6 31.1h35.3A12.2 12.2 0 1 0 510 16.2a3.531 3.531 0 1 0 6.9 1.5 5.109 5.109 0 1 1 5 6.2h-35.3a3.8 3.8 0 0 0-4 3.5 3.828 3.828 0 0 0 4 3.7z"
-                  ></path>
-                  <path
-                    id="Path_127"
-                    data-name="Path 127"
-                    className="Wind-cls-1"
-                    d="M559.7 12.1a17.37 17.37 0 0 0-17.3 17.3 16.665 16.665 0 0 0 .5 3.9 3.493 3.493 0 1 0 6.8-1.6 9.079 9.079 0 0 1-.3-2.3 10.2 10.2 0 1 1 10.2 10.2h-84a3.8 3.8 0 0 0-4 3.5 3.8 3.8 0 0 0 4 3.5h84.1a17.25 17.25 0 1 0 0-34.5z"
-                  ></path>
-                  <path
-                    id="Path_128"
-                    data-name="Path 128"
-                    className="Wind-cls-1"
-                    d="M547.4 55.3h-60.7a3.8 3.8 0 0 0-4 3.5 3.8 3.8 0 0 0 4 3.5h60.9a5.1 5.1 0 1 1-5.1 6.2 3.493 3.493 0 1 0-6.8 1.6 12.2 12.2 0 0 0 24.1-2.7 12.538 12.538 0 0 0-12.4-12.1z"
-                  ></path>
-                </g>
-              </svg>
+              <div className="ab-condition ab-condition-weather ab-condition-wide">
+                <div className="ab-condition_icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="-1225.4 2083.7 105.4 72.9"
+                    className="icon Wind"
+                  >
+                    <g
+                      id="Group_30"
+                      data-name="Group 30"
+                      transform="translate(-1697 2077)"
+                    >
+                      <path
+                        id="Path_126"
+                        data-name="Path 126"
+                        className="Wind-cls-1"
+                        d="M486.6 31.1h35.3A12.2 12.2 0 1 0 510 16.2a3.531 3.531 0 1 0 6.9 1.5 5.109 5.109 0 1 1 5 6.2h-35.3a3.8 3.8 0 0 0-4 3.5 3.828 3.828 0 0 0 4 3.7z"
+                      ></path>
+                      <path
+                        id="Path_127"
+                        data-name="Path 127"
+                        className="Wind-cls-1"
+                        d="M559.7 12.1a17.37 17.37 0 0 0-17.3 17.3 16.665 16.665 0 0 0 .5 3.9 3.493 3.493 0 1 0 6.8-1.6 9.079 9.079 0 0 1-.3-2.3 10.2 10.2 0 1 1 10.2 10.2h-84a3.8 3.8 0 0 0-4 3.5 3.8 3.8 0 0 0 4 3.5h84.1a17.25 17.25 0 1 0 0-34.5z"
+                      ></path>
+                      <path
+                        id="Path_128"
+                        data-name="Path 128"
+                        className="Wind-cls-1"
+                        d="M547.4 55.3h-60.7a3.8 3.8 0 0 0-4 3.5 3.8 3.8 0 0 0 4 3.5h60.9a5.1 5.1 0 1 1-5.1 6.2 3.493 3.493 0 1 0-6.8 1.6 12.2 12.2 0 0 0 24.1-2.7 12.538 12.538 0 0 0-12.4-12.1z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div> : <CircularProgress/>}
+      ) : (
+        <CircularProgress />
+      )}
     </>
   );
 };

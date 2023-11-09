@@ -20,7 +20,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { Height } from "@mui/icons-material";
 import SignIn from "../../pages/SignIn";
 
-const pages = ["HOME", "STAYCATION", "ACTIVITIES", "THE SLOPE"];
+const pages = ["HOME", "STAYCATION", "ACTIVITIES", "ABOUT US"];
 const settings = [
   "Dine In",
   "CSR",
@@ -168,7 +168,7 @@ function ResponsiveAppBar() {
                   fontSize: "0.990rem",
                   fontWeight: "Bold",
                   padding: "6px 30px",
-                  fontFamily:"Aktiv"
+                  fontFamily: "Aktiv",
                   // fontFamily: "TrajanPro3Black",
                 }}
                 onMouseEnter={onEnter}
@@ -220,7 +220,7 @@ function ResponsiveAppBar() {
                   <Typography
                     textAlign="center"
                     color="inherit"
-                    fontFamily= "Aktiv"
+                    fontFamily="Aktiv"
                     // component={Link}
                     // to={`/${settings.toLowerCase().replace(/\s/g, "-")}`}
                   >
