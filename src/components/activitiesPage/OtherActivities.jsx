@@ -89,12 +89,11 @@ const OtherActivities = ({ activitiesData }) => {
             alignItems: "center",
           }}
         >
-          <Typography variant="h3" color="#094e9d" sx={{                  fontFamily: "Aktiv",
-}}>
+          <Typography variant="h3" color="#094e9d" sx={{ fontFamily: "Aktiv" }}>
             Other Activities
           </Typography>
         </Box>
-        <Box sx={{ mb: "5em", mx:"8em" }}>
+        <Box sx={{ mb: "5em", mx: "8em" }}>
           <Carousel
             // customDot={<CustomDot />}
             swipeable={true}
@@ -104,10 +103,10 @@ const OtherActivities = ({ activitiesData }) => {
             ssr={true} // means to render carousel on server-side.
             infinite={true}
             autoPlay={true}
-            autoPlaySpeed={3000}
+            autoPlaySpeed={7000}
             keyBoardControl={true}
-            customTransition="all .5s"
-            transitionDuration={500}
+            customTransition="all 1s"
+            transitionDuration={1000}
             arrows={true}
           >
             {card}

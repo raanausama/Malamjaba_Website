@@ -4,7 +4,6 @@ import gsap from "gsap";
 // import AccomendationModal from "../../pages/AccomendationModal";
 
 const StaycationGridCard = ({ image, heading, text }) => {
-  
   // const [viewModalOpen, setViewModalOpen] = React.useState(false);
   // const handleCloseModal = () => {
   //   setViewModalOpen(false); // Close the modal
@@ -30,10 +29,11 @@ const StaycationGridCard = ({ image, heading, text }) => {
             flexDirection: "column",
             height: "100%",
             border: "3px solid #e0ba4b",
-            overflow:"hidden",
+            overflow: "hidden",
             borderRadius: "1em",
           }}
-          onMouseEnter={onEnter} onMouseLeave={onLeave}
+          onMouseEnter={onEnter}
+          onMouseLeave={onLeave}
         >
           <img
             src={image}
@@ -46,7 +46,8 @@ const StaycationGridCard = ({ image, heading, text }) => {
             <Typography variant="h4">{heading}</Typography>
           </a> */}
             <a
-              href="https://bookme.pk/events/activities-at-malam-jabba-swat
+              // href="https://bookme.pk/events/activities-at-malam-jabba-swat
+              href="https://www.pchotels.com/pcmalam-jabba
           "
               target="_blank"
               style={{ textDecoration: "none", color: "inherit" }}
