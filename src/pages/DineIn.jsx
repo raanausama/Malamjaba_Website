@@ -18,26 +18,28 @@ import NewFooter from "../components/footer/NewFooter";
 import axios from "axios";
 
 function DineIn() {
-    const [dineData, setDineData] = useState([]);
+  const [dineData, setDineData] = useState([]);
   const [loading, setLoading] = useState(false);
 
   const getDineData = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/dine/getDinePageData?username=ranausama`);
+      const response = await axios.get(
+        `http://localhost:5000/dine/getDinePageData?username=ranausama`
+      );
       // Handle the response data here
-      console.log('Data:', response.data);
+      console.log("Data:", response.data);
       setLoading(true);
       setDineData(response.data);
     } catch (error) {
       // Handle errors here
-      console.error('Error:', error);
+      console.error("Error:", error);
     }
   };
 
   // const footerRef = useRef(null);
   // const [data, setData] = useState([]);
-  console.log('homeData', dineData)
-    useEffect(() => {
+  console.log("homeData", dineData);
+  useEffect(() => {
     // const fetchData = async () => {
     //   try {
     //     const response = await axios.get(`http://127.0.0.1:8000/api/homepage`);
@@ -49,8 +51,7 @@ function DineIn() {
     // };
 
     // fetchData();
-    getDineData()
-
+    getDineData();
   }, [loading]);
   return (
     <div>
@@ -120,20 +121,18 @@ function DineIn() {
                   // fontFamily: '"Jost", sans-serif',
                 }}
               >
-                {/* {dineData.rest1_txt} */}
-                {" "}
-                Experience culinary excellence at its finest at MarcoPolo
-                Restaurant, nestled within the luxurious Pearl Continental Malam
-                Jabba. Indulge in a symphony of flavors as our talented chefs
-                craft exquisite dishes that blend traditional Pakistani cuisine
-                with international flair.{" "}
+                {/* {dineData.rest1_txt} */} Experience culinary excellence at
+                its finest at MarcoPolo Restaurant, nestled within the luxurious
+                Pearl Continental Malam Jabba. Indulge in a symphony of flavors
+                as our talented chefs craft exquisite dishes that blend
+                traditional Pakistani cuisine with international flair.{" "}
               </Typography>
             </Stack>
           </Grid>
 
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
-                    // src={`http://localhost:5000/${dineData.rest1_img}`}
+              // src={`http://localhost:5000/${dineData.rest1_img}`}
 
               src="/DineIn/Marcopolo.png"
               alt="MarcoPolo"
@@ -219,13 +218,11 @@ function DineIn() {
                     // fontFamily: '"Jost", sans-serif',
                   }}
                 >
-                                    {/* {dineData.rest2_txt} */}
-
-                  {" "}
-                  Indulge in a symphony of flavors crafted by our expert chefs,
-                  surrounded by the stunning natural beauty of the Swat Valley.
-                  From delectable local cuisine to international delights,
-                  MarcoPolo Bistro promises a dining experience like no other.{" "}
+                  {/* {dineData.rest2_txt} */} Indulge in a symphony of flavors
+                  crafted by our expert chefs, surrounded by the stunning
+                  natural beauty of the Swat Valley. From delectable local
+                  cuisine to international delights, MarcoPolo Bistro promises a
+                  dining experience like no other.{" "}
                 </Typography>
               </Stack>
             </Grid>
@@ -356,14 +353,11 @@ function DineIn() {
                   // fontFamily: '"Jost", sans-serif',
                 }}
               >
-                {/* {dineData.rest3_txt} */}
-                {" "}
-                Treat yourself in an exquisite culinary journey at Tai Pan, the
-                premier Chinese restaurant at Pearl Continental Malam Jabba.
-                Savor the rich flavors of authentic Chinese cuisine prepared by
-                our master chefs, all while enjoying breathtaking mountain
-                views.{" "}
-
+                {/* {dineData.rest3_txt} */} Treat yourself in an exquisite
+                culinary journey at Tai Pan, the premier Chinese restaurant at
+                Pearl Continental Malam Jabba. Savor the rich flavors of
+                authentic Chinese cuisine prepared by our master chefs, all
+                while enjoying breathtaking mountain views.{" "}
               </Typography>
             </Stack>
           </Grid>
@@ -391,9 +385,8 @@ function DineIn() {
             <Grid item xs={12} sm={12} md={6} mt={5}>
               <img
                 // src={`http://localhost:5000/${dineData.rest4_img}`}
-                src="/DineIn/ecoRestraunt.jpg"
-
-                alt="EcoRestaurant"
+                src="/DineIn/lazeezRest.jpg"
+                alt="Lazeez Restraunt"
                 style={{
                   maxWidth: "90%",
                   // height: 500,
@@ -433,7 +426,6 @@ function DineIn() {
                 >
                   Lazeez Restaurant.
                   {/* {dineData.rest4_title} */}
-
                 </Typography>
                 <Divider
                   sx={{
@@ -457,13 +449,11 @@ function DineIn() {
                     // fontFamily: '"Jost", sans-serif',
                   }}
                 >
-                  {/* {dineData.rest4_txt} */}
-                  {" "}
-                  Experience culinary excellence amidst the stunning
-                  snow-covered slopes at Lazeez Restaurant, your ultimate dining
-                  destination at Malam Jabba Ski Resort. Indulge in a delectable
-                  fusion of local flavors, served with warm hospitality in a
-                  cozy mountain setting.{" "}
+                  {/* {dineData.rest4_txt} */} Experience culinary excellence
+                  amidst the stunning snow-covered slopes at Lazeez Restaurant,
+                  your ultimate dining destination at Malam Jabba Ski Resort.
+                  Indulge in a delectable fusion of local flavors, served with
+                  warm hospitality in a cozy mountain setting.{" "}
                 </Typography>
               </Stack>
             </Grid>
@@ -523,15 +513,13 @@ function DineIn() {
                   // fontFamily: '"Jost", sans-serif',
                 }}
               >
-                {/* {dineData.rest5_txt} */}
-                {" "}
-                Get the perfect blend of warmth and flavor at Gloria Jeans,
-                nestled in the heart of Malam Jabba Ski Resort. Indulge in our
-                rich, aromatic coffees and delightful snacks as you take in the
-                breathtaking mountain views. Whether you're hitting the slopes
-                or simply seeking a cozy retreat, Gloria Jeans at Malam Jabba
-                Ski Resort is your go-to destination for comfort and
-                refreshment. views.{" "}
+                {/* {dineData.rest5_txt} */} Get the perfect blend of warmth and
+                flavor at Gloria Jeans, nestled in the heart of Malam Jabba Ski
+                Resort. Indulge in our rich, aromatic coffees and delightful
+                snacks as you take in the breathtaking mountain views. Whether
+                you're hitting the slopes or simply seeking a cozy retreat,
+                Gloria Jeans at Malam Jabba Ski Resort is your go-to destination
+                for comfort and refreshment. views.{" "}
               </Typography>
             </Stack>
           </Grid>
@@ -540,7 +528,6 @@ function DineIn() {
             <img
               // src={`http://localhost:5000/${dineData.rest5_img}`}
               src="/DineIn/gloria.jpg"
-
               alt="TaiPan"
               style={{
                 maxWidth: "90%",

@@ -11,9 +11,7 @@ import slope1 from "../Assets/bg_content/slope1.png";
 import slope2 from "../Assets/bg_content/slope2.png";
 import axios from "axios";
 
-
 function Slope() {
-
   const [slopeData, setSlopeData] = useState([]);
   const [loading, setLoading] = useState(false);
   const getSlopePageData = async () => {
@@ -47,7 +45,6 @@ function Slope() {
         text="The Identity of Malam Jabba Ski Resort"
         // heading={slopeData.hero_title}
         // text={slopeData.hero_txt}
-        
       />
       <Box sx={{ padding: "10%" }}>
         <Grid
@@ -55,6 +52,39 @@ function Slope() {
           display="flex !important"
           justifyContent="center !important"
         >
+          <Grid item xs={12} mb={10} display={"flex"}>
+            <Stack direction="column">
+              <Typography
+                textAlign={"center"}
+                variant="h4"
+                color="#094e9d"
+                sx={{ fontFamily: "Aktiv", m: 2 }}
+              >
+                About the Resort
+                {/* {slopeData.ski_title1}<br/> */}
+                {/* {slopeData.ski_title2} */}
+              </Typography>
+              <Typography
+                textAlign={"center"}
+                variant="subtitle"
+                sx={{ fontFamily: "Aktiv", m: 2 }}
+              >
+                Malam Jabba Ski Resort, a beautiful destination stationed amidst
+                the Hindu Kush and Himalayan mountains. It is an all-season
+                destination, home to a variety of exhilarating activities such
+                as Skiing, Snowboarding, Snow Tubbing, Ski Rental in our winter
+                season as well as chairlift, zipline, human slingshot, giant
+                swing, VR rides, and a couple of games for kids to enjoy as
+                well. All the rides and their equipment conform to
+                state-of-the-art safety and quality procedures and are tested
+                and reviewed by a team of foreign experts and engineers,
+                multiple times a year. The resort is also accompanied by a
+                5-star hotel – PC Malam Jabba, offering premium accommodation to
+                visitors.
+                {/* {slopeData.ski_txt} */}
+              </Typography>
+            </Stack>
+          </Grid>
           <Grid item md={6} padding="1%">
             <Grid
               container
@@ -128,12 +158,16 @@ function Slope() {
             }}
           >
             <Stack direction="column">
-              <Typography variant="h4" color="#094e9d" sx={{fontFamily: "Aktiv", m:2 }}>
-                Malam Jabba Ski Resort - <br/> Where Nature Meets Adventure:
+              <Typography
+                variant="h4"
+                color="#094e9d"
+                sx={{ fontFamily: "Aktiv", m: 2 }}
+              >
+                Malam Jabba Ski Resort - <br /> Where Nature Meets Adventure:
                 {/* {slopeData.ski_title1}<br/> */}
                 {/* {slopeData.ski_title2} */}
               </Typography>
-              <Typography variant="subtitle" sx={{fontFamily: "Aktiv",m:2}}>
+              <Typography variant="subtitle" sx={{ fontFamily: "Aktiv", m: 2 }}>
                 As you travel up the curvy roads of Swat, eyeing breathtaking
                 views of the valley, the journey concludes with a sight that
                 makes all the traveling worth it – Malam Jabba Ski Resort, a
@@ -162,14 +196,14 @@ function Slope() {
               variant="h4"
               fontWeight={"400"}
               // textAlign={'center'}
-              sx={{fontFamily: "Aktiv",m:1, textAlign:"center"}}
+              sx={{ fontFamily: "Aktiv", m: 1, textAlign: "center" }}
               // fontSize={"3rem"}
             >
-            Technicalities of the Slope
-            {/* {slopeData.tech_title} */}
+              Technicalities of the Slope
+              {/* {slopeData.tech_title} */}
             </Typography>
 
-            <Typography variant="subtitle" sx={{fontFamily: "Aktiv", }}>
+            <Typography variant="subtitle" sx={{ fontFamily: "Aktiv" }}>
               The slope at Malam Jabba is one of its kind, well-maintained and
               perfect for skiing and snowboarding. The management at Malam Jabba
               Ski Resort ensures that the snow is groomed to perfection,
@@ -247,7 +281,7 @@ function Slope() {
       /> */}
       {/* <Sponsors /> */}
       {/* <Footer bgImage="footer1.jpg" /> */}
-      <NewFooter/>
+      <NewFooter />
     </div>
   );
 }

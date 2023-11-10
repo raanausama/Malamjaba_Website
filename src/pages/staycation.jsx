@@ -8,7 +8,7 @@ import StaycationSeasonPackage from "../components/StaycationSeasonPackage/Stayc
 import ResponsiveAppBar from "../components/NavBar/NavBar";
 import { CircularProgress } from "@mui/material";
 import NewFooter from "../components/footer/NewFooter";
-import header from "../Assets/staycation/Picture1-min.png";
+import header from "../Assets/staycation/stayCationHeader.jpg";
 import axios from "axios";
 
 const Staycation = () => {

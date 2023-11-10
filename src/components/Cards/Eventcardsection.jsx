@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import ActionAreaCard from "../Cards/Eventcard";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import parallaxBG from "../../Assets/bg_content/parallax-bg.jpg";
+import parallaxBG from "../../Assets/bg_content/chairLiftNew.jpg";
 
-const Eventcardsection = ({homeData}) => {
+const Eventcardsection = ({ homeData }) => {
   // const [expandedCard, setExpandedCard] = useState(null);
 
   // const handleCardClick = (index) => {
@@ -44,9 +44,9 @@ const Eventcardsection = ({homeData}) => {
                 // header3={homeData.pec_des}
                 header3="Cuisine from all over Pakistan and a Qawalli Night"
                 // description={homeData.pec_mdes}
-                description='The Malam Jabba Ski Resort hosted a spectacular food fest, drawing food enthusiasts and tourists alike to indulge in a delightful culinary extravaganza. 
+                description="The Malam Jabba Ski Resort hosted a spectacular food fest, drawing food enthusiasts and tourists alike to indulge in a delightful culinary extravaganza. 
                  Nestled amidst the breathtaking snow-capped mountains, the event showcased a diverse array of delectable dishes, featuring both traditional regional cuisine and international flavors.
-                  Local vendors and renowned chefs collaborated to present a rich tapestry of tastes, from savory kebabs and aromatic biryanis to sweet delicacies and refreshing beverages.'
+                  Local vendors and renowned chefs collaborated to present a rich tapestry of tastes, from savory kebabs and aromatic biryanis to sweet delicacies and refreshing beverages."
                 // expanded={expandedCard === 0}
                 // onClick={() => handleCardClick(0)}
               />

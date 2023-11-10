@@ -164,10 +164,10 @@ const StaycationGrid = ({ staycationData }) => {
         ssr={true} // means to render carousel on server-side.
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={3000}
+        autoPlaySpeed={7000}
         keyBoardControl={true}
-        customTransition="all .5s"
-        transitionDuration={500}
+        customTransition="all 1s"
+        transitionDuration={1000}
         arrows={true}
       >
         {card}
