@@ -1,19 +1,19 @@
 import React, { lazy, Suspense, useState, useEffect } from "react";
 // import VideoTextOverlay from "../components/textOverlay/TextOverlay";
-import Sponsors from "../components/sponsors/sponsorsFooter";
+// import Sponsors from "../components/sponsors/sponsorsFooter";
 import "./home.css";
 import Footer from "../components/footer/footer";
 // import ImageWithSummerActivities from "../components/imageWithTextOverlay/imageWithSummerActivities";
 import ImageWithWinterActivities from "../components/imageWithTextOverlay/imageWithWinterActivities";
 import axios from "axios";
-import ImageLists from "../components/carousel/ImageLists";
+// import ImageLists from "../components/carousel/ImageLists";
 import Eventcardsection from "../components/Cards/Eventcardsection";
-import Servicecardsection from "../components/Cards/servicecardsection";
+// import Servicecardsection from "../components/Cards/servicecardsection";
 import ResponsiveAppBar from "../components/NavBar/NavBar";
 import { Box, CircularProgress } from "@mui/material";
 import NewFooter from "../components/footer/NewFooter";
 import AnnouncementBanner from "../components/announcementBanner/AnnouncementBanner";
-import GoogleMap from "./GoogleMap";
+// import GoogleMap from "./GoogleMap";
 
 const VideoTextOverlay = lazy(() =>
   import("../components/textOverlay/TextOverlay")
@@ -99,6 +99,7 @@ const HomePage = () => {
           buttonCallBack={() => {
             console.log("testing");
           }}
+          
         />
       </Suspense>
       <ImageWithWinterActivities

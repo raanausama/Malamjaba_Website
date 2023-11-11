@@ -105,7 +105,7 @@ const OtherActivities = ({ activitiesData }) => {
             autoPlay={true}
             autoPlaySpeed={7000}
             keyBoardControl={true}
-            customTransition="all 1s"
+            customTransition="all 3s"
             transitionDuration={1000}
             arrows={true}
           >
