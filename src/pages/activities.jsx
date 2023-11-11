@@ -59,8 +59,8 @@ const Activities = () => {
       <ResponsiveAppBar />
       <ActivitiesTop activitiesData={activitiesData} />
       <ActivitiesAvatar activitiesData={activitiesData} />
-      <ActivitiesTopPick activitiesData={activitiesData}/>
-      <OtherActivities activitiesData={activitiesData} />
+      <ActivitiesTopPick activitiesData={activitiesData} id="tp"/>
+      <OtherActivities activitiesData={activitiesData } id="oa" />
 
       {/* <Sponsors /> */}
       {/* <Footer /> */}

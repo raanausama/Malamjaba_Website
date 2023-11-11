@@ -35,12 +35,12 @@ const StaycationGrid = ({ staycationData }) => {
       // text={staycationData.room1_txt}
     />,
     <StaycationGridCard
-      image={"/PicturesForWebsite/Cinema (2)-min.jpg"}
-      heading={"Cinema"}
-      text={"Indoor Cinema for your entertainment"}
-      // image={`http://localhost:5000/${staycationData.room2_img}`}
-      // heading={staycationData.room2_title}
-      // text={staycationData.room2_txt}
+      image={"delux-min.jpg"}
+      heading={"Deluxe Rooms"}
+      text={"Standard Rooms for your comfortable stay"}
+      // image={`http://localhost:5000/${staycationData.room4_img}`}
+      // heading={staycationData.room4_title}
+      // text={staycationData.room4_txt}
     />,
     <StaycationGridCard
       image={"/PicturesForWebsite/conferenceRoom-min.JPG"}
@@ -51,13 +51,14 @@ const StaycationGrid = ({ staycationData }) => {
       // text={staycationData.room3_txt}
     />,
     <StaycationGridCard
-      image={"delux-min.jpg"}
-      heading={"Deluxe Rooms"}
-      text={"Standard Rooms for your comfortable stay"}
-      // image={`http://localhost:5000/${staycationData.room4_img}`}
-      // heading={staycationData.room4_title}
-      // text={staycationData.room4_txt}
+      image={"/PicturesForWebsite/Cinema (2)-min.jpg"}
+      heading={"Cinema"}
+      text={"Indoor Cinema for your entertainment"}
+      // image={`http://localhost:5000/${staycationData.room2_img}`}
+      // heading={staycationData.room2_title}
+      // text={staycationData.room2_txt}
     />,
+    
     <StaycationGridCard
       image={"/Activities/BanquetHall-min.JPG"}
       heading={"Banquet Hall"}
@@ -166,7 +167,7 @@ const StaycationGrid = ({ staycationData }) => {
         autoPlay={true}
         autoPlaySpeed={7000}
         keyBoardControl={true}
-        customTransition="all 1s"
+        customTransition="all 3s"
         transitionDuration={1000}
         arrows={true}
       >

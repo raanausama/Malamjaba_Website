@@ -29,7 +29,7 @@ export default function PrepModal({ open, handleClose, image }) {
     // backgroundImage: `url(${image})`,
     // backdropFilter: "blur(10px)",
     color: "#ffffff",
-    borderRadius: '20px',
+    borderRadius: "20px",
 
     overflow: "auto",
     //   border: '0px solid #000',
@@ -160,7 +160,7 @@ export default function PrepModal({ open, handleClose, image }) {
                   sx={{ fontSize: "1.2em", mb: "0.5em" }}
                   component="h2"
                 >
-                 <b>6-</b>
+                  <b>6-</b>
                   {/* <img
                     width="40"
                     height="40"
