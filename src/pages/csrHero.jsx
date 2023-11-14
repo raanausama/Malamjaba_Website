@@ -29,7 +29,7 @@ const CsrHero = ({ image, heading, heading2, text }) => {
           top: { xs: "60%", sm: "30%", md: "10%" },
         }}
       >
-        <Box sx={{backgroundColor:"rgba(0, 0, 0, 0.25)", p:"1em", width:"56%", borderRadius:"1em"}}>
+        <Box sx={{backgroundColor:"rgba(0, 0, 0, 0.1)", p:"1em", width:"56%", borderRadius:"1em"}}>
             <Typography
               variant="h3"
               sx={{
