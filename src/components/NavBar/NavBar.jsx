@@ -140,7 +140,7 @@ function ResponsiveAppBar() {
                 display: { xs: "block", md: "none" },
 
                 "& .css-6hp17o-MuiList-root-MuiMenu-list": {
-                  backgroundColor: "rgba(0,0,0,0.5)",
+                  backgroundColor: "rgba(0,0,0,0.5) !important",
                 },
               }}
             >
@@ -205,7 +205,7 @@ function ResponsiveAppBar() {
                 sx={{
                   mt: "45px",
                   "& .css-6hp17o-MuiList-root-MuiMenu-list": {
-                    backgroundColor: "rgba(0,0,0,0.5)",
+                    backgroundColor: "rgba(0,0,0,0.5) !important",
                   },
                 }}
                 PaperProps={{
