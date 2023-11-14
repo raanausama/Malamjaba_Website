@@ -25,6 +25,10 @@ function App() {
 
   return (
     <>
+      <AnnouncementBanner
+        // text={homeData.header_txt}
+        text={"Coming Soon"}
+      />
       {/* <ResponsiveAppBar /> */}
       {/* <AnnouncementBanner/> */}
       <Router>

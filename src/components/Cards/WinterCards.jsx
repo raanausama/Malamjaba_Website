@@ -7,8 +7,17 @@ import gsap from "gsap";
 import ActivitiesBlogModal from "../../pages/ActivitiesBlogModal";
 import { IconButton } from "@mui/material";
 import { ArrowCircleUp } from "@mui/icons-material";
+import TopPickModal from "../activitiesModal/TopPickModal";
 
-export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
+export default function WinterCards({
+  simage = "",
+  sheader = "",
+  stext = "",
+  hourlyPrice,
+  halfDayPrice,
+  fullDayPrice,
+  twoDayPrice,
+}) {
   const onEnter = ({ currentTarget }) => {
     gsap.to(currentTarget, { scale: 1.05 });
   };
@@ -42,6 +51,15 @@ export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
         handleClose={handleCloseModal}
         image={simage}
       /> */}
+      <TopPickModal
+        open={viewModalOpen}
+        handleClose={handleCloseModal}
+        subtext={stext}
+        hourlyPrice={hourlyPrice}
+        fullDayPrice={fullDayPrice}
+        halfDayPrice={halfDayPrice}
+        twoDayPrice={twoDayPrice}
+      />
       <Card
         sx={{
           position: "relative",
@@ -51,7 +69,7 @@ export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
         }}
         onMouseEnter={onEnter}
         onMouseLeave={onLeave}
-        // onClick={handleOpenModal}
+        onClick={handleOpenModal}
       >
         <Box
           sx={{
@@ -63,22 +81,19 @@ export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
             backgroundImage: `url(${simage})`,
             backgroundSize: "cover",
           }}
-          
-          
         />
         <CardContent
           sx={{
             position: "relative",
-            zIndex:  isHovered ? 1 : 0,
-            transition: isHovered ? "background-color 0.3s" : 'none',
+            zIndex: isHovered ? 1 : 0,
+            transition: isHovered ? "background-color 0.3s" : "none",
             // backgroundColor: "transparent",
-            backgroundColor: isHovered ? "rgba(255, 255, 255, 0.5)" : 'none',
+            backgroundColor: isHovered ? "rgba(255, 255, 255, 0.5)" : "none",
             height: "100rem",
           }}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          
           <Box
             display="flex"
             flexDirection="column"
@@ -88,25 +103,20 @@ export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
             mt={15}
             color="Black"
           >
-            {isHovered ? 
-            <>
-            <Typography
-              gutterBottom
-              variant="h2"
-              component="div"
-              sx={sxHeader}
-              mt={8}
-            >
-              {sheader}
-            </Typography>
-            <Typography variant="body2" component="div" sx={sxText} mt={1}>
-              {stext}
-            </Typography>
-            </>
-            : null }
+            {isHovered ? (
+              <>
+                <Typography
+                  gutterBottom
+                  variant="h2"
+                  component="div"
+                  sx={sxHeader}
+                  mt={8}
+                >
+                  {sheader}
+                </Typography>
+              </>
+            ) : null}
           </Box>
-          
-          
         </CardContent>
       </Card>
     </>

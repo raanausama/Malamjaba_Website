@@ -25,7 +25,8 @@ const StaycationSeasonPackage = ({
   const boxStyle = {
     // backgroundImage: `url(${image})`,
     // backgroundColor: "#F1F1FE",
-    background: "linear-gradient(90deg,  rgba(255,255,255,1) 0%,rgba(230,230,210,1) 50%, rgba(255,255,255,1) 100%)",
+    background:
+      "linear-gradient(90deg,  rgba(255,255,255,1) 0%,rgba(230,230,210,1) 50%, rgba(255,255,255,1) 100%)",
 
     backgroundSize: "cover",
     // backgroundPosition: "0% 80%",
@@ -56,7 +57,7 @@ const StaycationSeasonPackage = ({
   const onLeave = ({ currentTarget }) => {
     gsap.to(currentTarget, { scale: 1 });
   };
-  
+
   return (
     <Box sx={boxStyle}>
       {/* <img src={image} alt='skii'></img> */}
@@ -75,9 +76,18 @@ const StaycationSeasonPackage = ({
         justifyContent={{ xs: "center", md: "flex-end" }}
       >
         <Grid item sx={12} md={12}>
-          <PrepModal image={image} open={viewModalOpen} handleClose={handleCloseModal} />
+          <PrepModal
+            image={image}
+            open={viewModalOpen}
+            handleClose={handleCloseModal}
+          />
           <Stack direction="column" alignItems="center">
-            <Typography variant="h4" mt={4} color="#11357C" fontFamily={"Aktiv"}>
+            <Typography
+              variant="h4"
+              mt={4}
+              color="#11357C"
+              fontFamily={"Aktiv"}
+            >
               ARE YOU READY?
             </Typography>
 
@@ -99,7 +109,11 @@ const StaycationSeasonPackage = ({
           <Button
             onMouseEnter={onEnter}
             onMouseLeave={onLeave}
-            sx={{ color: "black", borderColor: "black !important", background: 'rgb(118,152,255)' }}
+            sx={{
+              color: "black",
+              borderColor: "black !important",
+              background: "rgb(118,152,255)",
+            }}
             size="medium"
             variant="contained"
             mt={4}

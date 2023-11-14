@@ -65,10 +65,10 @@ const HomePage = () => {
   }, [loading]);
   return (
     <>
-      <AnnouncementBanner
+      {/* <AnnouncementBanner
         // text={homeData.header_txt}
         text={"Comming Soon"}
-      />
+      /> */}
 
       <ResponsiveAppBar />
       <Suspense
@@ -100,7 +100,6 @@ const HomePage = () => {
           buttonCallBack={() => {
             console.log("testing");
           }}
-          
         />
       </Suspense>
       <ImageWithWinterActivities

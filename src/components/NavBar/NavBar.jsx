@@ -103,7 +103,12 @@ function ResponsiveAppBar() {
             </a>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -133,7 +138,13 @@ function ResponsiveAppBar() {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
+
+                "& .css-6hp17o-MuiList-root-MuiMenu-list": {
+                  backgroundColor: "rgba(0,0,0,0.5)",
+                },
+
                 
+
               }}
             >
               {pages.map((page) => (
@@ -192,46 +203,55 @@ function ResponsiveAppBar() {
                 <MenuIcon sx={{ color: "white", fontWeight: "bold" }} />
               </IconButton>
             </Tooltip>
-            <Menu
-              sx={{
-                mt: "45px",
-              }}
-              PaperProps={{
-                sx: { backgroundColor: "transparent", color: "white" },
-              }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem
-                  key={setting}
-                  // component={Link}
-                  to={`/${setting.toLowerCase().replace(/\s/g, "-")}`}
-                  onClick={() => handleMenuItem(setting)}
-                >
-                  <Typography
-                    textAlign="center"
-                    color="inherit"
-                    fontFamily="Aktiv"
+            <Box>
+              <Menu
+                sx={{
+                  mt: "45px",
+                  "& .css-6hp17o-MuiList-root-MuiMenu-list": {
+                    backgroundColor: "rgba(0,0,0,0.5)",
+                  },
+                }}
+                PaperProps={{
+                  sx: { backgroundColor: "transparent", color: "white" },
+                }}
+                id="menu-appbar"
+                anchorEl={anchorElUser}
+                anchorOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "right",
+                }}
+                open={Boolean(anchorElUser)}
+                onClose={handleCloseUserMenu}
+              >
+                {settings.map((setting) => (
+                  <MenuItem
+                    key={setting}
                     // component={Link}
-                    // to={`/${settings.toLowerCase().replace(/\s/g, "-")}`}
+                    to={`/${setting.toLowerCase().replace(/\s/g, "-")}`}
+                    onClick={() => handleMenuItem(setting)}
+                    // sx={{
+                    //   "& .MuiList-root MuiList-padding MuiMenu-list css-6hp17o-MuiList-root-MuiMenu-list":
+                    //     { backgroundColor: "rgba(0,0,0,0.5)" },
+                    // }}
                   >
-                    {setting}
-                  </Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+                    <Typography
+                      textAlign="center"
+                      color="inherit"
+                      fontFamily="Aktiv"
+                      // component={Link}
+                      // to={`/${settings.toLowerCase().replace(/\s/g, "-")}`}
+                    >
+                      {setting}
+                    </Typography>
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>
           </Box>
         </Toolbar>
       </Container>

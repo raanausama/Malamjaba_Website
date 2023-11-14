@@ -27,7 +27,7 @@ const AnnouncementBanner = ({ text }) => {
           color="white"
           fontFamily="Aktiv"
         >
-          Something's Comming
+          Something's Coming
         </Typography>
       </div>
     </>
