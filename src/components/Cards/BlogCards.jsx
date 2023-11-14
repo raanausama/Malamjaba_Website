@@ -5,8 +5,19 @@ import Typography from "@mui/material/Typography";
 import { Box } from "@mui/system";
 import gsap from "gsap";
 import { Divider } from "@mui/material";
+import TopPickModal from "../activitiesModal/TopPickModal";
 
-export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
+export default function WinterCards({
+  simage = "",
+  sheader = "",
+  stext = "",
+  hourlyPrice,
+  halfDayPrice,
+  fullDayPrice,
+  twoDayPrice,
+}) {
+  const [viewModalOpen, setViewModalOpen] = React.useState(false);
+
   const onEnter = ({ currentTarget }) => {
     gsap.to(currentTarget, { scale: 1.05 });
   };
@@ -15,9 +26,27 @@ export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
     gsap.to(currentTarget, { scale: 1 });
   };
 
+  const handleCloseModal = () => {
+    console.log("handleCloseModal");
+    setViewModalOpen(false); // Close the modal
+  };
+  const handleOpenModal = () => {
+    console.log("handleOpenModal");
+    setViewModalOpen(true); // open the modal
+  };
+
   return (
     <>
       {/* <AccomendationModal open={viewModalOpen} handleClose={handleCloseModal} /> */}
+      <TopPickModal
+        open={viewModalOpen}
+        handleClose={handleCloseModal}
+        subtext={stext}
+        hourlyPrice={hourlyPrice}
+        fullDayPrice={fullDayPrice}
+        halfDayPrice={halfDayPrice}
+        twoDayPrice={twoDayPrice}
+      />
       <Box sx={{ p: "1em", height: "100%", mb: "1em" }}>
         <Box
           sx={{
@@ -25,10 +54,12 @@ export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
             flexDirection: "column",
             height: "100%",
             border: "3px solid #e0ba4b",
-            overflow:"hidden",
+            overflow: "hidden",
             borderRadius: "1em",
           }}
-          onMouseEnter={onEnter} onMouseLeave={onLeave}
+          onMouseEnter={onEnter}
+          onMouseLeave={onLeave}
+          onClick={handleOpenModal}
         >
           <img
             src={simage}
@@ -40,32 +71,32 @@ export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
             {/* <a href="">
             <Typography variant="h4">{heading}</Typography>
           </a> */}
-            <a
+            {/* <a
               href="https://bookme.pk/events/activities-at-malam-jabba-swat
           "
               target="_blank"
               style={{ textDecoration: "none", color: "inherit" }}
+            > */}
+            <Typography
+              variant="h4"
+              fontFamily={"Aktiv"}
+              sx={{
+                textDecoration: "none",
+                // fontFamily: '"Allison", handwriting !important',
+                color: "#11357C",
+                transition: "color 0.3s ease",
+              }}
+              onMouseOver={(e) => {
+                e.target.style.color = "#BD9A5F";
+              }}
+              onMouseOut={(e) => {
+                e.target.style.color = "#11357C";
+              }}
+              // onClick={handleOpenModal}
             >
-              <Typography
-                variant="h4"
-                fontFamily={"Aktiv"}
-                sx={{
-                  textDecoration: "none",
-                  // fontFamily: '"Allison", handwriting !important',
-                  color: "#11357C",
-                  transition: "color 0.3s ease",
-                }}
-                onMouseOver={(e) => {
-                  e.target.style.color = "#BD9A5F";
-                }}
-                onMouseOut={(e) => {
-                  e.target.style.color = "#11357C";
-                }}
-                // onClick={handleOpenModal}
-              >
-                {sheader}
-              </Typography>
-            </a>
+              {sheader}
+            </Typography>
+            {/* </a> */}
             <Divider
               sx={{
                 borderBottomWidth: "medium",
@@ -73,7 +104,7 @@ export default function WinterCards({ simage = "", sheader = "", stext = "" }) {
                 width: "100px",
               }}
             />
-            <Typography fontFamily={"Aktiv"}>{stext}</Typography>
+            {/* <Typography fontFamily={"Aktiv"}>{stext}</Typography> */}
           </Box>
         </Box>
       </Box>
@@ -91,5 +122,4 @@ const sxHeader = {
 const sxText = {
   /* Additional styles for the text typography */
   fontFamily: "Aktiv",
-
 };

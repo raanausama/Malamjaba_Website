@@ -59,9 +59,9 @@ function DineIn() {
       <StaycationHero
         image="/PicturesForWebsite/DineIn.JPG"
         //  image={`http://localhost:5000/${dineData.hero_img}`}
-        heading="The Magnificient Slope"
+        // heading="The Magnificient Slope"
         // heading={dineData.hero_title}
-        text="Rewind from work and reconnect with Nature"
+        // text="Rewind from work and reconnect with Nature"
         // text={dineData.hero_txt}
       />
       <Container fixed sx={{ mb: 10 }}>
