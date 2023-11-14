@@ -39,6 +39,7 @@ function App() {
             </>
           }
         >
+          
           <Routes>
             <Route exact path="/" element={<HomePage />} />
             <Route exact path="/home" element={<HomePage />} />

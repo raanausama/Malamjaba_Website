@@ -138,9 +138,13 @@ function ResponsiveAppBar() {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
+
                 "& .css-6hp17o-MuiList-root-MuiMenu-list": {
                   backgroundColor: "rgba(0,0,0,0.5)",
                 },
+
+                
+
               }}
             >
               {pages.map((page) => (
@@ -177,6 +181,8 @@ function ResponsiveAppBar() {
                   fontWeight: "Bold",
                   padding: "6px 30px",
                   fontFamily: "Aktiv",
+                  ml:"0.5em",
+                  // backgroundColor: "rgba(255, 255, 255, 0.5)"
                   // fontFamily: "TrajanPro3Black",
                 }}
                 onMouseEnter={onEnter}
