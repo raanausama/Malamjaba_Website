@@ -283,7 +283,7 @@ import React, { useState, useEffect } from "react";
 import Sponsors from "../components/sponsors/sponsorsFooter";
 import Footer from "../components/footer/footer";
 import BlogGrid from "../components/gridViews/BlogGrid";
-import StaycationHero from "./StaycationHero";
+import CsrHero from "./csrHero";
 import {
   Box,
   Grid,
@@ -337,8 +337,8 @@ function CSRMain() {
     <div>
       <ResponsiveAppBar />
 
-      <StaycationHero
-        image="/csrtop.jpg"
+      <CsrHero
+        image="/CSR3.jpg"
         // image={`http://localhost:5000/${csrData.hero_img}`}
         heading="Empowering Communities, Enriching Lives:"
         // heading={csrData.hero_title}
