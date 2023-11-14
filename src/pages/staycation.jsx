@@ -10,6 +10,7 @@ import { CircularProgress } from "@mui/material";
 import NewFooter from "../components/footer/NewFooter";
 import header from "../Assets/staycation/stayCationHeader.jpg";
 import axios from "axios";
+import EconAccomodation from "../components/StaycationSeasonPackage/EconAccomodation";
 
 const Staycation = () => {
   const [staycationData, setStaycationData] = useState([]);
@@ -42,10 +43,13 @@ const Staycation = () => {
       />
       <StacationCover staycationData={staycationData} />
       <StaycationGrid staycationData={staycationData} />
+      
+      <EconAccomodation/>
       <StaycationSeasonPackage
         image="/familyfest.webp"
         buttonText={"Tips before your trip"}
       />
+      
       {/* <Sponsors /> */}
       {/* <Footer bgImage="footer1.jpg" /> */}
       <NewFooter />

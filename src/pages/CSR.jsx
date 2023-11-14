@@ -733,10 +733,10 @@ function CSRMain() {
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
               //  src={`http://localhost:5000/${csrData.csr5_img}`}
-              src="/CSR/Learning&DevelopmentofLocals.png"
+              src="/IMG_1187.JPG"
               alt="Learning drives"
               style={{
-                maxWidth: "90%",
+                maxWidth: "100%",
                 height: 350,
                 borderRadius: "50px 0px 50px 0px",
                 filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
