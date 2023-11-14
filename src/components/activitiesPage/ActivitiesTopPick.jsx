@@ -30,7 +30,7 @@ const ActivitiesTopPick = ({ activitiesData }) => {
               Our Top Picks This Winter
             </Typography>
           </Grid>
-          <Grid Item sm={12} md={2}>
+          <Grid Item xs={12} sm={4} md={2}>
             <WinterCards
               simage="/Activities/Sking-min.JPG"
               // simage= {`http://localhost:5000/${activitiesData?.card1_img}`}
@@ -45,7 +45,7 @@ const ActivitiesTopPick = ({ activitiesData }) => {
               twoDayPrice={7500}
             />
           </Grid>
-          <Grid Item sm={12} md={2}>
+          <Grid Item xs={12} sm={4} md={2}>
             <WinterCards
               simage="/Activities/Snowboarding-min.jpg"
               // simage= {`http://localhost:5000/${activitiesData?.card2_img}`}
@@ -60,7 +60,7 @@ const ActivitiesTopPick = ({ activitiesData }) => {
               twoDayPrice={7500}
             />
           </Grid>
-          <Grid Item sm={12} md={2}>
+          <Grid Item xs={12} sm={4} md={2}>
             <WinterCards
               // simage= {`http://localhost:5000/${activitiesData?.card3_img}`}
               // sheader={activitiesData?.card3_title}
@@ -71,7 +71,7 @@ const ActivitiesTopPick = ({ activitiesData }) => {
               stext="Perfect ride for all the fun lovers"
             />
           </Grid>
-          <Grid Item sm={12} md={2}>
+          <Grid Item xs={12} sm={4} md={2}>
             <WinterCards
               // simage= {`http://localhost:5000/${activitiesData?.card3_img}`}
               // sheader={activitiesData?.card3_title}

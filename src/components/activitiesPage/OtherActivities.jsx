@@ -93,7 +93,12 @@ const OtherActivities = ({ activitiesData }) => {
             Other Activities
           </Typography>
         </Box>
-        <Box sx={{ mb: "5em", mx: "8em" }}>
+        <Box
+          sx={{
+            mb: "5em",
+            // mx: "8em"
+          }}
+        >
           <Carousel
             // customDot={<CustomDot />}
             swipeable={true}
