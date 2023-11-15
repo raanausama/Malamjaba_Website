@@ -204,9 +204,10 @@ function ResponsiveAppBar() {
               <Menu
                 sx={{
                   mt: "45px",
-                  "& MuiList-root MuiList-padding MuiMenu-list": {
-                    backgroundColor: "rgba(0,0,0,0.5) !important",
-                  },
+                  "& .css-1shg6pe-MuiPaper-root-MuiPopover-paper-MuiMenu-paper":
+                    {
+                      backgroundColor: "rgba(0,0,0,0.5)",
+                    },
                 }}
                 PaperProps={{
                   sx: { backgroundColor: "transparent", color: "white" },
