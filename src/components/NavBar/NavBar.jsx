@@ -139,9 +139,9 @@ function ResponsiveAppBar() {
               sx={{
                 display: { xs: "block", md: "none" },
 
-                "& .css-6hp17o-MuiList-root-MuiMenu-list": {
-                  backgroundColor: "rgba(0,0,0,0.5) !important",
-                },
+                // "& .css-6hp17o-MuiList-root-MuiMenu-list": {
+                //   backgroundColor: "rgba(0,0,0,0.5) !important",
+                // },
               }}
             >
               {pages.map((page) => (
@@ -204,7 +204,7 @@ function ResponsiveAppBar() {
               <Menu
                 sx={{
                   mt: "45px",
-                  "& .css-6hp17o-MuiList-root-MuiMenu-list": {
+                  "& MuiList-root MuiList-padding MuiMenu-list": {
                     backgroundColor: "rgba(0,0,0,0.5) !important",
                   },
                 }}
