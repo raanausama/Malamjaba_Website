@@ -138,10 +138,13 @@ function ResponsiveAppBar() {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
+                "& ..css-q6c8bk ": {
+                  backgroundColor: "rgba(0,0,0,0.5)",
+                },
 
-                // "& .css-6hp17o-MuiList-root-MuiMenu-list": {
-                //   backgroundColor: "rgba(0,0,0,0.5) !important",
-                // },
+                "& .css-6hp17o-MuiList-root-MuiMenu-list": {
+                  backgroundColor: "rgba(0,0,0,0.5) !important",
+                },
               }}
             >
               {pages.map((page) => (
@@ -208,6 +211,9 @@ function ResponsiveAppBar() {
                     {
                       backgroundColor: "rgba(0,0,0,0.5)",
                     },
+                  "& ..css-q6c8bk ": {
+                    backgroundColor: "rgba(0,0,0,0.5)",
+                  },
                 }}
                 PaperProps={{
                   sx: { backgroundColor: "transparent", color: "white" },
