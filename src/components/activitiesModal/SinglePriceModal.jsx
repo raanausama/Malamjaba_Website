@@ -8,14 +8,11 @@ import Typography from "@mui/material/Typography";
 import { Grid, IconButton } from "@mui/material";
 import CancelIcon from "@mui/icons-material/Cancel";
 
-export default function TopPickModal({
+export default function SinglePriceModal({
   open,
   handleClose,
   subtext,
-  hourlyPrice,
-  halfDayPrice,
-  fullDayPrice,
-  twoDayPrice,
+  price,
   description,
 }) {
   // const [viewModalOpen, setViewModalOpen] = React.useState(false);
@@ -112,30 +109,9 @@ export default function TopPickModal({
                     display={"flex"}
                     textAlign={"center"}
                     alignItems={"center"}
+                    m="0em 0.5em 1.2em 0.5em"
                   >
-                    Hourly: {hourlyPrice}
-                  </Typography>
-                  <Typography
-                    display={"flex"}
-                    textAlign={"center"}
-                    alignItems={"center"}
-                  >
-                    Half day: {halfDayPrice}
-                  </Typography>
-                  <Typography
-                    display={"flex"}
-                    textAlign={"center"}
-                    alignItems={"center"}
-                  >
-                    Full day: {fullDayPrice}
-                  </Typography>
-                  <Typography
-                    display={"flex"}
-                    textAlign={"center"}
-                    alignItems={"center"}
-                    mb="1.5rem"
-                  >
-                    For PC guest 2 days package : {twoDayPrice}
+                    Ticket Price: {price}
                   </Typography>
                   <Typography
                     display={"flex"}

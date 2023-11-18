@@ -8,15 +8,13 @@ import ActivitiesBlogModal from "../../pages/ActivitiesBlogModal";
 import { IconButton } from "@mui/material";
 import { ArrowCircleUp } from "@mui/icons-material";
 import TopPickModal from "../activitiesModal/TopPickModal";
+import SinglePriceModal from "../activitiesModal/SinglePriceModal";
 
-export default function WinterCards({
+export default function AcitivitySinglePriceCards({
   simage = "",
   sheader = "",
   stext = "",
-  hourlyPrice,
-  halfDayPrice,
-  fullDayPrice,
-  twoDayPrice,
+  price = "",
   description = "",
 }) {
   const onEnter = ({ currentTarget }) => {
@@ -52,26 +50,20 @@ export default function WinterCards({
         handleClose={handleCloseModal}
         image={simage}
       /> */}
-      <TopPickModal
+      <SinglePriceModal
         open={viewModalOpen}
         handleClose={handleCloseModal}
         subtext={stext}
-        hourlyPrice={hourlyPrice}
-        fullDayPrice={fullDayPrice}
-        halfDayPrice={halfDayPrice}
-        twoDayPrice={twoDayPrice}
+        price={price}
         description={description}
       />
       <Card
         sx={{
           position: "relative",
           height: 400,
-          borderRadius: "15px",
+          // borderRadius: "15px",
           m: 0.2,
           cursor: "pointer",
-          "&:hover": {
-            borderRadius: "0px",
-          },
         }}
         onMouseEnter={onEnter}
         onMouseLeave={onLeave}

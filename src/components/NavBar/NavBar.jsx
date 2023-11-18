@@ -200,7 +200,7 @@ function ResponsiveAppBar() {
                 <MenuIcon sx={{ color: "white", fontWeight: "bold" }} />
               </IconButton>
             </Tooltip>
-            <Box>
+            <Box sx={{}}>
               <Menu
                 sx={{
                   mt: "45px",
