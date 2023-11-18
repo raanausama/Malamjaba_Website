@@ -138,7 +138,7 @@ function ResponsiveAppBar() {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
-                "& ..css-q6c8bk ": {
+                "& .css-q6c8bk ": {
                   backgroundColor: "rgba(0,0,0,0.5)",
                 },
 
@@ -211,7 +211,7 @@ function ResponsiveAppBar() {
                     {
                       backgroundColor: "rgba(0,0,0,0.5)",
                     },
-                  "& ..css-q6c8bk ": {
+                  "& .css-q6c8bk ": {
                     backgroundColor: "rgba(0,0,0,0.5)",
                   },
                 }}
