@@ -14,7 +14,7 @@ const EconAccomodation = () => {
   return (
     <Box display="flex" flexDirection="column" alignItems="center" py="2em">
       <Typography color="#094e9d" variant="h3" fontFamily={"Aktiv"}>
-        Economical Accomodation at Samsons Group Inn.
+        Economical Accomodation at Samsons Inn.
       </Typography>
       {/* <SamsonCarousel /> */}
       <Grid container>
@@ -44,8 +44,7 @@ const EconAccomodation = () => {
           </a> */}
                 <a
                   // href="https://bookme.pk/events/activities-at-malam-jabba-swat
-                  href="https://www.pchotels.com/pcmalam-jabba
-          "
+                  // href="https://www.pchotels.com/pcmalam-jabba"
                   target="_blank"
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
@@ -121,8 +120,7 @@ const EconAccomodation = () => {
           </a> */}
                 <a
                   // href="https://bookme.pk/events/activities-at-malam-jabba-swat
-                  href="https://www.pchotels.com/pcmalam-jabba
-          "
+                  // href="https://www.pchotels.com/pcmalam-jabba"
                   target="_blank"
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
@@ -143,7 +141,7 @@ const EconAccomodation = () => {
                     }}
                     // onClick={handleOpenModal}
                   >
-                    Delux Rooms
+                    Deluxe Rooms
                   </Typography>
                 </a>
                 <Divider
@@ -198,8 +196,7 @@ const EconAccomodation = () => {
           </a> */}
                 <a
                   // href="https://bookme.pk/events/activities-at-malam-jabba-swat
-                  href="https://www.pchotels.com/pcmalam-jabba
-          "
+                  // href="https://www.pchotels.com/pcmalam-jabba"
                   target="_blank"
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
@@ -264,7 +261,7 @@ const EconAccomodation = () => {
               onMouseLeave={onLeave}
             >
               <img
-                src="/Bonfire.JPG"
+                src="/bonfire1.jpg"
                 alt="Staycation"
                 style={{ width: "100%", height: "50vh" }}
                 // borderRadius="1em"
@@ -275,8 +272,7 @@ const EconAccomodation = () => {
           </a> */}
                 <a
                   // href="https://bookme.pk/events/activities-at-malam-jabba-swat
-                  href="https://www.pchotels.com/pcmalam-jabba
-          "
+                  // href="https://www.pchotels.com/pcmalam-jabba"
                   target="_blank"
                   style={{ textDecoration: "none", color: "inherit" }}
                 >
