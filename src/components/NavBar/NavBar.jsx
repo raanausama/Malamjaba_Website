@@ -86,7 +86,7 @@ function ResponsiveAppBar() {
   return (
     <AppBar
       position="absolute"
-      sx={{ backgroundColor: "transparent", boxShadow: "none", marginTop: 4 }}
+      sx={{ backgroundColor: "transparent", boxShadow: "none", marginTop: 4, background:"rgba(0,0,0,.5)" }}
     >
       <SignIn open={viewModalOpen} handleClose={handleCloseModal} />
       <Container maxWidth="100%">
@@ -148,7 +148,7 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem style={{background:"rgba(0,0,0,.5)"}} key={page} onClick={handleCloseNavMenu}>
                   <Link
                     to={`/${page.toLowerCase().replace(/\s/g, "-")}`}
                     style={{ textDecoration: "none", color: "inherit" }}

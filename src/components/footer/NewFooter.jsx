@@ -2,6 +2,7 @@ import React from "react";
 import "./footer.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import Background from "../../Assets/bg_content/footer1.jpg";
 import logo from "../../Assets/logos/malamjabbalogo-150.png";
 import { Box, Container, Grid, Stack, Typography, Link } from "@mui/material";
@@ -49,7 +50,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               justifyContent="center"
             >
               <a
-                href="https://maps.app.goo.gl/vgMu5DNN9b2t42gX7"
+                href="https://maps.app.goo.gl/FKKMnQFD9NhPjS1N6"
                 target="_blank"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
@@ -59,7 +60,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
                 >
                   LOCATION
                 </Typography>
-              </a>
+              
               <Typography fontFamily={"Aktiv"} variant="body1 " >
                 Hill station,
               </Typography>
@@ -69,6 +70,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               <Typography fontFamily={"Aktiv"} variant="body1" >
                 Malam Jabba, Swat.
               </Typography>
+              </a>
             </Stack>
           </Grid>
           <Grid
@@ -120,7 +122,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
                   title="Flaticon"
                   sx={{ color: "white" }}
                 >
-                  Dinning inn
+                  Dine In
                 </Link>
               </Typography>
             </Stack>
@@ -150,9 +152,10 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
                 info@malamjabbaresort.com
               </Typography>
               <Typography fontFamily={"Aktiv"} variant="body1" >
+                <WhatsAppIcon />
                 +92-302-6575400
               </Typography>
-              <Typography fontFamily={"Aktiv"} variant="body1" >
+              <Typography fontFamily={"Aktiv"} variant="body1" style={{marginLeft:"1.4em"}} >
                 +92-333-2342342
               </Typography>
             </Stack>
@@ -302,10 +305,11 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               title="Flaticon"
             >
               <img
-                width="60"
-                height="60"
-                src="/SocialIcons/icons8-twitter.svg"
+                width="40"
+                height="40"
+                src="/SocialIcons/icons8-twitter.png"
                 alt="twitter-circled"
+                style={{filter:"invert(100%)"}}
               />
             </Link>{" "}
             <Link
