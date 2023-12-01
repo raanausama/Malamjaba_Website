@@ -293,32 +293,37 @@ function Slope() {
           Meet the Team
         </Typography>
         <Grid container>
-        <Grid item xs={6} md={3}>
-        <Box sx={{ p: "1em", height: "100%", mb: "1em" }}>
+          <Grid item xs={12} md={12}>
             <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                height: "100%",
-                border: "3px solid #e0ba4b",
-                overflow: "hidden",
-                borderRadius: "1em",
-              }}
-              onMouseEnter={onEnter}
-              onMouseLeave={onLeave}
+              display={"flex"}
+              justifyContent={"center"}
+              sx={{ p: "2em", height: "100%" }}
             >
-              <img
-                src="/MartinSchultz-GeneralManager.png"
-                alt="Staycation"
-                style={{ width: "100%", height: "50vh" }}
-                // borderRadius="1em"
-              />
-              <Box sx={{ padding: "5%" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  height: "100%",
+                  width: "60%",
+                  border: "3px solid #e0ba4b",
+                  overflow: "hidden",
+                  borderRadius: "1em",
+                }}
+                onMouseEnter={onEnter}
+                onMouseLeave={onLeave}
+              >
+                <img
+                  src="/team.JPG"
+                  alt="Staycation"
+                  style={{ width: "100%", height: "40vh" }}
+                  // borderRadius="1em"
+                />
+                {/* <Box sx={{ padding: "5%" }}> */}
                 {/* <a href="">
             <Typography variant="h4">{heading}</Typography>
           </a> */}
-               
-                  <Typography
+
+                {/* <Typography
                     variant="h4"
                     fontFamily={"Aktiv"}
                     sx={{
@@ -336,51 +341,47 @@ function Slope() {
                     // onClick={handleOpenModal}
                   >
                     Martin Schultz
-                  </Typography>
-                
-                <Divider
-                  sx={{
-                    borderBottomWidth: "medium",
-                    borderColor: "#D9BD90",
-                    width: "100px",
-                  }}
-                />
-                <Typography fontFamily={"Aktiv"}>
-                GeneralManager
-                </Typography>
-                
-                
+                  </Typography> */}
+
+                {/* <Divider
+                    sx={{
+                      borderBottomWidth: "medium",
+                      borderColor: "#D9BD90",
+                      width: "100px",
+                    }}
+                  /> */}
+                {/* <Typography fontFamily={"Aktiv"}>GeneralManager</Typography> */}
+                {/* </Box> */}
               </Box>
             </Box>
-          </Box>
-        </Grid>
-        
-        <Grid item xs={6} md={3}>
-        <Box sx={{ p: "1em", height: "100%", mb: "1em" }}>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                height: "100%",
-                border: "3px solid #e0ba4b",
-                overflow: "hidden",
-                borderRadius: "1em",
-              }}
-              onMouseEnter={onEnter}
-              onMouseLeave={onLeave}
-            >
-              <img
-                src="/ShahzadAlam-DeputyGeneralManager.jpg"
-                alt="Staycation"
-                style={{ width: "100%", height: "50vh" }}
-                // borderRadius="1em"
-              />
-              <Box sx={{ padding: "5%" }}>
-                {/* <a href="">
+          </Grid>
+
+          {/* <Grid item xs={6} md={3}>
+            <Box sx={{ p: "1em", height: "100%", mb: "1em" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  height: "100%",
+                  border: "3px solid #e0ba4b",
+                  overflow: "hidden",
+                  borderRadius: "1em",
+                }}
+                onMouseEnter={onEnter}
+                onMouseLeave={onLeave}
+              >
+                <img
+                  src="/ShahzadAlam-DeputyGeneralManager.jpg"
+                  alt="Staycation"
+                  style={{ width: "100%", height: "50vh" }}
+                  // borderRadius="1em"
+                />
+                <Box sx={{ padding: "5%" }}> */}
+          {/* <a href="">
             <Typography variant="h4">{heading}</Typography>
           </a> */}
-               
-                  <Typography
+
+          {/* <Typography
                     variant="h4"
                     fontFamily={"Aktiv"}
                     sx={{
@@ -394,54 +395,52 @@ function Slope() {
                     }}
                     onMouseOut={(e) => {
                       e.target.style.color = "#11357C";
-                    }}
-                    // onClick={handleOpenModal}
-                  >
+                    }} */}
+          {/* // onClick={handleOpenModal} */}
+          {/* >
                     Shahzad Alam
                   </Typography>
-                
-                <Divider
-                  sx={{
-                    borderBottomWidth: "medium",
-                    borderColor: "#D9BD90",
-                    width: "100px",
-                  }}
-                />
-                <Typography fontFamily={"Aktiv"}>
-                Deputy General Manager
-                </Typography>
-                
-                
+
+                  <Divider
+                    sx={{
+                      borderBottomWidth: "medium",
+                      borderColor: "#D9BD90",
+                      width: "100px",
+                    }}
+                  />
+                  <Typography fontFamily={"Aktiv"}>
+                    Deputy General Manager
+                  </Typography>
+                </Box>
               </Box>
             </Box>
-          </Box>
-        </Grid>
-        <Grid item xs={6} md={3}>
-        <Box sx={{ p: "1em", height: "100%", mb: "1em" }}>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                height: "100%",
-                border: "3px solid #e0ba4b",
-                overflow: "hidden",
-                borderRadius: "1em",
-              }}
-              onMouseEnter={onEnter}
-              onMouseLeave={onLeave}
-            >
-              <img
-                src="/AshfaqMalik-AssistantManagerAdmin.jpeg"
-                alt="Staycation"
-                style={{ width: "100%", height: "50vh" }}
-                // borderRadius="1em"
-              />
-              <Box sx={{ padding: "5%" }}>
-                {/* <a href="">
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <Box sx={{ p: "1em", height: "100%", mb: "1em" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  height: "100%",
+                  border: "3px solid #e0ba4b",
+                  overflow: "hidden",
+                  borderRadius: "1em",
+                }}
+                onMouseEnter={onEnter}
+                onMouseLeave={onLeave}
+              >
+                <img
+                  src="/AshfaqMalik-AssistantManagerAdmin.jpeg"
+                  alt="Staycation"
+                  style={{ width: "100%", height: "50vh" }}
+                  // borderRadius="1em"
+                />
+                <Box sx={{ padding: "5%" }}>
+                  {/* <a href="">
             <Typography variant="h4">{heading}</Typography>
           </a> */}
-               
-                  <Typography
+
+          {/* <Typography
                     variant="h4"
                     fontFamily={"Aktiv"}
                     sx={{
@@ -455,54 +454,52 @@ function Slope() {
                     }}
                     onMouseOut={(e) => {
                       e.target.style.color = "#11357C";
-                    }}
-                    // onClick={handleOpenModal}
+                    }} */}
+          {/* // onClick={handleOpenModal}
                   >
                     Ashfaq Malik
                   </Typography>
-                
-                <Divider
-                  sx={{
-                    borderBottomWidth: "medium",
-                    borderColor: "#D9BD90",
-                    width: "100px",
-                  }}
-                />
-                <Typography fontFamily={"Aktiv"}>
-                Assitant Manager Admin
-                </Typography>
-                
-                
+
+                  <Divider
+                    sx={{
+                      borderBottomWidth: "medium",
+                      borderColor: "#D9BD90",
+                      width: "100px",
+                    }}
+                  />
+                  <Typography fontFamily={"Aktiv"}>
+                    Assitant Manager Admin
+                  </Typography>
+                </Box>
               </Box>
             </Box>
-          </Box>
-        </Grid>
-        <Grid item xs={6} md={3}>
-        <Box sx={{ p: "1em", height: "100%", mb: "1em" }}>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                height: "100%",
-                border: "3px solid #e0ba4b",
-                overflow: "hidden",
-                borderRadius: "1em",
-              }}
-              onMouseEnter={onEnter}
-              onMouseLeave={onLeave}
-            >
-              <img
-                src="/BilalTariq-TechnicalManager.jpeg"
-                alt="Staycation"
-                style={{ width: "100%", height: "50vh" }}
-                // borderRadius="1em"
-              />
-              <Box sx={{ padding: "5%" }}>
-                {/* <a href="">
+          </Grid>
+          <Grid item xs={6} md={3}>
+            <Box sx={{ p: "1em", height: "100%", mb: "1em" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  height: "100%",
+                  border: "3px solid #e0ba4b",
+                  overflow: "hidden",
+                  borderRadius: "1em",
+                }}
+                onMouseEnter={onEnter}
+                onMouseLeave={onLeave}
+              >
+                <img
+                  src="/BilalTariq-TechnicalManager.jpeg"
+                  alt="Staycation"
+                  style={{ width: "100%", height: "50vh" }} */}
+          {/* // borderRadius="1em"
+                />
+                <Box sx={{ padding: "5%" }}>
+                  {/* <a href="">
             <Typography variant="h4">{heading}</Typography>
           </a> */}
-               
-                  <Typography
+
+          {/* <Typography
                     variant="h4"
                     fontFamily={"Aktiv"}
                     sx={{
@@ -516,28 +513,26 @@ function Slope() {
                     }}
                     onMouseOut={(e) => {
                       e.target.style.color = "#11357C";
-                    }}
-                    // onClick={handleOpenModal}
-                  >
-                    Bilal Tariq
-                  </Typography>
-                
-                <Divider
-                  sx={{
-                    borderBottomWidth: "medium",
-                    borderColor: "#D9BD90",
-                    width: "100px",
-                  }}
-                />
-                <Typography fontFamily={"Aktiv"}>
-                Technical Manager
-                </Typography>
-                
-                
-              </Box>
-            </Box>
-          </Box>
-        </Grid>
+                    }} */}
+          {/* //         // onClick={handleOpenModal}
+            //       >
+            //         Bilal Tariq
+            //       </Typography>
+
+            //       <Divider */}
+          {/* //         sx={{ */}
+          {/* //           borderBottomWidth: "medium",
+            //           borderColor: "#D9BD90",
+            //           width: "100px",
+            //         }}
+            //       />
+            //       <Typography fontFamily={"Aktiv"}>
+            //         Technical Manager
+            //       </Typography>
+            //     </Box>
+            //   </Box>
+            // </Box> */}
+          {/* // </Grid> */}
         </Grid>
       </Box>
       <NewFooter />

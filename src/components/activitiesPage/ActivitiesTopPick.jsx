@@ -44,7 +44,7 @@ const ActivitiesTopPick = ({ activitiesData }) => {
               halfDayPrice={3900}
               fullDayPrice={5900}
               twoDayPrice={7500}
-              description="Entry 1,100 per person If you buy an activity ticket entry will be free. Activity Prices Per Person All prices include 200PKR worth of food voucher which can be redeemed at our Food Court"
+              description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
             />
           </Grid>
           <Grid Item xs={12} sm={4} md={2}>
@@ -60,7 +60,7 @@ const ActivitiesTopPick = ({ activitiesData }) => {
               halfDayPrice={3900}
               fullDayPrice={5900}
               twoDayPrice={7500}
-              description="Entry 1,100 per person If you buy an activity ticket entry will be free. Activity Prices Per Person All prices include 200PKR worth of food voucher which can be redeemed at our Food Court"
+              description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
             />
           </Grid>
           <Grid Item xs={12} sm={4} md={2}>
@@ -73,7 +73,7 @@ const ActivitiesTopPick = ({ activitiesData }) => {
               sheader="Snow Tubing"
               stext="Perfect ride for all the fun lovers"
               price="400"
-              description="Entry 1,100 per person If you buy an activity ticket entry will be free. Activity Prices Per Person All prices include 200PKR worth of food voucher which can be redeemed at our Food Court"
+              description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
             />
           </Grid>
           <Grid Item xs={12} sm={4} md={2}>
@@ -86,7 +86,7 @@ const ActivitiesTopPick = ({ activitiesData }) => {
               sheader="Ski-Rental"
               stext="Get yourself well-equipped with high quality skis and snowboards to experience thrilling experience of a lifetime"
               price=""
-              description="Entry 1,100 per person If you buy an activity ticket entry will be free. Activity Prices Per Person All prices include 200PKR worth of food voucher which can be redeemed at our Food Court"
+              description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
             />
           </Grid>
         </Grid>
