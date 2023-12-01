@@ -34,8 +34,8 @@ const OtherActivities = ({ activitiesData }) => {
       simage="/Activities/ChairliftCropped-min.png"
       sheader="Chairlift"
       stext="An 850 meters ride to the top station to enjoy scenic views of the valley"
-      price="1400"
-      description="Entry 1,100 per person If you buy an activity ticket entry will be free. Activity Prices Per Person All prices include 200PKR worth of food voucher which can be redeemed at our Food Court"
+      price="1400 - Quick Access Chairlift : 1,700 - Hike to ChairLift : 800"
+      description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
     />,
 
     // <BlogCards
@@ -50,8 +50,8 @@ const OtherActivities = ({ activitiesData }) => {
       simage="/Activities/Zipline-min.png"
       sheader="Zipline"
       stext="Zip through the clouds on one of the longest ziplines of Pakistan"
-      price="3500"
-      description="Entry 1,100 per person If you buy an activity ticket entry will be free. Activity Prices Per Person All prices include 200PKR worth of food voucher which can be redeemed at our Food Court"
+      price="3500 - Hike to Zipline : 2300"
+      description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
     />,
     // <BlogCards
     //   simage="/Activities/Zipline-min.png"
@@ -66,7 +66,7 @@ const OtherActivities = ({ activitiesData }) => {
       sheader="Giant Swing"
       stext="Swing your stress away, at the only Giant Swing of Pakistan"
       price="3500"
-      description="Entry 1,100 per person If you buy an activity ticket entry will be free. Activity Prices Per Person All prices include 200PKR worth of food voucher which can be redeemed at our Food Court"
+      description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
     />,
     // <BlogCards
     //   simage="/Activities/GiantSwing-min.jpg"
@@ -81,7 +81,7 @@ const OtherActivities = ({ activitiesData }) => {
       sheader="Human Slingshot"
       stext="Are you daring enough to try the only slingshot of Pakistan"
       price="5000"
-      description="Entry 1,100 per person If you buy an activity ticket entry will be free. Activity Prices Per Person All prices include 200PKR worth of food voucher which can be redeemed at our Food Court"
+      description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
     />,
     // <BlogCards
     //   simage="/Activities/HumanSlingshot-min.JPG"
@@ -91,13 +91,13 @@ const OtherActivities = ({ activitiesData }) => {
     // sheader={activitiesData?.ac4_title}
     // stext={activitiesData?.ac4_txt}
     // />,
-    <AcitivitySinglePriceCards
-      simage="/Activities/GrassSki-min.jpg"
-      sheader="Grass Ski"
-      stext="Ski is no longer for winters with our grass skiing, using the best equipment"
-      price="1000"
-      description="Entry 1,100 per person If you buy an activity ticket entry will be free. Activity Prices Per Person All prices include 200PKR worth of food voucher which can be redeemed at our Food Court"
-    />,
+    // <AcitivitySinglePriceCards
+    //   simage="/Activities/GrassSki-min.jpg"
+    //   sheader="Grass Ski"
+    //   stext="Ski is no longer for winters with our grass skiing, using the best equipment"
+    //   price="1000"
+    //   description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
+    // />,
     // <BlogCards
     //   simage="/Activities/GrassSki-min.jpg"
     //   sheader="Grass Ski"
@@ -111,7 +111,7 @@ const OtherActivities = ({ activitiesData }) => {
       sheader="VR Rides"
       stext="VR Snowboarding and Skiing simulators to provide you the experience of its kind"
       price="500"
-      description="Entry 1,100 per person If you buy an activity ticket entry will be free. Activity Prices Per Person All prices include 200PKR worth of food voucher which can be redeemed at our Food Court"
+      description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
     />,
     // <BlogCards
     //   simage={vrRides}

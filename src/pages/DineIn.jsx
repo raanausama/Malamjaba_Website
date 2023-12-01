@@ -538,6 +538,159 @@ function DineIn() {
               }}
             />
           </Grid>
+          <Grid
+            container
+            sx={{
+              display: "flex",
+              flexWrap: "nowrap",
+              flexDirection: { xs: "column-reverse", md: "row" },
+            }}
+          >
+            <Grid item xs={12} sm={12} md={6} mt={5}>
+              <img
+                // src={`http://localhost:5000/${dineData.rest4_img}`}
+                src="/DineIn/botFood.jpg"
+                alt="Bottom Food Court"
+                style={{
+                  maxWidth: "90%",
+                  // height: 500,
+                  borderRadius: "50px 0px 50px 0px",
+                }}
+              />
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              sm={12}
+              md={6}
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              textAlign="center"
+            >
+              <Stack
+                direction="column"
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <Typography
+                  sx={{
+                    fontSize: "25px",
+                    lineHeight: "1.4",
+                    fontWeight: "400",
+                    letterSpacing: "2px",
+                    textTransform: "none",
+                    color: "#0a0a0a",
+                    fontFamily: "Aktiv",
+
+                    // fontFamily: '"Allison", handwriting !important',
+                    marginTop: 5,
+                  }}
+                >
+                  Base Food Court
+                  {/* {dineData.rest4_title} */}
+                </Typography>
+                <Divider
+                  sx={{
+                    borderBottomWidth: "medium",
+                    borderColor: "#D9BD90",
+                    width: "130px",
+                    mb: "5",
+                  }}
+                />
+                <Typography
+                  mt={4}
+                  sx={{
+                    fontSize: "17px",
+                    lineHeight: "1.4",
+                    fontWeight: "400",
+                    letterSpacing: "2px",
+                    textTransform: "none",
+                    color: "#0a0a0a",
+                    fontFamily: "Aktiv",
+
+                    // fontFamily: '"Jost", sans-serif',
+                  }}
+                >
+                  {/* {dineData.rest4_txt} */} Snack attack! Explore our diverse
+                  selection of tasty treats at our resort's base station.{" "}
+                </Typography>
+              </Stack>
+            </Grid>
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={6}
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            textAlign="center"
+          >
+            <Stack
+              direction="column"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+            >
+              <Typography
+                sx={{
+                  fontSize: "25px",
+                  lineHeight: "1.4",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                  textTransform: "none",
+                  color: "#0a0a0a",
+                  fontFamily: "Aktiv",
+
+                  // fontFamily: '"Allison", handwriting !important',
+                  marginTop: 5,
+                }}
+              >
+                {/* {dineData.rest5_title} */}
+                Top Food Court
+              </Typography>
+              <Divider
+                sx={{
+                  borderBottomWidth: "medium",
+                  borderColor: "#D9BD90",
+                  width: "100px",
+                  mb: "5",
+                }}
+              />
+              <Typography
+                mt={4}
+                sx={{
+                  fontSize: "17px",
+                  lineHeight: "1.4",
+                  fontWeight: "400",
+                  letterSpacing: "2px",
+                  textTransform: "none",
+                  color: "#0a0a0a",
+                  fontFamily: "Aktiv",
+
+                  // fontFamily: '"Jost", sans-serif',
+                }}
+              >
+                {/* {dineData.rest5_txt} */} Snacking with a view: A feast for
+                every craving.{" "}
+              </Typography>
+            </Stack>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} mt={5}>
+            <img
+              // src={`http://localhost:5000/${dineData.rest5_img}`}
+              src="/DineIn/topFood.JPG"
+              alt="Top Food Court"
+              style={{
+                maxWidth: "90%",
+                // height: 500,
+                borderRadius: "50px 0px 50px 0px",
+              }}
+            />
+          </Grid>
 
           {/* <Grid
             item

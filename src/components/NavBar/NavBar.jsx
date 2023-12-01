@@ -22,7 +22,7 @@ import SignIn from "../../pages/SignIn";
 
 const pages = ["HOME", "STAYCATION", "ACTIVITIES", "ABOUT US"];
 const settings = [
-  "Dine In",
+  "Dinning In",
   "CSR",
   // "Blog",
   "Contact Us",
@@ -71,7 +71,7 @@ function ResponsiveAppBar() {
     if (setting === "CSR") {
       navigate("/csr");
     }
-    if (setting === "Dine In") {
+    if (setting === "Dinning In") {
       navigate("/dinein");
     }
     if (setting === "Contact Us") {
