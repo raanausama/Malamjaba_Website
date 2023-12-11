@@ -588,7 +588,7 @@ function DineIn() {
                     marginTop: 5,
                   }}
                 >
-                  Base Food Court
+                  Top Station Food Court
                   {/* {dineData.rest4_title} */}
                 </Typography>
                 <Divider
@@ -650,7 +650,7 @@ function DineIn() {
                 }}
               >
                 {/* {dineData.rest5_title} */}
-                Top Food Court
+                Bottom Station Food Court
               </Typography>
               <Divider
                 sx={{
