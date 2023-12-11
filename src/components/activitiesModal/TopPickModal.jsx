@@ -129,18 +129,19 @@ export default function TopPickModal({
                   >
                     Full day: {fullDayPrice}
                   </Typography>
-                  <Typography
+                  {/* <Typography
                     display={"flex"}
                     textAlign={"center"}
                     alignItems={"center"}
                     mb="1.5rem"
                   >
                     For PC guest 2 days package : {twoDayPrice}
-                  </Typography>
+                  </Typography> */}
                   <Typography
                     display={"flex"}
                     textAlign={"center"}
                     alignItems={"center"}
+                    mt={2}
                   >
                     Note: {description}
                   </Typography>
