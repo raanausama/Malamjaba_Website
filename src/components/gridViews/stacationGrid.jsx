@@ -58,7 +58,7 @@ const StaycationGrid = ({ staycationData }) => {
       // heading={staycationData.room2_title}
       // text={staycationData.room2_txt}
     />,
-    
+
     <StaycationGridCard
       image={"/Activities/BanquetHall-min.JPG"}
       heading={"Banquet Hall"}
@@ -86,10 +86,20 @@ const StaycationGrid = ({ staycationData }) => {
       // text={staycationData.room7_txt}
     />,
     <StaycationGridCard
-      image={NetCricket}
+      image="/netcric.jpg"
       heading={"Net Cricket"}
       text={
         "Through our Net Cricket, we ensure, Cricket stays with you no matter where you go. "
+      }
+      // image={`http://localhost:5000/${staycationData.room8_img}`}
+      // heading={staycationData.room8_title}
+      // text={staycationData.room8_txt}
+    />,
+    <StaycationGridCard
+      image="/futsal.jpg"
+      heading={"Futsal"}
+      text={
+        "Net Futsal at Malam Jabba Ski Resort offers an exciting blend of the small-sided football game, providing visitors with a unique sporting experience amidst the stunning mountain scenery of Malam Jabba in Pakistan. "
       }
       // image={`http://localhost:5000/${staycationData.room8_img}`}
       // heading={staycationData.room8_title}
