@@ -280,6 +280,77 @@ function Slope() {
           </Grid>
         </Grid>
       </Grid>
+      <Box sx={{ padding: "10%" }}>
+        <Grid
+          container
+          display="flex !important"
+          justifyContent="center !important"
+        >
+          <Grid item md={6} padding="1%">
+          <img
+                  src="/piston_bully.jpg"
+                  // src={`http://localhost:5000/${slopeData.ski_img1}`}
+                  alt="First Image"
+                  style={{
+                    width: "50%",
+                    height: "50vh",
+                    border: "10px solid white",
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                    borderRadius: "10px",
+                  }}
+                />
+                <img
+                  src="/Picture2.jpg"
+                  // src={`http://localhost:5000/${slopeData.ski_img1}`}
+                  alt="First Image"
+                  style={{
+                    width: "50%",
+                    height: "50vh",
+                    border: "10px solid white",
+                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                    borderRadius: "10px",
+                  }}
+                />
+          </Grid>
+          <Grid
+            item
+            md={6}
+            mt={{ xs: 10, sm: 10, md: 10, lg: 5 }}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              textAlign: {
+                xs: "Center",
+                sm: "Center",
+                md: "Center",
+                lg: "start",
+              },
+            }}
+          >
+            <Stack direction="column">
+              <Typography
+                variant="h4"
+                color="#094e9d"
+                sx={{ fontFamily: "Aktiv", m: 2 }}
+              >
+                Piston Bully:
+                {/* {slopeData.ski_title1}<br/> */}
+                {/* {slopeData.ski_title2} */}
+              </Typography>
+              <Typography variant="subtitle" sx={{ fontFamily: "Aktiv", m: 2 }}>
+                The Piston Bully machine at Malam Jabba Ski Resort is a
+                specialized snow grooming vehicle designed to meticulously
+                maintain and shape the ski slopes, ensuring optimal skiing
+                conditions by smoothing and packing the snow for a safe and
+                enjoyable experience for skiers and snowboarders.
+                {/* {slopeData.ski_txt} */}
+              </Typography>
+            </Stack>
+          </Grid>
+        </Grid>
+      </Box>
+
       {/* <StacationCover /> */}
       {/* <BlogGrid /> */}
       {/* <StaycationSeasonPackage
