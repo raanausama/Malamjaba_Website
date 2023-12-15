@@ -517,9 +517,9 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
             justifyContent="center"
           >
             <img
-              src={logo}
+              src={"/mjr-rev.png"}
               alt="footer-logo-mjr"
-              // style={{ height: "25vh", width: "25vh" }}
+              style={{ height: "20vh", width: "25vh" }}
             />
           </Grid>
           
@@ -532,9 +532,14 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
             display="flex"
             justifyContent="center"
           >
-            <SponsorImage
+            {/* <SponsorImage
               image="/Images/footer-logo-pc.png"
               alt="redbull"
+            /> */}
+            <img
+              src={"/Images/footer-logo-pc.png"}
+              alt="footer-logo-mjr"
+              style={{ height: "20vh", width: "25vh" }}
             />
           </Grid>
           <Grid
@@ -546,7 +551,12 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
             display="flex"
             justifyContent="center"
           >
-            <SponsorImage image="/Images/samsons-logo-png.png" alt="nescafe" />
+            {/* <SponsorImage image="samsons-rev.png" alt="nescafe" style={{ height: "20px", width: "25vh" }} /> */}
+            <img
+              src={"/samsons-rev.png"}
+              alt="footer-logo-mjr"
+              style={{ height: "20vh", width: "35vh" }}
+            />
           </Grid>
           {/* <Grid item sx={12} sm={12} md={4} display="flex" justifyContent="center">
                 <SponsorImage

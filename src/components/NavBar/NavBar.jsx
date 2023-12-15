@@ -356,7 +356,7 @@ function ResponsiveAppBar() {
         backgroundColor: "transparent",
         boxShadow: "none",
         marginTop: 4,
-        background: "rgba(0,0,0,.5)",
+        background: "rgba(0,0,0)",
       }}
     >
       <SignIn open={viewModalOpen} handleClose={handleCloseModal} />
@@ -366,10 +366,14 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "flex" } }}>
             <a href="/">
               <img
-                src={logo}
+                src={"/mjr-rev.png"}
                 alt="logo"
                 Link="/"
-                sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+                sx={{
+                  display: { xs: "none", md: "flex" },
+                  mr: 1,
+                }}
+                style={{height: "15vh", width: "25vh"}}
               />
             </a>
           </Box>
