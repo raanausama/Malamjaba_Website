@@ -38,6 +38,7 @@
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",
+    "build:win": "vite build",
     "serve": "vite preview"
   },
   "eslintConfig": {
