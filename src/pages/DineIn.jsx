@@ -58,8 +58,7 @@ function DineIn() {
       <ResponsiveAppBar />
       <StaycationHero
         image="/PicturesForWebsite/DineIn.JPG"
-        //  image={`http://localhost:5000/${dineData.hero_img}`}
-
+        // image={`http://localhost:5000/${dineData.hero_img}`}
         heading="DineIn Services"
         // heading={dineData.hero_title}
         text="Enjoy diverse culinary experiences with beautiful landscapes"
@@ -123,7 +122,8 @@ function DineIn() {
                   // fontFamily: '"Jost", sans-serif',
                 }}
               >
-                {/* {dineData.rest1_txt} */} Experience culinary excellence at
+                {/* {dineData.rest1_txt} */}
+                Experience culinary excellence at
                 its finest at MarcoPolo Restaurant, nestled within the luxurious
                 Pearl Continental Malam Jabba. Indulge in a symphony of flavors
                 as our talented chefs craft exquisite dishes that blend
@@ -135,7 +135,6 @@ function DineIn() {
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
               // src={`http://localhost:5000/${dineData.rest1_img}`}
-
               src="/DineIn/Marcopolo.png"
               alt="MarcoPolo"
               style={{
@@ -220,11 +219,12 @@ function DineIn() {
                     // fontFamily: '"Jost", sans-serif',
                   }}
                 >
-                  {/* {dineData.rest2_txt} */} Indulge in a symphony of flavors
+                  {/* {dineData.rest2_txt} */}
+                  Indulge in a symphony of flavors
                   crafted by our expert chefs, surrounded by the stunning
                   natural beauty of the Swat Valley. From delectable local
                   cuisine to international delights, MarcoPolo Bistro promises a
-                  dining experience like no other.{" "}
+                  dining experience like no other.
                 </Typography>
               </Stack>
             </Grid>
@@ -355,7 +355,8 @@ function DineIn() {
                   // fontFamily: '"Jost", sans-serif',
                 }}
               >
-                {/* {dineData.rest3_txt} */} Treat yourself in an exquisite
+                {/* {dineData.rest3_txt} */}
+                Treat yourself in an exquisite
                 culinary journey at Tai Pan, the premier Chinese restaurant at
                 Pearl Continental Malam Jabba. Savor the rich flavors of
                 authentic Chinese cuisine prepared by our master chefs, all
@@ -451,7 +452,8 @@ function DineIn() {
                     // fontFamily: '"Jost", sans-serif',
                   }}
                 >
-                  {/* {dineData.rest4_txt} */} Experience culinary excellence
+                  {/* {dineData.rest4_txt} */}
+                  Experience culinary excellence
                   amidst the stunning snow-covered slopes at Lazeez Restaurant,
                   your ultimate dining destination at Malam Jabba Ski Resort.
                   Indulge in a delectable fusion of local flavors, served with
@@ -515,7 +517,8 @@ function DineIn() {
                   // fontFamily: '"Jost", sans-serif',
                 }}
               >
-                {/* {dineData.rest5_txt} */} Get the perfect blend of warmth and
+                {/* {dineData.rest5_txt} */}
+                Get the perfect blend of warmth and
                 flavor at Gloria Jeans, nestled in the heart of Malam Jabba Ski
                 Resort. Indulge in our rich, aromatic coffees and delightful
                 snacks as you take in the breathtaking mountain views. Whether
@@ -548,9 +551,9 @@ function DineIn() {
           >
             <Grid item xs={12} sm={12} md={6} mt={5}>
               <img
-                // src={`http://localhost:5000/${dineData.rest4_img}`}
-                src="/DineIn/botFood.jpg"
-                alt="Bottom Food Court"
+                // src={`http://localhost:5000/${dineData.rest6_img}`}
+                src="/DineIn/topFood.jpg"
+                alt="Top Food Court"
                 style={{
                   maxWidth: "90%",
                   // height: 500,
@@ -589,7 +592,7 @@ function DineIn() {
                   }}
                 >
                   Top Station Food Court
-                  {/* {dineData.rest4_title} */}
+                  {/* {dineData.rest6_title} */}
                 </Typography>
                 <Divider
                   sx={{
@@ -613,7 +616,8 @@ function DineIn() {
                     // fontFamily: '"Jost", sans-serif',
                   }}
                 >
-                  {/* {dineData.rest4_txt} */} Snack attack! Explore our diverse
+                  {/* {dineData.rest6_txt} */}
+                  Snack attack! Explore our diverse
                   selection of tasty treats at our resort's base station.{" "}
                 </Typography>
               </Stack>
@@ -649,7 +653,7 @@ function DineIn() {
                   marginTop: 5,
                 }}
               >
-                {/* {dineData.rest5_title} */}
+                {/* {dineData.rest7_title} */}
                 Bottom Station Food Court
               </Typography>
               <Divider
@@ -674,14 +678,15 @@ function DineIn() {
                   // fontFamily: '"Jost", sans-serif',
                 }}
               >
-                {/* {dineData.rest5_txt} */} Snacking with a view: A feast for
+                {/* {dineData.rest7_txt} */}
+                Snacking with a view: A feast for
                 every craving.{" "}
               </Typography>
             </Stack>
           </Grid>
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
-              // src={`http://localhost:5000/${dineData.rest5_img}`}
+              // src={`http://localhost:5000/${dineData.rest7_img}`}
               src="/DineIn/topFood.JPG"
               alt="Top Food Court"
               style={{

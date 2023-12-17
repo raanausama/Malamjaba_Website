@@ -74,43 +74,6 @@ const EconAccomodation = () => {
       // heading={staycationData.room2_title}
       // text={staycationData.room2_txt}
     />,
-
-    // <EconCards
-    //   image={"/Activities/BanquetHall-min.JPG"}
-    //   heading={"Banquet Hall"}
-    //   text={"Perfect place for your destination wedding, corporate events etc."}
-    //   // image={`http://localhost:5000/${staycationData.room5_img}`}
-    //   // heading={staycationData.room5_title}
-    //   // text={staycationData.room5_txt}
-    // />,
-    // <EconCards
-    //   image={"/PicturesForWebsite/SwimmingPool-min.JPG"}
-    //   heading={"Swimming Pool"}
-    //   text={
-    //     "Outdoor and temperature control swimming pool for your refreshment"
-    //   }
-    // image={`http://localhost:5000/${staycationData.room6_img}`}
-    // heading={staycationData.room6_title}
-    // text={staycationData.room6_txt}
-    // />,
-    // <EconCards
-    //   image={OutDoor}
-    //   heading={"Outdoor Wedding"}
-    //   text={"Plan your perfect wedding at the perfect location"}
-    // image={`http://localhost:5000/${staycationData.room7_img}`}
-    // heading={staycationData.room7_title}
-    // text={staycationData.room7_txt}
-    // />,
-    // <EconCards
-    //   image={NetCricket}
-    //   heading={"Net Cricket"}
-    //   text={
-    //     "Through our Net Cricket, we ensure, Cricket stays with you no matter where you go. "
-    //   }
-    // image={`http://localhost:5000/${staycationData.room8_img}`}
-    // heading={staycationData.room8_title}
-    // text={staycationData.room8_txt}
-    // />,
   ];
 
   return (

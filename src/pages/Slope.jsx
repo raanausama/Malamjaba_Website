@@ -67,7 +67,8 @@ function Slope() {
                 color="#094e9d"
                 sx={{ fontFamily: "Aktiv", m: 2 }}
               >
-                About the Resort
+                {/* About the Resort */}
+                {slopeData.about_title}
                 {/* {slopeData.ski_title1}<br/> */}
                 {/* {slopeData.ski_title2} */}
               </Typography>
@@ -76,7 +77,8 @@ function Slope() {
                 variant="subtitle"
                 sx={{ fontFamily: "Aktiv", m: 2 }}
               >
-                Malam Jabba Ski Resort, a beautiful destination stationed amidst
+                {slopeData.about_text}
+                {/* Malam Jabba Ski Resort, a beautiful destination stationed amidst
                 the Hindu Kush and Himalayan mountains. It is an all-season
                 destination, home to a variety of exhilarating activities such
                 as Skiing, Snowboarding, Snow Tubbing, Ski Rental in our winter
@@ -87,7 +89,7 @@ function Slope() {
                 and reviewed by a team of foreign experts and engineers,
                 multiple times a year. The resort is also accompanied by a
                 5-star hotel – PC Malam Jabba, offering premium accommodation to
-                visitors.
+                visitors. */}
                 {/* {slopeData.ski_txt} */}
               </Typography>
             </Stack>
@@ -287,30 +289,30 @@ function Slope() {
           justifyContent="center !important"
         >
           <Grid item md={6} padding="1%">
-          <img
-                  src="/piston_bully.jpg"
-                  // src={`http://localhost:5000/${slopeData.ski_img1}`}
-                  alt="First Image"
-                  style={{
-                    width: "50%",
-                    height: "50vh",
-                    border: "10px solid white",
-                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
-                    borderRadius: "10px",
-                  }}
-                />
-                <img
-                  src="/Picture2.jpg"
-                  // src={`http://localhost:5000/${slopeData.ski_img1}`}
-                  alt="First Image"
-                  style={{
-                    width: "50%",
-                    height: "50vh",
-                    border: "10px solid white",
-                    filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
-                    borderRadius: "10px",
-                  }}
-                />
+            <img
+              src="/piston_bully.jpg"
+              // src={`http://localhost:5000/${slopeData.piston_img1}`}
+              alt="First Image"
+              style={{
+                width: "50%",
+                height: "50vh",
+                border: "10px solid white",
+                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                borderRadius: "10px",
+              }}
+            />
+            <img
+              src="/Picture2.jpg"
+              // src={`http://localhost:5000/${slopeData.piston_img2}`}
+              alt="Second Image"
+              style={{
+                width: "50%",
+                height: "50vh",
+                border: "10px solid white",
+                filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))",
+                borderRadius: "10px",
+              }}
+            />
           </Grid>
           <Grid
             item
@@ -335,8 +337,8 @@ function Slope() {
                 sx={{ fontFamily: "Aktiv", m: 2 }}
               >
                 Piston Bully:
-                {/* {slopeData.ski_title1}<br/> */}
-                {/* {slopeData.ski_title2} */}
+
+                {/* {slopeData.piston_title} */}
               </Typography>
               <Typography variant="subtitle" sx={{ fontFamily: "Aktiv", m: 2 }}>
                 The Piston Bully machine at Malam Jabba Ski Resort is a
@@ -344,7 +346,7 @@ function Slope() {
                 maintain and shape the ski slopes, ensuring optimal skiing
                 conditions by smoothing and packing the snow for a safe and
                 enjoyable experience for skiers and snowboarders.
-                {/* {slopeData.ski_txt} */}
+                {/* {slopeData.piston_txt} */}
               </Typography>
             </Stack>
           </Grid>
@@ -384,6 +386,7 @@ function Slope() {
                 onMouseLeave={onLeave}
               >
                 <img
+                  // src={`http://localhost:5000/${slopeData.team_img}`}
                   src="/team.JPG"
                   alt="Staycation"
                   style={{ width: "100%", height: "40vh" }}
