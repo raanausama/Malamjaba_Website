@@ -284,9 +284,9 @@ import MenuItem from "@mui/material/MenuItem";
 import gsap from "gsap";
 import { Link, useNavigate } from "react-router-dom";
 import { Height } from "@mui/icons-material";
-import SignIn from "../../pages/SignIn";
+// import SignIn from "../../pages/SignIn";
 
-const pages = ["HOME", "STAYCATION", "ACTIVITIES", "ABOUT US"];
+const pages = ["HOME"];
 const settings = [
   "Dine In",
   "CSR",
@@ -359,7 +359,7 @@ function ResponsiveAppBar() {
         background: "rgba(0,0,0)",
       }}
     >
-      <SignIn open={viewModalOpen} handleClose={handleCloseModal} />
+      {/* <SignIn open={viewModalOpen} handleClose={handleCloseModal} /> */}
       <Container maxWidth="100%">
         <Toolbar disableGutters>
           {/* <AdbIcon  /> */}

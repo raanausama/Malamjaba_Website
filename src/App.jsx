@@ -11,13 +11,13 @@ import AnnouncementBanner from "./components/announcementBanner/AnnouncementBann
 // import DineIn from "./pages/DineIn";
 
 const HomePage = lazy(() => import("./pages/home"));
-const Staycation = lazy(() => import("./pages/staycation"));
-const TheSlope = lazy(() => import("./pages/Slope"));
-const Packages = lazy(() => import("./pages/packages"));
-const BlogMain = lazy(() => import("./pages/BlogMain"));
-const Activities = lazy(() => import("./pages/activities"));
-const DineIn = lazy(() => import("./pages/DineIn"));
-const CSRMain = lazy(() => import("./pages/CSR"));
+// const Staycation = lazy(() => import("./pages/staycation"));
+// const TheSlope = lazy(() => import("./pages/Slope"));
+// const Packages = lazy(() => import("./pages/packages"));
+// const BlogMain = lazy(() => import("./pages/BlogMain"));
+// const Activities = lazy(() => import("./pages/activities"));
+// const DineIn = lazy(() => import("./pages/DineIn"));
+// const CSRMain = lazy(() => import("./pages/CSR"));
 
 function App() {
   // const header = useSelector(state => state.header.visible);
@@ -44,13 +44,13 @@ function App() {
             <Route exact path="/" element={<HomePage />} />
             <Route exact path="/home" element={<HomePage />} />
             <Route exact path="/index" element={<HomePage />} />
-            <Route exact path="/staycation" element={<Staycation />} />
-            <Route exact path="/about-us" element={<TheSlope />} />
-            <Route exact path="/packages" element={<Packages />} />
-            <Route exact path="/activities" element={<Activities />} />
-            <Route exact path="/blog" element={<BlogMain />} />
-            <Route exact path="/csr" element={<CSRMain />} />
-            <Route exact path="/dinein" element={<DineIn />} />
+            {/* <Route exact path="/staycation" element={<Staycation />} /> */}
+            {/* <Route exact path="/about-us" element={<TheSlope />} /> */}
+            {/* <Route exact path="/packages" element={<Packages />} /> */}
+            {/* <Route exact path="/activities" element={<Activities />} /> */}
+            {/* <Route exact path="/blog" element={<BlogMain />} /> */}
+            {/* <Route exact path="/csr" element={<CSRMain />} /> */}
+            {/* <Route exact path="/dinein" element={<DineIn />} /> */}
           </Routes>
         </Suspense>
       </Router>
