@@ -123,11 +123,11 @@ function DineIn() {
                 }}
               >
                 {/* {dineData.rest1_txt} */}
-                Experience culinary excellence at
-                its finest at MarcoPolo Restaurant, nestled within the luxurious
-                Pearl Continental Malam Jabba. Indulge in a symphony of flavors
-                as our talented chefs craft exquisite dishes that blend
-                traditional Pakistani cuisine with international flair.{" "}
+                Experience culinary excellence at its finest at MarcoPolo
+                Restaurant, nestled within the luxurious Pearl Continental Malam
+                Jabba. Indulge in a symphony of flavors as our talented chefs
+                craft exquisite dishes that blend traditional Pakistani cuisine
+                with international flair.{" "}
               </Typography>
             </Stack>
           </Grid>
@@ -220,11 +220,10 @@ function DineIn() {
                   }}
                 >
                   {/* {dineData.rest2_txt} */}
-                  Indulge in a symphony of flavors
-                  crafted by our expert chefs, surrounded by the stunning
-                  natural beauty of the Swat Valley. From delectable local
-                  cuisine to international delights, MarcoPolo Bistro promises a
-                  dining experience like no other.
+                  Indulge in a symphony of flavors crafted by our expert chefs,
+                  surrounded by the stunning natural beauty of the Swat Valley.
+                  From delectable local cuisine to international delights,
+                  MarcoPolo Bistro promises a dining experience like no other.
                 </Typography>
               </Stack>
             </Grid>
@@ -356,11 +355,11 @@ function DineIn() {
                 }}
               >
                 {/* {dineData.rest3_txt} */}
-                Treat yourself in an exquisite
-                culinary journey at Tai Pan, the premier Chinese restaurant at
-                Pearl Continental Malam Jabba. Savor the rich flavors of
-                authentic Chinese cuisine prepared by our master chefs, all
-                while enjoying breathtaking mountain views.{" "}
+                Treat yourself in an exquisite culinary journey at Tai Pan, the
+                premier Chinese restaurant at Pearl Continental Malam Jabba.
+                Savor the rich flavors of authentic Chinese cuisine prepared by
+                our master chefs, all while enjoying breathtaking mountain
+                views.{" "}
               </Typography>
             </Stack>
           </Grid>
@@ -453,11 +452,11 @@ function DineIn() {
                   }}
                 >
                   {/* {dineData.rest4_txt} */}
-                  Experience culinary excellence
-                  amidst the stunning snow-covered slopes at Lazeez Restaurant,
-                  your ultimate dining destination at Malam Jabba Ski Resort.
-                  Indulge in a delectable fusion of local flavors, served with
-                  warm hospitality in a cozy mountain setting.{" "}
+                  Experience culinary excellence amidst the stunning
+                  snow-covered slopes at Lazeez Restaurant, your ultimate dining
+                  destination at Malam Jabba Ski Resort. Indulge in a delectable
+                  fusion of local flavors, served with warm hospitality in a
+                  cozy mountain setting.{" "}
                 </Typography>
               </Stack>
             </Grid>
@@ -518,13 +517,13 @@ function DineIn() {
                 }}
               >
                 {/* {dineData.rest5_txt} */}
-                Get the perfect blend of warmth and
-                flavor at Gloria Jeans, nestled in the heart of Malam Jabba Ski
-                Resort. Indulge in our rich, aromatic coffees and delightful
-                snacks as you take in the breathtaking mountain views. Whether
-                you're hitting the slopes or simply seeking a cozy retreat,
-                Gloria Jeans at Malam Jabba Ski Resort is your go-to destination
-                for comfort and refreshment. views.{" "}
+                Get the perfect blend of warmth and flavor at Gloria Jeans,
+                nestled in the heart of Malam Jabba Ski Resort. Indulge in our
+                rich, aromatic coffees and delightful snacks as you take in the
+                breathtaking mountain views. Whether you're hitting the slopes
+                or simply seeking a cozy retreat, Gloria Jeans at Malam Jabba
+                Ski Resort is your go-to destination for comfort and
+                refreshment. views.{" "}
               </Typography>
             </Stack>
           </Grid>
@@ -552,7 +551,7 @@ function DineIn() {
             <Grid item xs={12} sm={12} md={6} mt={5}>
               <img
                 // src={`http://localhost:5000/${dineData.rest6_img}`}
-                src="/DineIn/topFood.jpg"
+                src="/DineIn/botFood.jpg"
                 alt="Top Food Court"
                 style={{
                   maxWidth: "90%",
@@ -591,7 +590,7 @@ function DineIn() {
                     marginTop: 5,
                   }}
                 >
-                  Top Station Food Court
+                  Bottom Station Food Court
                   {/* {dineData.rest6_title} */}
                 </Typography>
                 <Divider
@@ -617,8 +616,8 @@ function DineIn() {
                   }}
                 >
                   {/* {dineData.rest6_txt} */}
-                  Snack attack! Explore our diverse
-                  selection of tasty treats at our resort's base station.{" "}
+                  Snack attack! Explore our diverse selection of tasty treats at
+                  our resort's base station.{" "}
                 </Typography>
               </Stack>
             </Grid>
@@ -654,7 +653,7 @@ function DineIn() {
                 }}
               >
                 {/* {dineData.rest7_title} */}
-                Bottom Station Food Court
+                Top Station Food Court
               </Typography>
               <Divider
                 sx={{
@@ -679,8 +678,7 @@ function DineIn() {
                 }}
               >
                 {/* {dineData.rest7_txt} */}
-                Snacking with a view: A feast for
-                every craving.{" "}
+                Snacking with a view: A feast for every craving.{" "}
               </Typography>
             </Stack>
           </Grid>
@@ -688,7 +686,7 @@ function DineIn() {
             <img
               // src={`http://localhost:5000/${dineData.rest7_img}`}
               src="/DineIn/topFood.JPG"
-              alt="Top Food Court"
+              alt="Bottom Food Court"
               style={{
                 maxWidth: "90%",
                 // height: 500,
