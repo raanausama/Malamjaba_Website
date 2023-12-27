@@ -111,14 +111,14 @@ export default function SinglePriceModal({
                     alignItems={"center"}
                     m="0em 0.5em 1.2em 0.5em"
                   >
-                    Ticket Price: {price}
+                    Ticket Price : {price}
                   </Typography>
                   <Typography
                     display={"flex"}
                     textAlign={"center"}
                     alignItems={"center"}
                   >
-                    Note: {description}
+                    Note : {description}
                   </Typography>
                 </Box>
               </Grid>

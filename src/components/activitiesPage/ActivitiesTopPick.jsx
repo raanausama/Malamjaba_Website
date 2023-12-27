@@ -15,8 +15,6 @@ import AcitivitySinglePriceCards from "../Cards/ActivitySinglePriceCards";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-
-
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
@@ -40,85 +38,86 @@ const ActivitiesTopPick = ({ activitiesData }) => {
   const smallScreen = theme.breakpoints.down("md");
   let card = [
     <WinterCards
-              simage="/Activities/Sking-min.JPG"
-              // simage= {`http://localhost:5000/${activitiesData?.card1_img}`}
-
-              sheader="Skiing"
-              // sheader={activitiesData.card1_title}
-              stext="Ski through our magnificent slopes under the training of national and international experts"
-              // stext={activitiesData.card1_txt}
-              hourlyPrice={2000}
-              halfDayPrice={3900}
-              fullDayPrice={5900}
-              twoDayPrice={7500}
-              description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
-            />,
-            <WinterCards
-            simage="/Activities/Snowboarding-min.jpg"
-            // simage= {`http://localhost:5000/${activitiesData?.card2_img}`}
-            // sheader={activitiesData.card2_title}
-
-            // stext={activitiesData.card2_txt}
-            sheader="Snow Boarding"
-            stext="Enjoy Snowboarding at Malam Jabba and check your Wishlist of adventurous activities."
-            hourlyPrice={2000}
-            halfDayPrice={3900}
-            fullDayPrice={5900}
-            twoDayPrice={7500}
-            description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
-          />,
-          <AcitivitySinglePriceCards
-          // simage= {`http://localhost:5000/${activitiesData?.card3_img}`}
-          // sheader={activitiesData?.card3_title}
-
-          // stext={activitiesData?.card3_txt}
-          simage="/Activities/Snowtubing-min.jpg"
-          sheader="Snow Tubing"
-          stext="Perfect ride for all the fun lovers"
-          price="400"
-          description="Enjoy The Ride"
-        />,
-      //   <AcitivitySinglePriceCards
-      //   // simage= {`http://localhost:5000/${activitiesData?.card3_img}`}
-      //   // sheader={activitiesData?.card3_title}
-
-      //   // stext={activitiesData?.card3_txt}
-      //   simage="/Activities/SkiRentalMin.jpg"
-      //   sheader="Ski-Rental"
-      //   stext="Get yourself well-equipped with high quality skis and snowboards to experience thrilling experience of a lifetime"
-      //   price=""
-      //   description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
-      // />,
-      <WinterCards
-      simage="/Activities/SkiRentalMin.jpg"
-      // simage= {`http://localhost:5000/${activitiesData?.card2_img}`}
-      // sheader={activitiesData.card2_title}
-
-      // stext={activitiesData.card2_txt}
-      sheader="Ski-Rental"
-      stext="Get yourself well-equipped with high quality skis and snowboards to experience thrilling experience of a lifetime"
-      hourlyPrice={2000}
-      halfDayPrice={3900}
-      fullDayPrice={5900}
+      // simage="/Activities/Sking-min.JPG"
+      simage={`http://localhost:5000/${activitiesData?.card1_img}`}
+      // sheader="Skiing"
+      sheader={activitiesData.card1_title}
+      // stext="Ski through our magnificent slopes under the training of national and international experts"
+      stext={activitiesData.card1_txt}
+      // hourlyPrice={2000}
+      hourlyPrice={activitiesData?.card1_hourlyrate}
+      // halfDayPrice={3900}
+      halfDayPrice={activitiesData?.card1_halfdayrate}
+      // fullDayPrice={5900}
+      fullDayPrice={activitiesData?.card1_fulldayrate}
       // twoDayPrice={7500}
-      description="This include ski rental"
+      description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
     />,
+    <WinterCards
+      // simage="/Activities/Snowboarding-min.jpg"
+      simage={`http://localhost:5000/${activitiesData?.card2_img}`}
+      sheader={activitiesData.card2_title}
+      stext={activitiesData.card2_txt}
+      // sheader="Snow Boarding"
+      // stext="Enjoy Snowboarding at Malam Jabba and check your Wishlist of adventurous activities."
+      hourlyPrice={activitiesData?.card2_hourlyrate}
+      halfDayPrice={activitiesData?.card2_halfdayrate}
+      fullDayPrice={activitiesData?.card2_fulldayrate}
+      // hourlyPrice={2000}
+      // halfDayPrice={3900}
+      // fullDayPrice={5900}
+      // twoDayPrice={7500}
+      description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
+    />,
+    <AcitivitySinglePriceCards
+      simage={`http://localhost:5000/${activitiesData?.card3_img}`}
+      sheader={activitiesData?.card3_title}
+      stext={activitiesData?.card3_txt}
+      price={activitiesData?.card3_ticketRate}
+      // simage="/Activities/Snowtubing-min.jpg"
+      // sheader="Snow Tubing"
+      // stext="Perfect ride for all the fun lovers"
+      // price="400"
+      description="Enjoy The Ride"
+    />,
+    //   <AcitivitySinglePriceCards
+    //   // simage= {`http://localhost:5000/${activitiesData?.card3_img}`}
+    //   // sheader={activitiesData?.card3_title}
 
+    //   // stext={activitiesData?.card3_txt}
+    //   simage="/Activities/SkiRentalMin.jpg"
+    //   sheader="Ski-Rental"
+    //   stext="Get yourself well-equipped with high quality skis and snowboards to experience thrilling experience of a lifetime"
+    //   price=""
+    //   description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
+    // />,
+    <WinterCards
+      // simage="/Activities/SkiRentalMin.jpg"
+      simage={`http://localhost:5000/${activitiesData?.card4_img}`}
+      sheader={activitiesData.card2_title}
+      stext={activitiesData.card2_txt}
+      // sheader="Ski-Rental"
+      // stext="Get yourself well-equipped with high quality skis and snowboards to experience thrilling experience of a lifetime"
+      // hourlyPrice={2000}
+      // halfDayPrice={3900}
+      // fullDayPrice={5900}
+      hourlyPrice={activitiesData?.card4_hourlyrate}
+      halfDayPrice={activitiesData?.card4_halfdayrate}
+      fullDayPrice={activitiesData?.card4_fulldayrate}
+      // twoDayPrice={7500}
+      description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
+    />,
   ];
 
   return (
     <>
-        <Grid container display="flex" justifyContent="center">
-          <Grid Item xs={12} display="flex" justifyContent="center">
-            <Typography
-              variant="h3"
-              color="#094e9d"
-              sx={{ fontFamily: "Aktiv" }}
-            >
-              Our Top Picks This Winter
-            </Typography>
-          </Grid>
-          <Grid Item xs={12} sm={12} md={12}>
+      <Grid container display="flex" justifyContent="center">
+        <Grid Item xs={12} display="flex" justifyContent="center">
+          <Typography variant="h3" color="#094e9d" sx={{ fontFamily: "Aktiv" }}>
+            Our Top Picks This Winter
+          </Typography>
+        </Grid>
+        <Grid Item xs={12} sm={12} md={12}>
           <Carousel
             // customDot={<CustomDot />}
             swipeable={true}
@@ -136,8 +135,8 @@ const ActivitiesTopPick = ({ activitiesData }) => {
           >
             {card}
           </Carousel>
-            </Grid>
-            {/* <WinterCards
+        </Grid>
+        {/* <WinterCards
               simage="/Activities/Sking-min.JPG"
               // simage= {`http://localhost:5000/${activitiesData?.card1_img}`}
 
@@ -194,7 +193,7 @@ const ActivitiesTopPick = ({ activitiesData }) => {
               description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
             />
           </Grid> */}
-        </Grid>
+      </Grid>
     </>
   );
 };

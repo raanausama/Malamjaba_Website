@@ -30,27 +30,33 @@ const OtherActivities = ({ activitiesData }) => {
   // const smallScreen = theme.breakpoints.down("md");
   // console.log("THIS IS OTHER DATA", activitiesData)
   let card = [
-    <AcitivitySinglePriceCards
-      simage="/Activities/ChairliftCropped-min.png"
-      sheader="Chairlift"
-      stext="An 850 meters ride to the top station to enjoy scenic views of the valley"
-      price="1400 - Quick Access Chairlift : 1,700 - Hike to ChairLift : 800"
-      description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
-    />,
-
-    // <BlogCards
+    // <AcitivitySinglePriceCards
     //   simage="/Activities/ChairliftCropped-min.png"
     //   sheader="Chairlift"
     //   stext="An 850 meters ride to the top station to enjoy scenic views of the valley"
-    // simage={`http://localhost:5000/${activitiesData?.ac1_img}`}
-    // sheader={activitiesData?.ac1_title}
-    // stext={activitiesData?.ac1_txt}
+    //   price="1400 - Quick Access Chairlift : 1,700 - Hike to ChairLift : 800"
+    //   description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
     // />,
+
     <AcitivitySinglePriceCards
-      simage="/Activities/Zipline-min.png"
-      sheader="Zipline"
-      stext="Zip through the clouds on one of the longest ziplines of Pakistan"
-      price="3500 - Hike to Zipline : 2300"
+      // simage="/Activities/ChairliftCropped-min.png"
+      // sheader="Chairlift"
+      // stext="An 850 meters ride to the top station to enjoy scenic views of the valley"
+      simage={`http://localhost:5000/${activitiesData?.ac1_img}`}
+      sheader={activitiesData?.ac1_title}
+      stext={activitiesData?.ac1_txt}
+      price={` ${activitiesData?.ac1_ticketPrice} - Quick Access ChariLift : ${activitiesData?.ac1_quickAccess} - Hike to ChairLift : ${activitiesData?.ac1_hiketozip}`}
+      description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
+    />,
+    <AcitivitySinglePriceCards
+      // simage="/Activities/Zipline-min.png"
+      // sheader="Zipline"
+      // stext="Zip through the clouds on one of the longest ziplines of Pakistan"
+      // price="3500 - Hike to Zipline : 2300"
+      simage={`http://localhost:5000/${activitiesData?.ac2_img}`}
+      sheader={activitiesData?.ac2_title}
+      stext={activitiesData?.ac2_txt}
+      price={` ${activitiesData?.ac2_ticketPrice} - Hike to ChairLift : ${activitiesData?.ac2_hiketozip}`}
       description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
     />,
     // <BlogCards
@@ -62,10 +68,14 @@ const OtherActivities = ({ activitiesData }) => {
     // stext={activitiesData?.ac2_txt}
     // />,
     <AcitivitySinglePriceCards
-      simage="/Activities/GiantSwing-min.jpg"
-      sheader="Giant Swing"
-      stext="Swing your stress away, at the only Giant Swing of Pakistan"
-      price="3500"
+      // simage="/Activities/GiantSwing-min.jpg"
+      // sheader="Giant Swing"
+      // stext="Swing your stress away, at the only Giant Swing of Pakistan"
+      // price="3500"
+      simage={`http://localhost:5000/${activitiesData?.ac3_img}`}
+      sheader={activitiesData?.ac3_title}
+      stext={activitiesData?.ac3_txt}
+      price={` ${activitiesData?.ac3_ticketPrice} `}
       description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
     />,
     // <BlogCards
@@ -77,10 +87,14 @@ const OtherActivities = ({ activitiesData }) => {
     // stext={activitiesData?.ac3_txt}
     // />,
     <AcitivitySinglePriceCards
-      simage="/Activities/HumanSlingshot-min.JPG"
-      sheader="Human Slingshot"
-      stext="Are you daring enough to try the only slingshot of Pakistan"
-      price="5000"
+      // simage="/Activities/HumanSlingshot-min.JPG"
+      // sheader="Human Slingshot"
+      // stext="Are you daring enough to try the only slingshot of Pakistan"
+      // price="5000"
+      simage={`http://localhost:5000/${activitiesData?.ac4_img}`}
+      sheader={activitiesData?.ac4_title}
+      stext={activitiesData?.ac4_txt}
+      price={` ${activitiesData?.ac4_ticketPrice} `}
       description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
     />,
     // <BlogCards
@@ -107,10 +121,14 @@ const OtherActivities = ({ activitiesData }) => {
     // stext={activitiesData?.ac5_txt}
     // />,
     <AcitivitySinglePriceCards
-      simage={vrRides}
-      sheader="VR Rides"
-      stext="VR Snowboarding and Skiing simulators to provide you the experience of its kind"
-      price="500"
+      // simage={vrRides}
+      // sheader="VR Rides"
+      // stext="VR Snowboarding and Skiing simulators to provide you the experience of its kind"
+      // price="500"
+      simage={`http://localhost:5000/${activitiesData?.ac5_img}`}
+      sheader={activitiesData?.ac5_title}
+      stext={activitiesData?.ac5_txt}
+      price={` ${activitiesData?.ac5_ticketPrice} `}
       description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
     />,
     // <BlogCards
