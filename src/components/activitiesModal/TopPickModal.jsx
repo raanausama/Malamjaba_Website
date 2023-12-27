@@ -109,21 +109,21 @@ export default function TopPickModal({
                   alignItems={"center"}
                 >
                   <Typography
-                    display={"flex"}
+                    display={hourlyPrice ? "flex" : "none"}
                     textAlign={"center"}
                     alignItems={"center"}
                   >
                     Hourly: {hourlyPrice}
                   </Typography>
                   <Typography
-                    display={"flex"}
+                    display={halfDayPrice ? "flex" : "none"}
                     textAlign={"center"}
                     alignItems={"center"}
                   >
                     Half day: {halfDayPrice}
                   </Typography>
                   <Typography
-                    display={"flex"}
+                    display={fullDayPrice ? "flex" : "none"}
                     textAlign={"center"}
                     alignItems={"center"}
                   >
