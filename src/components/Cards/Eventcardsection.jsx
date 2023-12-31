@@ -37,7 +37,7 @@ const Eventcardsection = ({ homeData }) => {
             <Grid item md={4} sm={6}>
               <ActionAreaCard
                 image="familyfest.jpeg"
-                // image={`http://localhost:5000/${homeData.pec_img}`}
+                // image={`${import.meta.env.VITE_BACKEND_URL}/${homeData.pec_img}`}
                 header1="PAST EVENT"
                 // header2={homeData.pec_title}
                 header2="Food Fest"
@@ -54,7 +54,7 @@ const Eventcardsection = ({ homeData }) => {
             <Grid item md={4} sm={6}>
               <ActionAreaCard
                 image="Marathon.jpg"
-                // image={`http://localhost:5000/${homeData.uec_img}`}
+                // image={`${import.meta.env.VITE_BACKEND_URL}/${homeData.uec_img}`}
                 header1="UPCOMING EVENT"
                 header2="Marathon"
                 // header2={homeData.uec_title}
@@ -69,7 +69,7 @@ const Eventcardsection = ({ homeData }) => {
             <Grid item md={4} sm={6}>
               <ActionAreaCard
                 image="Nationalski.jpeg"
-                // image={`http://localhost:5000/${homeData.fec_img}`}
+                // image={`${import.meta.env.VITE_BACKEND_URL}/${homeData.fec_img}`}
                 header1="FUTURE EVENT"
                 header2="National Ski and Snowboarding Competition"
                 // header2={homeData.fec_title}

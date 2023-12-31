@@ -304,7 +304,9 @@ function CSRMain() {
   const getCsrData = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/csr/getcsrPageData?username=ranausama`
+        `${
+          import.meta.env.VITE_BACKEND_URL
+        }/csr/getcsrPageData?username=ranausama`
       );
       // Handle the response data here
       console.log("Data:", response.data);
@@ -338,12 +340,12 @@ function CSRMain() {
       <ResponsiveAppBar />
 
       <CsrHero
-        image="/CSR3.jpg"
-        // image={`http://localhost:5000/${csrData.hero_img}`}
-        heading="Empowering Communities, Enriching Lives:"
-        // heading={csrData.hero_title}
-        // text={csrData.hero_txt}
-        text="Our Commitment to Corporate Social Responsibility."
+        // image="/CSR3.jpg"
+        image={`${import.meta.env.VITE_BACKEND_URL}/${csrData.hero_img}`}
+        // heading="Empowering Communities, Enriching Lives:"
+        heading={csrData.hero_title}
+        text={csrData.hero_txt}
+        // text="Our Commitment to Corporate Social Responsibility."
       />
       <Container fixed sx={{ mb: 10 }}>
         <Grid container>
@@ -377,8 +379,8 @@ function CSRMain() {
                   marginTop: 5,
                 }}
               >
-                {/* {csrData.csr1_title} */}
-                Cleanliness Drive
+                {csrData.csr1_title}
+                {/* Cleanliness Drive */}
               </Typography>
               <Divider
                 sx={{
@@ -401,18 +403,19 @@ function CSRMain() {
                   fontFamily: "Aktiv",
                 }}
               >
-                {/* {csrData.csr1_txt} */} To provide a pleasant and fresh
+                {csrData.csr1_txt}
+                {/* To provide a pleasant and fresh
                 experience to the tourists and also a way of giving back to
-                nature, regular cleanliness drives for a soulful vacation.{" "}
+                nature, regular cleanliness drives for a soulful vacation.{" "} */}
               </Typography>
             </Stack>
           </Grid>
 
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
-              //  src={`http://localhost:5000/${csrData.csr1_img}`}
+              src={`${import.meta.env.VITE_BACKEND_URL}/${csrData.csr1_img}`}
               // src={csrData.csr1_img}
-              src="/CSR/CleanlinessDrive.jpeg"
+              // src="/CSR/CleanlinessDrive.jpeg"
               alt="Cleanliness drives"
               style={{
                 maxWidth: "90%",
@@ -432,8 +435,8 @@ function CSRMain() {
           >
             <Grid item xs={12} sm={12} md={6} mt={5}>
               <img
-                //  src={`http://localhost:5000/${csrData.csr2_img}`}
-                src="/CSR/FirstAid.png"
+                src={`${import.meta.env.VITE_BACKEND_URL}/${csrData.csr2_img}`}
+                // src="/CSR/FirstAid.png"
                 alt="First Aid"
                 style={{
                   maxWidth: "90%",
@@ -473,8 +476,8 @@ function CSRMain() {
                     marginTop: 5,
                   }}
                 >
-                  {/* {csrData.csr2_title} */}
-                  Quick Rescue Teams.
+                  {csrData.csr2_title}
+                  {/* Quick Rescue Teams. */}
                 </Typography>
                 <Divider
                   sx={{
@@ -497,10 +500,11 @@ function CSRMain() {
                     fontFamily: "Aktiv",
                   }}
                 >
-                  {/* {csrData.csr2_txt} */} Keeping in mind the safety of the
+                  {csrData.csr2_txt}
+                  {/* Keeping in mind the safety of the
                   tourists, we have rescue teams on the ready 24/7 for any
                   mishaps or unfortunate incidents as safety is the utmost
-                  priority.{" "}
+                  priority.{" "} */}
                 </Typography>
               </Stack>
             </Grid>
@@ -535,8 +539,8 @@ function CSRMain() {
                   marginTop: 5,
                 }}
               >
-                {/* {csrData.csr3_title} */}
-                Ration Distribution.
+                {csrData.csr3_title}
+                {/* Ration Distribution. */}
               </Typography>
               <Divider
                 sx={{
@@ -559,20 +563,21 @@ function CSRMain() {
                   mr: 2,
                 }}
               >
-                {/* {csrData.csr3_txt} */} Ration drives to fulfill the needs of
+                {csrData.csr3_txt}
+                {/* Ration drives to fulfill the needs of
                 the deserving people who cannot afford basic groceries due to
                 inflation. Learning and Development We take pride in providing
                 ski training to our locals and provide them with platforms and
                 training so that they can represent their country at a national
-                as well as an international level.{" "}
+                as well as an international level.{" "} */}
               </Typography>
             </Stack>
           </Grid>
 
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
-              //  src={`http://localhost:5000/${csrData.csr3_img}`}
-              src="/CSR/RationDistribution.png"
+              src={`${import.meta.env.VITE_BACKEND_URL}/${csrData.csr3_img}`}
+              // src="/CSR/RationDistribution.png"
               alt="Ration Distribution drives"
               style={{
                 maxWidth: "90%",
@@ -592,8 +597,8 @@ function CSRMain() {
           >
             <Grid item xs={12} sm={12} md={6} mt={5}>
               <img
-                // src={`http://localhost:5000/${csrData.csr4_img}`}
-                src="/CSR/snowClearanceNew.jpg"
+                src={`${import.meta.env.VITE_BACKEND_URL}/${csrData.csr4_img}`}
+                // src="/CSR/snowClearanceNew.jpg"
                 alt="Road Clearance"
                 style={{
                   maxWidth: "90%",
@@ -633,8 +638,8 @@ function CSRMain() {
                     marginTop: 5,
                   }}
                 >
-                  {/* {csrData.csr4_title} */}
-                  Road Clearance.
+                  {csrData.csr4_title}
+                  {/* Road Clearance. */}
                 </Typography>
                 <Divider
                   sx={{
@@ -658,10 +663,11 @@ function CSRMain() {
                     // fontFamily: '"Jost", sans-serif',
                   }}
                 >
-                  {/* {csrData.csr4_txt} */} Keeping in mind the safety of the
+                  {csrData.csr4_txt}
+                  {/* Keeping in mind the safety of the
                   tourists, we have rescue teams on the ready 24/7 for any
                   mishaps or unfortunate incidents as safety is the utmost
-                  priority.{" "}
+                  priority.{" "} */}
                 </Typography>
               </Stack>
             </Grid>
@@ -696,8 +702,8 @@ function CSRMain() {
                   marginTop: 5,
                 }}
               >
-                {/* {csrData.csr5_title} */}
-                Learning and Development.
+                {csrData.csr5_title}
+                {/* Learning and Development. */}
               </Typography>
               <Divider
                 sx={{
@@ -722,18 +728,20 @@ function CSRMain() {
                   mr: 2,
                 }}
               >
-                {/* {csrData.csr5_txt} */} We take pride in providing ski
+                {csrData.csr5_txt}
+                {/* We take pride in providing ski
                 training to our locals and provide them with platforms and
                 training so that they can represent their country at a national
-                as well as an international level.
+                as well as an international level. */}
               </Typography>
             </Stack>
           </Grid>
 
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
-              //  src={`http://localhost:5000/${csrData.csr5_img}`}
-              src="/CSR/Learning.jpg"
+              src={`${import.meta.env.VITE_BACKEND_URL}/${csrData.csr5_img}`}
+              //
+              // src="/CSR/Learning.jpg"
               alt="Learning drives"
               style={{
                 maxWidth: "100%",

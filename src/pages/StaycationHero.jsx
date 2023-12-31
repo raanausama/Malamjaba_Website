@@ -32,7 +32,6 @@ const StaycationHero = ({ image, heading, heading2, text }) => {
             fontWeight: "400",
             // fontFamily: '"Allison", handwriting !important',
             fontFamily: "Aktiv",
-
           }}
         >
           {heading}
@@ -44,7 +43,6 @@ const StaycationHero = ({ image, heading, heading2, text }) => {
             fontWeight: "400",
             // fontFamily: '"Allison", handwriting !important',
             fontFamily: "Aktiv",
-
           }}
         >
           {heading2}
@@ -55,7 +53,6 @@ const StaycationHero = ({ image, heading, heading2, text }) => {
             fontSize: { xs: "0.8em", md: "1.90em" },
             // fontFamily: '"Allison", handwriting !important',
             fontFamily: "Aktiv",
-
           }}
         >
           {text}

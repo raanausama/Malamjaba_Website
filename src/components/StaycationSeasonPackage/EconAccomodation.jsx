@@ -24,7 +24,7 @@ const responsive = {
   },
 };
 
-const EconAccomodation = () => {
+const EconAccomodation = ({ staycationData }) => {
   const onEnter = ({ currentTarget }) => {
     gsap.to(currentTarget, { scale: 1.05 });
   };
@@ -35,44 +35,52 @@ const EconAccomodation = () => {
 
   let card = [
     <EconCards
-      image={"/ExecutiveRoom.JPG"}
-      heading={"Executive Rooms"}
-      text={
-        " Room space with a double bed, mini bar, inverter, geyser. Room rates may depend on seasonality. For bookings, contact Samsons Inn Manager Bawar Hussain +92-314-9735622."
-      }
-      // image={`http://localhost:5000/${staycationData.room1_img}`}
-      // heading={staycationData.room1_title}
-      // text={staycationData.room1_txt}
+      // image={"/ExecutiveRoom.JPG"}
+      // heading={"Executive Rooms"}
+      // text={
+      //   " Room space with a double bed, mini bar, inverter, geyser. Room rates may depend on seasonality. For bookings, contact Samsons Inn Manager Bawar Hussain +92-314-9735622."
+      // }
+      image={`${import.meta.env.VITE_BACKEND_URL}/${
+        staycationData.accomodation1_img
+      }`}
+      heading={staycationData.accomodation1_title}
+      text={staycationData.accomodation1_txt}
     />,
     <EconCards
-      image={"/DeluxeRooms.JPG"}
-      heading={"Deluxe Rooms"}
-      text={
-        "Room space with 4 single beds, inverter, geyser. Room rates may depend on seasonality. For bookings, contact Samsons Inn Manager Bawar Hussain +92-314-9735622."
-      }
-      // image={`http://localhost:5000/${staycationData.room4_img}`}
-      // heading={staycationData.room4_title}
-      // text={staycationData.room4_txt}
+      // image={"/DeluxeRooms.JPG"}
+      // heading={"Deluxe Rooms"}
+      // text={
+      //   "Room space with 4 single beds, inverter, geyser. Room rates may depend on seasonality. For bookings, contact Samsons Inn Manager Bawar Hussain +92-314-9735622."
+      // }
+      image={`${import.meta.env.VITE_BACKEND_URL}/${
+        staycationData.accomodation2_img
+      }`}
+      heading={staycationData.accomodation2_title}
+      text={staycationData.accomodation2_txt}
     />,
     <EconCards
-      image={"/lawn.jpg"}
-      heading={"Outdoor Dining"}
-      text={
-        "Enjoy a delicious meal with the best of views and peaceful environment. For bookings, contact Samsons Inn Manager Bawar Hussain +92-314-9735622."
-      }
-      // image={`http://localhost:5000/${staycationData.room3_img}`}
-      // heading={staycationData.room3_title}
-      // text={staycationData.room3_txt}
+      // image={"/lawn.jpg"}
+      // heading={"Outdoor Dining"}
+      // text={
+      //   "Enjoy a delicious meal with the best of views and peaceful environment. For bookings, contact Samsons Inn Manager Bawar Hussain +92-314-9735622."
+      // }
+      image={`${import.meta.env.VITE_BACKEND_URL}/${
+        staycationData.accomodation3_img
+      }`}
+      heading={staycationData.accomodation3_title}
+      text={staycationData.accomodation3_txt}
     />,
     <EconCards
-      image={"/bonfireNew.jpg"}
-      heading={"Bonfire"}
-      text={
-        "We arrange bonfires for your friends circle to enjoy amidst cool breeze. For bookings, contact Samsons Inn Manager Bawar Hussain +92-314-9735622."
-      }
-      // image={`http://localhost:5000/${staycationData.room2_img}`}
-      // heading={staycationData.room2_title}
-      // text={staycationData.room2_txt}
+      // image={"/bonfireNew.jpg"}
+      // heading={"Bonfire"}
+      // text={
+      //   "We arrange bonfires for your friends circle to enjoy amidst cool breeze. For bookings, contact Samsons Inn Manager Bawar Hussain +92-314-9735622."
+      // }
+      image={`${import.meta.env.VITE_BACKEND_URL}/${
+        staycationData.accomodation4_img
+      }`}
+      heading={staycationData.accomodation4_title}
+      text={staycationData.accomodation4_txt}
     />,
   ];
 
