@@ -31,7 +31,7 @@ const SamsonCarousel = ({ staycationData }) => {
       image={"/PicturesForWebsite/premium-suites-min.jpg"}
       heading={"Premium Suites"}
       text={"Luxury Premium Suites to make your stay memorable!"}
-      // image={`http://localhost:5000/${staycationData.room1_img}`}
+      // image={`${import.meta.env.VITE_BACKEND_URL}/${staycationData.room1_img}`}
       // heading={staycationData.room1_title}
       // text={staycationData.room1_txt}
     />,
@@ -39,7 +39,7 @@ const SamsonCarousel = ({ staycationData }) => {
       image={"/PicturesForWebsite/premium-suites-min.jpg"}
       heading={"Delux Rooms"}
       text={"Luxury Premium Suites to make your stay memorable!"}
-      // image={`http://localhost:5000/${staycationData.room1_img}`}
+      // image={`${import.meta.env.VITE_BACKEND_URL}/${staycationData.room1_img}`}
       // heading={staycationData.room1_title}
       // text={staycationData.room1_txt}
     />,

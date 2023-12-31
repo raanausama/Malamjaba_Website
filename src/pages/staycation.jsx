@@ -18,7 +18,9 @@ const Staycation = () => {
   const getStaycationData = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/staycation/getStaycationPageData?username=ranausama`
+        `${
+          import.meta.env.VITE_BACKEND_URL
+        }/staycation/getStaycationPageData?username=ranausama`
       );
       // Handle the response data here
       console.log("Data:", response.data);
@@ -38,18 +40,18 @@ const Staycation = () => {
     <div>
       <ResponsiveAppBar />
       <StaycationHero
-        // image={`http://localhost:5000/${staycationData.hero_img}`}
-        image={header}
+        image={`${import.meta.env.VITE_BACKEND_URL}/${staycationData.hero_img}`}
+        // image={header}
       />
       <StacationCover staycationData={staycationData} />
       <StaycationGrid staycationData={staycationData} />
-      
-      <EconAccomodation/>
+
+      <EconAccomodation staycationData={staycationData} />
       <StaycationSeasonPackage
         image="/familyfest.webp"
         buttonText={"Tips before your trip"}
       />
-      
+
       {/* <Sponsors /> */}
       {/* <Footer bgImage="footer1.jpg" /> */}
       <NewFooter />

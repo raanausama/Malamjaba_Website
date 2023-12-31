@@ -34,10 +34,13 @@ const HomePage = () => {
   const getHomeData = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/home/getHomePageData?username=ranausama`
+        // `${import.meta.env.VITE_BACKEND_URL}/home/getHomePageData?username=ranausama`
+        `${
+          import.meta.env.VITE_BACKEND_URL
+        }/home/getHomePageData?username=ranausama`
       );
       // Handle the response data here
-      console.log("Data:", response.data);
+      console.log("RESPONSE DATA:", response.data);
       setLoading(true);
       setHomeData(response.data);
     } catch (error) {
@@ -87,7 +90,7 @@ const HomePage = () => {
         />
 
         <ImageWithSummerActivities
-          // image={`http://localhost:5000/${homeData.sa_img}`}
+          // image={`${import.meta.env.VITE_BACKEND_URL}/${homeData.sa_img}`}
           image="SummerActivities.JPG"
           // text={homeData.sa_txt}
           text="The tourists can enjoy plethora of activities during Summers other than the scenic
@@ -103,7 +106,7 @@ const HomePage = () => {
         />
       </Suspense>
       <ImageWithWinterActivities
-        // image={`http://localhost:5000/${homeData.wa_img}`}
+        // image={`${import.meta.env.VITE_BACKEND_URL}/${homeData.wa_img}`}
         image="events.jpg"
         textHeading="Winter Activities"
         // text={homeData.wa_txt}
