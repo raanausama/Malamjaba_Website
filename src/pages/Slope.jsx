@@ -1,14 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Sponsors from "../components/sponsors/sponsorsFooter";
-import Footer from "../components/footer/footer";
-import BlogGrid from "../components/gridViews/BlogGrid";
 import StaycationHero from "./StaycationHero";
 import { Box, Grid, Stack, Typography, Avatar, Divider } from "@mui/material";
 import ResponsiveAppBar from "../components/NavBar/NavBar";
-import StaycationSeasonPackage from "../components/StaycationSeasonPackage/StaycationSeasonPackage";
 import NewFooter from "../components/footer/NewFooter";
-import slope1 from "../Assets/bg_content/slope1.png";
-import slope2 from "../Assets/bg_content/slope2.png";
 import axios from "axios";
 import gsap from "gsap";
 
@@ -18,9 +12,7 @@ function Slope() {
   const getSlopePageData = async () => {
     try {
       const response = await axios.get(
-        `${
-          import.meta.env.VITE_BACKEND_URL
-        }/slope/getSlopePageData?username=ranausama`
+        `${import.meta.env.VITE_BACKEND_URL}/slope/getSlopePageData?username=ranausama`
       );
       // Handle the response data here
       console.log("Data:", response.data);
@@ -48,12 +40,12 @@ function Slope() {
       <ResponsiveAppBar />
       <StaycationHero
         // image="Images/Slope/dsfgfgg.jpg"
-        image={`${import.meta.env.VITE_BACKEND_URL}/${slopeData.hero_img}`}
+        image={`${import.meta.env.VITE_BACKEND_URL}/${slopeData?.hero_img}`}
         // heading="A Symphony of Serenity -"
         // heading2="Malam Jabba's Magnificent Slopes Await you"
         // text="The Identity of Malam Jabba Ski Resort"
-        heading={slopeData.hero_title}
-        text={slopeData.hero_txt}
+        heading={slopeData?.hero_title}
+        text={slopeData?.hero_txt}
       />
       <Box sx={{ padding: "10%" }}>
         <Grid
@@ -70,16 +62,16 @@ function Slope() {
                 sx={{ fontFamily: "Aktiv", m: 2 }}
               >
                 {/* About the Resort */}
-                {slopeData.about_title}
-                {/* {slopeData.ski_title1}<br/> */}
-                {/* {slopeData.ski_title2} */}
+                {slopeData?.about_title}
+                {slopeData?.ski_title1}<br/> 
+                {slopeData?.ski_title2}
               </Typography>
               <Typography
                 textAlign={"center"}
                 variant="subtitle"
                 sx={{ fontFamily: "Aktiv", m: 2 }}
               >
-                {slopeData.about_text}
+                {slopeData?.about_text}
                 {/* Malam Jabba Ski Resort, a beautiful destination stationed amidst
                 the Hindu Kush and Himalayan mountains. It is an all-season
                 destination, home to a variety of exhilarating activities such
@@ -92,7 +84,7 @@ function Slope() {
                 multiple times a year. The resort is also accompanied by a
                 5-star hotel – PC Malam Jabba, offering premium accommodation to
                 visitors. */}
-                {/* {slopeData.ski_txt} */}
+                {slopeData?.ski_txt}
               </Typography>
             </Stack>
           </Grid>
@@ -107,9 +99,7 @@ function Slope() {
               <Grid item xs={6}>
                 <img
                   // src="/Images/Slope/IMG_9404-1-min.JPG"
-                  src={`${import.meta.env.VITE_BACKEND_URL}/${
-                    slopeData.ski_img1
-                  }`}
+                  src={`${import.meta.env.VITE_BACKEND_URL}/${slopeData?.ski_img1}`}
                   alt="First Image"
                   style={{
                     width: "100%",
@@ -125,9 +115,7 @@ function Slope() {
                   <Grid item xs={12}>
                     <img
                       // src="/Images/Slope/fghgfh-min.jpg"
-                      src={`${import.meta.env.VITE_BACKEND_URL}/${
-                        slopeData.ski_img2
-                      }`}
+                      src={`${import.meta.env.VITE_BACKEND_URL}/${slopeData?.ski_img2}`}
                       alt="Second Image"
                       style={{
                         width: "100%",
@@ -141,9 +129,7 @@ function Slope() {
                   <Grid item xs={12}>
                     <img
                       // src={slope1}
-                      src={`${import.meta.env.VITE_BACKEND_URL}/${
-                        slopeData.ski_img3
-                      }`}
+                      src={`${import.meta.env.VITE_BACKEND_URL}/${slopeData?.ski_img3}`}
                       alt="Third Image"
                       style={{
                         width: "100%",
@@ -181,9 +167,8 @@ function Slope() {
                 sx={{ fontFamily: "Aktiv", m: 2 }}
               >
                 {/* Malam Jabba Ski Resort - <br /> Where Nature Meets Adventure: */}
-                {slopeData.ski_title1}
-                <br />
-                {slopeData.ski_title2}
+                {slopeData?.ski_title1}<br/>
+                {slopeData?.ski_title2}
               </Typography>
               <Typography variant="subtitle" sx={{ fontFamily: "Aktiv", m: 2 }}>
                 {/* As you travel up the curvy roads of Swat, eyeing breathtaking
@@ -197,7 +182,7 @@ function Slope() {
                 state-of-the-art infrastructure, premium accommodations, and
                 world-class winter sports facilities. The resort commenced its
                 operations in 2016. */}
-                {slopeData.ski_txt}
+                {slopeData?.ski_txt}
               </Typography>
             </Stack>
           </Grid>
@@ -218,7 +203,7 @@ function Slope() {
               // fontSize={"3rem"}
             >
               {/* Technicalities of the Slope */}
-              {slopeData.tech_title}
+              {slopeData?.tech_title}
             </Typography>
 
             <Typography variant="subtitle" sx={{ fontFamily: "Aktiv" }}>
@@ -230,7 +215,7 @@ function Slope() {
               The length of the slope is 720 Meters and its width is 60 Meters.
               Moreover, the average slope gradient is 28%, providing an
               exhilarating skiing experience for enthusiasts. */}
-              {slopeData.tech_txt}
+              {slopeData?.tech_txt}
             </Typography>
           </Box>
         </Grid>
@@ -245,9 +230,7 @@ function Slope() {
             <Grid item xs={6}>
               <img
                 // src="/Images/Slope/sdfrr5fg1-min.jpg"
-                src={`${import.meta.env.VITE_BACKEND_URL}/${
-                  slopeData.tech1_img
-                }`}
+                src={`${import.meta.env.VITE_BACKEND_URL}/${slopeData?.tech1_img}`}
                 alt="First Image"
                 style={{
                   width: "100%",
@@ -263,9 +246,7 @@ function Slope() {
                 <Grid item xs={12}>
                   <img
                     // src="/Images/Slope/dsfgfgg-min.jpg"
-                    src={`${import.meta.env.VITE_BACKEND_URL}/${
-                      slopeData.tech2_img
-                    }`}
+                    src={`${import.meta.env.VITE_BACKEND_URL}/${slopeData?.tech2_img}`}
                     alt="Second Image"
                     style={{
                       width: "100%",
@@ -279,9 +260,7 @@ function Slope() {
                 <Grid item xs={12}>
                   <img
                     // src={slope2}
-                    src={`${import.meta.env.VITE_BACKEND_URL}/${
-                      slopeData.tech3_img
-                    }`}
+                    src={`${import.meta.env.VITE_BACKEND_URL}/${slopeData?.tech3_img}`}
                     alt="Third Image"
                     style={{
                       width: "100%",
@@ -306,9 +285,7 @@ function Slope() {
           <Grid item md={6} padding="1%">
             <img
               // src="/piston_bully.jpg"
-              src={`${import.meta.env.VITE_BACKEND_URL}/${
-                slopeData.piston_img1
-              }`}
+              src={`${import.meta.env.VITE_BACKEND_URL}/${slopeData?.piston_img1}`}
               alt="First Image"
               style={{
                 width: "50%",
@@ -320,9 +297,7 @@ function Slope() {
             />
             <img
               // src="/Picture2.jpg"
-              src={`${import.meta.env.VITE_BACKEND_URL}/${
-                slopeData.piston_img2
-              }`}
+              src={`${import.meta.env.VITE_BACKEND_URL}/${slopeData?.piston_img2}`}
               alt="Second Image"
               style={{
                 width: "50%",
@@ -356,7 +331,8 @@ function Slope() {
                 sx={{ fontFamily: "Aktiv", m: 2 }}
               >
                 {/* Piston Bully: */}
-                {slopeData.piston_title}
+
+                {slopeData?.piston_title}
               </Typography>
               <Typography variant="subtitle" sx={{ fontFamily: "Aktiv", m: 2 }}>
                 {/* The Piston Bully machine at Malam Jabba Ski Resort is a
@@ -364,7 +340,7 @@ function Slope() {
                 maintain and shape the ski slopes, ensuring optimal skiing
                 conditions by smoothing and packing the snow for a safe and
                 enjoyable experience for skiers and snowboarders. */}
-                {slopeData.piston_txt}
+                {slopeData?.piston_txt}
               </Typography>
             </Stack>
           </Grid>
@@ -404,11 +380,9 @@ function Slope() {
                 onMouseLeave={onLeave}
               >
                 <img
-                  src={`${import.meta.env.VITE_BACKEND_URL}/${
-                    slopeData.team_img
-                  }`}
+                  src={`${import.meta.env.VITE_BACKEND_URL}/${slopeData?.team_img}`}
                   // src="/team.JPG"
-                  alt="Team Photo"
+                  alt="Staycation"
                   style={{ width: "100%", height: "40vh" }}
                   // borderRadius="1em"
                 />

@@ -23,11 +23,11 @@ const AnnouncementBanner = ({ text }) => {
         {/* <Typography variant="body1" className="moving-text moving-text.paused " color='white'>{text}</Typography> */}
         <Typography
           variant="body1"
-          className="moving-text moving-text.paused "
+          className="moving-text moving-text.paused"
           color="white"
           fontFamily="Aktiv"
         >
-          Something's Coming
+          {text}
         </Typography>
       </div>
     </>

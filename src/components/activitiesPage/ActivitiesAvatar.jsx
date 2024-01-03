@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import "../../pages/activities.css";
 
-const ActivitiesAvatar = ({ activitiesData }) => {
+const ActivitiesAvatar = ({activitiesData}) => {
   const theme = useTheme();
   const smallScreen = theme.breakpoints.down("md");
 
@@ -33,10 +33,8 @@ const ActivitiesAvatar = ({ activitiesData }) => {
           >
             <Avatar
               alt="Activities"
-              src={`${import.meta.env.VITE_BACKEND_URL}s/${
-                activitiesData.adventure_img
-              }`}
-              src="/outdoor-min.jpeg"
+              src={`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.adventure_img}`}
+              // src="/outdoor-min.jpeg"
               sx={{
                 width: { xs: 250, sm: 400 },
                 height: { xs: 250, sm: 400 },
@@ -69,7 +67,8 @@ const ActivitiesAvatar = ({ activitiesData }) => {
                 Slingshot and kids activities made for fun and memorable
                 adventures. We strive to enhance the lives of our guests by
                 creating the best human-powered outdoor adventures available.{" "} */}
-                {activitiesData?.adventure_txt}
+                                {activitiesData?.adventure_txt}
+
               </Typography>
             </Stack>
           </Grid>

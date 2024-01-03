@@ -1,4 +1,0 @@
-VITE_BACKEND_URL="https://backend.malamjabbaresort.com"
-VITE_PORT=3000
-
-VITE_NODE_ENV="development"

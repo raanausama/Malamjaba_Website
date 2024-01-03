@@ -1,8 +1,5 @@
 import { Box } from "@mui/material";
 import React from "react";
-import StaycationGridCard from "../Cards/StaycationGridCard";
-import OutDoor from "../../Assets/staycation/Picture2.png";
-import NetCricket from "../../Assets/staycation/Picture3.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import SamsonsCarCard from "../Cards/SamsonCarCard";
@@ -28,20 +25,20 @@ const responsive = {
 const SamsonCarousel = ({ staycationData }) => {
   let card = [
     <SamsonsCarCard
-      image={"/PicturesForWebsite/premium-suites-min.jpg"}
-      heading={"Premium Suites"}
-      text={"Luxury Premium Suites to make your stay memorable!"}
-      // image={`${import.meta.env.VITE_BACKEND_URL}/${staycationData.room1_img}`}
-      // heading={staycationData.room1_title}
-      // text={staycationData.room1_txt}
+      // image={"/PicturesForWebsite/premium-suites-min.jpg"}
+      // heading={"Premium Suites"}
+      // text={"Luxury Premium Suites to make your stay memorable!"}
+      image={`${import.meta.env.VITE_BACKEND_URL}/${staycationData.room1_img}`}
+      heading={staycationData.room1_title}
+      text={staycationData.room1_txt}
     />,
     <SamsonsCarCard
-      image={"/PicturesForWebsite/premium-suites-min.jpg"}
-      heading={"Delux Rooms"}
-      text={"Luxury Premium Suites to make your stay memorable!"}
-      // image={`${import.meta.env.VITE_BACKEND_URL}/${staycationData.room1_img}`}
-      // heading={staycationData.room1_title}
-      // text={staycationData.room1_txt}
+      // image={"/PicturesForWebsite/premium-suites-min.jpg"}
+      // heading={"Delux Rooms"}
+      // text={"Luxury Premium Suites to make your stay memorable!"}
+      image={`${import.meta.env.VITE_BACKEND_URL}/${staycationData.room1_img}`}
+      heading={staycationData.room1_title}
+      text={staycationData.room1_txt}
     />,
   ];
   return (

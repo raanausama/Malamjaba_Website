@@ -1,8 +1,8 @@
 import React, {useState}  from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import image1 from "../../Assets/bg_content/staycation-header.jpg";
-import image2 from "../../Assets/bg_content/accommodation-passes.jpg";
-import image3 from "../../Assets/bg_content/activities-header.jpg";
+import image1 from "../../assets/bg_content/staycation-header.jpg";
+import image2 from "../../assets/bg_content/accommodation-passes.jpg";
+import image3 from "../../assets/bg_content/activities-header.jpg";
 import "./swiper.css"
 
 // create a vertical swiper using react bootstrap carousel

@@ -1,11 +1,9 @@
 import React from "react";
-import { Grid, Typography, useTheme, Container, Box } from "@mui/material";
+import { Typography,Box } from "@mui/material";
 import "../../pages/activities.css";
-import BlogCards from "../../components/Cards/BlogCards";
-import vrRides from "../../Assets/bg_content/Picture5.png";
+
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import WinterCards from "../Cards/WinterCards";
 import AcitivitySinglePriceCards from "../Cards/ActivitySinglePriceCards";
 
 const responsive = {
@@ -63,7 +61,7 @@ const OtherActivities = ({ activitiesData }) => {
     //   simage="/Activities/Zipline-min.png"
     //   sheader="Zipline"
     //   stext="Zip through the clouds on one of the longest ziplines of Pakistan"
-    // simage={`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.ac2_img}`}
+    // simage={`http://localhost:5000/${activitiesData?.ac2_img}`}
     // sheader={activitiesData?.ac2_title}
     // stext={activitiesData?.ac2_txt}
     // />,
@@ -82,7 +80,7 @@ const OtherActivities = ({ activitiesData }) => {
     //   simage="/Activities/GiantSwing-min.jpg"
     //   sheader="Giant Swing"
     //   stext="Swing your stress away, at the only Giant Swing of Pakistan"
-    // simage={`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.ac3_img}`}
+    // simage={`http://localhost:5000/${activitiesData?.ac3_img}`}
     // sheader={activitiesData?.ac3_title}
     // stext={activitiesData?.ac3_txt}
     // />,
@@ -101,7 +99,7 @@ const OtherActivities = ({ activitiesData }) => {
     //   simage="/Activities/HumanSlingshot-min.JPG"
     //   sheader="Human Slingshot"
     //   stext="Are you daring enough to try the only slingshot of Pakistan"
-    // simage={`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.ac4_img}`}
+    // simage={`http://localhost:5000/${activitiesData?.ac4_img}`}
     // sheader={activitiesData?.ac4_title}
     // stext={activitiesData?.ac4_txt}
     // />,
@@ -116,7 +114,7 @@ const OtherActivities = ({ activitiesData }) => {
     //   simage="/Activities/GrassSki-min.jpg"
     //   sheader="Grass Ski"
     //   stext="Ski is no longer for winters with our grass skiing, using the best equipment"
-    // simage={`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.ac5_img}`}
+    // simage={`http://localhost:5000/${activitiesData?.ac5_img}`}
     // sheader={activitiesData?.ac5_title}
     // stext={activitiesData?.ac5_txt}
     // />,
@@ -135,7 +133,7 @@ const OtherActivities = ({ activitiesData }) => {
     //   simage={vrRides}
     //   sheader="VR Rides"
     //   stext="VR Snowboarding and Skiing simulators to provide you the experience of its kind"
-    // simage={`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.ac6_img}`}
+    // simage={`http://localhost:5000/${activitiesData?.ac6_img}`}
     // sheader={activitiesData?.ac6_title}
     // stext={activitiesData?.ac6_txt}
     // />,
@@ -185,7 +183,7 @@ const OtherActivities = ({ activitiesData }) => {
               // simage="/Activities/ChairliftCropped-min.png"
               // sheader="Chairlift"
               // stext="An 850 meters ride to the top station to enjoy scenic views of the valley"
-              simage= {`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.ac1_img}`}
+              simage= {`http://localhost:5000/${activitiesData?.ac1_img}`}
               sheader={activitiesData?.ac1_title}
   
               stext={activitiesData?.ac1_txt}
@@ -196,7 +194,7 @@ const OtherActivities = ({ activitiesData }) => {
               // simage="/Activities/Zipline-min.png"
               // sheader="Zipline"
               // stext="Zip through the clouds on one of the longest ziplines of Pakistan"
-              simage= {`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.ac2_img}`}
+              simage= {`http://localhost:5000/${activitiesData?.ac2_img}`}
               sheader={activitiesData?.ac2_title}
   
               stext={activitiesData?.ac2_txt}
@@ -207,7 +205,7 @@ const OtherActivities = ({ activitiesData }) => {
               // simage="/Activities/GiantSwing-min.jpg"
               // sheader="Giant Swing"
               // stext="Swing your stress away, at the only Giant Swing of Pakistan"
-              simage= {`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.ac3_img}`}
+              simage= {`http://localhost:5000/${activitiesData?.ac3_img}`}
               sheader={activitiesData?.ac3_title}
   
               stext={activitiesData?.ac3_txt}
@@ -218,7 +216,7 @@ const OtherActivities = ({ activitiesData }) => {
               // simage="/Activities/HumanSlingshot-min.JPG"
               // sheader="Human Slingshot"
               // stext="Are you daring enough to try the only slingshot of Pakistan"
-              simage= {`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.ac4_img}`}
+              simage= {`http://localhost:5000/${activitiesData?.ac4_img}`}
               sheader={activitiesData?.ac4_title}
   
               stext={activitiesData?.ac4_txt}
@@ -229,7 +227,7 @@ const OtherActivities = ({ activitiesData }) => {
               // simage="/Activities/GrassSki-min.jpg"
               // sheader="Grass Ski"
               // stext="Ski is no longer for winters with our grass skiing, using the best equipment"
-              simage= {`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.ac5_img}`}
+              simage= {`http://localhost:5000/${activitiesData?.ac5_img}`}
               sheader={activitiesData?.ac5_title}
               stext={activitiesData?.ac5_txt}
             />
@@ -239,7 +237,7 @@ const OtherActivities = ({ activitiesData }) => {
               // simage={vrRides}
               // sheader="VR Rides"
               // stext="VR Snowboarding and Skiing simulators to provide you the experience of its kind"
-              simage= {`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.ac6_img}`}
+              simage= {`http://localhost:5000/${activitiesData?.ac6_img}`}
               sheader={activitiesData?.ac6_title}
               stext={activitiesData?.ac6_txt}
             />

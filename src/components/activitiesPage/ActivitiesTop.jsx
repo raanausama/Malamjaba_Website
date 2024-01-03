@@ -1,9 +1,15 @@
 import React from "react";
-import { Box, Grid, Stack, Typography, useTheme } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Stack,
+  Typography,
+  useTheme,
+} from "@mui/material";
 import "../../pages/activities.css";
-import Background from "../../Assets/bg_content/Picture4.png";
+import Background from "../../assets/bg_content/Picture4.png";
 
-const ActivitiesTop = ({ activitiesData }) => {
+const ActivitiesTop = ({activitiesData}) => {
   const theme = useTheme();
   const smallScreen = theme.breakpoints.down("md");
 
@@ -12,10 +18,8 @@ const ActivitiesTop = ({ activitiesData }) => {
       <Grid container md={12} xl={12}>
         <Box
           sx={{
-            // backgroundImage: `url(${Background})`,
-            backgroundImage: `url(${import.meta.env.VITE_BACKEND_URL}/${
-              activitiesData.hero_img
-            })`,
+            backgroundImage: `url(${Background})`,
+            // backgroundImage:`url(http://localhost:5000/${activitiesData.hero_img})`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
@@ -62,7 +66,7 @@ const ActivitiesTop = ({ activitiesData }) => {
                 State of the Art Infrastructure and <br /> Adventurous
                 Activities
               </Typography> */}
-            {/* <Typography
+              {/* <Typography
                 variant={smallScreen ? "h3" : "h5"}
                 sx={{
                   [theme.breakpoints.down("sm")]: {
@@ -77,7 +81,7 @@ const ActivitiesTop = ({ activitiesData }) => {
               >
                 Nature Meets Adventure!
               </Typography> */}
-            {/* <Typography
+              {/* <Typography
                 variant={smallScreen ? "h6" : "h7"}
                 sx={{
                   [theme.breakpoints.down("sm")]: {

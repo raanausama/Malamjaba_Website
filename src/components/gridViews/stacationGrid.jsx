@@ -25,6 +25,7 @@ const responsive = {
 };
 
 const StaycationGrid = ({ staycationData }) => {
+  console.log('staycationData',staycationData)
   let card = [
     <StaycationGridCard
       // image={"/PicturesForWebsite/premium-suites-min.jpg"}
@@ -54,9 +55,9 @@ const StaycationGrid = ({ staycationData }) => {
       // image={"/PicturesForWebsite/Cinema (2)-min.jpg"}
       // heading={"Cinema"}
       // text={"Indoor Cinema for your entertainment"}
-      image={`${import.meta.env.VITE_BACKEND_URL}/${staycationData.room4_img}`}
-      heading={staycationData.room4_title}
-      text={staycationData.room4_txt}
+      image={`${import.meta.env.VITE_BACKEND_URL}/${staycationData.room2_img}`}
+      heading={staycationData.room2_title}
+      text={staycationData.room2_txt}
     />,
 
     <StaycationGridCard
@@ -85,25 +86,25 @@ const StaycationGrid = ({ staycationData }) => {
       heading={staycationData.room7_title}
       text={staycationData.room7_txt}
     />,
-    <StaycationGridCard
+    // <StaycationGridCard
       // image="/netcric.jpg"
       // heading={"Net Cricket"}
       // text={
       //   "Through our Net Cricket, we ensure, Cricket stays with you no matter where you go. "
       // }
-      image={`${import.meta.env.VITE_BACKEND_URL}/${staycationData.room8_img}`}
-      heading={staycationData.room8_title}
-      text={staycationData.room8_txt}
-    />,
+    //   image={`${import.meta.env.VITE_BACKEND_URL}/${staycationData.room8_img}`}
+    //   heading={staycationData.room8_title}
+    //   text={staycationData.room8_txt}
+    // />,
     <StaycationGridCard
       // image="/futsal.jpg"
       // heading={"Futsal"}
       // text={
       //   "Net Futsal at Malam Jabba Ski Resort offers an exciting blend of the small-sided football game, providing visitors with a unique sporting experience amidst the stunning mountain scenery of Malam Jabba in Pakistan. "
       // }
-      image={`${import.meta.env.VITE_BACKEND_URL}/${staycationData.room9_img}`}
-      heading={staycationData.room9_title}
-      text={staycationData.room9_txt}
+      image={`${import.meta.env.VITE_BACKEND_URL}/${staycationData.room8_img}`}
+      heading={staycationData.room8_title}
+      text={staycationData.room8_txt}
     />,
   ];
   return (

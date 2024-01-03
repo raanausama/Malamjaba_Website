@@ -332,14 +332,11 @@
 
 import React from "react";
 import "./footer.css";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import Background from "../../Assets/bg_content/footer1.jpg";
-import logo from "../../Assets/logos/malamjabbalogo-150.png";
 import { Box, Container, Grid, Stack, Typography, Link } from "@mui/material";
-import SponsorImage from "../sponsors/sponsorImage";
-import { LinkedIn, Twitter, YouTube } from "@mui/icons-material";
+import pclogo from "../../assets/sliderimage/footer-logo-pc.png";
+import mjrLogo from "../../assets/logos/mjr-rev.png";
+import samsonsLogo from "../../assets/logos/samsons-rev.png";
 
 const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
   return (
@@ -517,7 +514,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
             justifyContent="center"
           >
             <img
-              src={"/mjr-rev.png"}
+              src={mjrLogo}
               alt="footer-logo-mjr"
               style={{ height: "20vh", width: "25vh" }}
             />
@@ -537,7 +534,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               alt="redbull"
             /> */}
             <img
-              src={"/Images/footer-logo-pc.png"}
+              src={pclogo}
               alt="footer-logo-mjr"
               style={{ height: "20vh", width: "25vh" }}
             />
@@ -553,7 +550,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
           >
             {/* <SponsorImage image="samsons-rev.png" alt="nescafe" style={{ height: "20px", width: "25vh" }} /> */}
             <img
-              src={"/samsons-rev.png"}
+              src={samsonsLogo}
               alt="footer-logo-mjr"
               style={{ height: "20vh", width: "35vh" }}
             />

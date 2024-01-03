@@ -6,9 +6,7 @@ import StaycationGrid from "../components/gridViews/stacationGrid";
 import StaycationHero from "./StaycationHero";
 import StaycationSeasonPackage from "../components/StaycationSeasonPackage/StaycationSeasonPackage";
 import ResponsiveAppBar from "../components/NavBar/NavBar";
-import { CircularProgress } from "@mui/material";
 import NewFooter from "../components/footer/NewFooter";
-import header from "../Assets/staycation/stayCationHeader.jpg";
 import axios from "axios";
 import EconAccomodation from "../components/StaycationSeasonPackage/EconAccomodation";
 
@@ -18,9 +16,7 @@ const Staycation = () => {
   const getStaycationData = async () => {
     try {
       const response = await axios.get(
-        `${
-          import.meta.env.VITE_BACKEND_URL
-        }/staycation/getStaycationPageData?username=ranausama`
+        `${import.meta.env.VITE_BACKEND_URL}/staycation/getStaycationPageData?username=ranausama`
       );
       // Handle the response data here
       console.log("Data:", response.data);
@@ -45,13 +41,13 @@ const Staycation = () => {
       />
       <StacationCover staycationData={staycationData} />
       <StaycationGrid staycationData={staycationData} />
-
-      <EconAccomodation staycationData={staycationData} />
+      
+      <EconAccomodation/>
       <StaycationSeasonPackage
         image="/familyfest.webp"
         buttonText={"Tips before your trip"}
       />
-
+      
       {/* <Sponsors /> */}
       {/* <Footer bgImage="footer1.jpg" /> */}
       <NewFooter />

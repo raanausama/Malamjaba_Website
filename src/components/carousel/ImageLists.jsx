@@ -1,25 +1,5 @@
 import React from "react";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
-import ImageListItemBar from "@mui/material/ImageListItemBar";
-// import ListSubheader from "@mui/material/ListSubheader";
-import IconButton from "@mui/material/IconButton";
-// import InfoIcon from "@mui/icons-material/Info";
-import Limage1 from "../../Assets/sliderimage/instagram.jpg";
-import Limage2 from "../../Assets/sliderimage/facebook.jpg";
-import Limage3 from "../../Assets/sliderimage/youtube.jpg";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import { useNavigate } from "react-router-dom";
-import "./ImageLists.css";
-import "../../pages/home.css";
 import { Grid } from "@mui/material";
-// import Badge from "react-bootstrap/Badge";
-// import Button from "react-bootstrap/Button";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import IconCards from "../Cards/IconCards";
-import { Box } from "@mui/material";
 
 export default function ImageLists() {
   
@@ -150,7 +130,7 @@ export default function ImageLists() {
       <Grid container>
         <Grid item sx={12} sm={12} md={6}>
           <IconCards
-            simage="/Assets/sliderimage/instagram.jpg"
+            simage="/assets/sliderimage/instagram.jpg"
             sheader="malamjabbaskiresort"
             icons="Facebook"
             icons2="Instagram"
@@ -162,7 +142,7 @@ export default function ImageLists() {
         </Grid>
         <Grid item sx={12} sm={12} md={6}>
           <IconCards
-            simage="/Assets/sliderimage/facebook.jpg"
+            simage="/assets/sliderimage/facebook.jpg"
             sheader="malamjabbaskiresort"
             icons="Youtube"
             icons2="Tiktok"
@@ -175,7 +155,7 @@ export default function ImageLists() {
 
         <Grid item sx={12} sm={12} md={6}>
           <IconCards
-            simage="/Assets/sliderimage/youtube.jpg"
+            simage="/assets/sliderimage/youtube.jpg"
             sheader="malamjabbaskiresort"
             icons='Twitter'
             iconLinks="https://twitter.com/Mjskiresort"
@@ -185,7 +165,7 @@ export default function ImageLists() {
         </Grid>
         <Grid item sx={12} sm={12} md={6}>
           <IconCards
-            simage="/Assets/sliderimage/facebook.jpg"
+            simage="/assets/sliderimage/facebook.jpg"
             sheader="malamjabbaskiresort"
             icons="LinkedIn"
             iconLinks="https://www.linkedin.com/company/malam-jabba-ski-resort/?viewAsMember=true"

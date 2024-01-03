@@ -23,11 +23,7 @@ const Activities = () => {
   const getActivitiesData = async () => {
     try {
       const response = await axios.get(
-        // `${import.meta.env.VITE_BACKEND_URL}/activities/getActivitiesPageData?username=ranausama`
-        // `https://backend.malamjabbaresort.com/activities/getActivitiesPageData?username=ranausama`
-        `${
-          import.meta.env.VITE_BACKEND_URL
-        }/activities/getActivitiesPageData?username=ranausama`
+        `${import.meta.env.VITE_BACKEND_URL}/activities/getActivitiesPageData?username=ranausama`
       );
       // Handle the response data here
       console.log("Data:", response.data);

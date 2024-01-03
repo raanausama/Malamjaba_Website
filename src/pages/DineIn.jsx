@@ -24,9 +24,7 @@ function DineIn() {
   const getDineData = async () => {
     try {
       const response = await axios.get(
-        `${
-          import.meta.env.VITE_BACKEND_URL
-        }/dine/getDinePageData?username=ranausama`
+        `${import.meta.env.VITE_BACKEND_URL}/dine/getDinePageData?username=ranausama`
       );
       // Handle the response data here
       console.log("Data:", response.data);
@@ -40,7 +38,7 @@ function DineIn() {
 
   // const footerRef = useRef(null);
   // const [data, setData] = useState([]);
-  console.log("homeData", dineData);
+  console.log("dineData", dineData);
   useEffect(() => {
     // const fetchData = async () => {
     //   try {
@@ -60,12 +58,12 @@ function DineIn() {
       <ResponsiveAppBar />
       <StaycationHero
         // image="/PicturesForWebsite/DineIn.JPG"
-        image={`${import.meta.env.VITE_BACKEND_URL}/${dineData.hero_img}`}
+        image={`${import.meta.env.VITE_BACKEND_URL}/${dineData?.hero_img}`}
         // heading="DineIn Services"
-        heading={dineData.hero_title}
+        heading={dineData?.hero_title}
         // text="Enjoy diverse culinary experiences with beautiful landscapes"
-        //
-        text={dineData.hero_txt}
+
+        text={dineData?.hero_txt}
       />
       <Container fixed sx={{ mb: 10 }}>
         <Grid container>
@@ -99,7 +97,7 @@ function DineIn() {
                   marginTop: 5,
                 }}
               >
-                {dineData.rest1_title}
+                {dineData?.rest1_title}
                 {/* Marcopolo */}
               </Typography>
               <Divider
@@ -124,7 +122,7 @@ function DineIn() {
                   // fontFamily: '"Jost", sans-serif',
                 }}
               >
-                {dineData.rest1_txt}
+                {dineData?.rest1_txt}
                 {/* Experience culinary excellence at its finest at MarcoPolo
                 Restaurant, nestled within the luxurious Pearl Continental Malam
                 Jabba. Indulge in a symphony of flavors as our talented chefs
@@ -136,7 +134,7 @@ function DineIn() {
 
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
-              src={`${import.meta.env.VITE_BACKEND_URL}/${dineData.rest1_img}`}
+              src={`${import.meta.env.VITE_BACKEND_URL}/${dineData?.rest1_img}`}
               // src="/DineIn/Marcopolo.png"
               alt="MarcoPolo"
               style={{
@@ -157,9 +155,7 @@ function DineIn() {
             <Grid item xs={12} sm={12} md={6} mt={5}>
               <img
                 // src="/DineIn/MarcopoloBistro.png"
-                src={`${import.meta.env.VITE_BACKEND_URL}/${
-                  dineData.rest2_img
-                }`}
+                src={`${import.meta.env.VITE_BACKEND_URL}/${dineData?.rest2_img}`}
                 alt="Marcopolo Bistro"
                 style={{
                   maxWidth: "90%",
@@ -199,7 +195,7 @@ function DineIn() {
                   }}
                 >
                   {/* Marcopolo Bistro. */}
-                  {dineData.rest2_title}
+                  {dineData?.rest2_title}
                 </Typography>
                 <Divider
                   sx={{
@@ -223,7 +219,7 @@ function DineIn() {
                     // fontFamily: '"Jost", sans-serif',
                   }}
                 >
-                  {dineData.rest2_txt}
+                  {dineData?.rest2_txt}
                   {/* Indulge in a symphony of flavors crafted by our expert chefs,
                   surrounded by the stunning natural beauty of the Swat Valley.
                   From delectable local cuisine to international delights,
@@ -334,7 +330,7 @@ function DineIn() {
                 }}
               >
                 {/* Tai Pan. */}
-                {dineData.rest3_title}
+                {dineData?.rest3_title}
               </Typography>
               <Divider
                 sx={{
@@ -358,7 +354,7 @@ function DineIn() {
                   // fontFamily: '"Jost", sans-serif',
                 }}
               >
-                {dineData.rest3_txt}
+                {dineData?.rest3_txt}
                 {/* Treat yourself in an exquisite culinary journey at Tai Pan, the
                 premier Chinese restaurant at Pearl Continental Malam Jabba.
                 Savor the rich flavors of authentic Chinese cuisine prepared by
@@ -371,7 +367,7 @@ function DineIn() {
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
               // src="/DineIn/TaiPan.png"
-              src={`${import.meta.env.VITE_BACKEND_URL}/${dineData.rest3_img}`}
+              src={`${import.meta.env.VITE_BACKEND_URL}/${dineData?.rest3_img}`}
               alt="TaiPan"
               style={{
                 maxWidth: "90%",
@@ -390,9 +386,7 @@ function DineIn() {
           >
             <Grid item xs={12} sm={12} md={6} mt={5}>
               <img
-                src={`${import.meta.env.VITE_BACKEND_URL}/${
-                  dineData.rest4_img
-                }`}
+                src={`${import.meta.env.VITE_BACKEND_URL}/${dineData?.rest4_img}`}
                 // src="/DineIn/lazeezRest.jpg"
                 alt="Lazeez Restraunt"
                 style={{
@@ -433,7 +427,7 @@ function DineIn() {
                   }}
                 >
                   {/* Lazeez Restaurant. */}
-                  {dineData.rest4_title}
+                  {dineData?.rest4_title}
                 </Typography>
                 <Divider
                   sx={{
@@ -457,7 +451,7 @@ function DineIn() {
                     // fontFamily: '"Jost", sans-serif',
                   }}
                 >
-                  {dineData.rest4_txt}
+                  {dineData?.rest4_txt}
                   {/* Experience culinary excellence amidst the stunning
                   snow-covered slopes at Lazeez Restaurant, your ultimate dining
                   destination at Malam Jabba Ski Resort. Indulge in a delectable
@@ -497,7 +491,7 @@ function DineIn() {
                   marginTop: 5,
                 }}
               >
-                {dineData.rest5_title}
+                {dineData?.rest5_title}
                 {/* Gloria Jeans. */}
               </Typography>
               <Divider
@@ -522,7 +516,7 @@ function DineIn() {
                   // fontFamily: '"Jost", sans-serif',
                 }}
               >
-                {dineData.rest5_txt}
+                {dineData?.rest5_txt}
                 {/* Get the perfect blend of warmth and flavor at Gloria Jeans,
                 nestled in the heart of Malam Jabba Ski Resort. Indulge in our
                 rich, aromatic coffees and delightful snacks as you take in the
@@ -536,7 +530,7 @@ function DineIn() {
 
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
-              src={`${import.meta.env.VITE_BACKEND_URL}/${dineData.rest5_img}`}
+              src={`${import.meta.env.VITE_BACKEND_URL}/${dineData?.rest5_img}`}
               // src="/DineIn/gloria.jpg"
               alt="TaiPan"
               style={{
@@ -556,9 +550,7 @@ function DineIn() {
           >
             <Grid item xs={12} sm={12} md={6} mt={5}>
               <img
-                src={`${import.meta.env.VITE_BACKEND_URL}/${
-                  dineData.rest6_img
-                }`}
+                src={`${import.meta.env.VITE_BACKEND_URL}/${dineData?.rest6_img}`}
                 // src="/DineIn/botFood.jpg"
                 alt="Top Food Court"
                 style={{
@@ -599,7 +591,7 @@ function DineIn() {
                   }}
                 >
                   {/* Bottom Station Food Court */}
-                  {dineData.rest6_title}
+                  {dineData?.rest6_title}
                 </Typography>
                 <Divider
                   sx={{
@@ -623,7 +615,7 @@ function DineIn() {
                     // fontFamily: '"Jost", sans-serif',
                   }}
                 >
-                  {dineData.rest6_txt}
+                  {dineData?.rest6_txt}
                   {/* Snack attack! Explore our diverse selection of tasty treats at
                   our resort's base station.{" "} */}
                 </Typography>
@@ -660,7 +652,7 @@ function DineIn() {
                   marginTop: 5,
                 }}
               >
-                {dineData.rest7_title}
+                {dineData?.rest7_title}
                 {/* Top Station Food Court */}
               </Typography>
               <Divider
@@ -685,14 +677,14 @@ function DineIn() {
                   // fontFamily: '"Jost", sans-serif',
                 }}
               >
-                {dineData.rest7_txt}
+                {dineData?.rest7_txt}
                 {/* Snacking with a view: A feast for every craving.{" "} */}
               </Typography>
             </Stack>
           </Grid>
           <Grid item xs={12} sm={12} md={6} mt={5}>
             <img
-              src={`${import.meta.env.VITE_BACKEND_URL}/${dineData.rest7_img}`}
+              src={`${import.meta.env.VITE_BACKEND_URL}/${dineData?.rest7_img}`}
               // src="/DineIn/topFood.JPG"
               alt="Bottom Food Court"
               style={{

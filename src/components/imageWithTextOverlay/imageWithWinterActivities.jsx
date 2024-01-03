@@ -8,8 +8,6 @@ import { Link } from "react-router-dom";
 const ImageWithWinterActivities = ({
   image = "",
   text,
-  button = false,
-  buttonText = "",
   buttonCallBack = () => {},
 }) => {
   const boxStyle = {

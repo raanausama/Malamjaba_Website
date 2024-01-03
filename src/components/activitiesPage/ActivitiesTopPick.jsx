@@ -39,9 +39,7 @@ const ActivitiesTopPick = ({ activitiesData }) => {
   let card = [
     <WinterCards
       // simage="/Activities/Sking-min.JPG"
-      simage={`${import.meta.env.VITE_BACKEND_URL}/${
-        activitiesData?.card1_img
-      }`}
+      simage={`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.card1_img}`}
       // sheader="Skiing"
       sheader={activitiesData.card1_title}
       // stext="Ski through our magnificent slopes under the training of national and international experts"
@@ -57,9 +55,7 @@ const ActivitiesTopPick = ({ activitiesData }) => {
     />,
     <WinterCards
       // simage="/Activities/Snowboarding-min.jpg"
-      simage={`${import.meta.env.VITE_BACKEND_URL}/${
-        activitiesData?.card2_img
-      }`}
+      simage={`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.card2_img}`}
       sheader={activitiesData.card2_title}
       stext={activitiesData.card2_txt}
       // sheader="Snow Boarding"
@@ -74,9 +70,7 @@ const ActivitiesTopPick = ({ activitiesData }) => {
       description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
     />,
     <AcitivitySinglePriceCards
-      simage={`${import.meta.env.VITE_BACKEND_URL}/${
-        activitiesData?.card3_img
-      }`}
+      simage={`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.card3_img}`}
       sheader={activitiesData?.card3_title}
       stext={activitiesData?.card3_txt}
       price={activitiesData?.card3_ticketRate}
@@ -84,10 +78,10 @@ const ActivitiesTopPick = ({ activitiesData }) => {
       // sheader="Snow Tubing"
       // stext="Perfect ride for all the fun lovers"
       // price="400"
-      description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
+      description="Enjoy The Ride"
     />,
     //   <AcitivitySinglePriceCards
-    //   // simage= {`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.card3_img}`}
+    //   // simage= {`http://localhost:5000/${activitiesData?.card3_img}`}
     //   // sheader={activitiesData?.card3_title}
 
     //   // stext={activitiesData?.card3_txt}
@@ -99,11 +93,9 @@ const ActivitiesTopPick = ({ activitiesData }) => {
     // />,
     <WinterCards
       // simage="/Activities/SkiRentalMin.jpg"
-      simage={`${import.meta.env.VITE_BACKEND_URL}/${
-        activitiesData?.card4_img
-      }`}
-      sheader={activitiesData.card2_title}
-      stext={activitiesData.card2_txt}
+      simage={`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.card4_img}`}
+      sheader={activitiesData.card4_title}
+      stext={activitiesData.card4_txt}
       // sheader="Ski-Rental"
       // stext="Get yourself well-equipped with high quality skis and snowboards to experience thrilling experience of a lifetime"
       // hourlyPrice={2000}
@@ -146,7 +138,7 @@ const ActivitiesTopPick = ({ activitiesData }) => {
         </Grid>
         {/* <WinterCards
               simage="/Activities/Sking-min.JPG"
-              // simage= {`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.card1_img}`}
+              // simage= {`http://localhost:5000/${activitiesData?.card1_img}`}
 
               sheader="Skiing"
               // sheader={activitiesData.card1_title}
@@ -162,7 +154,7 @@ const ActivitiesTopPick = ({ activitiesData }) => {
           <Grid Item xs={12} sm={4} md={2}>
             <WinterCards
               simage="/Activities/Snowboarding-min.jpg"
-              // simage= {`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.card2_img}`}
+              // simage= {`http://localhost:5000/${activitiesData?.card2_img}`}
               // sheader={activitiesData.card2_title}
 
               // stext={activitiesData.card2_txt}
@@ -177,7 +169,7 @@ const ActivitiesTopPick = ({ activitiesData }) => {
           </Grid>
           <Grid Item xs={12} sm={4} md={2}>
             <AcitivitySinglePriceCards
-              // simage= {`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.card3_img}`}
+              // simage= {`http://localhost:5000/${activitiesData?.card3_img}`}
               // sheader={activitiesData?.card3_title}
 
               // stext={activitiesData?.card3_txt}
@@ -190,7 +182,7 @@ const ActivitiesTopPick = ({ activitiesData }) => {
           </Grid>
           <Grid Item xs={12} sm={4} md={2}>
             <AcitivitySinglePriceCards
-              // simage= {`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.card3_img}`}
+              // simage= {`http://localhost:5000/${activitiesData?.card3_img}`}
               // sheader={activitiesData?.card3_title}
 
               // stext={activitiesData?.card3_txt}

@@ -1,6 +1,6 @@
 import { Link as RouterLink } from "react-router-dom";
 // @mui
-import logo from "../../Assets/logos/malamjabbalogo-150.png";
+import logo from "../../assets/logos/malamjabbalogo-150.png";
 import { Stack, LinearProgress, Box } from "@mui/material";
 import { Zoom } from "react-awesome-reveal";
 import "./LazyLoader.css";

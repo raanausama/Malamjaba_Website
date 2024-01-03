@@ -265,7 +265,6 @@
 // export default ResponsiveAppBar;
 
 import "./navbar.css";
-import logo from "../../Assets/logos/malamjabbalogo-150.png";
 import Weather from "../weatherElement/weather";
 import AppsIcon from "@mui/icons-material/Apps";
 import WeatherBar from "../weatherElement/weatherBar";
@@ -283,8 +282,8 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import gsap from "gsap";
 import { Link, useNavigate } from "react-router-dom";
-import { Height } from "@mui/icons-material";
 import SignIn from "../../pages/SignIn";
+import mjrLogo from "../../assets/logos/mjr-rev.png"
 
 const pages = ["HOME", "STAYCATION", "ACTIVITIES", "ABOUT US"];
 const settings = [
@@ -294,7 +293,7 @@ const settings = [
   "Contact Us",
 ];
 
-function ResponsiveAppBar() {
+function ResponsiveAppBar({homeData}) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -366,14 +365,14 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "flex" } }}>
             <a href="/">
               <img
-                src={"/mjr-rev.png"}
+                src={mjrLogo}
                 alt="logo"
                 Link="/"
-                sx={{
-                  display: { xs: "none", md: "flex" },
-                  mr: 1,
-                }}
-                style={{height: "15vh", width: "25vh"}}
+                style={{height: "15vh", width: "25vh",  // Default width
+                '@media (max-width: 600px)': {
+                  height: "10vh", // Adjust height for small screens
+                  width: "20vh",  // Adjust width for small screens
+                },}}
               />
             </a>
           </Box>

@@ -1,8 +1,8 @@
 import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
-import simage1 from "../../Assets/sliderimage/pastevent.jpg";
-import simage2 from "../../Assets/sliderimage/cycling.jpg";
-import simage3 from "../../Assets/sliderimage/futureevent.jpg";
+import simage1 from "../../assets/sliderimage/pastevent.jpg";
+import simage2 from "../../assets/sliderimage/cycling.jpg";
+import simage3 from "../../assets/sliderimage/futureevent.jpg";
 import { Box } from "@mui/material";
 
 function Slider1() {
