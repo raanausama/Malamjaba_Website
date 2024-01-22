@@ -484,9 +484,9 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
                 <WhatsAppIcon />
                 +92-302-6575400
               </Typography>
-              <Typography fontFamily={"Aktiv"} variant="body1" style={{marginLeft:"1.4em"}} >
+              {/* <Typography fontFamily={"Aktiv"} variant="body1" style={{marginLeft:"1.4em"}} >
                 +92-333-2342342
-              </Typography>
+              </Typography> */}
             </Stack>
           </Grid>
         </Grid>
