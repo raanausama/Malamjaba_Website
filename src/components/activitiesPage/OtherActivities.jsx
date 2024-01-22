@@ -95,6 +95,28 @@ const OtherActivities = ({ activitiesData }) => {
       price={` ${activitiesData?.ac4_ticketPrice} `}
       description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
     />,
+    <AcitivitySinglePriceCards
+      // simage="/Activities/HumanSlingshot-min.JPG"
+      // sheader="Human Slingshot"
+      // stext="Are you daring enough to try the only slingshot of Pakistan"
+      // price="5000"
+      simage={`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.ac6_img}`}
+      sheader={activitiesData?.ac6_title}
+      stext={activitiesData?.ac6_txt}
+      price={` ${activitiesData?.ac6_ticketPrice} `}
+      description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
+    />,
+    <AcitivitySinglePriceCards
+      // simage="/Activities/HumanSlingshot-min.JPG"
+      // sheader="Human Slingshot"
+      // stext="Are you daring enough to try the only slingshot of Pakistan"
+      // price="5000"
+      simage={`${import.meta.env.VITE_BACKEND_URL}/${activitiesData?.ac7_img}`}
+      sheader={activitiesData?.ac7_title}
+      stext={activitiesData?.ac7_txt}
+      price={` ${activitiesData?.ac7_ticketPrice} `}
+      description="Activity Prices Per Person: (All prices include 200PKR worth of food voucher which can be redeemed at our Food Court)"
+    />,
     // <BlogCards
     //   simage="/Activities/HumanSlingshot-min.JPG"
     //   sheader="Human Slingshot"
