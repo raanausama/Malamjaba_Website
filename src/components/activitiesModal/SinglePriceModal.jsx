@@ -87,6 +87,25 @@ export default function SinglePriceModal({
               </Grid>
               <Grid item xs={12}>
                 <Typography
+                  component="h3"
+                  sx={{
+                    fontSize: "1.2em",
+                    m: "0em 0.5em 1.2em 0.5em",
+                    display: "flex",
+                    justifyContent: "center",
+                    textAlign: "center",
+                  }}
+                >
+                  Book your adventures at:
+                  <a
+                    href="https://bookme.pk/events/activities-at-malam-jabba-swat"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    https://bookme.pk/events/activities-at-malam-jabba-swat
+                  </a>
+                </Typography>
+                <Typography
                   component="h2"
                   sx={{
                     fontSize: "1.2em",

@@ -283,7 +283,7 @@ import MenuItem from "@mui/material/MenuItem";
 import gsap from "gsap";
 import { Link, useNavigate } from "react-router-dom";
 import SignIn from "../../pages/SignIn";
-import mjrLogo from "../../assets/logos/mjr-rev.png"
+import mjrLogo from "../../assets/logos/mjr-rev.png";
 
 const pages = ["HOME", "STAYCATION", "ACTIVITIES", "ABOUT US"];
 const settings = [
@@ -293,7 +293,7 @@ const settings = [
   "Contact Us",
 ];
 
-function ResponsiveAppBar({homeData}) {
+function ResponsiveAppBar({ homeData }) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -368,11 +368,14 @@ function ResponsiveAppBar({homeData}) {
                 src={mjrLogo}
                 alt="logo"
                 Link="/"
-                style={{height: "15vh", width: "25vh",  // Default width
-                '@media (max-width: 600px)': {
-                  height: "10vh", // Adjust height for small screens
-                  width: "20vh",  // Adjust width for small screens
-                },}}
+                style={{
+                  height: "15vh",
+                  width: "25vh", // Default width
+                  "@media (max-width: 600px)": {
+                    height: "10vh", // Adjust height for small screens
+                    width: "20vh", // Adjust width for small screens
+                  },
+                }}
               />
             </a>
           </Box>
