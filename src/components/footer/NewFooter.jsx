@@ -187,7 +187,7 @@
 //               // style={{ height: "25vh", width: "25vh" }}
 //             />
 //           </Grid>
-          
+
 //           <Grid
 //             item
 //             gap={{ xs: 1, md: 1 }}
@@ -330,15 +330,40 @@
 
 // export default NewFooter;
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./footer.css";
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { Box, Container, Grid, Stack, Typography, Link } from "@mui/material";
 import pclogo from "../../assets/sliderimage/footer-logo-pc.png";
 import mjrLogo from "../../assets/logos/mjr-rev.png";
 import samsonsLogo from "../../assets/logos/samsons-rev.png";
 
 const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
+  const [homeData, setHomeData] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const getHomeData = async () => {
+    try {
+      // const response = await axios.get(
+      //   `${import.meta.env.VITE_BACKEND_URL}/home/getHomePageData?username=ranausama`
+      // );
+      console.log("url", `${import.meta.env.VITE_BACKEND_URL}`);
+      const response = await axios.get(
+        `${
+          import.meta.env.VITE_BACKEND_URL
+        }/home/getHomePageData?username=ranausama`
+      );
+      // Handle the response data here
+      console.log("Datasda:", response.data);
+      setLoading(true);
+      setHomeData(response.data);
+    } catch (error) {
+      // Handle errors here
+      console.error("Error:", error);
+    }
+  };
+  useEffect(() => {
+    getHomeData();
+  }, [loading]);
   return (
     <Box
       maxWidth="100%"
@@ -383,22 +408,23 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
                 target="_blank"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                <Typography fontFamily={"Aktiv"}
+                <Typography
+                  fontFamily={"Aktiv"}
                   variant="h5"
                   // sx={{ fontFamily: "Times New Roman, Times, serif" }}
                 >
                   LOCATION
                 </Typography>
-              
-              <Typography fontFamily={"Aktiv"} variant="body1 " >
-                Hill station,
-              </Typography>
-              <Typography fontFamily={"Aktiv"} variant="body1" >
-                Malam Jabba Road,
-              </Typography>
-              <Typography fontFamily={"Aktiv"} variant="body1" >
-                Malam Jabba, Swat.
-              </Typography>
+
+                <Typography fontFamily={"Aktiv"} variant="body1 ">
+                  Hill station,
+                </Typography>
+                <Typography fontFamily={"Aktiv"} variant="body1">
+                  Malam Jabba Road,
+                </Typography>
+                <Typography fontFamily={"Aktiv"} variant="body1">
+                  Malam Jabba, Swat.
+                </Typography>
               </a>
             </Stack>
           </Grid>
@@ -424,7 +450,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               >
                 QUICK LINKS
               </Typography>
-              <Typography fontFamily={"Aktiv"} variant="body1" >
+              <Typography fontFamily={"Aktiv"} variant="body1">
                 <Link
                   href="/activities"
                   rel="sponsored"
@@ -444,7 +470,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
                   Staycation
                 </Link>
               </Typography>
-              <Typography fontFamily={"Aktiv"} variant="body1" >
+              <Typography fontFamily={"Aktiv"} variant="body1">
                 <Link
                   href="/dinein"
                   rel="sponsored"
@@ -477,12 +503,12 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               >
                 CONTACT US
               </Typography>
-              <Typography fontFamily={"Aktiv"} variant="body1" >
-                info@malamjabbaresort.com
+              <Typography fontFamily={"Aktiv"} variant="body1">
+                {homeData?.email}
               </Typography>
-              <Typography fontFamily={"Aktiv"} variant="body1" >
+              <Typography fontFamily={"Aktiv"} variant="body1">
                 <WhatsAppIcon />
-                +92-302-6575400
+                {homeData?.phoneOne}
               </Typography>
               {/* <Typography fontFamily={"Aktiv"} variant="body1" style={{marginLeft:"1.4em"}} >
                 +92-333-2342342
@@ -519,7 +545,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               style={{ height: "20vh", width: "25vh" }}
             />
           </Grid>
-          
+
           <Grid
             item
             gap={{ xs: 1, md: 1 }}
@@ -584,7 +610,9 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
               align="center"
               sx={{ color: "white" }}
             > */}
-            <Typography fontFamily={"Aktiv"} variant="h6" >FOLLOW US</Typography>
+            <Typography fontFamily={"Aktiv"} variant="h6">
+              FOLLOW US
+            </Typography>
             <Link
               sx={{ color: "white" }}
               href="https://www.facebook.com/MjSkiResort"
@@ -648,7 +676,7 @@ const NewFooter = ({ bgImage = "", text = "", textHeading = "" }) => {
                 height="40"
                 src="/SocialIcons/icons8-twitter.png"
                 alt="twitter-circled"
-                style={{filter:"invert(100%)"}}
+                style={{ filter: "invert(100%)" }}
               />
             </Link>{" "}
             <Link
