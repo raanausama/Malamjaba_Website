@@ -372,7 +372,7 @@ function ResponsiveAppBar({ homeData }) {
                   height: "15vh",
                   width: "25vh", // Default width
                   "@media (max-width: 600px)": {
-                    height: "10vh", // Adjust height for small screens
+                    height: "2vh", // Adjust height for small screens
                     width: "20vh", // Adjust width for small screens
                   },
                 }}

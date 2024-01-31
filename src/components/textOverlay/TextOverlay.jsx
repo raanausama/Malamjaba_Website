@@ -67,7 +67,9 @@ const VideoTextOverlay = ({
       //   height: "100vh",
       // }}
     >
-      <video src={video} loop muted autoPlay></video>
+      {/* <video src={video} loop muted autoPlay></video> */}
+      <img src={video} style={{height:'100vh',width:'100%'}} alt="background gif" />
+
       <Grid container>
         <Grid
           item
@@ -78,7 +80,9 @@ const VideoTextOverlay = ({
           // mt={50}
           sx={{
             position: "absolute",
-            bottom: { xs: "1%", md: "10em", lg: "16em" },
+            // bottom: { xs: "1%", md: "10em", lg: "16em" }, for video.mp4
+            // left: { xs: "1%", md: "1em", lg: "1em" },
+            bottom: { xs: "5%", md: "5em", lg: "5em" },
             left: { xs: "1%", md: "1em", lg: "1em" },
             zIndex: 1,
             // textAlign: "center",
