@@ -72,7 +72,7 @@ const HomePage = () => {
       >
         <VideoTextOverlay
           // video="mjr.mp4"
-          video="Final _Video.mp4"
+          video="Final_Video_gif.gif"
           text="Plan your perfect getaway with family and friends"
           textHeading="Malam Jabba Ski Resort – "
           text1="Where Nature Meets Adventure!"
